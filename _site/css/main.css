@@ -251,9 +251,8 @@ html, body {
 	margin: 50px auto;
 }
 
-.post article h2 {
+.post article h2, .post article h2 a {
 	position: relative;
-	display: block;
 	text-align: center;
 	margin-top: 30px;
 	margin-bottom: 0px;
@@ -262,6 +261,16 @@ html, body {
 	line-height: 26px;
 	font-weight: 600;
 	color: #333d3e;
+	text-decoration: none;
+}
+
+.post article h2 a {
+	color: #687778;
+	border-bottom: 1px solid #bbc9ca;
+}
+
+.post article h2 a:hover {
+	color: #bbc9ca;
 }
 
 .post article .meta a {
@@ -282,4 +291,14 @@ html, body {
 	font-family: "Helvetica Neue", "Apple SD Gothic Neo", "AppleSDGothicNeo1", "SDGothicNeo1", "Malgun Gothic", sans-serif;
 	line-height: 1.8em;
 	color: #515e5f;
+}
+
+.post article .content img {
+	display: block;
+	margin: 10px auto;
+	max-width: 80%;
+}
+
+.post article .content p {
+	margin: 20px auto;
 }
