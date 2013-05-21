@@ -1,0 +1,6 @@
+name: si.mpli.st
+author: premist
+pygments: true
+paginate: 10
+paginate_path: 'p:num'
+permalink: none

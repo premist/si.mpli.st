@@ -1,0 +1,285 @@
+/*
+	si.mpli.st 2013
+	main stylesheet
+	by minku lee
+*/
+
+/* reset5 © 2011 opensource.736cs.com MIT */
+html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,audio,canvas,details,figcaption,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,summary,time,video{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0;}body{line-height:1;}article,aside,dialog,figure,footer,header,hgroup,nav,section,blockquote{display:block;}nav ul{list-style:none;}ol{list-style:decimal;}ul{list-style:disc;}ul ul{list-style:circle;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:none;}ins{text-decoration:underline;}del{text-decoration:line-through;}mark{background:none;}abbr[title],dfn[title]{border-bottom:1px dotted #000;cursor:help;}table{border-collapse:collapse;border-spacing:0;}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0;}input[type=submit],input[type=button],button{margin:0!important;padding:0!important;}input,select,a img{vertical-align:middle;}
+
+code, pre {
+	font-family: "Menlo", "Monaco", "Ubuntu Mono", monospace;
+}
+
+.highlight {
+	font-size: 12px;
+}
+
+.category-dev .category { color: #3498DB; } /* 'Peter River' from Flat UI color swatches */
+.category-geek .category { color: #2980B9; } /* 'Belize Hole' from Flat UI color swatches */ 
+.category-life .category { color: #f39c12; } /* 'Orange' from Flat UI color swatches */
+.category-think .category { color: #1ABC9C; } /* 'Turquoise' from Flat UI color swatches */
+.category-anime .category { color: #e74c3c; } /* 'Alizarin' from Flat UI color swatches */
+.category-travel .category { color: #9B59B6; } /* 'Amethyst' from Flat UI color swatches */
+
+.post header h1.title.title-dev a { color: #3498DB; } /* 'Peter River' from Flat UI color swatches */
+.post header h1.title.title-geek a { color: #2980B9; } /* 'Belize Hole' from Flat UI color swatches */ 
+.post header h1.title.title-life a { color: #f39c12; } /* 'Orange' from Flat UI color swatches */
+.post header h1.title.title-think a { color: #1ABC9C; } /* 'Turquoise' from Flat UI color swatches */
+.post header h1.title.title-anime a { color: #e74c3c; } /* 'Alizarin' from Flat UI color swatches */
+.post header h1.title.title-travel a { color: #9B59B6; } /* 'Amethyst' from Flat UI color swatches */
+
+#index li.category-dev a:hover { background-color: #3498DB; } /* 'Peter River' from Flat UI color swatches */
+#index li.category-geek a:hover { background-color: #2980B9; } /* 'Belize Hole' from Flat UI color swatches */ 
+#index li.category-life a:hover { background-color: #f39c12; } /* 'Orange' from Flat UI color swatches */
+#index li.category-think a:hover { background-color: #1ABC9C; } /* 'Turquoise' from Flat UI color swatches */
+#index li.category-anime a:hover { background-color: #e74c3c; } /* 'Alizarin' from Flat UI color swatches */
+#index li.category-travel a:hover { background-color: #9B59B6; } /* 'Amethyst' from Flat UI color swatches */
+
+
+
+html, body {
+	background-color: #fbfbfb;
+}
+
+.container {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	
+	width: 700px;
+	margin: 40px auto;
+}
+
+.home header {
+	position: relative;
+	display: block;
+	overflow: visible;
+	height: 50px;
+}
+
+.home header h1.title {
+}
+
+.home header h1.title a {
+	float: left;
+	
+	font-family: "futura-pt";
+	font-size: 50px;
+	line-height: 50px;
+	font-weight: normal;
+	text-decoration: none;
+	color: #7f8c8d;
+}
+
+.home header span.author {
+	display: block;
+	float: right;
+	
+	font-family: "futura-pt";
+	font-size: 16px;
+	margin-top: 34px;
+	line-height: 16px;
+	color: #b2bebf;
+}
+
+#index {
+	position: relative;
+	display: block;
+	margin: 50px auto;
+}
+
+#index li {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 40px;
+	border-bottom: 1px solid #ddd;
+}
+
+#index li:first-child {
+	border-top: 1px solid #ddd;
+}
+
+#index li a, #index li span.category, #index li span.title, #index li span.time {
+	transition: all .1s ease-in-out;
+}
+
+#index li a {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: #fbfbfb;
+}
+
+#index li span.category {
+	display: block;
+	float: left;
+	width: 60px;
+	padding: 14px 20px;
+	font-size: 12px;
+	font-weight: 700;
+	text-align: right;
+	border-right: 1px solid #ddd;
+}
+
+.category {
+	font-family: "myriad-pro";
+	text-transform: uppercase;
+}
+
+#index li a:hover span.category, #index li a:hover span.title {
+	color: #fff;
+}
+
+#index li span.title {
+	display: block;
+	float: left;
+	
+	font-family: "Helvetica Neue", "Apple SD Gothic Neo", "AppleSDGothicNeo1", "SDGothicNeo1", "Malgun Gothic", sans-serif;
+	font-size: 18px;
+	padding-left: 20px;
+	margin-top: 4px;
+	line-height: 36px;
+	color: #555;
+}
+
+#index li a:hover span.time {
+	color: #f0f0f0;
+}
+
+#index li span.time {
+	display: block;
+	float: right;
+	padding: 0 10px;
+	
+	font-family: "futura-pt";
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 40px;
+	color: #aaa;
+}
+
+#pagination {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 20px;
+	
+	font-family: "futura-pt";
+}
+
+#pagination .prev {
+	position: absolute;
+	left: 0;
+	z-index: 10;
+}
+
+#pagination .prev a, #pagination .next a {
+	color: #444;
+	text-decoration: none;
+}
+
+#pagination .prev a:hover, #pagination .next a:hover {
+	color: #888;
+	text-decoration: none;
+}
+
+#pagination .prev span, #pagination .next span {
+	color: #bbb;
+	text-decoration: none;
+}
+
+#pagination .page-count {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	z-index: 5;
+	color: #bbb;
+}
+
+#pagination .next {
+	position: absolute;
+	right: 0;
+	z-index: 10;
+}
+
+
+/* post style */
+
+.post .container {
+	margin: 20px auto;
+}
+
+.post header {
+	position: relative;
+	display: block;
+	overflow: visible;
+	height: 20px;
+}
+
+.post header h1.title a {
+	float: left;
+	
+	font-family: "futura-pt";
+	font-size: 20px;
+	line-height: 20px;
+	font-weight: normal;
+	text-decoration: none;
+	color: #7f8c8d;
+}
+
+.post header h1.title a .title-cat {
+	color: #ccc;
+}
+
+.post header span.author {
+	display: block;
+	float: right;
+	
+	font-family: "futura-pt";
+	font-size: 16px;
+	line-height: 20px;
+	color: #b2bebf;
+}
+
+.post article {
+	position: relative;
+	display: block;
+	width: 100%;
+	margin: 50px auto;
+}
+
+.post article h2 {
+	position: relative;
+	display: block;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 0px;
+	font-family: "futura-pt", "Apple SD Gothic Neo", "AppleSDGothicNeo1", "SDGothicNeo1", "Malgun Gothic", sans-serif;
+	font-size: 26px;
+	line-height: 26px;
+	font-weight: 600;
+	color: #333d3e;
+}
+
+.post article .meta a {
+	position: relative;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	font-family: "futura-pt";
+	font-weight: 300;
+	margin-top: 20px;
+	color: #b2bebf;
+}
+
+.post article .content {
+	position: relative;
+	display: block;
+	margin: 50px auto;
+	font-family: "Helvetica Neue", "Apple SD Gothic Neo", "AppleSDGothicNeo1", "SDGothicNeo1", "Malgun Gothic", sans-serif;
+	line-height: 1.8em;
+	color: #515e5f;
+}

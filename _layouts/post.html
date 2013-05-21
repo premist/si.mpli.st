@@ -1,0 +1,17 @@
+---
+layout: default
+type: post
+---
+<header>
+  <h1 class="title title-{{ page.category }}"><a href="/">{{ site.name }} <span class="title-cat">{{ page.category }}</span></a></h1>
+  <span class="author">by {{ site.author }}</span>
+</header>
+
+<article>
+	<h2>{{ page.title }}</h2>
+	<span class="meta"><a href="{{ page.permalink }}">{{ page.date | date_to_string }}</a></span>
+	<div class="content">
+	{{ content }}
+	</div>
+	
+</article>
