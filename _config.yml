@@ -4,3 +4,4 @@ pygments: true
 paginate: 10
 paginate_path: 'p:num'
 permalink: none
+markdown: redcarpet
