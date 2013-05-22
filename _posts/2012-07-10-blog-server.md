@@ -2,7 +2,7 @@
 layout: post
 title:  "블로그 서버 이전"
 date:   2012-07-10 11:22:31
-category: dev
+category: life
 ---
 
 블로그 서버를 [Windows Azure](http://windowsazure.com/) 에서 [@Relipnamu](https://twitter.com/relipnamu)님 서버로 옮겼다.

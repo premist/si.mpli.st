@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Microsoft Surface"
+title:  "Sharp AQUOS Android Smartphone - Feel UX"
 date:   2012-06-19 20:50:08
-category: geek
+category: think
 link: http://vimeo.com/43224490
 ---
 

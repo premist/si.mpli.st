@@ -2,7 +2,7 @@
 layout: post
 title:  "Microsoft Surface"
 date:   2012-06-19 08:54:05
-category: geek
+category: think
 link: http://mobile.theverge.com/2012/6/18/3094157/new-microsoft-surface-windows-tablet
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "MacBook Air 신형 구매"
 date:   2012-07-16 14:51:36
-category: geek
+category: life
 ---
 
 ![MacBook Air with MagSafe 2](http://i.imgur.com/jSulz.jpg)
