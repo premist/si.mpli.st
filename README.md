@@ -13,7 +13,7 @@ Run bundler to install dependencies.
 
 ## License
 
-Minku Lee <premist@me.com>. Some rights reserved. 
+Copyright © [Minku Lee](mailto:premist@me.com). Some rights reserved. 
 
 ![Creative Commons Attribution-ShareAlike 3.0 Unported License](http://i.creativecommons.org/l/by-sa/3.0/88x31.png)
 
