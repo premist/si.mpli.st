@@ -1,6 +1,6 @@
-# si.mpli.st
+# [si.mpli.st](http://si.mpli.st/)
 
-personal blog built with jekyll
+personal blog built with jekyll.
 
 
 ## Dependencies
