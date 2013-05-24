@@ -47,12 +47,12 @@ Apple의 Siri 데모에서 나왔던 대화이다. 어떤 것이 놀라운 지 �
 울프람알파는 Wolfram Mathematica를 이용한 검색엔진(사이트의 설명을 빌리자면 Computational knowledge engine)이다. Mathematica를 이용한 수학 연산부터, 잡다한 상식까지 전부 찾아준다. Siri는 질문이 어디에도 부합하지 않을 때 Wolfram|Alpha에 검색한다. 꽤 중요한 대목이다. Wolfram|Alpha의 방대한 지식 데이터베이스에 음성으로, 그것도 자연어로 접근할 수 있다는 것이다. 카페 라떼가 몇 kcal인지, 12oz가 몇 ml인지 등의 질문을 해도 Siri는 답해줄 것이다.
 
 
-## 맺으며
+### 맺으며
 
 사실 오늘까지도 Siri의 능력을 의심했지만, [CBS의 데모 비디오](http://www.youtube.com/watch?v=fSp1_IBotjA&feature=youtu.be&a)를 보고 의도하지 않아도 꽤 높은 인식률을 보여준다는 것을 알게 될 것이다. iPhone 4S를 손에 넣으면 제일 먼저 Siri를 테스트 해 보고 싶을 만큼 개인적으로, 아니 남에게도 추천할만큼 대단한 기능이라고 생각한다. 다만 한국어 등 다국어 지원이 어떻게 될지는 걱정스럽기도 하다. 하지만 현재까지 존재했던 음성으로 기능을 작동시키는 기술 중에서는 사용자의 행동패턴을 제일 잘 반영한 것은 분명하다.
 
 
-## 참고 사이트
+### 참고 사이트
 
 - [Why Siri just might work](http://thisismynext.com/2011/10/04/siri-work/)
 - [자연어 처리 전공자로써 iPhone 4S의 Siri에 대한 깨작거림 ](http://hanury.net/wp/archives/2998)

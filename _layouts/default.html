@@ -12,7 +12,7 @@
 		<script type="text/javascript" src="//use.typekit.net/lid4aqt.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     </head>
-    <body class="{{ page.type }}">
+    <body class="{{ page.type }}" {% if page.category %}data-category="{{ page.category }}"{% endif %}>
 
         <div class="container">
 			{{ content }}

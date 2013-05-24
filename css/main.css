@@ -15,19 +15,12 @@ code, pre {
 	font-size: 12px;
 }
 
-.category-dev .category { color: #3498DB; } /* 'Peter River' from Flat UI color swatches */
-.category-geek .category { color: #2980B9; } /* 'Belize Hole' from Flat UI color swatches */ 
-.category-life .category { color: #f39c12; } /* 'Orange' from Flat UI color swatches */
-.category-think .category { color: #1ABC9C; } /* 'Turquoise' from Flat UI color swatches */
-.category-anime .category { color: #e74c3c; } /* 'Alizarin' from Flat UI color swatches */
-.category-travel .category { color: #9B59B6; } /* 'Amethyst' from Flat UI color swatches */
-
-.post header h1.title.title-dev a { color: #3498DB; } /* 'Peter River' from Flat UI color swatches */
-.post header h1.title.title-geek a { color: #2980B9; } /* 'Belize Hole' from Flat UI color swatches */ 
-.post header h1.title.title-life a { color: #f39c12; } /* 'Orange' from Flat UI color swatches */
-.post header h1.title.title-think a { color: #1ABC9C; } /* 'Turquoise' from Flat UI color swatches */
-.post header h1.title.title-anime a { color: #e74c3c; } /* 'Alizarin' from Flat UI color swatches */
-.post header h1.title.title-travel a { color: #9B59B6; } /* 'Amethyst' from Flat UI color swatches */
+#index li.category-dev .category { color: #3498DB; } /* 'Peter River' from Flat UI color swatches */
+#index li.category-geek .category { color: #2980B9; } /* 'Belize Hole' from Flat UI color swatches */ 
+#index li.category-life .category { color: #f39c12; } /* 'Orange' from Flat UI color swatches */
+#index li.category-think .category { color: #1ABC9C; } /* 'Turquoise' from Flat UI color swatches */
+#index li.category-anime .category { color: #e74c3c; } /* 'Alizarin' from Flat UI color swatches */
+#index li.category-travel .category { color: #9B59B6; } /* 'Amethyst' from Flat UI color swatches */
 
 #index li.category-dev a:hover { background-color: #3498DB; } /* 'Peter River' from Flat UI color swatches */
 #index li.category-geek a:hover { background-color: #2980B9; } /* 'Belize Hole' from Flat UI color swatches */ 
@@ -35,6 +28,20 @@ code, pre {
 #index li.category-think a:hover { background-color: #1ABC9C; } /* 'Turquoise' from Flat UI color swatches */
 #index li.category-anime a:hover { background-color: #e74c3c; } /* 'Alizarin' from Flat UI color swatches */
 #index li.category-travel a:hover { background-color: #9B59B6; } /* 'Amethyst' from Flat UI color swatches */
+
+body[data-category="dev"].post header h1.title a { color: #3498DB; } /* 'Peter River' from Flat UI color swatches */
+body[data-category="geek"].post header h1.title a { color: #2980B9; } /* 'Belize Hole' from Flat UI color swatches */ 
+body[data-category="life"].post header h1.title a { color: #f39c12; } /* 'Orange' from Flat UI color swatches */
+body[data-category="think"].post header h1.title a { color: #1ABC9C; } /* 'Turquoise' from Flat UI color swatches */
+body[data-category="anime"].post header h1.title a { color: #e74c3c; } /* 'Alizarin' from Flat UI color swatches */
+body[data-category="travel"].post header h1.title a { color: #9B59B6; } /* 'Amethyst' from Flat UI color swatches */
+
+body[data-category="dev"].post article .content a { color: #3498DB; } /* 'Peter River' from Flat UI color swatches */
+body[data-category="geek"].post article .content a { color: #2980B9; } /* 'Belize Hole' from Flat UI color swatches */ 
+body[data-category="life"].post article .content a { color: #f39c12; } /* 'Orange' from Flat UI color swatches */
+body[data-category="think"].post article .content a { color: #1ABC9C; } /* 'Turquoise' from Flat UI color swatches */
+body[data-category="anime"].post article .content a { color: #e74c3c; } /* 'Alizarin' from Flat UI color swatches */
+body[data-category="travel"].post article .content a { color: #9B59B6; } /* 'Amethyst' from Flat UI color swatches */
 
 
 
@@ -251,7 +258,7 @@ html, body {
 	margin: 50px auto;
 }
 
-.post article h2, .post article h2 a {
+.post article > h2, .post article > h2 a {
 	position: relative;
 	text-align: center;
 	margin-top: 30px;
@@ -259,17 +266,17 @@ html, body {
 	font-family: "futura-pt", "Apple SD Gothic Neo", "AppleSDGothicNeo1", "SDGothicNeo1", "Malgun Gothic", sans-serif;
 	font-size: 26px;
 	line-height: 26px;
-	font-weight: 600;
+	font-weight: 700;
 	color: #333d3e;
 	text-decoration: none;
 }
 
-.post article h2 a {
+.post article > h2 a {
 	color: #687778;
 	border-bottom: 1px solid #bbc9ca;
 }
 
-.post article h2 a:hover {
+.post article > h2 a:hover {
 	color: #bbc9ca;
 }
 
@@ -293,14 +300,50 @@ html, body {
 	color: #515e5f;
 }
 
+.post article .content h1,
+.post article .content h2,
+.post article .content h3,
+.post article .content h4, 
+.post article .content h5, 
+.post article .content h6 {
+	color: #2C3E50;
+	font-size: 18px;
+	padding-top: 15px;
+	
+}
+
 .post article .content img {
 	display: block;
 	margin: 10px auto;
-	max-width: 80%;
+	max-width: 60%;
 }
 
 .post article .content p {
 	margin: 20px auto;
+}
+
+.post article .content ul {
+	display: block;
+	margin: 10px 0;
+}
+
+.post article .content li:before {
+	content: "• ";
+}
+
+.post article .content p:first-child {
+	margin-top: 0px;
+}
+
+.post article .content a {
+	font-weight: 500;
+	text-decoration: none;
+	color: #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.post article .content a:hover {
+	color: #888 !important;
 }
 
 .post article .content .yt-container {
