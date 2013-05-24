@@ -14,7 +14,7 @@
 		<meta property="og:image" content="{{ site.domain }}/images/logo.png" />
 		{% if page.type == 'post' %}
 		<meta property="og:type" content="article">
-		<meta property="og:title" content="{{ page.title }}">
+		<meta property="og:title" content="{{ page.title }} &mdash; {{ site.name }}">
 		<meta property="og:url" content="{{ site.domain }}{{ page.url }}">
 		{% if page.excerpt %}
 		<meta property="og:description" content="{{ page.excerpt }}">
