@@ -17,13 +17,22 @@
         <!-- <meta name="viewport" content="width=device-width"> -->
 		
 		<meta property="og:site_name" content="{{ site.name }}">
-		<meta property="og:image" content="{{ site.domain }}/images/logo.png" />
+		<meta property="og:image" content="{{ site.domain }}/images/logo.png">
+		
 		{% if page.type == 'post' %}
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@simpIist">
+		<meta name="twitter:creator" content="@premist">
+		<meta name="twitter:title" content="{{ page.title }}">
+		<meta name="twitter:image" content="{{ site.domain }}//images/logo.png">
+		
 		<meta property="og:type" content="article">
 		<meta property="og:title" content="{{ page.title }} &mdash; {{ site.name }}">
 		<meta property="og:url" content="{{ site.domain }}{{ page.url }}">
+		
 		{% if page.excerpt %}
 		<meta property="og:description" content="{{ page.excerpt }}">
+		<meta name="twitter:description" content="{{ page.excerpt }}">
 		{% endif %}
 		{% else %}
 		<meta property="og:type" content="website">
