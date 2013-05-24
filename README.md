@@ -1,7 +1,6 @@
 # si.mpli.st
 
-Repository of my personal blog [si.mpli.st](http://si.mpli.st/).
-Built with static page generator [Jekyll](http://jekyllrb.com/).
+Repository of my personal blog [si.mpli.st](http://si.mpli.st/), built with static page generator [Jekyll](http://jekyllrb.com/).
 
 
 ## Dependencies
