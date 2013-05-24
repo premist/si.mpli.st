@@ -3,6 +3,7 @@ layout: post
 title:  "Font book - Smart Collection"
 date:   2012-08-03 10:01:54
 category: think
+excerpt: OS X Mountain Lion의 Font Book(서체 관리자)에 Smart Collection이라는 기능이 추가되었다.
 ---
 
 ![Smart Collection](http://i.imgur.com/9udfu.png)

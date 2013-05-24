@@ -6,6 +6,20 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
 		
+		<meta property="og:site_name" content="{{ site.name }}">
+		{% if page.category %}
+		<meta property="og:type" content="article">
+		<meta property="og:title" content="{{ page.title }}">
+		<meta property="og:url" content="{{ site.domain }}{{ page.url }}">
+		{% if page.excerpt %}
+		<meta property="og:description" content="{{ page.excerpt }}">
+		{% endif %}
+		{% else %}
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="{{ site.name }}">
+		<meta property="og:url" content="{{ site.domain }}">
+		{% endif %}
+		
         <link rel="stylesheet" href="/css/syntax.css">
         <link rel="stylesheet" href="/css/main.css">
 

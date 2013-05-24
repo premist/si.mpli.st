@@ -17,7 +17,7 @@ type: post
 		{{ page.title }}
 		{% endif %}
 	</h2>
-	<span class="meta"><a href="{{ page.permalink }}">{{ page.date | date_to_string }}</a></span>
+	<span class="meta"><a href="{{ site.domain }}{{ page.url }}">{{ page.date | date_to_string }}</a></span>
 	<div class="content">
 	{{ content }}
 	</div>

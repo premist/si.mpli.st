@@ -4,6 +4,7 @@ title:  "Tweetbot for Mac"
 date:   2012-07-12 09:37:01
 category: think
 link: http://tapbots.com/blog/tweetbot/tweetbot-for-mac
+excerpt: Twitter for Mac을 대체할 수 있을 정도의 품질을 기대했지만, 아직까지는 기대에 미치지 못하는 것 같다.
 ---
 
 [Twitter for Mac](http://itunes.apple.com/kr/app/twitter/id409789998?mt=12)을 대체할 수 있을 정도의 품질을 기대했지만, 아직까지는 기대에 미치지 못하는 것 같다. 다만 다른 클라이언트들보다는 훨씬 편하게 사용할 수 있는 듯. 다중 계정 단축키나 빠른 애니메이션, 더 많은 제스쳐 등이 정식 버전에 들어간다면 메인 클라이언트로 사용할 것 같다.

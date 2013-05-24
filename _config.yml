@@ -5,3 +5,4 @@ paginate: 10
 paginate_path: 'p:num'
 permalink: none
 markdown: redcarpet
+domain: http://si.mpli.st

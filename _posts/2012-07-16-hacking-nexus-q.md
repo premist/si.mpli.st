@@ -3,6 +3,7 @@ layout: post
 title:  "Hacking Nexus Q"
 date:   2012-07-16 15:07:39
 category: geek
+excerpt: Nexus Q를 발표할 때, 사람들의 환호가 터져나온 순간은 바로 'Full Hackability' 를 발표했을 때였다..
 ---
 
 Nexus Q를 발표할 때, 사람들의 환호가 터져나온 순간은 바로 'Full Hackability' 를 발표했을 때였다. 과연 어떤 식으로 개발자 친화적인 사치품을 제작했을까 궁금했는데, [24시간만에 앱을 구동할 수 있도록 해킹되었다](http://www.theverge.com/2012/6/28/3123155/google-nexus-q-games-hack).

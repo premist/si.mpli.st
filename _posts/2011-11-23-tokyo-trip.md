@@ -3,12 +3,9 @@ layout: post
 title: 4박 5일간, 도쿄에 갑니다.
 date: 2011-11-23 01:31:09
 category: travel
+excerpt: 여행을 다니면서 블로그에 여행기를 쓰려고 해도 귀찮아져서, 기록을 전부 저장해버리기로 했습니다.
 ---
 
 [![](http://si.mpli.st/wp-content/uploads/2011/11/followfootprint.png "followfootprint")](http://si.mpli.st/wp-content/uploads/2011/11/followfootprint.png)
-
-** 클릭하면 확대됩니다.**
-
-&nbsp;
 
 여행을 다니면서 블로그에 여행기를 쓰려고 해도 귀찮아져서, 기록을 전부 저장해버리기로 했습니다. 나중에 기억하기에 좋을 것 같다는 생각도 들어서 말이죠. 11월 28일부터 12월 2일까지 총 5일동안, 제 홈페이지에는 제가 있는 위치가 실시간으로 업데이트됩니다.

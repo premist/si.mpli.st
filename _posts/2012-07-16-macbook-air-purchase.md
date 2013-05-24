@@ -3,6 +3,7 @@ layout: post
 title:  "MacBook Air 신형 구매"
 date:   2012-07-16 14:51:36
 category: life
+excerpt: 2012년형 MacBook Air를 구매하였다. 11인치에 CPU/RAM CTO.
 ---
 
 ![MacBook Air with MagSafe 2](http://i.imgur.com/jSulz.jpg)

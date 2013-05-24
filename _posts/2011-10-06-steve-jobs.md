@@ -3,6 +3,7 @@ layout: post
 title: Steve Jobs (1955 - 2011)
 date: 2011-10-06 18:31:08
 category: life
+excerpt: Rest in peace, Steve Jobs.
 ---
 
 {% youtube dX9GTUMh490 %}

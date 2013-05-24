@@ -4,6 +4,7 @@ title:  "Pocket Planes"
 date:   2012-06-19 18:22:45
 category: life
 link: http://itunes.apple.com/kr/app/pocket-planes/id491994942?mt=8
+excerpt: Pocket Planes는 요즘 한창 재밌게 하고 있던 게임이다.
 ---
 
 요즘 한창 재밌게 하고 있던 게임. [Tiny Tower](http://itunes.apple.com/kr/app/tiny-tower/id422667065?mt=8)를 만든 Nimblebits의 신작인데, 특유의 도트 그래픽이 아기자기한 느낌을 준다. 
