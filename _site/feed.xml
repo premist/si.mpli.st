@@ -2,9 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>si.mpli.st</title>
-		<description></description>
+		<description>si.mpli.st by premist</description>
 		<link>http://si.mpli.st</link>
 		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+		
+			
+			<item>
+				<title>블로그 이전, 그리고</title>
+				<description>&lt;p&gt;&lt;a href=&quot;https://www.facebook.com/photo.php?fbid=3768790105929&amp;amp;set=a.1372050988949.2050249.1461991545&quot;&gt;고등학교를 졸업&lt;/a&gt;하고, &lt;a href=&quot;http://followmyfootprint.in/&quot;&gt;일본 여행&lt;/a&gt;을 다녀오고, &lt;a href=&quot;http://kr.linkedin.com/in/premist&quot;&gt;회사에 취직&lt;/a&gt;하는 약 10개월동안 블로그를 잊고 있었다. 아니, 사실 방치했다고 보는 게 맞을 것이다. 간단히 근황 같은 것을 올려야 한다는 막연한 생각은 했지만 실제로 글을 쓴 건 아니니 말이다. &lt;/p&gt;
+
+&lt;p&gt;그러다가 5월 24일에 드디어 블로그 디자인을 바꾸었다.&lt;/p&gt;
+</description>
+				<pubDate>Mon, 24 Jun 2013 03:23:00 +0900</pubDate>
+				<link>http://si.mpli.st/life/migrating-to-jekyll.html</link>
+				<guid isPermaLink="true">http://si.mpli.st/life/migrating-to-jekyll.html</guid>
+			</item>
+			
 		
 			
 			<item>
