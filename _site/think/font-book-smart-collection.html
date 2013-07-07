@@ -60,17 +60,33 @@
 	</h2>
 	<span class="meta"><a href="http://si.mpli.st/think/font-book-smart-collection.html">03 Aug 2012</a></span>
 	<div class="content">
-	<p><img src="http://i.imgur.com/9udfu.png" alt="Smart Collection"></p>
+	<p><img src="/images/2012-08-13-font-book-1.png" alt="Smart Collection"></p>
 
 <p>OS X Mountain Lion의 Font Book(서체 관리자)에 Smart Collection이라는 기능이 추가되었다.  iTunes의 <a href="http://support.apple.com/kb/HT1801?viewlocale=ko_KR">스마트 재생 목록</a>과 유사한 기능으로, 여러 가지 필터를 설정하면 폰트를 자동으로 묶어 주는 기능이다.</p>
 
-<p><img src="http://i.imgur.com/HMuWv.png" alt="Smart Collection 2"></p>
+<p><img src="/images/2012-08-13-font-book-2.png" alt="Smart Collection 2"></p>
 
 <p>필요하다고 생각했던 기능이라 자주 쓰게 될 것 같다. 아마 이 기능을 기다려 오신 다른 분들도 많을 듯.</p>
 
 	</div>
 	
 </article>
+
+<script>/*
+	window.onload = function() {
+		var headings = document.getElementsByTagName('h2');
+		for (var i = 0, hLength = headings.length; i < hLength; i++) {
+			var heading = headings[i];
+			
+			heading.firstChild.nodeValue = heading.firstChild.nodeValue.replace(/[a-zA-Z.]+/g, function(match) {
+				return "<span class=\"en\">".concat(match, "</span>");	
+			});
+			
+			console.log(heading.firstChild.nodeValue);
+			
+		}
+	}
+*/</script>
         </div>
 		<script type="text/javascript">
 

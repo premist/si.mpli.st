@@ -43,7 +43,12 @@ body[data-category="think"].post article .content a { color: #1ABC9C; } /* 'Turq
 body[data-category="anime"].post article .content a { color: #e74c3c; } /* 'Alizarin' from Flat UI color swatches */
 body[data-category="travel"].post article .content a { color: #9B59B6; } /* 'Amethyst' from Flat UI color swatches */
 
-
+body[data-category="dev"].post article .content blockquote { border-left: 4px solid #3498DB; } /* 'Peter River' from Flat UI color swatches */
+body[data-category="geek"].post article .content blockquote { border-left: 4px solid #2980B9; } /* 'Belize Hole' from Flat UI color swatches */ 
+body[data-category="life"].post article .content blockquote { border-left: 4px solid #f39c12; } /* 'Orange' from Flat UI color swatches */
+body[data-category="think"].post article .content blockquote { border-left: 4px solid #1ABC9C; } /* 'Turquoise' from Flat UI color swatches */
+body[data-category="anime"].post article .content blockquote { border-left: 4px solid #e74c3c; } /* 'Alizarin' from Flat UI color swatches */
+body[data-category="travel"].post article .content blockquote { border-left: 4px solid #9B59B6; } /* 'Amethyst' from Flat UI color swatches */
 
 html, body {
 	background-color: #fbfbfb;
@@ -307,19 +312,24 @@ html, body {
 .post article .content h5, 
 .post article .content h6 {
 	color: #2C3E50;
-	font-size: 18px;
-	padding-top: 15px;
-	
+	font-size: 20px;
+	padding-top: 25px;
 }
 
 .post article .content img {
 	display: block;
-	margin: 10px auto;
-	max-width: 60%;
+	margin: 30px auto;
+	max-width: 100%;
 }
 
 .post article .content p {
 	margin: 20px auto;
+}
+
+.post article .content blockquote {
+	margin: 20px auto;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .post article .content ul {

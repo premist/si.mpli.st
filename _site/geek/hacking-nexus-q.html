@@ -66,17 +66,33 @@
 
 <p>TV도 없고 마냥 넥서스 Q를 방치하기에는 너무 아까운 하드웨어라고 생각하여, 해킹을 해보기로 마음먹었다. 하지만 안드로이드에 대한 지식이 없어서 혼자 막연히 시작할 수 없기에,  <a href="http://twitter.com/devunt">@devunt</a> 님의 도움을 받았다.</p>
 
-<p><img src="http://i.imgur.com/dqQwb.jpg" alt="Nexus Q About Page"></p>
+<p><img src="/images/2012-07-16-nexus-q-about-page.jpg" alt="Nexus Q About Page"></p>
 
 <p>몇 분 안에 Nexus Q의 부트로더를 언락하고 슈퍼유저 권한을 취득할 수 있었고, ADB 쉘로 키입력을 하나하나 보내서(...) 정보 페이지를 열 수 있었다. 이후에는 Bluetooth HID 마우스를 연결하여 작업하였고, 오늘 드디어 이런 결과가 나왔다.</p>
 
-<p><img src="http://i.imgur.com/BE2Lr.jpg" alt="Ubuntu + NGINX on Nexus Q"></p>
+<p><img src="/images/2012-07-16-ubuntu-on-q.jpg" alt="Ubuntu + NGINX on Nexus Q"></p>
 
 <p>내가 집에 간 사이에 <a href="http://twitter.com/devunt">@devunt</a>님이 Ubuntu를 Nexus Q에 올리고, 그것도 모자라 <a href="http://nginx.org/">NGINX 웹 서버</a>까지 컴파일하여 설치 해 놓았다. 이제 서버로 쓰기만 하면..</p>
 
 	</div>
 	
 </article>
+
+<script>/*
+	window.onload = function() {
+		var headings = document.getElementsByTagName('h2');
+		for (var i = 0, hLength = headings.length; i < hLength; i++) {
+			var heading = headings[i];
+			
+			heading.firstChild.nodeValue = heading.firstChild.nodeValue.replace(/[a-zA-Z.]+/g, function(match) {
+				return "<span class=\"en\">".concat(match, "</span>");	
+			});
+			
+			console.log(heading.firstChild.nodeValue);
+			
+		}
+	}
+*/</script>
         </div>
 		<script type="text/javascript">
 
