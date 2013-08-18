@@ -28,24 +28,24 @@ type: home
   {% if paginator.previous_page %}
     <p class="prev">
       {% if paginator.previous_page == 1 %}
-        <a href="/">prev</a>
+        <a href="/">newer</a>
       {% else %}
-        <a href="/{{ paginator.previous_page_path }}">prev</a>
+        <a href="/{{ paginator.previous_page_path }}">newer</a>
       {% endif %}
     </p>
   {% else %}
     <p class="prev disabled">
-      <span>prev</span>
+      <span>newer</span>
     </p>
   {% endif %}
 
   {% if paginator.next_page %}
     <p class="next">
-      <a href="/{{ paginator.next_page_path }}">next</a>
+      <a href="/{{ paginator.next_page_path }}">older</a>
     </p>
   {% else %}
     <p class="next disabled">
-      <span>next</span>
+      <span>older</span>
     </p>
   {% endif %}
   
