@@ -3,6 +3,15 @@
 
   
   <url>
+    <loc>http://si.mpli.st/travel/osaka-2012.html</loc>
+    
+    <lastmod>2013-08-26T08:00:00+09:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
     <loc>http://si.mpli.st/review/spotify-vs-google-play-music-all-access.html</loc>
     
     <lastmod>2013-08-02T02:00:00+09:00</lastmod>
