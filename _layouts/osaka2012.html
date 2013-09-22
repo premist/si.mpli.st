@@ -15,7 +15,9 @@ type: post
         	<h2 class="osaka2012-title"><a href="{{ site.domain }}{{ page.url }}">2012 OSAKA</a></h2>
         </div>
         
-        <div class="osaka2012-parallax-bg">&nbsp;</div>
+        <div class="osaka2012-parallax-bg-wrap">
+            <img class="osaka2012-parallax-bg" src="/images/2013-08-26-osaka2012-bg.jpg">
+        </div>
     </div>
     
 	<div class="content">
@@ -31,7 +33,7 @@ type: post
     
     header {
         position: relative;
-        width: 940px;
+        width: 700px;
         margin: 0px auto;
     }
     
@@ -43,40 +45,107 @@ type: post
         position: relative;
         width: 100%;
         height: 300px;
+        overflow: hidden;
+    }
+    
+    .osaka2012-parallax-bg-wrap {
+        position: absolute;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
     }
     
     .osaka2012-parallax-bg {
         position: absolute;
         width: 100%;
-        height: 300px;
-        background-image: url('/images/2013-08-26-osaka2012-bg.jpg');
-        background-size: cover;
-        background-position: center center;
+        min-width: 570px;
     }
     
     .osaka2012-rando-wrap {
         position: absolute;
+        width: 400px;
+        height: 400px;
+        left: 50%;
+        margin-left: -200px;
+        padding: 160px 0px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
         z-index: 5;
+        
+        background: url('/images/2013-08-26-osaka2012-titlebg.jpg');
+        background-size: 100% 100%;
+        -webkit-transform: translateY(-50px);
+        text-align: center;
     }
     
     .osaka2012-tagline {
         position: relative;
+        display: block;
         font-family: "proxima-nova", sans-serif;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 14px;
+        line-height: 20px;
         color: #F0F0F0;
         text-transform: uppercase;
         letter-spacing: 5px;
+        
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+        white-space: nowrap;
     }
     
     .osaka2012-title {
-        
+        position: relative;
+        display: block;
+    }
+    
+    .osaka2012-title a {
+        font-family: "futura-pt", sans-serif;
+        font-weight: 700;
+        font-size: 50px;
+        color: #FFF;
+        text-decoration: none;
+    }
+    
+    .post article .content {
+        display: block;
+        width: 700px;
+        margin: 0px auto;
     }
     
     
 </style>
 
-<script>/*
+<script>
+
+var adjust = function() {
+    var pbw = document.getElementsByClassName('osaka2012-parallax-bg-wrap')[0];
+    
+    if(pbw.offsetWidth > 570) {
+        var pb = document.getElementsByClassName('osaka2012-parallax-bg')[0];
+        var tY = 300 - pb.offsetHeight + document.body.scrollTop*0.5;
+    
+        pb.style.transform = 'translateY('+ tY +'px)';
+        pb.style.webkitTransform = 'translateY('+ tY +'px)';
+        pb.style.mozTransform = 'translateY('+ tY +'px)';
+        pb.style.msTransform = 'translateY('+ tY +'px)';
+    }
+}
+
+window.onresize = function() {
+    adjust();
+}
+
+window.onscroll = function() {
+    adjust();
+}
+
+window.onload = function() {
+    adjust();
+}
+
+/*
 	window.onload = function() {
 		var headings = document.getElementsByTagName('h2');
 		for (var i = 0, hLength = headings.length; i < hLength; i++) {

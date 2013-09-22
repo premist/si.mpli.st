@@ -169,10 +169,10 @@ html, body {
 	padding: 0 10px;
 	
 	font-family: "futura-pt";
-	font-weight: 300;
+	font-weight: normal;
 	font-size: 12px;
 	line-height: 40px;
-	color: #aaa;
+	color: #ddd;
 }
 
 #pagination {
