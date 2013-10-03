@@ -12,7 +12,8 @@ type: post
         
         <div class="osaka2012-rando-wrap">
             <span class="osaka2012-tagline">follow my footprint</span>
-        	<h2 class="osaka2012-title"><a href="{{ site.domain }}{{ page.url }}">2012 OSAKA</a></h2>
+        	<h2 class="osaka2012-title">2012 OSAKA</h2>
+            <span class="osaka2012-posttitle"><a href="{{ site.domain }}{{ page.url }}">{{ page.title }}</a></span>
         </div>
         
         <div class="osaka2012-parallax-bg-wrap">
@@ -67,7 +68,7 @@ type: post
         height: 400px;
         left: 50%;
         margin-left: -200px;
-        padding: 160px 0px;
+        padding: 150px 0px;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
@@ -98,14 +99,32 @@ type: post
     .osaka2012-title {
         position: relative;
         display: block;
-    }
-    
-    .osaka2012-title a {
         font-family: "futura-pt", sans-serif;
         font-weight: 700;
         font-size: 50px;
         color: #FFF;
         text-decoration: none;
+    }
+    
+    .osaka2012-posttitle {
+        position: relative;
+        display: block;
+        padding: 10px 0;
+    }
+    
+    .osaka2012-posttitle a {
+        font-family: "futura-pt", "Apple SD Gothic Neo", "SDGothicNeo1", "Malgun Gothic", NanumGothic, sans-serif;
+        font-weight: normal;
+        color: #F0F0F0;
+        text-decoration: none;
+        
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+        white-space: nowrap;
+    }
+    
+    .osaka2012-posttitle a:hover {
+        color: #E0E0E0;
     }
     
     .post article .content {
@@ -124,7 +143,8 @@ var adjust = function() {
     
     if(pbw.offsetWidth > 570) {
         var pb = document.getElementsByClassName('osaka2012-parallax-bg')[0];
-        var tY = 300 - pb.offsetHeight + document.body.scrollTop*0.5;
+        
+        var tY = 300 - pb.offsetHeight + document.body.scrollTop*0.3;
     
         pb.style.transform = 'translateY('+ tY +'px)';
         pb.style.webkitTransform = 'translateY('+ tY +'px)';
@@ -134,15 +154,15 @@ var adjust = function() {
 }
 
 window.onresize = function() {
-    adjust();
+    setTimeout(adjust, 0);
 }
 
 window.onscroll = function() {
-    adjust();
+    setTimeout(adjust, 0);
 }
 
 window.onload = function() {
-    adjust();
+    setTimeout(adjust, 0);
 }
 
 /*
