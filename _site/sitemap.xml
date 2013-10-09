@@ -3,6 +3,15 @@
 
   
   <url>
+    <loc>http://si.mpli.st/travel/osaka-2012-day-1.html</loc>
+    
+    <lastmod>2013-10-10T23:00:00+09:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
     <loc>http://si.mpli.st/travel/osaka-2012.html</loc>
     
     <lastmod>2013-10-03T18:35:00+09:00</lastmod>
