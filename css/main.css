@@ -337,6 +337,7 @@ html, body {
 .post article .content ul {
 	display: block;
 	margin: 10px 0;
+	list-style: none;
 }
 
 .post article .content li:before {
