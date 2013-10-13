@@ -8,3 +8,6 @@ paginate_path: 'p:num'
 permalink: none
 markdown: redcarpet
 domain: http://si.mpli.st
+
+flickr:
+  api_key: kjh3g4kj1h2gkjh1gvbnvd7o1khmqjh2g3

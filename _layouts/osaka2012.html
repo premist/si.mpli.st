@@ -17,7 +17,11 @@ type: post
         </div>
         
         <div class="osaka2012-parallax-bg-wrap">
-            <img class="osaka2012-parallax-bg" src="/images/2013-08-26-osaka2012-bg.jpg">
+            {% if page.bg %} 
+                <img class="osaka2012-parallax-bg" src="{{ page.bg }}">
+            {% else %}
+                <img class="osaka2012-parallax-bg" src="/images/2013-08-26-osaka2012-bg.jpg">
+            {% endif %}
         </div>
     </div>
     
