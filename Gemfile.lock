@@ -63,5 +63,3 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll
-  redcarpet

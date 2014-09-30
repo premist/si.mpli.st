@@ -8,7 +8,9 @@ excerpt: 오늘(한국 시간으로 2011년 5월 12일), Google I/O 컨퍼런스
 
 Chrome OS가 처음 나왔을때 내 생각은, "너무 일찍 나왔다" 라는 생각뿐이였다. Google이 웹 오피스 환경을 제공하고, GMail을 제공한다고는 하지만, 턱없이 부족하다는 것이 내 생각이였다. 다른 많은 분들도 아직은 시기상조가 아니냐는 의견이 대다수였다. 이제 막 클라우드 개념이 퍼져나갈 시기였고, 유저들은 토런트를 사용하고 있었다. 미디어 라이브러리는 C:/Users/User/Music 에 저장되어 있는 것이 기본이였고, 하드디스크를 테라바이트 단위로 운영하는 사람들도 꽤 있었다.
 
-{% youtube 0QRO3gKj3qw %}
+
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/0QRO3gKj3qw" frameborder="0" allowfullscreen></iframe>
 
 물론 웹이 주목받고 HTML5니 WebGL이니 새로운 웹 기술이 등장하여 웹 시대를 꿈꾸던 개발자들의 장밋빛 전망은 존재했지만, 당장 모든것을 웹으로 옮기기는 힘든 시기가 바로 이 때였다. Google이 Chrome OS의 태블릿 프로토타입과 위에 있는 컨셉영상을 공개했을 때에, 난 구글이 또 하나의 실험을 하고 있다고 생각했다. 실용화 단계는 아니지만, "우리는 이런 것도 한다" 라는 인식을 심어주기 위한, 그런 실험 말이다. 
 
@@ -24,7 +26,7 @@ Chrome OS가 처음 나왔을때 내 생각은, "너무 일찍 나왔다" 라는
 
 오늘(한국 시간으로 2011년 5월 12일), Google I/O 컨퍼런스에서 Chrome OS에 대한 새로운 소식이 들려왔다. 바로 Chromebook에 대한 이야기였다. Samsung이나 Acer 등 다양한 제조사가 참여한 Chromebook은, Chrome OS를 얹은 랩탑이였다. 그 이상도 그 이하도 아니였지만, 다시 들려온 소식에 기쁘지 않을 수 없었다.
 
-{% youtube TVqe8ieqz10 %}
+<iframe width="560" height="315" src="//www.youtube.com/embed/TVqe8ieqz10" frameborder="0" allowfullscreen></iframe>
 
 Chromebook은 렌탈 서비스 등 기존 PC에 비해 정말 저렴한 가격대를 형성할 것으로 보인다. 위 영상에서 말하는 것과 같이, Chromebook은 "인터넷 그 자체" 이다. 오직 인터넷을 위하여 제작된 기기인만큼, 가격이 비쌀 필요도 없고, 비싸서도 안되었다. 일단 가격적인 부분이나 정책적인 부분에서는 잠재적인 고객을 많이 확보했다고 할 수 있다.
 

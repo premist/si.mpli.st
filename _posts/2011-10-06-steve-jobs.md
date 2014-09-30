@@ -6,7 +6,7 @@ category: life
 excerpt: Rest in peace, Steve Jobs.
 ---
 
-{% youtube dX9GTUMh490 %}
+<iframe width="420" height="315" src="//www.youtube.com/embed/nmwXdGm89Tk" frameborder="0" allowfullscreen></iframe>
 
 Here’s to the crazy ones.
 
@@ -35,5 +35,3 @@ They push the human race forward.
 And while some may see them as the crazy ones, we see genius.
 
 Because the people who are crazy enough to think they can change the world, are the ones who do.
-
-**Rest in peace, Steve Jobs.**
