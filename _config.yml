@@ -1,6 +1,8 @@
 name: si.mpli.st
 description: si.mpli.st by premist
 
+encoding: utf-8
+
 author: premist
 pygments: true
 paginate: 10
