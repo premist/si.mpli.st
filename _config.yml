@@ -4,7 +4,7 @@ description: si.mpli.st by premist
 encoding: utf-8
 
 author: premist
-pygments: true
+highlighter: pygments
 paginate: 10
 paginate_path: 'p:num'
 permalink: none
