@@ -6,7 +6,7 @@ category: review
 excerpt: Spotify와 Google Play Music All Access, 두 서비스를 모두 사용해본 입장에서 나의 경험을 공유해본다.
 ---
 
-![두 서비스의 Android 앱](http://storage.googleapis.com/simplist/attachments/2013-08-02-spotify-vs-google-music-all-access.png)
+![두 서비스의 Android 앱](http://simplist.storage.googleapis.com/attachments/2013-08-02-spotify-vs-google-music-all-access.png)
 
 한국에도 여러 음악 스트리밍 서비스들이 있지만, 음악 라이브러리의 규모가 크고 편의성이 뛰어난 [Spotify](https://www.spotify.com/uk/)를 사용하고 있다. 그러다가 Google I/O 2013에서 구글이 Play Music All Access를 [발표](http://www.theverge.com/2013/5/15/4333464/google-takes-on-spotify-with-google-play-music-all-access)하였는데, Rdio와 Spotify를 다분히 노린 서비스라서 어떤 차이점이 있는지 궁금해졌다. 최근 안드로이드를 만져보다가 Play Music 생각이 났고, 직접 사용해 보았다. 두 서비스를 모두 사용해본 입장에서 나의 경험을 공유해본다.
 
@@ -26,7 +26,7 @@ excerpt: Spotify와 Google Play Music All Access, 두 서비스를 모두 사용
 
 ### 음악 라이브러리
 
-![검색 결과](http://storage.googleapis.com/simplist/attachments/2013-08-02-search-result.png)
+![검색 결과](http://simplist.storage.googleapis.com/attachments/2013-08-02-search-result.png)
 
 두 서비스가 출시한 국가가 비슷한 현재 시점에서는 라이브러리 상의 차이는 거의 없다. 다만 정규 앨범 이외에 리믹스나 Extended Mix가 포함된 싱글은 Google Play Music All Access에 없는 경우가 많았고, 일부 지역 한정 음반도 Spotify가 대체적으로 더 많이 보유하고 있는 듯 하다. 다만 구글 코리아에서 음악 파트너쉽 관련 [채용 공고](https://www.google.com/about/jobs/search/#!t=jo&jid=2990001)를 낸 것이 최근에 포착되었는데, Google Play Music All Access 쪽이 그나마 한국 출시에 대한 희망이 있는 상태이다. (Spotify도 [확장 계획](http://blogs.wsj.com/digits/2013/04/16/spotify-expands-into-eight-new-markets/)이 있으나, 한국은 계획에 없는 듯 하다)
 
@@ -51,7 +51,7 @@ excerpt: Spotify와 Google Play Music All Access, 두 서비스를 모두 사용
 
 ### 추천 기능
 
-![두 서비스의 추천 기능](http://storage.googleapis.com/simplist/attachments/2013-08-02-discover-vs-listen-now.jpg)
+![두 서비스의 추천 기능](http://simplist.storage.googleapis.com/attachments/2013-08-02-discover-vs-listen-now.jpg)
 
 Spotify와 Google Play Music All Access 각각 **Discover**와 **Listen Now**라는 추천 기능을 가지고 있다. 두 서비스 모두 카드형 인터페이스로 사용자가 좋아할 것 같은 아티스트와 앨범, 곡들을 보여주는데, 추천의 품질은 Spotify가 월등히 좋다. Beatport에서 취향이 맞는 아티스트를 찾아 iTunes에서 듣고 있었는데, 나의 취향을 분석해서 Discover에 해당 아티스트를 추천한다는 카드가 떴을때는 깜짝 놀랐다.
 
