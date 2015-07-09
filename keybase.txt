@@ -1,0 +1,67 @@
+==================================================================
+https://keybase.io/premist
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://si.mpli.st
+  * I am premist (https://keybase.io/premist) on keybase.
+  * I have a public key with fingerprint 448C E46C A714 48F8 7788  E57C F530 9452 F2EF 9CEB
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "448ce46ca71448f87788e57cf5309452f2ef9ceb",
+            "host": "keybase.io",
+            "key_id": "f5309452f2ef9ceb",
+            "kid": "010180ad5787ab8fcc3f39bd07e6f927a2a329e71eb3c8cee5e84641fa253393e0fc0a",
+            "uid": "fc22756f962660608b07beacf9fbff00",
+            "username": "premist"
+        },
+        "service": {
+            "hostname": "si.mpli.st",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1436458630,
+    "expire_in": 157680000,
+    "prev": "b6368844deb631f7085027f62357aae50f8ea364eb971b968b0759ca6f31f373",
+    "seqno": 8,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.20
+Comment: https://keybase.io/crypto
+
+yMIVAnicbZJdSFRBFMd3zVIXDe1BjSDhppGy2tzPmbsiomFCoCHhVwUy9+6MXl33
+rrur+ZFBQpllED2ElBkVKFix9AEVCpYZUQaiqD2IWoYYFiLlg0hgc83empc5c+Z3
+/ueDMxKzw+awVzdf/uI55kiyj77OqrcV9/RcbOE0093EuVq4GrJ1UcNbSfw+v+EN
+ci5OkpBOJEXHkGcmRRAiRGSoU1kEqiQLVCBU1YnGObkqM2BFMBkNB0iGYTIfe1QY
+bub9D1+z9QF4wCOA3TJEEGuI6rpIRVVzA0gUqgoQC1gUVAJ5ook6q4XIBEmKxFMs
+yKKoigRQHWAmV/83jy4IUGaRiqAoQAFIA1AjWKcq1SgFwAIDxO/FtYTRPj+pNVjV
+rU6OORsMnVgTsBrZBgJGRq3PY2QwxsloM2jqpof5q4JBn8sKCzb5LO4M0Sq2FSo0
+w+tmM2QBDcQfMEwv5+IZqQcNS5KXREWSkSICJ0cafYafVBgWIUMFAXasNKSBSWqK
+qCAkSW7CLJ5CgGQgQKoIogwxJjKgiGCmRTQV8pqqWJ3Kqo4VymgRipzVU53X5FyI
+lYkrt7qp9OJgvZ9wrcOvTofb7A7brp1h1hbYHFGx/3Yj6kDEZm7CSnJE1kBXWvWT
+xdL2mei4n6kjXOtqr+3kxtLbhLY9/RnjQEedezuG9hmT4TdzevPbxzNTYunZ2ejm
+0b75E+7QB5STn/t0OG7udvdUR+PQqYPpA4fuL7aZfSlHBz9fCIH1Ic/dKymlm9E1
+w56yqTHfcvezB5++L+wumvg2L0dm2+0/kpOmN5Ye46H89JdXXevxJH6tpbDjcL9z
+LDSbq2Y2T5a1Zad1FrzRxf3XZG9o5gV2pMcdH0y9dT71lzTNwTBlduHGSmbfw7yl
+uee/vxYOX6JHEjuvP/q4fKc4xky8tyqVNEWq71bq1s4V5FUPClXlE+/L57oKi9ZX
+Skv+AMB0JbM=
+=iTwR
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/premist
+
+==================================================================
