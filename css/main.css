@@ -344,6 +344,10 @@ html, body {
 	content: "• ";
 }
 
+.post article .content li {
+	margin-bottom: 0.25em;
+}
+
 .post article .content p:first-child {
 	margin-top: 0px;
 }
