@@ -7,13 +7,17 @@ Repository of my personal blog [si.mpli.st](http://si.mpli.st/), built with stat
 
 - [Jekyll](http://jekyllrb.com/)
 - [Redcarpet](https://github.com/vmg/redcarpet)
+- [cssnext](http://cssnext.io/)
 
-Run bundler to install dependencies.
+## Setup
+
+- Run `bundle install`.
+- Run `npm install postcss-cli -g`.
 
 
 ## License
 
-Copyright © [Minku Lee](mailto:premist@me.com). Some rights reserved. 
+Copyright © [Minku Lee](mailto:premist@me.com). Some rights reserved.
 
 ![Creative Commons Attribution-ShareAlike 3.0 Unported License](http://i.creativecommons.org/l/by-sa/3.0/88x31.png)
 
