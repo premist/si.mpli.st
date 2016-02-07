@@ -2,40 +2,42 @@
 layout: default
 type: post
 ---
-<header>
-  <h1 class="title"><a href="/">{{ site.name }} <span class="title-cat">{{ page.category }}</span></a></h1>
-  <span class="author">by {{ site.author }}</span>
-</header>
+<div class="post">
+	<header>
+	  <h1 class="title"><a href="/">{{ site.name }} <span class="title-cat">{{ page.category }}</span></a></h1>
+	  <span class="author">by {{ site.author }}</span>
+	</header>
 
-<article>
-	<h2>
-		{% if page.link %}
-		<a href="{{ page.link }}">
+	<article>
+		<h2>
+			{% if page.link %}
+			<a href="{{ page.link }}">
+				{{ page.title }}
+			</a>
+			{% else %}
 			{{ page.title }}
-		</a>
-		{% else %}
-		{{ page.title }}
-		{% endif %}
-	</h2>
-	<span class="meta"><a href="{{ site.domain }}{{ page.url }}">{{ page.date | date_to_string }}</a></span>
-	<div class="content">
-	{{ content }}
-	</div>
-	
-</article>
+			{% endif %}
+		</h2>
+		<span class="meta"><a href="{{ site.domain }}{{ page.url }}">{{ page.date | date_to_string }}</a></span>
+		<div class="content">
+		{{ content }}
+		</div>
+		
+	</article>
 
-<script>/*
-	window.onload = function() {
-		var headings = document.getElementsByTagName('h2');
-		for (var i = 0, hLength = headings.length; i < hLength; i++) {
-			var heading = headings[i];
-			
-			heading.firstChild.nodeValue = heading.firstChild.nodeValue.replace(/[a-zA-Z.]+/g, function(match) {
-				return "<span class=\"en\">".concat(match, "</span>");	
-			});
-			
-			console.log(heading.firstChild.nodeValue);
-			
+	<script>/*
+		window.onload = function() {
+			var headings = document.getElementsByTagName('h2');
+			for (var i = 0, hLength = headings.length; i < hLength; i++) {
+				var heading = headings[i];
+				
+				heading.firstChild.nodeValue = heading.firstChild.nodeValue.replace(/[a-zA-Z.]+/g, function(match) {
+					return "<span class=\"en\">".concat(match, "</span>");	
+				});
+				
+				console.log(heading.firstChild.nodeValue);
+				
+			}
 		}
-	}
-*/</script>
+	*/</script>
+</div>

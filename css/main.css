@@ -29,26 +29,26 @@ code, pre {
 #index li.category-review a:hover { background-color: #e74c3c; } /* 'Alizarin' from Flat UI color swatches */
 #index li.category-travel a:hover { background-color: #9B59B6; } /* 'Amethyst' from Flat UI color swatches */
 
-body[data-category="dev"].post header h1.title a { color: #3498DB; } /* 'Peter River' from Flat UI color swatches */
-body[data-category="geek"].post header h1.title a { color: #2980B9; } /* 'Belize Hole' from Flat UI color swatches */ 
-body[data-category="life"].post header h1.title a { color: #f39c12; } /* 'Orange' from Flat UI color swatches */
-body[data-category="think"].post header h1.title a { color: #1ABC9C; } /* 'Turquoise' from Flat UI color swatches */
-body[data-category="review"].post header h1.title a { color: #e74c3c; } /* 'Alizarin' from Flat UI color swatches */
-body[data-category="travel"].post header h1.title a { color: #9B59B6; } /* 'Amethyst' from Flat UI color swatches */
+body[data-category="dev"] .post header h1.title a { color: #3498DB; } /* 'Peter River' from Flat UI color swatches */
+body[data-category="geek"] .post header h1.title a { color: #2980B9; } /* 'Belize Hole' from Flat UI color swatches */ 
+body[data-category="life"] .post header h1.title a { color: #f39c12; } /* 'Orange' from Flat UI color swatches */
+body[data-category="think"] .post header h1.title a { color: #1ABC9C; } /* 'Turquoise' from Flat UI color swatches */
+body[data-category="review"] .post header h1.title a { color: #e74c3c; } /* 'Alizarin' from Flat UI color swatches */
+body[data-category="travel"] .post header h1.title a { color: #9B59B6; } /* 'Amethyst' from Flat UI color swatches */
 
-body[data-category="dev"].post article .content a { color: #3498DB; } /* 'Peter River' from Flat UI color swatches */
-body[data-category="geek"].post article .content a { color: #2980B9; } /* 'Belize Hole' from Flat UI color swatches */ 
-body[data-category="life"].post article .content a { color: #f39c12; } /* 'Orange' from Flat UI color swatches */
-body[data-category="think"].post article .content a { color: #1ABC9C; } /* 'Turquoise' from Flat UI color swatches */
-body[data-category="review"].post article .content a { color: #e74c3c; } /* 'Alizarin' from Flat UI color swatches */
-body[data-category="travel"].post article .content a { color: #9B59B6; } /* 'Amethyst' from Flat UI color swatches */
+body[data-category="dev"] .post article .content a { color: #3498DB; } /* 'Peter River' from Flat UI color swatches */
+body[data-category="geek"] .post article .content a { color: #2980B9; } /* 'Belize Hole' from Flat UI color swatches */ 
+body[data-category="life"] .post article .content a { color: #f39c12; } /* 'Orange' from Flat UI color swatches */
+body[data-category="think"] .post article .content a { color: #1ABC9C; } /* 'Turquoise' from Flat UI color swatches */
+body[data-category="review"] .post article .content a { color: #e74c3c; } /* 'Alizarin' from Flat UI color swatches */
+body[data-category="travel"] .post article .content a { color: #9B59B6; } /* 'Amethyst' from Flat UI color swatches */
 
-body[data-category="dev"].post article .content blockquote { border-left: 4px solid #3498DB; } /* 'Peter River' from Flat UI color swatches */
-body[data-category="geek"].post article .content blockquote { border-left: 4px solid #2980B9; } /* 'Belize Hole' from Flat UI color swatches */ 
-body[data-category="life"].post article .content blockquote { border-left: 4px solid #f39c12; } /* 'Orange' from Flat UI color swatches */
-body[data-category="think"].post article .content blockquote { border-left: 4px solid #1ABC9C; } /* 'Turquoise' from Flat UI color swatches */
-body[data-category="review"].post article .content blockquote { border-left: 4px solid #e74c3c; } /* 'Alizarin' from Flat UI color swatches */
-body[data-category="travel"].post article .content blockquote { border-left: 4px solid #9B59B6; } /* 'Amethyst' from Flat UI color swatches */
+body[data-category="dev"] .post article .content blockquote { border-left: 4px solid #3498DB; } /* 'Peter River' from Flat UI color swatches */
+body[data-category="geek"] .post article .content blockquote { border-left: 4px solid #2980B9; } /* 'Belize Hole' from Flat UI color swatches */ 
+body[data-category="life"] .post article .content blockquote { border-left: 4px solid #f39c12; } /* 'Orange' from Flat UI color swatches */
+body[data-category="think"] .post article .content blockquote { border-left: 4px solid #1ABC9C; } /* 'Turquoise' from Flat UI color swatches */
+body[data-category="review"] .post article .content blockquote { border-left: 4px solid #e74c3c; } /* 'Alizarin' from Flat UI color swatches */
+body[data-category="travel"] .post article .content blockquote { border-left: 4px solid #9B59B6; } /* 'Amethyst' from Flat UI color swatches */
 
 html, body {
 	background-color: #fbfbfb;
