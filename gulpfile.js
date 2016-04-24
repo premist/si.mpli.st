@@ -64,3 +64,4 @@ gulp.task("browser-sync", () => {
 });
 
 gulp.task("default", ["css", "jekyll", "browser-sync", "watch"]);
+gulp.task("build", ["css", "jekyll"]);
