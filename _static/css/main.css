@@ -22,8 +22,6 @@ html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,addr
 
   --container-width: 800px;
   --container-top-bottom-margin: 30px;
-
-  --main-title-size: 30px;
 }
 
 body {
@@ -41,9 +39,10 @@ body {
 header {
 
   & h1 {
-    font-size: var(--main-title-size);
+    font-size: 30px;
     font-weight: var(--title-font-weight);
     letter-spacing: var(--title-letter-spacing);
+    line-height: 1.3em;
 
     & a {
       color: var(--primary-color);
@@ -52,6 +51,7 @@ header {
   }
 
   & .author {
+    font-size: 16px;
     font-family: var(--smallcap-font);
     font-weight: var(--subtitle-font-weight);
     color: var(--primary-color);
