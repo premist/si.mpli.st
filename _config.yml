@@ -1,11 +1,11 @@
 name: si.mpli.st
-description: si.mpli.st by premist
+description: si.mpli.st by minku lee
 
 encoding: utf-8
 
 gems: [jekyll-paginate]
 
-author: premist
+author: minku lee
 paginate: 10
 paginate_path: "p:num"
 permalink: none
