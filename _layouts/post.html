@@ -3,7 +3,7 @@ layout: default
 type: post
 ---
 <div class="post">
-	<header>
+	<header class="small">
 	  <h1 class="title"><a href="/">{{ site.name }} <span class="title-cat">{{ page.category }}</span></a></h1>
 	  <span class="author">by {{ site.author }}</span>
 	</header>
@@ -22,7 +22,7 @@ type: post
 		<div class="content">
 		{{ content }}
 		</div>
-		
+
 	</article>
 
 	<script>/*
@@ -30,13 +30,13 @@ type: post
 			var headings = document.getElementsByTagName('h2');
 			for (var i = 0, hLength = headings.length; i < hLength; i++) {
 				var heading = headings[i];
-				
+
 				heading.firstChild.nodeValue = heading.firstChild.nodeValue.replace(/[a-zA-Z.]+/g, function(match) {
-					return "<span class=\"en\">".concat(match, "</span>");	
+					return "<span class=\"en\">".concat(match, "</span>");
 				});
-				
+
 				console.log(heading.firstChild.nodeValue);
-				
+
 			}
 		}
 	*/</script>
