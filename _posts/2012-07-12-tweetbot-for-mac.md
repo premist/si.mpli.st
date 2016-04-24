@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Tweetbot for Mac"
-date:   2012-07-12 09:37:01
+date:   2012-07-12 09:37:01 +0900
 category: think
 link: http://tapbots.com/blog/tweetbot/tweetbot-for-mac
 excerpt: Twitter for Mac을 대체할 수 있을 정도의 품질을 기대했지만, 아직까지는 기대에 미치지 못하는 것 같다.

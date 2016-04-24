@@ -2,187 +2,189 @@
 layout: default
 type: post
 ---
-<header>
-  <h1 class="title"><a href="/">{{ site.name }} <span class="title-cat">{{ page.category }}</span></a></h1>
-  <span class="author">by {{ site.author }}</span>
-</header>
+<div class="post">
+  <header>
+    <h1 class="title"><a href="/">{{ site.name }} <span class="title-cat">{{ page.category }}</span></a></h1>
+    <span class="author">by {{ site.author }}</span>
+  </header>
 
-<article>
-    <div class="osaka2012-header-wrap">
-        
-        <div class="osaka2012-rando-wrap">
-            <span class="osaka2012-tagline">follow my footprint</span>
-        	<h2 class="osaka2012-title">2012 OSAKA</h2>
-            <span class="osaka2012-posttitle"><a href="{{ site.domain }}{{ page.url }}">{{ page.title }}</a></span>
-        </div>
-        
-        <div class="osaka2012-parallax-bg-wrap">
-            {% if page.bg %} 
-                <img class="osaka2012-parallax-bg" src="{{ page.bg }}">
-            {% else %}
-                <img class="osaka2012-parallax-bg" src="http://simplist.storage.googleapis.com/attachments/2013-08-26-osaka2012-bg.jpg">
-            {% endif %}
-        </div>
-    </div>
-    
-	<div class="content">
-	{{ content }}
-	</div>
-	
-</article>
+  <article>
+      <div class="osaka2012-header-wrap">
 
-<style>
-    .container {
-        width: 100%;
-    }
-    
-    header {
-        position: relative;
-        width: 700px;
-        margin: 0px auto;
-    }
-    
-    .post article {
-        margin: 20px auto 50px auto;
-    }
+          <div class="osaka2012-rando-wrap">
+              <span class="osaka2012-tagline">follow my footprint</span>
+          	<h2 class="osaka2012-title">2012 OSAKA</h2>
+              <span class="osaka2012-posttitle"><a href="{{ site.domain }}{{ page.url }}">{{ page.title }}</a></span>
+          </div>
 
-    .osaka2012-header-wrap {
-        position: relative;
-        width: 100%;
-        height: 300px;
-        overflow: hidden;
-    }
-    
-    .osaka2012-parallax-bg-wrap {
-        position: absolute;
-        width: 100%;
-        height: 300px;
-        overflow: hidden;
-    }
-    
-    .osaka2012-parallax-bg {
-        position: absolute;
-        width: 100%;
-        min-width: 570px;
-    }
-    
-    .osaka2012-rando-wrap {
-        position: absolute;
-        width: 400px;
-        height: 400px;
-        left: 50%;
-        margin-left: -200px;
-        padding: 150px 0px;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        z-index: 5;
-        
-        background: url('http://simplist.storage.googleapis.com/attachments/2013-08-26-osaka2012-titlebg.jpg');
-        background-size: 100% 100%;
-        -webkit-transform: translateY(-50px);
-        text-align: center;
-    }
-    
-    .osaka2012-tagline {
-        position: relative;
-        display: block;
-        font-family: "proxima-nova", sans-serif;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 20px;
-        color: #F0F0F0;
-        text-transform: uppercase;
-        letter-spacing: 5px;
-        
-        -webkit-font-smoothing: antialiased;
-        text-rendering: optimizeLegibility;
-        white-space: nowrap;
-    }
-    
-    .osaka2012-title {
-        position: relative;
-        display: block;
-        font-family: "futura-pt", sans-serif;
-        font-weight: 700;
-        font-size: 50px;
-        color: #FFF;
-        text-decoration: none;
-    }
-    
-    .osaka2012-posttitle {
-        position: relative;
-        display: block;
-        padding: 10px 0;
-    }
-    
-    .osaka2012-posttitle a {
-        font-family: "futura-pt", "Apple SD Gothic Neo", "SDGothicNeo1", "Malgun Gothic", NanumGothic, sans-serif;
-        font-weight: normal;
-        color: #F0F0F0;
-        text-decoration: none;
-        
-        -webkit-font-smoothing: antialiased;
-        text-rendering: optimizeLegibility;
-        white-space: nowrap;
-    }
-    
-    .osaka2012-posttitle a:hover {
-        color: #E0E0E0;
-    }
-    
-    .post article .content {
-        display: block;
-        width: 700px;
-        margin: 0px auto;
-    }
-    
-    
-</style>
+          <div class="osaka2012-parallax-bg-wrap">
+              {% if page.bg %}
+                  <img class="osaka2012-parallax-bg" src="{{ page.bg }}">
+              {% else %}
+                  <img class="osaka2012-parallax-bg" src="http://simplist.storage.googleapis.com/attachments/2013-08-26-osaka2012-bg.jpg">
+              {% endif %}
+          </div>
+      </div>
 
-<script>
+  	<div class="content">
+  	{{ content }}
+  	</div>
 
-var adjust = function() {
-    var pbw = document.getElementsByClassName('osaka2012-parallax-bg-wrap')[0];
-    
-    if(pbw.offsetWidth > 570) {
-        var pb = document.getElementsByClassName('osaka2012-parallax-bg')[0];
-        
-        var tY = 300 - pb.offsetHeight + document.body.scrollTop*0.3;
-    
-        pb.style.transform = 'translateY('+ tY +'px)';
-        pb.style.webkitTransform = 'translateY('+ tY +'px)';
-        pb.style.mozTransform = 'translateY('+ tY +'px)';
-        pb.style.msTransform = 'translateY('+ tY +'px)';
-    }
-}
+  </article>
 
-adjust();
+  <style>
+      .container {
+          width: 100%;
+      }
 
-window.onresize = function() {
-    setTimeout(adjust, 0);
-}
+      header {
+          position: relative;
+          width: 700px;
+          margin: 0px auto;
+      }
 
-window.onscroll = function() {
-    setTimeout(adjust, 0);
-}
+      .post article {
+          margin: 20px auto 50px auto;
+      }
 
-window.onload = function() {
-    setTimeout(adjust, 0);
-}
+      .osaka2012-header-wrap {
+          position: relative;
+          width: 100%;
+          height: 300px;
+          overflow: hidden;
+      }
 
-/*
-	window.onload = function() {
-		var headings = document.getElementsByTagName('h2');
-		for (var i = 0, hLength = headings.length; i < hLength; i++) {
-			var heading = headings[i];
-			
-			heading.firstChild.nodeValue = heading.firstChild.nodeValue.replace(/[a-zA-Z.]+/g, function(match) {
-				return "<span class=\"en\">".concat(match, "</span>");	
-			});
-			
-			console.log(heading.firstChild.nodeValue);
-			
-		}
-	}
-*/</script>
+      .osaka2012-parallax-bg-wrap {
+          position: absolute;
+          width: 100%;
+          height: 300px;
+          overflow: hidden;
+      }
+
+      .osaka2012-parallax-bg {
+          position: absolute;
+          width: 100%;
+          min-width: 570px;
+      }
+
+      .osaka2012-rando-wrap {
+          position: absolute;
+          width: 400px;
+          height: 400px;
+          left: 50%;
+          margin-left: -200px;
+          padding: 150px 0px;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          z-index: 5;
+
+          background: url('http://simplist.storage.googleapis.com/attachments/2013-08-26-osaka2012-titlebg.jpg');
+          background-size: 100% 100%;
+          -webkit-transform: translateY(-50px);
+          text-align: center;
+      }
+
+      .osaka2012-tagline {
+          position: relative;
+          display: block;
+          font-family: "proxima-nova", sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          color: #F0F0F0;
+          text-transform: uppercase;
+          letter-spacing: 5px;
+
+          -webkit-font-smoothing: antialiased;
+          text-rendering: optimizeLegibility;
+          white-space: nowrap;
+      }
+
+      .osaka2012-title {
+          position: relative;
+          display: block;
+          font-family: "futura-pt", sans-serif;
+          font-weight: 700;
+          font-size: 50px;
+          color: #FFF;
+          text-decoration: none;
+      }
+
+      .osaka2012-posttitle {
+          position: relative;
+          display: block;
+          padding: 10px 0;
+      }
+
+      .osaka2012-posttitle a {
+          font-family: "futura-pt", "Apple SD Gothic Neo", "SDGothicNeo1", "Malgun Gothic", NanumGothic, sans-serif;
+          font-weight: normal;
+          color: #F0F0F0;
+          text-decoration: none;
+
+          -webkit-font-smoothing: antialiased;
+          text-rendering: optimizeLegibility;
+          white-space: nowrap;
+      }
+
+      .osaka2012-posttitle a:hover {
+          color: #E0E0E0;
+      }
+
+      .post article .content {
+          display: block;
+          width: 700px;
+          margin: 0px auto;
+      }
+
+
+  </style>
+
+  <script>
+
+  var adjust = function() {
+      var pbw = document.getElementsByClassName('osaka2012-parallax-bg-wrap')[0];
+
+      if(pbw.offsetWidth > 570) {
+          var pb = document.getElementsByClassName('osaka2012-parallax-bg')[0];
+
+          var tY = 300 - pb.offsetHeight + document.body.scrollTop*0.3;
+
+          pb.style.transform = 'translateY('+ tY +'px)';
+          pb.style.webkitTransform = 'translateY('+ tY +'px)';
+          pb.style.mozTransform = 'translateY('+ tY +'px)';
+          pb.style.msTransform = 'translateY('+ tY +'px)';
+      }
+  }
+
+  adjust();
+
+  window.onresize = function() {
+      setTimeout(adjust, 0);
+  }
+
+  window.onscroll = function() {
+      setTimeout(adjust, 0);
+  }
+
+  window.onload = function() {
+      setTimeout(adjust, 0);
+  }
+
+  /*
+  	window.onload = function() {
+  		var headings = document.getElementsByTagName('h2');
+  		for (var i = 0, hLength = headings.length; i < hLength; i++) {
+  			var heading = headings[i];
+
+  			heading.firstChild.nodeValue = heading.firstChild.nodeValue.replace(/[a-zA-Z.]+/g, function(match) {
+  				return "<span class=\"en\">".concat(match, "</span>");
+  			});
+
+  			console.log(heading.firstChild.nodeValue);
+
+  		}
+  	}
+  */</script>
+</div>

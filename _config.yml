@@ -13,3 +13,4 @@ markdown: kramdown
 domain: http://si.mpli.st
 
 exclude: ["node_modules", "Gemfile", "Gemfile.lock", "gulpfile.js", "package.json", "README.md"]
+timezone: Asia/Seoul

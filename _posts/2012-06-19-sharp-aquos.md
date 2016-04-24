@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Sharp AQUOS Android Smartphone - Feel UX"
-date:   2012-06-19 20:50:08
+date:   2012-06-19 20:50:08 +0900
 category: think
 link: http://vimeo.com/43224490
 excerpt: NeXT 컴퓨터 등을 디자인해온 디자인 에이전시 frog가 디자인한 안드로이드 UI.
