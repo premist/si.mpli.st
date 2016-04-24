@@ -41,7 +41,7 @@ gulp.task("css", () => {
 
 // http://blog.webbb.be/use-jekyll-with-gulp/
 gulp.task("jekyll", ["css"], (cb) => {
-  return child_process.spawn("jekyll", ["build"], {stdio: "inherit"})
+  return child_process.spawn("bundle", ["exec", "jekyll", "build"], {stdio: "inherit"})
                       .on("error", (error) => console.log(`Error on Jekyll: ${error}`))
                       .on("close", cb);
 });
