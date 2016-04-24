@@ -21,11 +21,12 @@ html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,addr
   --title-font-weight: 600;
 
   --main-title-font-size: 35px;
-  --main-author-font-size: 16px;
+  --main-author-font-size: 12px;
 
   --index-item-font-size: 20px;
-  --index-item-height: 40px;
+  --index-item-height: 45px;
 
+  --uppercase-letter-spacing: 0.05em;
 }
 
 body {
@@ -36,6 +37,7 @@ body {
 .container {
   position: relative;
   display: block;
+  overflow: hidden;
   width: var(--container-width);
   margin: var(--container-top-bottom-margin) auto;
 }
@@ -56,9 +58,10 @@ header {
 
   & .author {
     font-size: var(--main-author-font-size);
-    font-family: var(--smallcap-font);
     font-weight: var(--subtitle-font-weight);
     color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: var(--uppercase-letter-spacing);
   }
 
 }
@@ -92,7 +95,7 @@ header {
     font-size: calc(var(--index-item-font-size) * 0.6);
     font-family: var(--primary-font);
     text-transform: uppercase;
-    letter-spacing: 0.15em;
+    letter-spacing: var(--uppercase-letter-spacing);
   }
 
   & .title {
@@ -101,5 +104,18 @@ header {
 
   & .time {
     display: none;
+  }
+}
+
+#pagination {
+  & p {
+    float: left;
+    margin-right: 10px;
+  }
+
+  & p, & a {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: var(--uppercase-letter-spacing);
   }
 }
