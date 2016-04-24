@@ -10,6 +10,7 @@
     "url": "https://github.com/premist"
   },
   "devDependencies": {
+    "browser-sync": "^2.12.3",
     "cssnano": "^3.5.2",
     "gulp": "^3.9.1",
     "gulp-connect": "^3.2.2",

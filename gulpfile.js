@@ -4,6 +4,7 @@ const gulp = require("gulp");
 const htmlmin = require("gulp-htmlmin");
 const postcss = require("gulp-postcss");
 const connect = require("gulp-connect");
+const browserSync = require("browser-sync").create();
 
 
 const base_path = "./";
@@ -36,6 +37,7 @@ gulp.task("css", () => {
       require("postcss-reporter")()
     ]))
     .pipe(gulp.dest(`${paths.static.dest}/css`))
+    .pipe(browserSync.reload({ stream: true }))
   );
 });
 
@@ -43,14 +45,10 @@ gulp.task("css", () => {
 gulp.task("jekyll", ["css"], (cb) => {
   return child_process.spawn("bundle", ["exec", "jekyll", "build"], {stdio: "inherit"})
                       .on("error", (error) => console.log(`Error on Jekyll: ${error}`))
-                      .on("close", cb);
-});
-
-gulp.task("server", () => {
-  connect.server({
-    root: [`${paths.base}_site`],
-    port: 4000
-  });
+                      .on("close", (code) => {
+                        browserSync.reload();
+                        cb(code);
+                      });
 });
 
 gulp.task("watch", () => {
@@ -58,4 +56,12 @@ gulp.task("watch", () => {
   gulp.watch(paths.watch.css, ["css"]);
 });
 
-gulp.task("default", ["css", "jekyll", "server", "watch"]);
+gulp.task("browser-sync", () => {
+  browserSync.init({
+    server: {
+      baseDir: `${paths.base}_site`
+    }
+  });
+});
+
+gulp.task("default", ["css", "jekyll", "browser-sync", "watch"]);
