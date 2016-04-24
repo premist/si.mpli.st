@@ -1,0 +1,14 @@
+language: ruby
+sudo: false
+
+ruby:
+  - 2.3.0
+
+before_install:
+  - . $HOME/.nvm/nvm.sh
+  - nvm install v5.10.0
+  - nvm use v5.10.0
+  - nvm install -g gulp
+
+before_script:
+  - npm install
