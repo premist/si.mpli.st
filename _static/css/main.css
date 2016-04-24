@@ -11,11 +11,14 @@ html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,addr
   --primary-color: #4c4c4c;
   --content-color: #5f5f5f;
 
-
-
   --primary-font: "Whitney SSm A", "Whitney SSm B";
+  --smallcap-font: "Whitney SSm SC A", "Whitney SSm SC B";
+
   --primary-font-weight: 400;
-  --heading-font-weight: 600;
+  --subtitle-font-weight: 500;
+  --title-font-weight: 600;
+
+  --title-letter-spacing: -0.02em;
 
   --container-width: 800px;
   --container-top-bottom-margin: 30px;
@@ -35,12 +38,23 @@ body {
   margin: var(--container-top-bottom-margin) auto;
 }
 
-h1 {
-  font-size: var(--main-title-size);
-  font-weight: var(--heading-font-weight);
+header {
 
-  & a {
-    color: var(--primary-color);
-    text-decoration: none;
+  & h1 {
+    font-size: var(--main-title-size);
+    font-weight: var(--title-font-weight);
+    letter-spacing: var(--title-letter-spacing);
+
+    & a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
   }
+
+  & .author {
+    font-family: var(--smallcap-font);
+    font-weight: var(--subtitle-font-weight);
+    color: var(--primary-color);
+  }
+
 }
