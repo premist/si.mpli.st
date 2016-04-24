@@ -10,7 +10,7 @@ type: home
 </header>
 
 <div id="index">
-  
+
   <ul class="posts">
     {% for post in paginator.posts %}
       <li class="category-{{ post.category }}">
@@ -48,9 +48,9 @@ type: home
       <span>older</span>
     </p>
   {% endif %}
-  
+
   <p class="page-count">
-	 page {{ paginator.page }} of {{ paginator.total_pages }} 
+	 page {{ paginator.page }} of {{ paginator.total_pages }}
   </p>
 
 </div>
