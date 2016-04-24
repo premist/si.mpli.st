@@ -13,6 +13,7 @@ html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,addr
 
   --primary-color: #4c4c4c;
   --content-color: #5f5f5f;
+  --link-color: #888;
 
   --primary-font: "Whitney SSm A", "Whitney SSm B";
 
@@ -27,6 +28,14 @@ html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,addr
   --index-item-height: 45px;
 
   --uppercase-letter-spacing: 0.05em;
+
+  /* Category Colors */
+  --cat-color-dev: #3498db;
+  --cat-color-geek: #2980b9;
+  --cat-color-life: #f39c12;
+  --cat-color-think: #1abc9c;
+  --cat-color-review: #e74c3c;
+  --cat-color-travel: #9b59b6;
 }
 
 body {
@@ -66,6 +75,36 @@ header {
 
 }
 
+.category-dev {
+  & .category { color: var(--cat-color-dev); }
+  &:hover .title { color: var(--cat-color-dev); }
+}
+
+.category-geek {
+  & .category { color: var(--cat-color-geek); }
+  &:hover .title { color: var(--cat-color-geek); }
+}
+
+.category-life {
+  & .category { color: var(--cat-color-life); }
+  &:hover .title { color: var(--cat-color-life); }
+}
+
+.category-think {
+  & .category { color: var(--cat-color-think); }
+  &:hover .title { color: var(--cat-color-think); }
+}
+
+.category-review {
+  & .category { color: var(--cat-color-review); }
+  &:hover .title { color: var(--cat-color-review); }
+}
+
+.category-travel {
+  & .category { color: var(--cat-color-travel); }
+  &:hover .title { color: var(--cat-color-travel); }
+}
+
 #index {
   position: relative;
   display: block;
@@ -100,6 +139,7 @@ header {
 
   & .title {
     font-size: var(--index-item-font-size);
+    transition: all .15s ease-out;
   }
 
   & .time {
@@ -117,5 +157,15 @@ header {
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: var(--uppercase-letter-spacing);
+  }
+
+  & a {
+    color: var(--link-color);
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  & a:hover {
+    color: var(--content-color);
   }
 }
