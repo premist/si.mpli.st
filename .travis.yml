@@ -32,4 +32,4 @@ deploy:
   detect_encoding: true
   skip_cleanup: true
   on:
-    branch: cssnext
+    branch: gh-pages
