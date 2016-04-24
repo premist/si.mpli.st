@@ -4,28 +4,32 @@
   by minku lee
 */
 
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
 /* reset5 © 2011 opensource.736cs.com MIT */
 html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,audio,canvas,details,figcaption,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,summary,time,video{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0;}body{line-height:1;}article,aside,dialog,figure,footer,header,hgroup,nav,section,blockquote{display:block;}nav ul{list-style:none;}ol{list-style:decimal;}ul{list-style:disc;}ul ul{list-style:circle;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:none;}ins{text-decoration:underline;}del{text-decoration:line-through;}mark{background:none;}abbr[title],dfn[title]{border-bottom:1px dotted #000;cursor:help;}table{border-collapse:collapse;border-spacing:0;}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0;}input[type=submit],input[type=button],button{margin:0!important;padding:0!important;}input,select,a img{vertical-align:middle;}
 
+/* Basic Settings - Typography, geometry and colors */
 :root {
   --container-width: 800px;
   --container-top-bottom-margin: 30px;
 
   --primary-color: #4c4c4c;
-  --content-color: #5f5f5f;
   --link-color: #888;
 
-  --primary-font: "Whitney SSm A", "Whitney SSm B";
+  --primary-font: "Whitney SSm A", "Whitney SSm B", "Noto Sans CJK KR", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", "Dotum", sans-serif;
 
   --primary-font-weight: 400;
   --subtitle-font-weight: 400;
   --title-font-weight: 600;
 
-  --main-title-font-size: 35px;
+  --main-title-font-size: 36px;
   --main-author-font-size: 12px;
 
   --index-item-font-size: 20px;
   --index-item-height: 45px;
+
+  --post-title-font-size: 26px;
 
   --uppercase-letter-spacing: 0.05em;
 
@@ -38,9 +42,11 @@ html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,addr
   --cat-color-travel: #9b59b6;
 }
 
+/* Common */
 body {
   font-family: var(--primary-font);
   font-weight: var(--primary-font-weight);
+  color: var(--primary-color);
 }
 
 .container {
@@ -51,6 +57,7 @@ body {
   margin: var(--container-top-bottom-margin) auto;
 }
 
+/* Common Header */
 header {
 
   & h1 {
@@ -75,36 +82,37 @@ header {
 
 }
 
-.category-dev {
-  & .category { color: var(--cat-color-dev); }
-  &:hover .title { color: var(--cat-color-dev); }
+.category-dev .category, .category-dev:hover .title,
+.post-dev .title-cat, .post-dev .content a {
+  color: var(--cat-color-dev);
 }
 
-.category-geek {
-  & .category { color: var(--cat-color-geek); }
-  &:hover .title { color: var(--cat-color-geek); }
+.category-geek .category, .category-geek:hover .title,
+.post-geek .title-cat, .post-geek .content a {
+  color: var(--cat-color-geek);
 }
 
-.category-life {
-  & .category { color: var(--cat-color-life); }
-  &:hover .title { color: var(--cat-color-life); }
+.category-life .category, .category-life:hover .title,
+.post-life .title-cat, .post-life .content a {
+  color: var(--cat-color-life);
 }
 
-.category-think {
-  & .category { color: var(--cat-color-think); }
-  &:hover .title { color: var(--cat-color-think); }
+.category-think .category, .category-think:hover .title,
+.post-think .title-cat, .post-think .content a {
+  color: var(--cat-color-think);
 }
 
-.category-review {
-  & .category { color: var(--cat-color-review); }
-  &:hover .title { color: var(--cat-color-review); }
+.category-review .category, .category-review:hover .title,
+.post-review .title-cat, .post-review .content a {
+  color: var(--cat-color-review);
 }
 
-.category-travel {
-  & .category { color: var(--cat-color-travel); }
-  &:hover .title { color: var(--cat-color-travel); }
+.category-travel .category, .category-travel:hover .title,
+.post-travel .title-cat, .post-travel .content a {
+  color: var(--cat-color-travel);
 }
 
+/* Index listing */
 #index {
   position: relative;
   display: block;
@@ -121,7 +129,7 @@ header {
 
   & a {
     display: block;
-    color: var(--content-color);
+    color: var(--primary-color);
     text-decoration: none;
   }
 
@@ -147,6 +155,7 @@ header {
   }
 }
 
+/* Index pagination */
 #pagination {
   & p {
     float: left;
@@ -161,11 +170,72 @@ header {
 
   & a {
     color: var(--link-color);
-    font-weight: 500;
     text-decoration: none;
   }
 
   & a:hover {
-    color: var(--content-color);
+    color: var(--primary-color);
+  }
+}
+
+/* Post specific header configuration */
+header.small {
+  & .title {
+    font-size: calc(var(--main-title-font-size) / 2);
+    line-height: 2em;
+    margin-top: calc(var(--main-title-font-size) / 4);
+    margin-left: 1px;
+  }
+
+  & .title-cat {
+    margin-left: 2px;
+  }
+
+  & .author { display: none; }
+}
+
+/* Post Layout */
+article {
+  & h2 {
+    font-size: var(--post-title-font-size);
+    font-weight: var(--title-font-weight);
+    margin-top: calc(var(--post-title-font-size) * 2);
+    margin-bottom: calc(var(--post-title-font-size) / 2);
+  }
+
+  & .meta {
+    display: block;
+    margin-bottom: calc(var(--post-title-font-size) * 2);
+  }
+
+  & .meta a {
+    font-size: 0.8em;
+    color: var(--primary-color);
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+.content {
+  line-height: 2em;
+
+  & p, & ul {
+    margin-bottom: 1.8em;
+  }
+
+  & img {
+    width: 100%;
+  }
+
+  & li {
+    margin-bottom: 0.5em;
+  }
+
+  & li:before {
+    content: "∙ ";
+  }
+
+  & a {
+    text-decoration: none;
   }
 }
