@@ -232,6 +232,10 @@ article {
     width: 100%;
   }
 
+  & ul {
+    list-style: none;
+  }
+
   & li {
     margin-bottom: 0.5em;
   }
@@ -242,5 +246,9 @@ article {
 
   & a {
     text-decoration: none;
+  }
+
+  & iframe {
+    margin: 1em 0;
   }
 }
