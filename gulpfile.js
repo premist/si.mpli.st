@@ -37,7 +37,6 @@ gulp.task("css", () => {
       require("postcss-reporter")()
     ]))
     .pipe(gulp.dest(`${paths.static.dest}/css`))
-    .pipe(browserSync.reload({ stream: true }))
   );
 });
 
