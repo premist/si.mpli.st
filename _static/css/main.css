@@ -10,9 +10,19 @@ html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,addr
 :root {
   --primary-font: "Whitney SSm A", "Whitney SSm B";
   --primary-font-weight: 400;
+
+  --container-width: 800px;
+  --container-top-bottom-margin: 30px;
 }
 
 body {
   font-family: var(--primary-font);
   font-weight: var(--primary-font-weight);
+}
+
+.container {
+  position: relative;
+  display: block;
+  width: var(--container-width);
+  margin: var(--container-top-bottom-margin) auto;
 }
