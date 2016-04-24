@@ -7,12 +7,12 @@ Repository of my personal blog [si.mpli.st](http://si.mpli.st/), built with stat
 
 - [Jekyll](http://jekyllrb.com/)
 - [Redcarpet](https://github.com/vmg/redcarpet)
-- [cssnext](http://cssnext.io/)
+- [Gulp](http://gulpjs.com/)
 
 ## Setup
 
 - Run `bundle install`.
-- Run `npm install postcss-cli -g`.
+- Run `npm install gulp-cli -g`.
 
 
 ## License
