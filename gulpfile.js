@@ -13,15 +13,18 @@ const paths = {
     src: `${base_path}_static`,
     dest: `${base_path}assets`
   },
-  watch: [
-    `${base_path}_static/**/*.css`,
-    'index.html',
-    '_posts/*',
-    '_layouts/*',
-    '_includes/*',
-    'assets/*',
-    'assets/**/*'
-  ]
+  watch: {
+    jekyll: [
+      `${base_path}index.html`,
+      `${base_path}_posts/*`,
+      `${base_path}_layouts/*`,
+      `${base_path}_includes/*`,
+      `${base_path}_static/**/*.css`,
+    ],
+    css: [
+      `${base_path}_static/**/*.css`,
+    ]
+  }
 };
 
 gulp.task("css", () => {
@@ -37,7 +40,7 @@ gulp.task("css", () => {
 });
 
 // http://blog.webbb.be/use-jekyll-with-gulp/
-gulp.task("jekyll", (cb) => {
+gulp.task("jekyll", ["css"], (cb) => {
   return child_process.spawn("jekyll", ["build"], {stdio: "inherit"})
                       .on("error", (error) => console.log(`Error on Jekyll: ${error}`))
                       .on("close", cb);
@@ -51,7 +54,8 @@ gulp.task("server", () => {
 });
 
 gulp.task("watch", () => {
-  gulp.watch(paths.watch);
+  gulp.watch(paths.watch.jekyll, ["jekyll"]);
+  gulp.watch(paths.watch.css, ["css"]);
 });
 
 gulp.task("default", ["css", "jekyll", "server", "watch"]);
