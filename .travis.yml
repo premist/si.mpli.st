@@ -30,3 +30,5 @@ deploy:
   acl: public-read
   detect_encoding: true
   cache_control: "max-age=1800"
+  on:
+    branch: cssnext
