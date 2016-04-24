@@ -12,5 +12,4 @@ before_script:
   - bundle install
 
 script:
-  - bundle exec jekyll build
   - gulp build
