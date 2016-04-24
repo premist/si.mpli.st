@@ -18,6 +18,7 @@ html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,addr
   --link-color: #888;
 
   --primary-font: "Whitney SSm A", "Whitney SSm B", "Noto Sans CJK KR", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", "Dotum", sans-serif;
+  --syntax-highlighting-font: "Meslo LG L", "Menlo", "Monaco", "Liberation Mono", Consolas, Courier, monospace;
 
   --primary-font-weight: 400;
   --subtitle-font-weight: 400;
@@ -250,5 +251,14 @@ article {
 
   & iframe {
     margin: 1em 0;
+  }
+
+  & code {
+    font-family: var(--syntax-highlighting-font);
+    font-size: 0.9em;
+  }
+
+  & .highlight {
+    overflow: scroll;
   }
 }

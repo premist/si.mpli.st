@@ -9,7 +9,12 @@ author: minku lee
 paginate: 10
 paginate_path: "p:num"
 permalink: none
+
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
 domain: http://si.mpli.st
 
 exclude: ["node_modules", "Gemfile", "Gemfile.lock", "gulpfile.js", "package.json", "README.md"]
