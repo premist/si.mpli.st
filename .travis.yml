@@ -6,7 +6,7 @@ node_js:
 
 before_install:
   - rvm install 2.3.0
-  - nvm install -g gulp-cli
+  - npm install -g gulp-cli
 
 before_script:
   - bundle install
