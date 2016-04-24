@@ -43,9 +43,9 @@ Apple의 Siri 데모에서 나왔던 대화이다. 어떤 것이 놀라운 지 �
 기존에 앱 스토어에 올라와있던 Siri는 근처의 매장 정보를 찾아주는 정도의 단순한 기능을 가지고 있었다. 애플의 규제 때문에 개인정보에 접근하지 못했기 때문이다. 하지만 애플이 인수하여 다시 만든 Siri는 다르다. 음성으로 문자를 보내고, 일정을 만든다. 만약 만드려는 일정이 다른 일정과 겹친다면, 경고도 해준다.
 
 
-### Wolfram|Alpha
+### WolframAlpha
 
-울프람알파는 Wolfram Mathematica를 이용한 검색엔진(사이트의 설명을 빌리자면 Computational knowledge engine)이다. Mathematica를 이용한 수학 연산부터, 잡다한 상식까지 전부 찾아준다. Siri는 질문이 어디에도 부합하지 않을 때 Wolfram|Alpha에 검색한다. 꽤 중요한 대목이다. Wolfram|Alpha의 방대한 지식 데이터베이스에 음성으로, 그것도 자연어로 접근할 수 있다는 것이다. 카페 라떼가 몇 kcal인지, 12oz가 몇 ml인지 등의 질문을 해도 Siri는 답해줄 것이다.
+울프람알파는 Wolfram Mathematica를 이용한 검색엔진(사이트의 설명을 빌리자면 Computational knowledge engine)이다. Mathematica를 이용한 수학 연산부터, 잡다한 상식까지 전부 찾아준다. Siri는 질문이 어디에도 부합하지 않을 때 WolframAlpha에 검색한다. 꽤 중요한 대목이다. WolframAlpha의 방대한 지식 데이터베이스에 음성으로, 그것도 자연어로 접근할 수 있다는 것이다. 카페 라떼가 몇 kcal인지, 12oz가 몇 ml인지 등의 질문을 해도 Siri는 답해줄 것이다.
 
 
 ### 맺으며
