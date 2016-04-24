@@ -29,7 +29,7 @@ gulp.task("css", () => {
     gulp.src(`${paths.static.src}/css/*.css`)
     .pipe(postcss([
       require("postcss-cssnext")(),
-      require("cssnano")(),
+      require("cssnano")({ autoprefixer: false }),
       require("postcss-reporter")()
     ]))
     .pipe(gulp.dest(`${paths.static.dest}/css`))
