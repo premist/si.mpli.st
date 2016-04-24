@@ -11,3 +11,5 @@ paginate_path: "p:num"
 permalink: none
 markdown: kramdown
 domain: http://si.mpli.st
+
+exclude: ["node_modules", "Gemfile", "Gemfile.lock", "gulpfile.js", "package.json", "README.md"]
