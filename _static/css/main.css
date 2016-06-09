@@ -95,32 +95,32 @@ header {
 }
 
 .category-dev .category, .category-dev:hover .title,
-.post-dev .title-cat, .post-dev .content a {
+.post-dev .title-cat, .post-dev h2 a, .post-dev .content a, {
   color: var(--cat-color-dev);
 }
 
 .category-geek .category, .category-geek:hover .title,
-.post-geek .title-cat, .post-geek .content a {
+.post-geek .title-cat, .post-geek h2 a, .post-geek .content a {
   color: var(--cat-color-geek);
 }
 
 .category-life .category, .category-life:hover .title,
-.post-life .title-cat, .post-life .content a {
+.post-life .title-cat, .post-life h2 a, .post-life .content a {
   color: var(--cat-color-life);
 }
 
 .category-think .category, .category-think:hover .title,
-.post-think .title-cat, .post-think .content a {
+.post-think .title-cat, .post-think h2 a, .post-think .content a {
   color: var(--cat-color-think);
 }
 
 .category-review .category, .category-review:hover .title,
-.post-review .title-cat, .post-review .content a {
+.post-review .title-cat, .post-review h2 a, .post-review .content a {
   color: var(--cat-color-review);
 }
 
 .category-travel .category, .category-travel:hover .title,
-.post-travel .title-cat, .post-travel .content a {
+.post-travel .title-cat, .post-travel h2 a, .post-travel .content a {
   color: var(--cat-color-travel);
 }
 
@@ -222,6 +222,10 @@ article {
     font-weight: var(--title-font-weight);
     margin-top: calc(var(--post-title-font-size) * 2);
     margin-bottom: calc(var(--post-title-font-size) / 2);
+
+    & a {
+      text-decoration: none;
+    }
   }
 
   & .meta {
