@@ -14,6 +14,8 @@ html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,addr
   --container-width: 800px;
   --container-top-bottom-margin: 30px;
 
+  --container-mobile-left-right-margin: 30px;
+
   --primary-color: #4c4c4c;
   --link-color: #888;
 
@@ -43,6 +45,9 @@ html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,addr
   --cat-color-travel: #9b59b6;
 }
 
+/* Define screen size to support */
+@custom-media --mobile (width <= 700px);
+
 /* Common */
 body {
   font-family: var(--primary-font);
@@ -56,6 +61,12 @@ body {
   overflow: hidden;
   width: var(--container-width);
   margin: var(--container-top-bottom-margin) auto;
+
+  @media (--mobile) {
+    width: auto;
+    margin: var(--container-top-bottom-margin) 0;
+    padding: 0 var(--container-mobile-left-right-margin);
+  }
 }
 
 /* Common Header */
@@ -144,11 +155,20 @@ header {
     font-family: var(--primary-font);
     text-transform: uppercase;
     letter-spacing: var(--uppercase-letter-spacing);
+
+    @media (--mobile) {
+      float: none;
+      margin-bottom: 0.5em;
+    }
   }
 
   & .title {
     font-size: var(--index-item-font-size);
     transition: all .15s ease-out;
+
+    @media (--mobile) {
+      line-height: 1.4em;
+    }
   }
 
   & .time {
@@ -231,6 +251,11 @@ article {
 
   & img {
     width: 100%;
+
+    @media (--mobile) {
+      width: calc(100% + var(--container-mobile-left-right-margin) * 2);
+      margin-left: calc(var(--container-mobile-left-right-margin) * -1);
+    }
   }
 
   & ul {
