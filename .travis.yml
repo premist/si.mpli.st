@@ -1,6 +1,11 @@
 language: node_js
 sudo: false
 
+addons:
+  apt:
+    packages:
+      - curl
+
 cache:
   bundler: true
   directories:
