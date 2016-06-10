@@ -20,6 +20,10 @@
     <meta property="og:site_name" content="{{ site.name }}">
     <meta property="og:url" content="{{ site.domain }}{{ page.url }}">
 
+    {% if page.cover %}
+      <meta property="og:image" content="{{ page.cover }}">
+    {% endif %}
+
     {% if page.title %}
       <meta property="og:type" content="article">
       <meta property="og:title" content="{{ page.title }}">

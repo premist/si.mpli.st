@@ -4,6 +4,7 @@ title: "남해 그리고 613여관"
 date: 2016-06-09 22:10:00 +0900
 category: travel
 excerpt: "여행을 가자"
+cover: https://cdn.si.mpli.st/2016-06-09-namhae613inn-day1-613inn.jpg
 ---
 
 2016.02.20 - 2016.02.21
