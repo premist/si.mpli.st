@@ -11,6 +11,8 @@ node_js:
   - 5.11.0
 
 before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get install -y curl
   - rvm install 2.3.0
   - npm install -g gulp-cli
 
