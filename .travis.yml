@@ -11,8 +11,8 @@ node_js:
   - 5.11.0
 
 before_install:
-  - sudo apt-get update -qq
-  - sudo apt-get install -y curl
+  # Remove ./node_modules/.bin from PATH so node-which doesn't replace Unix which and cause RVM to barf. See https://github.com/travis-ci/travis-ci/issues/5092
+  - export PATH=$(python -c 'from sys import argv;from collections import OrderedDict as od;print(":".join(od((p,None) for p in argv[1].split(":") if p.startswith("/")).keys()))' "$PATH")
   - rvm install 2.3.0
   - npm install -g gulp-cli
 
