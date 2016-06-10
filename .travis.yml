@@ -1,10 +1,6 @@
 language: node_js
-sudo: false
-
-addons:
-  apt:
-    packages:
-      - curl
+sudo: required
+dist: trusty
 
 cache:
   bundler: true
@@ -15,7 +11,7 @@ node_js:
   - 5.11.0
 
 before_install:
-  - rvm install 2.2.1
+  - rvm install 2.3.0
   - npm install -g gulp-cli
 
 before_script:
