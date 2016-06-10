@@ -15,7 +15,7 @@ node_js:
   - 5.11.0
 
 before_install:
-  - rvm install 2.3.0
+  - rvm install 2.2.1
   - npm install -g gulp-cli
 
 before_script:
