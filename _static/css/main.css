@@ -95,7 +95,7 @@ header {
 }
 
 .category-dev .category, .category-dev:hover .title,
-.post-dev .title-cat, .post-dev h2 a, .post-dev .content a, {
+.post-dev .title-cat, .post-dev h2 a, .post-dev .content a {
   color: var(--cat-color-dev);
 }
 
