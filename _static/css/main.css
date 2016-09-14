@@ -290,4 +290,9 @@ article {
   & .highlight {
     overflow: scroll;
   }
+
+  & blockquote {
+    border-left: 4px solid var(--primary-color);
+    padding-left: 15px;
+  }
 }
