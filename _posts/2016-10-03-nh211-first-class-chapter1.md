@@ -143,3 +143,7 @@ Fast Track 출국 심사 창구로 걸어가는데, 공항 직원이 갑자기 �
 ![탑승구](https://cdn.si.mpli.st/2016-10-03-nh211-first-class-chapter1/020.jpg)
 
 우선 탑승한 승객들이 대부분 우측 이코노미/비즈니스 탑승구로 들어가는 동안, 나는 왼쪽 탑승구로 들어갔다. 오늘은 특별한 날이니까.
+
+### 계속 읽기
+
+- **[생애 처음 퍼스트 클래스, ANA NH211 - 후편](/travel/nh211-first-class-chapter2.html)**
