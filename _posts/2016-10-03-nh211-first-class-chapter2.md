@@ -55,13 +55,13 @@ excerpt: 기내에 들어서자 여러 승무원 분께서 탑승을 환영해 �
 점심 식사의 메뉴의 경우에는 크게 일본식 카이세키 요리와 서양식 코스 메뉴가 있었는데, 일본 국적 항공사를 탄 만큼 ANA가 자랑하는 카이세키 요리를 맛보고 싶었다. 하지만 서양식 코스 메뉴의 일부 요리도 맛을 보고 싶어져서 승무원 분께 물어봤는데, “오늘 퍼스트 클래스에 손님만 타셨는데, 당연히 가능하죠!” 라고 대답해 주셨다.
 
 ![젠사이](https://cdn.si.mpli.st/2016-10-03-nh211-first-class-chapter2/007.jpg)
-<span style="text-align: center;display:block;">사키즈케先附 라고 불리우는 에피타이저가 제일 먼저 나왔지만, 워낙 처음 하는 경험이어서 사진을 찍지 못했다.<br>그 다음에 나온 두 번째 에피타이저 젠사이前菜.</span>
+<span style="text-align: center;display:block;">사키즈케先附 라고 불리우는 에피타이저가 제일 먼저 나왔지만 사진을 찍지 못했다.<br>사진은 두 번째 에피타이저 젠사이前菜.</span>
 
 ![샴페인](https://cdn.si.mpli.st/2016-10-03-nh211-first-class-chapter2/008.jpg)
-<span style="text-align: center;display:block;">Krug Grande Cuvée 샴페인.</span>
+<span style="text-align: center;display:block;">Krug Grande Cuvée 샴페인</span>
 
 ![음료 세 잔](https://cdn.si.mpli.st/2016-10-03-nh211-first-class-chapter2/009.jpg)
-<span style="text-align: center;display:block;">원래 술을 잘 마시지 않아 샴페인만 계속 마시기는 좀 그래서, 녹차와 진저 에일을 추가로 부탁했다.</span>
+<span style="text-align: center;display:block;">녹차와 진저 에일을 추가로 주문했다</span>
 
 ![오완](https://cdn.si.mpli.st/2016-10-03-nh211-first-class-chapter2/010.jpg)
 <span style="text-align: center;display:block;">국물 코스인 오완お椀. 조개와 대하가 들어간 어묵으로 깔끔한 맛을 낸 국물 요리.</span>
@@ -78,7 +78,7 @@ excerpt: 기내에 들어서자 여러 승무원 분께서 탑승을 환영해 �
 ![일리 카페라떼](https://cdn.si.mpli.st/2016-10-03-nh211-first-class-chapter2/014.jpg)
 <span style="text-align: center;display:block;">일리 카페라떼</span>
 
-점심 식사가 끝나고 담당 승무원 분께서 오셔서 잠자리를 준비해 줄지 물어보셨다. 원래대로라면 한숨 돌라고 잠을 청하고 싶었지만, 생각보다 많은 양의 음식을 먹은 것도 있고 지금 잠을 청하면 왠지 아까운 것 같아서 잠깐 작업을 하기로 했다.
+점심 식사가 끝나고 담당 승무원 분께서 오셔서 잠자리를 준비해 줄지 물어보셨다. 원래대로라면 한숨 돌라고 잠을 청하고 싶었지만, 생각보다 많은 양의 음식을 먹은 것도 있고 지금 잠을 청하면 왠지 아까운 것 같아서 노트북을 펴고 잠깐 작업을 하기로 했다.
 
 
 ### 하늘 위의 침대
