@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "생애 처음 퍼스트 클래스, ANA NH211 - 전편"
+title: "처음 타보는 퍼스트 클래스, ANA NH211 - 전편"
 date: 2016-10-03 23:55:00 +0900
 category: travel
 excerpt: 올해 3월, 친구와 같이 가기로 했던 짧은 유럽 여행에서 퍼스트 클래스를 타 볼 기회가 생겼다.
