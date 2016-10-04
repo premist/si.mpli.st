@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "생애 처음 퍼스트 클래스, ANA NH211 - 후편"
+title: "처음 타보는 퍼스트 클래스, ANA NH211 - 후편"
 date: 2016-10-03 23:56:00 +0900
 category: travel
 excerpt: 기내에 들어서자 여러 승무원 분께서 탑승을 환영해 주시고, 내 자리인 1K로 안내해 주셨다.
