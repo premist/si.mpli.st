@@ -43,6 +43,7 @@ html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,addr
   --cat-color-think: #1abc9c;
   --cat-color-review: #e74c3c;
   --cat-color-travel: #9b59b6;
+  --cat-color-video: #ec407a;
 }
 
 /* Define screen size to support */
@@ -122,6 +123,11 @@ header {
 .category-travel .category, .category-travel:hover .title,
 .post-travel .title-cat, .post-travel h2 a, .post-travel .content a {
   color: var(--cat-color-travel);
+}
+
+.category-video .category, .category-video:hover .title,
+.post-video .title-cat, .post-video h2 a, .post-video .content a {
+  color: var(--cat-color-video);
 }
 
 /* Index listing */
@@ -281,7 +287,8 @@ article {
   }
 
   & iframe {
-    margin: 1em 0;
+    display: block;
+    margin: 1.2em auto;
   }
 
   & code {
