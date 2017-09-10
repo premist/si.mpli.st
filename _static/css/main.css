@@ -297,11 +297,26 @@ article {
   }
 
   & .highlight {
+    padding: 10px;
+    background-color: #fafafa;
     overflow: scroll;
   }
 
   & blockquote {
     border-left: 4px solid var(--primary-color);
     padding-left: 15px;
+  }
+
+  & table {
+    position: relative;
+    margin: 0 auto 1.8em auto;
+  }
+
+  & thead {
+    border-bottom: 1px solid #ccc;
+  }
+
+  & th, & td {
+    padding: 5px 10px;
   }
 }
