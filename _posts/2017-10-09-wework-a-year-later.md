@@ -120,7 +120,7 @@ _본 글은 별도의 금전적 지원 없이 작성한 리뷰입니다. 사진�
 [6]:	https://www.spotify.com/int/discoverweekly/
 [7]:	https://refer.wework.com/i/premist
 [8]:	https://www.wework.com/buildings/gangnam-station--seoul
-[9]:	www.businessinsider.com/working-in-a-wework-2016-7/
+[9]:	https://www.businessinsider.com/working-in-a-wework-2016-7/
 
 [image-1]:	https://cdn.si.mpli.st/2017-10-09-wework-a-year-later/before-open.jpg "WeWork 강남점의 오픈을 알리는 팻말"
 [image-2]:	https://cdn.si.mpli.st/2017-10-09-wework-a-year-later/samseong-lounge.jpg "WeWork 삼성점 라운지"
