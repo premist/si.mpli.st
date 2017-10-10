@@ -85,7 +85,7 @@ WeWork에 처음 방문하게 되면 오게 되는 곳은 바로 라운지. 내�
 ![][image-16]
 <span style="text-align: center;display:block;">형광등이 아닌 따뜻한 조명이 비치는 복도는 언제 봐도 기분이 좋다</span>
 
-**배경 음악:** 소소한 점일지도 모르겠지만 전용 사무실을 제외한 여러 공간에서 나오는 취향 저격 배경음악이 정말 마음에 든다. 신기하게도 Spotify에서 추천해주는 나의 [Discover Weeekly][6]플레이리스트와 음악 성격이 정말 비슷한데, 덕분에 화장실에 갈 때마다 Shazam 앱을 켜서 지금 재생 중인 음악을 찾아보는 경우가 정말 많다. 배경 음악이 없을 때는 느끼지 못했지만, WeWork에 와서 가장 좋았던 점 중 하나로 꼽을 정도로 분위기에 큰 변화를 가져와 주었다.
+**배경 음악:** 소소한 점일지도 모르겠지만 전용 사무실을 제외한 여러 공간에서 나오는 취향 저격 배경음악이 정말 마음에 든다. 신기하게도 Spotify에서 추천해주는 나의 [Discover Weekly][6] 플레이리스트와 음악 성격이 정말 비슷한데, 덕분에 화장실에 갈 때마다 Shazam 앱을 켜서 지금 재생 중인 음악을 찾아보는 경우가 정말 많다. 배경 음악이 없을 때는 느끼지 못했지만, WeWork에 와서 가장 좋았던 점 중 하나로 꼽을 정도로 분위기에 큰 변화를 가져와 주었다.
 
 <br>
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Does <a href="https://twitter.com/WeWork?ref_src=twsrc%5Etfw">@WeWork</a> have a playlist of their loo jams on <a href="https://twitter.com/Spotify?ref_src=twsrc%5Etfw">@Spotify</a>? I literally <a href="https://twitter.com/Shazam?ref_src=twsrc%5Etfw">@Shazam</a> a song every time I&#39;m in the bathroom at the office.</p>&mdash; Anjali Kundra (@kundrela) <a href="https://twitter.com/kundrela/status/579145053467205632?ref_src=twsrc%5Etfw">March 21, 2015</a></blockquote><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>&nbsp;
