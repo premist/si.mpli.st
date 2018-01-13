@@ -22,18 +22,3 @@ before_script:
 
 script:
   - gulp build
-
-deploy:
-  provider: gcs
-  access_key_id:
-    secure: "GvCBZNakK4r4cvbgAUjw/thrhCe5V0AdCrQZHwyFDcO2ziBktdNtZSS4hIBBbr80R8BKtyH80P/2JgogMGIiMyc6/1OaS1Ea2YxyfOQvT95q2MK9/qBHFSe+w6JODXfkbPCRIS6SlqYmaApY3LYldFSx0JLF6+bOMjnfX4Lgk8w="
-  secret_access_key:
-    secure: "W/kEioAklO0/pc8ycte60XaAfgEn7PSHMDKdCaibQ8xiQd7J2P8p21GmtJmbpwEGZMr5ZfMLQ+NBbBV9JzqxPFlaJxIZYQZnw6jRCdN9GArKCYelut2LSg3Zk/ui3bWk135WPRxYLCj8FittPyEAyvAPmXx78fRQth5R+7kDXAY="
-  local_dir: _site
-  bucket: "si.mpli.st"
-  acl: public-read
-  cache_control: "max-age=1800"
-  detect_encoding: true
-  skip_cleanup: true
-  on:
-    branch: master
