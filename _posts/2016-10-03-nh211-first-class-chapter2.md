@@ -17,7 +17,7 @@ excerpt: 기내에 들어서자 여러 승무원 분께서 탑승을 환영해 �
 
 이륙 전에 승무원 분께서 오셔서 웰컴 드링크로 어떤 음료를 마실 건지 물어보셔서, 샴페인을 주문했다. 점심 식사 직전이라 주스나 차 같은 가벼운 음료를 마실까 하는 생각도 들었지만, 그래도 샴페인을 즐기기로 했다.
 
-![웰컴 드링크](https://cdn.si.mpli.st/2016-10-03-nh211-first-class-chapter2/001.jpg)
+![웰컴 드링크](https://simplist.cdn.sapbox.me/2016-10-03-nh211-first-class-chapter2/001.jpg)
 <span style="text-align: center;display:block;">웰컴 드링크</span>
 
 긴 비행동안 나를 담당해주실 승무원 분은 연륜이 꽤 있어 보이셨다. 아무래도 일등석은 서비스 품질 등을 가장 신경써야 하다 보니, 어떤 상황에도 유연하게 대처할 수 있는 경력이 많은 승무원분을 보통 배정하는 듯. 걱정했던 것과는 달리 영어를 굉장히 능숙하게 잘 하셨는데, 음료수나 기내 서비스 등 무언가 부탁을 할 때  “Certainly” 라고 웃으면서 대답을 해 주시는 모습이 정말 멋졌다.
@@ -26,16 +26,16 @@ excerpt: 기내에 들어서자 여러 승무원 분께서 탑승을 환영해 �
 
 좌석 오른쪽에는 기내 엔터테인먼트 시스템 리모컨과 더불어 터치스크린으로 된 좌석 조정 리모컨이 달려 있었다. 처음 탑승했을 때는 소파 모양으로 되어 있는 좌석이지만, 착륙 후 수면을 취하고 싶을 때는 이 리모컨을 사용하여 침대로 전환할 수 있는 것. 침대로 완전히 바꾸지 않아도 리클라이너처럼 자신이 원하는 형태로 바꿀 수 있는 미세한 조정도 가능했다.
 
-![좌석 전경](https://cdn.si.mpli.st/2016-10-03-nh211-first-class-chapter2/002.jpg)
+![좌석 전경](https://simplist.cdn.sapbox.me/2016-10-03-nh211-first-class-chapter2/002.jpg)
 <span style="text-align: center;display:block;">1-2-1 식 좌석 배치. 일부 항공사 좌석과는 다르게 별도의 좌석간 가림막은 설치되어 있지 않아, 프라이버시 보호는 되지 않는다.</span>
 
-![소파식 좌석](https://cdn.si.mpli.st/2016-10-03-nh211-first-class-chapter2/003.jpg)
+![소파식 좌석](https://simplist.cdn.sapbox.me/2016-10-03-nh211-first-class-chapter2/003.jpg)
 <span style="text-align: center;display:block;">소파식 좌석. 문처럼 생긴 것들은 모두 수납장이다.
 
-![모니터](https://cdn.si.mpli.st/2016-10-03-nh211-first-class-chapter2/004.jpg)
+![모니터](https://simplist.cdn.sapbox.me/2016-10-03-nh211-first-class-chapter2/004.jpg)
 <span style="text-align: center;display:block;">널찍한 모니터와 수납장. 자세히 보면 식탁이 수납되어 있는 것을 볼 수 있다.</span>
 
-![좌석 조정 시스템](https://cdn.si.mpli.st/2016-10-03-nh211-first-class-chapter2/004-1.jpg)
+![좌석 조정 시스템](https://simplist.cdn.sapbox.me/2016-10-03-nh211-first-class-chapter2/004-1.jpg)
 <span style="text-align: center;display:block;">터치스크린 형태의 좌석 조정 리모컨</span>
 
 잠시 후 일등석 좌석에 제공되는 노이스 캔슬링 헤드폰을 받았다. 예상했던대로 Bose 헤드폰보다는 떨어지는 노이스 캔슬링 성능이었지만, 이것저것 챙기기 싫은 사람에게는 큰 도움이 될 것 같았다. 비행 시간 대부분동안 휴대폰에 저장해둔 음악을 들을 예정이었기 때문에, 헤드폰 전용 수납함(!)에 넣어 두고 늘 휴대하게 되는 Bose QC25 헤드폰을 착용했다.
@@ -47,9 +47,9 @@ excerpt: 기내에 들어서자 여러 승무원 분께서 탑승을 환영해 �
 
 비행기가 이륙하고 얼마 되지 않아 담당 승무원 분께서 메뉴판 두 개를 가지고 오셨다. 하나에는 이 비행의 메인 식사인 점심 식사 메뉴와 더불어 비행 중간에 언제든지 요청할 수 있는 간단한 식사 메뉴와 스낵이 적혀 있었고, 다른 하나의 메뉴판에는 샴페인과 각종 음료 메뉴가 적혀 있었다.
 
-![음료 메뉴](https://cdn.si.mpli.st/2016-10-03-nh211-first-class-chapter2/005.jpg)
+![음료 메뉴](https://simplist.cdn.sapbox.me/2016-10-03-nh211-first-class-chapter2/005.jpg)
 
-![식사 메뉴](https://cdn.si.mpli.st/2016-10-03-nh211-first-class-chapter2/006.jpg)
+![식사 메뉴](https://simplist.cdn.sapbox.me/2016-10-03-nh211-first-class-chapter2/006.jpg)
 <span style="text-align: center;display:block;">일본식과 서양식 두 가지가 준비되어 있다</span>
 
 점심 식사의 메뉴의 경우에는 크게 일본식 카이세키 요리와 서양식 코스 메뉴가 있었는데, 일본 국적 항공사를 탄 만큼 ANA가 자랑하는 카이세키 요리를 맛보고 싶었다. 하지만 서양식 코스 메뉴의 일부 요리도 맛을 보고 싶어져서 승무원 분께 여쭤보았다.
@@ -58,28 +58,28 @@ excerpt: 기내에 들어서자 여러 승무원 분께서 탑승을 환영해 �
 
 > 승무원: “오늘 퍼스트 클래스에 손님만 타셨는데, 당연히 가능하죠!”
 
-![젠사이](https://cdn.si.mpli.st/2016-10-03-nh211-first-class-chapter2/007.jpg)
+![젠사이](https://simplist.cdn.sapbox.me/2016-10-03-nh211-first-class-chapter2/007.jpg)
 <span style="text-align: center;display:block;">사키즈케先附 라고 불리우는 에피타이저가 제일 먼저 나왔지만 사진을 찍지 못했다.<br>사진은 두 번째 에피타이저 젠사이前菜.</span>
 
-![샴페인](https://cdn.si.mpli.st/2016-10-03-nh211-first-class-chapter2/008.jpg)
+![샴페인](https://simplist.cdn.sapbox.me/2016-10-03-nh211-first-class-chapter2/008.jpg)
 <span style="text-align: center;display:block;">Krug Grande Cuvée 샴페인</span>
 
-![음료 세 잔](https://cdn.si.mpli.st/2016-10-03-nh211-first-class-chapter2/009.jpg)
+![음료 세 잔](https://simplist.cdn.sapbox.me/2016-10-03-nh211-first-class-chapter2/009.jpg)
 <span style="text-align: center;display:block;">녹차와 진저 에일을 추가로 주문했다</span>
 
-![오완](https://cdn.si.mpli.st/2016-10-03-nh211-first-class-chapter2/010.jpg)
+![오완](https://simplist.cdn.sapbox.me/2016-10-03-nh211-first-class-chapter2/010.jpg)
 <span style="text-align: center;display:block;">국물 코스인 오완お椀. 조개와 대하가 들어간 어묵으로 깔끔한 맛을 낸 국물 요리.</span>
 
-![오츠쿠리](https://cdn.si.mpli.st/2016-10-03-nh211-first-class-chapter2/011.jpg)
+![오츠쿠리](https://simplist.cdn.sapbox.me/2016-10-03-nh211-first-class-chapter2/011.jpg)
 <span style="text-align: center;display:block;">다음 코스인 오츠쿠리お造り. 기내에서 서빙된 회가 과연 맛이 있을까 걱정했지만 상상했던 것보다 아주 맛있었다.<br>흰살 생선의 경우 일본식 요리에 쓰인 만큼 숙성이 어느 정도 되어 쫄깃하기 보다는 선어회에 가까운 식감이 났다. </span>
 
-![타키와세, 친미, 슈사이, 스테이크](https://cdn.si.mpli.st/2016-10-03-nh211-first-class-chapter2/012.jpg)
+![타키와세, 친미, 슈사이, 스테이크](https://simplist.cdn.sapbox.me/2016-10-03-nh211-first-class-chapter2/012.jpg)
 타키와세炊き合わせ와 친미珍味, 카이세키식 메인 요리 슈사이主菜, 그리고 서양식 메인 요리. 사실 일본식 메인 요리가 생선 요리라 스테이크를 추가로 주문했는데, 타키와세 요리가 사가규로 나와서 본의 아니게 고기를 원 없이 먹게 되었다. 쿠로게규로 만든 서양식 스테이크는 개인적으로 가장 궁금했던 요리인데, 그릴 등을 자유롭게 사용할 수 없는 비행기의 특성 상 스테이크를 어떻게 조리할 지 궁금했기 때문이다. 예상했던대로 스테이크의 굽기는 선택할 수 없었지만 고기는 매우 부드럽고 연했다.
 
-![후식](https://cdn.si.mpli.st/2016-10-03-nh211-first-class-chapter2/013.jpg)
+![후식](https://simplist.cdn.sapbox.me/2016-10-03-nh211-first-class-chapter2/013.jpg)
 <span style="text-align: center;display:block;">후식</span>
 
-![일리 카페라떼](https://cdn.si.mpli.st/2016-10-03-nh211-first-class-chapter2/014.jpg)
+![일리 카페라떼](https://simplist.cdn.sapbox.me/2016-10-03-nh211-first-class-chapter2/014.jpg)
 <span style="text-align: center;display:block;">일리 카페라떼</span>
 
 점심 식사가 끝나고 담당 승무원 분께서 오셔서 잠자리를 준비해 줄지 물어보셨다. 원래대로라면 한숨 돌라고 잠을 청하고 싶었지만, 생각보다 많은 양의 음식을 먹은 것도 있고 지금 잠을 청하면 왠지 아까운 것 같아서 노트북을 펴고 잠깐 작업을 하기로 했다.
@@ -93,15 +93,15 @@ excerpt: 기내에 들어서자 여러 승무원 분께서 탑승을 환영해 �
 
 화장실에서 나와 자리로 돌아가니 침대가 준비되어 있었고, 캐빈 내의 조명도 잠자리에 알맞게 조절되어 있었다.
 
-![풀 플랫 침대](https://cdn.si.mpli.st/2016-10-03-nh211-first-class-chapter2/015.jpg)
-![풀 플랫 침대](https://cdn.si.mpli.st/2016-10-03-nh211-first-class-chapter2/016.jpg)
-![풀 플랫 침대](https://cdn.si.mpli.st/2016-10-03-nh211-first-class-chapter2/017.jpg)
+![풀 플랫 침대](https://simplist.cdn.sapbox.me/2016-10-03-nh211-first-class-chapter2/015.jpg)
+![풀 플랫 침대](https://simplist.cdn.sapbox.me/2016-10-03-nh211-first-class-chapter2/016.jpg)
+![풀 플랫 침대](https://simplist.cdn.sapbox.me/2016-10-03-nh211-first-class-chapter2/017.jpg)
 
 아주 조금씩 흔들리는 비행기 안에서, 넓은 침대에 누워 비행기의 천장을 바라보고 있다는 사실이 굉장히 비현실적으로 느껴졌다. 평소에 이코노미 석에서는 잠에 금방 들곤 했는데, 훨씬 편안한 이 곳에서는 한 숨도 잠이 오지 않았다.
 
 몇 번을 뒤척이다 결국 잠을 청하지 못하고, 다시 자리로 돌아와서 미리 준비해온 영화를 봤다.
 
-![영화 감상](https://cdn.si.mpli.st/2016-10-03-nh211-first-class-chapter2/018.jpg)
+![영화 감상](https://simplist.cdn.sapbox.me/2016-10-03-nh211-first-class-chapter2/018.jpg)
 <span style="text-align: center;display:block;">〈내부자들: 디 오리지널〉<br>전에 본 영화인데다가 러닝타임이 길어서 중간부터 잠이 왔다.</span>
 
 
@@ -114,7 +114,7 @@ excerpt: 기내에 들어서자 여러 승무원 분께서 탑승을 환영해 �
 
 간식을 시켜야겠다고 생각하고 메뉴를 보던 중, 아까 하네다 공항 라운지에서 시키지 못했던 카레가 보여 냉큼 주문했다. 음료는 어떻게 하겠냐고 승무원 분께서 물어보셔서, 산토리 히비키 21년산 위스키를 같이 시켰다.
 
-![ANA 오리지널 카레](https://cdn.si.mpli.st/2016-10-03-nh211-first-class-chapter2/019.jpg)
+![ANA 오리지널 카레](https://simplist.cdn.sapbox.me/2016-10-03-nh211-first-class-chapter2/019.jpg)
 <span style="text-align: center;display:block;">ANA 오리지널 카레</span>
 
 어느 정도 잠이 깬 상태였지만, 아직 캐빈 안의 불은 꺼져 있는 상황이었다. 보통 착륙 몇 시간 전이 되었을 때 켜고 식사를 주기 시작할 때 불이 켜지곤 하는데, 무언가를 하려고 해도 조금 어두워서 언제 불이 켜지는지를 승무원 분께 여쭤보았다.
@@ -132,26 +132,26 @@ excerpt: 기내에 들어서자 여러 승무원 분께서 탑승을 환영해 �
 
 어느 덧 마지막 식사를 할 때가 되었다. 착륙 전 식사는 메뉴가 딱히 정해져 있지 않고 비행 도중 언제든지 시킬 수 있는 메뉴 중에서 시키면 되는 방식이었는데, 평소보다 과식을 한 것도 있고 속을 풀기 위해서 잇푸도 미소라멘과 죽을 주문했다.
 
-![잇푸도 미소라멘](https://cdn.si.mpli.st/2016-10-03-nh211-first-class-chapter2/020.jpg)
+![잇푸도 미소라멘](https://simplist.cdn.sapbox.me/2016-10-03-nh211-first-class-chapter2/020.jpg)
 <span style="text-align: center;display:block;">잇푸도 미소라멘</span>
 
-![죽과 일본식 반찬들](https://cdn.si.mpli.st/2016-10-03-nh211-first-class-chapter2/021.jpg)
+![죽과 일본식 반찬들](https://simplist.cdn.sapbox.me/2016-10-03-nh211-first-class-chapter2/021.jpg)
 <span style="text-align: center;display:block;">죽과 일본식 반찬들</span>
 
-![일리 아이스 아메리카노](https://cdn.si.mpli.st/2016-10-03-nh211-first-class-chapter2/022.jpg)
+![일리 아이스 아메리카노](https://simplist.cdn.sapbox.me/2016-10-03-nh211-first-class-chapter2/022.jpg)
 <span style="text-align: center;display:block;">일리 아이스 아메리카노</span>
 
 착륙 준비를 알리는 안내 방송이 나왔다. 파자마에서 평상복으로 갈아입고, 좌석을 리클라이너에서 소파 형태로 전환하고 있는데, 승무원분께서 다가와서 Fast Track 이용권을 주셨다. 보통 공항에서 내려서 입국 수속을 밟을 때 줄을 길게 서서 기다려야 하는데, 이러한 대기열에서 기다릴 필요 없이 전용 대기열을 이용할 수 있게 해주는 이용권이었다.
 
-![Fast Track 이용권](https://cdn.si.mpli.st/2016-10-03-nh211-first-class-chapter2/023.jpg)
+![Fast Track 이용권](https://simplist.cdn.sapbox.me/2016-10-03-nh211-first-class-chapter2/023.jpg)
 
 비행기가 착륙하고 자리에서 일어나자 이륙 전에 맡겼던 겉옷을 수트 보관함에서 꺼내 주셨다. 보통 비행기 착륙이 끝나고 안전 벨트 사인이 꺼지면 먼저 나가려는 사람들로 복도가 줄을 이루는데, 혼자 유유히 출구로 향했다. 출구 앞에서 “다음에도 ANA를 이용해주세요” 라고 이야기해주시는 승무원 분들에게 감사하다는 인사를 하고, 드디어 비행기에서 내렸다.
 
-![도착!](https://cdn.si.mpli.st/2016-10-03-nh211-first-class-chapter2/024.jpg)
+![도착!](https://simplist.cdn.sapbox.me/2016-10-03-nh211-first-class-chapter2/024.jpg)
 
-![제일 먼저 나갈 때만 볼 수 있는 닫힌 문](https://cdn.si.mpli.st/2016-10-03-nh211-first-class-chapter2/025.jpg)
+![제일 먼저 나갈 때만 볼 수 있는 닫힌 문](https://simplist.cdn.sapbox.me/2016-10-03-nh211-first-class-chapter2/025.jpg)
 
-![히드로 공항 도착](https://cdn.si.mpli.st/2016-10-03-nh211-first-class-chapter2/026.jpg)
+![히드로 공항 도착](https://simplist.cdn.sapbox.me/2016-10-03-nh211-first-class-chapter2/026.jpg)
 <span style="text-align: center;display:block;">히드로 공항 도착</span>
 
 

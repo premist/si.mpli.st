@@ -66,5 +66,5 @@ end
 ![][image-dialyzer]
 
 
-[image-credo]: https://cdn.si.mpli.st/2017-08-27-credo.jpeg "Credo의 실행 결과"
-[image-dialyzer]: https://cdn.si.mpli.st/2017-08-27-dialyzer.jpeg "Dialyzer의 실행 결과"
+[image-credo]: https://simplist.cdn.sapbox.me/2017-08-27-credo.jpeg "Credo의 실행 결과"
+[image-dialyzer]: https://simplist.cdn.sapbox.me/2017-08-27-dialyzer.jpeg "Dialyzer의 실행 결과"
