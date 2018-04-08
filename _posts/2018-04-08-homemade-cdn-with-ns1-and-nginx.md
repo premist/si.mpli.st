@@ -167,8 +167,8 @@ SSL을 설정할 때는 [Let's Encrypt][14]의 인증서를 활용했는데, 지
 [15]:	https://github.com/Neilpang/acme.sh
 [16]:	https://si.mpli.st/review/wework-a-year-later.html
 
-[image-1]:	https://cdn.si.mpli.st/2018-04-homemade-cdn-with-ns1-and-nginx/cdn-plan.svg "홈메이드 CDN 구조"
-[image-2]:	https://cdn.si.mpli.st/2018-04-homemade-cdn-with-ns1-and-nginx/dnsimple.png "DNSimple의 Regional Records 기능"
-[image-3]:	https://cdn.si.mpli.st/2018-04-homemade-cdn-with-ns1-and-nginx/ns1-filter-chain.png "NS1의 Filter Chain"
-[image-4]:	https://cdn.si.mpli.st/2018-04-homemade-cdn-with-ns1-and-nginx/ns1-filter-chain-config.png "NS1의 Filter Chain"
-[image-5]:	https://cdn.si.mpli.st/2018-04-homemade-cdn-with-ns1-and-nginx/inspector-comparison.png "전후 Web Inspector 비교"
+[image-1]:	https://simplist.cdn.sapbox.me/2018-04-homemade-cdn-with-ns1-and-nginx/cdn-plan.svg "홈메이드 CDN 구조"
+[image-2]:	https://simplist.cdn.sapbox.me/2018-04-homemade-cdn-with-ns1-and-nginx/dnsimple.png "DNSimple의 Regional Records 기능"
+[image-3]:	https://simplist.cdn.sapbox.me/2018-04-homemade-cdn-with-ns1-and-nginx/ns1-filter-chain.png "NS1의 Filter Chain"
+[image-4]:	https://simplist.cdn.sapbox.me/2018-04-homemade-cdn-with-ns1-and-nginx/ns1-filter-chain-config.png "NS1의 Filter Chain"
+[image-5]:	https://simplist.cdn.sapbox.me/2018-04-homemade-cdn-with-ns1-and-nginx/inspector-comparison.png "전후 Web Inspector 비교"
