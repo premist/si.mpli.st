@@ -6,6 +6,11 @@ category: review
 excerpt: WeWork에 입주한 지 1년이 넘었는데, 그동안 강남점에서 지낸 경험과 느낀 점을 공유한다.
 ---
 
+Disclaimer: 리퍼러 링크가 있는 글입니다. 리퍼러 링크를 통해 서비스에 가입하시면 할인 혜택을 제공하기도 하고, 저도 리퍼럴에 대한 작은 보상을 받음으로써 더 많은 글을 쓸 수 있도록 동기 부여가 됩니다.
+
+---
+
+
 [Shakr][1]는 이사를 정말 많이 경험한 회사다. 내가 팀에 합류하기 전에는 지금은 사라진 KT 에코노베이션 센터 모란점에 있다가 내가 합류할 즈음에 강남역 근처의 오피스텔 건물로 이사를 했다. 어느 정도 인원이 많아지고 더이상 입주해 있던 사무실로는 감당하기 어려울 규모가 되었을 때 선정릉역 근처의 사무실로 한번 더 이사를 했는데, 어느 정도 정착되었다고 생각했을 때 임대를 비롯한 여러 가지 사정으로 다시 이사를 하게 되었다. 이사를 많이 한 만큼 다음에 이사가는 곳에는 오래 정착하고 싶어서 어느 곳으로 이사를 할 지에 대한 고민을 많이 했는데, 수도권 각지에서의 접근성과 사무실의 면적 및 편의성 등을 생각하다보니 결정을 내리기가 쉽지 않았다. 
 
 
@@ -103,9 +108,8 @@ WeWork에 처음 방문하게 되면 오게 되는 곳은 바로 라운지. 내�
 
 ### 링크
 
-- [WeWork에서 일하기 (리퍼러 링크)][7]
-- [WeWork 강남역점][8]
-- [Business Insider - WeWork에서 일한다는 것은 이렇습니다 (영문)][9]
+- [WeWork에서 일하기][7]
+- [Business Insider - WeWork에서 일한다는 것은 이렇습니다 (영문)][8]
 
 
 <br>
@@ -119,8 +123,7 @@ _본 글은 별도의 금전적 지원 없이 작성한 리뷰입니다. 사진�
 [5]:	https://www.wework.com/buildings/soma--sf-bay-area--CA
 [6]:	https://www.spotify.com/int/discoverweekly/
 [7]:	https://refer.wework.com/i/premist
-[8]:	https://www.wework.com/buildings/gangnam-station--seoul
-[9]:	https://www.businessinsider.com/working-in-a-wework-2016-7/
+[8]:	https://www.businessinsider.com/working-in-a-wework-2016-7/
 
 [image-1]:	https://simplist.cdn.sapbox.me/2017-10-09-wework-a-year-later/before-open.jpg "WeWork 강남점의 오픈을 알리는 팻말"
 [image-2]:	https://simplist.cdn.sapbox.me/2017-10-09-wework-a-year-later/samseong-lounge.jpg "WeWork 삼성점 라운지"
