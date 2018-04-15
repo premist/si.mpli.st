@@ -49,7 +49,7 @@ PostgreSQL에서 제공하는 [pg\_largeobject][5] 기능을 이용하여 데이
 
 ---
 
-공격이 이루어지고 있다는 사실을 발견하고, 추가적인 공격을 방지하기 위해 Docker Compose를 통해 실행하고 있던 PostgreSQL를 종료했다. 그 다음, 혹여나 공격자가 공격에 성공하여 어떤 작업이 일어나고 있지 않을까 하는 생각에 Telegraf로 수집하고 있던 CPU 점유율을 확인하였다.
+공격이 이루어지고 있다는 사실을 발견하고, 추가적인 공격을 방지하기 위해 Docker Compose를 통해 실행하고 있던 PostgreSQL를 종료했다. 그 다음, 혹여나 공격자가 공격에 성공하여 어떤 작업이 일어나고 있지 않을까 하는 생각에 [Telegraf로 수집하고 있던][6] CPU 점유율을 확인하였다.
 
 ```sql
 -- InfluxQL
@@ -71,7 +71,7 @@ GROUP BY time(4d)
 
 - PostgreSQL 프로세스는 Unprivileged Docker 컨테이너에서 실행이 되고 있었다.
 - 호스트 시스템에서 `/var/lib/postgresql/data` 디렉터리만 별도의 폴더를 마운트하여 사용하고, 호스트의 다른 디렉터리는 마운트하지 않았다.
-- [Arch Linux][6]를 사용하고 있었기에 취약점이 보고되지 않은 최신 버전의 Linux 커널과 Docker CE를 사용하고 있었다.
+- [Arch Linux][7]를 사용하고 있었기에 취약점이 보고되지 않은 최신 버전의 Linux 커널과 Docker CE를 사용하고 있었다.
 
 PostgreSQL 컨테이너를 `docker kill ID && docker rm ID` 로 제거하고, PostgreSQL 데이터베이스 파일을 모두 삭제하는 것으로 정리를 일단락지었다.
 
@@ -80,9 +80,9 @@ PostgreSQL 컨테이너를 `docker kill ID && docker rm ID` 로 제거하고, Po
 
 일단 급한 불을 끄고, 도대체 왜 이런 공격이 일어났는지를 조사하기 시작했다. 분명히 필요한 포트만 열고, PostgreSQL이 사용하는 포트인 5432는 로컬에서만 접근할 수 있게 방화벽을 설정했을 텐데, 공격자는 어떻게 데이터베이스에 접속할 수 있었던 것일까?
 
-답은 허무할 정도로 간단했다. 바로 방화벽이 켜져있지 않았던 것. 며칠동안 쓰고 삭제할 VM이여서 이왕 새로 설치하는 김에, 평소 사용하는 [iptables][7] 대신 보다 간단(다고 주장)한 [ufw][8]를 설치했는데, 사용하는 방법을 충분히 숙지하지 않아서 방화벽이 제대로 설정되지 않았던 것.
+답은 허무할 정도로 간단했다. 바로 방화벽이 켜져있지 않았던 것. 며칠동안 쓰고 삭제할 VM이여서 이왕 새로 설치하는 김에, 평소 사용하는 [iptables][8] 대신 보다 간단(다고 주장)한 [ufw][9]를 설치했는데, 사용하는 방법을 충분히 숙지하지 않아서 방화벽이 제대로 설정되지 않았던 것.
 
-엎친데 덮친 격으로 PostgreSQL 데이터베이스도 암호가 설정되어 있지 않았다. [Docker Inc.가 제공하는 공식 PostgreSQL 이미지][9]의 경우 `POSTGRES_PASSWORD` 환경 변수를 지정해주지 않으면 **계정의 비밀번호가 설정되지 않은 채로 데이터베이스 서버가 실행된다**. 로컬에서 사용할 데이터베이스였지만 간단한 비밀번호를 환경 변수를 통해 설정했을텐데, `systemctl daemon-reload`를 해 주지 않아 로컬에서 임의로 생성한 비밀번호가 적용되지 않은 채로 서비스가 실행되었다.
+엎친데 덮친 격으로 PostgreSQL 데이터베이스도 암호가 설정되어 있지 않았다. [Docker Inc.가 제공하는 공식 PostgreSQL 이미지][10]의 경우 `POSTGRES_PASSWORD` 환경 변수를 지정해주지 않으면 **계정의 비밀번호가 설정되지 않은 채로 데이터베이스 서버가 실행된다**. 로컬에서 사용할 데이터베이스였지만 간단한 비밀번호를 환경 변수를 통해 설정했을텐데, `systemctl daemon-reload`를 해 주지 않아 로컬에서 임의로 생성한 비밀번호가 적용되지 않은 채로 서비스가 실행되었다.
 
 이런 저런 실수가 겹쳐서 결국 공개 인터넷에 인증 없이 아무나 접근할 수 있는 데이터베이스를 공개한 격이 되어 버렸다. 정말 부끄러운 순간이었다.
 
@@ -91,12 +91,12 @@ PostgreSQL 컨테이너를 `docker kill ID && docker rm ID` 로 제거하고, Po
 
 어느 정도 수습을 하고 정신을 차린 후 곰곰히 생각해보니, 방금 겪은 상황을 어디선가 접해 본 적이 있었다. Instapaper에 저장한 글을 찬찬히 둘러보던 중, 최근에 읽은 글을 찾을 수 있었다.
 
-**[IMPERVA - A Deep Dive into Database Attacks Part III: Why Scarlett Johansson’s Picture Got My Postgres Database to Start Mining Monero][10]**
+**[IMPERVA - A Deep Dive into Database Attacks Part III: Why Scarlett Johansson’s Picture Got My Postgres Database to Start Mining Monero][11]**
 
 이 글의 저자는 인터넷에 공개적으로 노출되어 있는 데이터베이스에 어떠한 형태의 공격이 가해지는지를 분석하기 위해 일부러 허니팟을 구축해 두었는데, 이 허니팟을 공격자가 발견하고 내가 당한 것과 같은 공격을 수행하였다.
 
-- `pg_largeobject`로 바이너리를 저장하고, PostgreSQL의 [Server-side Function][11]인 `lo_export`를 통해 디스크에 저장한다. 이 때 데이터베이스를 감시하고 있는 보안 솔루션이 있을 것을 대비하여, `pg_proc` 카탈로그에 간접적으로 `lo_export`를 실행하는 함수를 저장하고 이를 실행한다.
-- [C UDF][12]를 이용하여 로컬에 저장된 바이너리를 호출하는 함수를 만든다.
+- `pg_largeobject`로 바이너리를 저장하고, PostgreSQL의 [Server-side Function][12]인 `lo_export`를 통해 디스크에 저장한다. 이 때 데이터베이스를 감시하고 있는 보안 솔루션이 있을 것을 대비하여, `pg_proc` 카탈로그에 간접적으로 `lo_export`를 실행하는 함수를 저장하고 이를 실행한다.
+- [C UDF][13]를 이용하여 로컬에 저장된 바이너리를 호출하는 함수를 만든다.
 - `lshw`와 `/proc/cpuinfo`로 GPU와 CPU 정보를 파악한다.
 - 바이너리가 숨겨진 사진 파일을 다운받고, 바이너리를 추출한다.
 - 마이닝 풀 정보와 함께 마이너 바이너리를 실행한다.
@@ -114,30 +114,31 @@ PostgreSQL 컨테이너를 `docker kill ID && docker rm ID` 로 제거하고, Po
 - 올바른 권한을 사용하거나 컨테이너 등으로 다른 프로세스와 격리하여 추가적인 피해를 막자
 - 시스템의 구성 요소는 최신 버전으로 유지하도록 노력하자
 
-[Google Cloud SQL][13]이나 [AWS RDS][14]를 사용한다면 [SUPERUSER 권한을 사용자가 취득할 수 없고][15], 기본적으로 IP 대역을 설정하거나 Security Group을 설정해야 하므로 비교적 안전한 초기 설정으로 데이터베이스를 운영할 수 있다. 프로덕션 서비스를 운영한다면 이러한 매니지드 서비스를 이용하는 것도 좋은 방법이다.
+[Google Cloud SQL][14]이나 [AWS RDS][15]를 사용한다면 [SUPERUSER 권한을 사용자가 취득할 수 없고][16], 기본적으로 IP 대역을 설정하거나 Security Group을 설정해야 하므로 비교적 안전한 초기 설정으로 데이터베이스를 운영할 수 있다. 프로덕션 서비스를 운영한다면 이러한 매니지드 서비스를 이용하는 것도 좋은 방법이다.
 
 
 ## 더 읽어보기
-- [Black Hat Europe - Advanced SQL Injection to operating system full control (2009)][16]
-- [Command execution with a PostgreSQL UDF (2009)][17]
+- [Black Hat Europe - Advanced SQL Injection to operating system full control (2009)][17]
+- [Command execution with a PostgreSQL UDF (2009)][18]
 
 [1]:	http://www.blink.sh/
 [2]:	http://rubykaigi.org/2017
 [3]:	https://en.wikipedia.org/wiki/W_(Unix)
 [4]:	https://en.wikipedia.org/wiki/Less_(Unix)
 [5]:	https://www.postgresql.org/docs/10/static/catalog-pg-largeobject.html
-[6]:	https://www.archlinux.org/
-[7]:	https://wiki.archlinux.org/index.php/iptables
-[8]:	https://wiki.archlinux.org/index.php/Uncomplicated_Firewall
-[9]:	https://hub.docker.com/_/postgres/
-[10]:	https://www.imperva.com/blog/2018/03/deep-dive-database-attacks-scarlett-johanssons-picture-used-for-crypto-mining-on-postgre-database/
-[11]:	https://www.postgresql.org/docs/10/static/lo-funcs.html
-[12]:	https://www.postgresql.org/docs/current/static/xfunc-c.html
-[13]:	https://cloud.google.com/sql/
-[14]:	https://aws.amazon.com/rds/
-[15]:	https://cloud.google.com/sql/docs/postgres/users#default-users
-[16]:	https://www.slideshare.net/inquis/advanced-sql-injection-to-operating-system-full-control-slides
-[17]:	http://bernardodamele.blogspot.kr/2009/01/command-execution-with-postgresql-udf.html
+[6]:	https://si.mpli.st/dev/introduction-to-telegraf.html
+[7]:	https://www.archlinux.org/
+[8]:	https://wiki.archlinux.org/index.php/iptables
+[9]:	https://wiki.archlinux.org/index.php/Uncomplicated_Firewall
+[10]:	https://hub.docker.com/_/postgres/
+[11]:	https://www.imperva.com/blog/2018/03/deep-dive-database-attacks-scarlett-johanssons-picture-used-for-crypto-mining-on-postgre-database/
+[12]:	https://www.postgresql.org/docs/10/static/lo-funcs.html
+[13]:	https://www.postgresql.org/docs/current/static/xfunc-c.html
+[14]:	https://cloud.google.com/sql/
+[15]:	https://aws.amazon.com/rds/
+[16]:	https://cloud.google.com/sql/docs/postgres/users#default-users
+[17]:	https://www.slideshare.net/inquis/advanced-sql-injection-to-operating-system-full-control-slides
+[18]:	http://bernardodamele.blogspot.kr/2009/01/command-execution-with-postgresql-udf.html
 
 [image-1]:	https://simplist.cdn.sapbox.me/2018-04-cryptominer-inside-postgres/ipad-workstation.jpg
 [image-2]:	https://simplist.cdn.sapbox.me/2018-04-cryptominer-inside-postgres/log-pg-largeobject.jpg "로그의 일부 발췌 (1)"
