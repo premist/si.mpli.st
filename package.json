@@ -9,6 +9,9 @@
     "name": "Minku Lee",
     "url": "https://github.com/premist"
   },
+  "resolutions": {
+    "fsevents": "^1.2.4"
+  },
   "devDependencies": {
     "browser-sync": "^2.12.3",
     "cssnano": "^3.5.2",
