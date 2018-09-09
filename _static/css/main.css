@@ -286,9 +286,9 @@ article {
     text-decoration: none;
   }
 
-  & iframe {
+  & iframe, & twitterwidget {
     display: block;
-    margin: 1.2em auto;
+    margin: 1.2em auto !important;
   }
 
   & code {
