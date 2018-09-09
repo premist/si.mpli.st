@@ -2,7 +2,7 @@
 layout: default
 type: post
 ---
-<div class="post">
+<div class="post" itemscope itemtype="https://schema.org/Article">
 	<header class="small">
 	  <h1 class="title"><a href="/">{{ site.name }} <span class="title-cat">{{ page.category }}</span></a></h1>
 	  <span class="author">by {{ site.author }}</span>
@@ -11,33 +11,20 @@ type: post
 	<article>
 		<h2>
 			{% if page.link %}
-			<a href="{{ page.link }}">
+			<a href="{{ page.link }}" itemprop="name">
 				{{ page.title }}
 			</a>
 			{% else %}
 			{{ page.title }}
 			{% endif %}
 		</h2>
-		<span class="meta"><a href="{{ site.domain }}{{ page.url }}">{{ page.date | date_to_string }}</a></span>
-		<div class="content">
+		<span class="meta">
+      <a href="{{ site.domain }}{{ page.url }}">
+        <time datetime="{{ page.date | date: "%Y-%m-%d" }}" itemprop="datePublished">{{ page.date | date_to_string }}</time>
+      </a>
+    </span>
+		<div class="content" itemprop="articleBody">
 		{{ content }}
 		</div>
-
 	</article>
-
-	<script>/*
-		window.onload = function() {
-			var headings = document.getElementsByTagName('h2');
-			for (var i = 0, hLength = headings.length; i < hLength; i++) {
-				var heading = headings[i];
-
-				heading.firstChild.nodeValue = heading.firstChild.nodeValue.replace(/[a-zA-Z.]+/g, function(match) {
-					return "<span class=\"en\">".concat(match, "</span>");
-				});
-
-				console.log(heading.firstChild.nodeValue);
-
-			}
-		}
-	*/</script>
 </div>
