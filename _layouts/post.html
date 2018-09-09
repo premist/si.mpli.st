@@ -3,28 +3,28 @@ layout: default
 type: post
 ---
 <div class="post" itemscope itemtype="https://schema.org/Article">
-	<header class="small">
-	  <h1 class="title"><a href="/">{{ site.name }} <span class="title-cat">{{ page.category }}</span></a></h1>
-	  <span class="author">by {{ site.author }}</span>
-	</header>
+  <header class="small">
+    <h1 class="title"><a href="/">{{ site.name }} <span class="title-cat">{{ page.category }}</span></a></h1>
+    <span class="author">by <span itemprop="author publisher">{{ site.author }}</span></span>
+  </header>
 
-	<article>
-		<h2>
-			{% if page.link %}
-			<a href="{{ page.link }}" itemprop="name">
-				{{ page.title }}
-			</a>
-			{% else %}
-			{{ page.title }}
-			{% endif %}
-		</h2>
-		<span class="meta">
+  <article>
+    <h2>
+      {% if page.link %}
+      <a href="{{ page.link }}" itemprop="name headline">
+        {{ page.title }}
+      </a>
+      {% else %}
+      {{ page.title }}
+      {% endif %}
+    </h2>
+    <span class="meta">
       <a href="{{ site.domain }}{{ page.url }}">
         <time datetime="{{ page.date | date: "%Y-%m-%d" }}" itemprop="datePublished">{{ page.date | date_to_string }}</time>
       </a>
     </span>
-		<div class="content" itemprop="articleBody">
-		{{ content }}
-		</div>
-	</article>
+    <div class="content" itemprop="articleBody">
+    {{ content }}
+    </div>
+  </article>
 </div>

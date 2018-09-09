@@ -5,7 +5,7 @@ encoding: utf-8
 
 plugins: [jekyll-paginate]
 
-author: minku lee
+author: Minku Lee
 paginate: 15
 paginate_path: "p:num"
 permalink: none
