@@ -3,10 +3,10 @@ description: si.mpli.st by minku lee
 
 encoding: utf-8
 
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 
 author: minku lee
-paginate: 10
+paginate: 15
 paginate_path: "p:num"
 permalink: none
 
