@@ -3,7 +3,7 @@ layout: post
 title: Google Cloud Run 겉핥기
 date: 2019-04-20 17:50:00 +0900
 category: dev
-excerpt: 머시기 저시기 
+excerpt: Cloud Next '19에서 발표된 Cloud Run에 개인적으로 만들고 있던 사진 갤러리 사이트를 옮겨보았습니다.
 ---
 
 2019년 4월, 샌프란시스코에서 [Cloud Next ‘19](https://cloud.withgoogle.com/next/sf/)가 열렸습니다. Shakr DevOps 팀에서 정말 기다리고 있던 [PostgreSQL 11 버전 지원](https://cloud.google.com/sql/docs/release-notes#april_9_2019)을 비롯해 정말 많은 제품 발표가 있었지만, 그 중 Cloud Run이라는 제품이 가장 인상적이었습니다.
@@ -14,9 +14,9 @@ excerpt: 머시기 저시기
 
 이번에 출시한 Cloud Run은 Google이 따라잡기 게임을 하고 있다는 인상을 없애줄, 강력한 한 방입니다. 코드의 형식을 강제하던 기존 서버리스 서비스와는 다르게 Docker 컨테이너를 만들 수 있고 `$PORT` 환경 변수에 따라 HTTP 포트를 바꿀 수 있기만 하면 무엇이든 돌릴 수 있습니다. (전체 요구 사항은 [여기](https://cloud.google.com/run/docs/developing)에)
 
-서버리스 플랫폼의 벤더 락인(vendor lock-in)도 해결했습니다. 구글 내에서 사용할때는 운영 걱정 없이 사용할 수도 있고, 이미 존재하는 GKE 클라스터의 자원을 사용하는 것도 가능합니다. 구글이 작년에 발표한 [Knative](https://knative.dev/docs/) 기반이기 때문에, EKS와 같은 다른 제공자의 Kubernetes 클러스터에서도 컨테이너를 같은 방식으로 구동할 수 있습니다. 
+서버리스 플랫폼의 벤더 락인(vendor lock-in)도 해결했습니다. 구글 내에서 사용할때는 운영 걱정 없이 사용할 수도 있고, 이미 존재하는 GKE 클라스터의 자원을 사용하는 것도 가능합니다. 구글이 작년에 발표한 [Knative](https://knative.dev/docs/) 기반이기 때문에, EKS와 같은 다른 제공자의 Kubernetes 클러스터에서도 컨테이너를 같은 방식으로 구동할 수 있습니다.
 
-발표 이후 운영 없이 컨테이너를 구동할 수 있다는 점 때문에 [AWS Fargate](https://aws.amazon.com/ko/fargate/)나 [Azure Container Instances](https://azure.microsoft.com/ko-kr/services/container-instances/)와 비교되기도 했지만, 실행 방식과 과금 방식에서 큰 차이가 있습니다. Fargate 및 ACI는 컨테이너가 상주하는 방식이기 때문에 한 달 내내 웹 서버 컨테이너 한개를 켜두면 30일분의 요금을 지불해야 합니다. Cloud Run은 컨테이너를 사용하지만 Cloud Functions처럼 요청이 있을 때만 실행되고, 요청을 처리하는 시간만큼만 과금이 됩니다. 
+발표 이후 운영 없이 컨테이너를 구동할 수 있다는 점 때문에 [AWS Fargate](https://aws.amazon.com/ko/fargate/)나 [Azure Container Instances](https://azure.microsoft.com/ko-kr/services/container-instances/)와 비교되기도 했지만, 실행 방식과 과금 방식에서 큰 차이가 있습니다. Fargate 및 ACI는 컨테이너가 상주하는 방식이기 때문에 한 달 내내 웹 서버 컨테이너 한개를 켜두면 30일분의 요금을 지불해야 합니다. Cloud Run은 컨테이너를 사용하지만 Cloud Functions처럼 요청이 있을 때만 실행되고, 요청을 처리하는 시간만큼만 과금이 됩니다.
 
 ![과금 방식 다이어그램](https://simplist.cdn.sapbox.me/2019-04-20-cloud-run-at-a-glance/billing.png)
 <span style="text-align: center;display:block;">[Cloud Run의 과금 방식을 설명하는 다이어그램](https://cloud.google.com/run/pricing)</span>
@@ -81,7 +81,7 @@ docker push gcr.io/my-project/my-image:20180420
 ![도메인 연결](https://simplist.cdn.sapbox.me/2019-04-20-cloud-run-at-a-glance/auto-letsencrypt.jpg)
 <span style="text-align: center;display:block;">Let's Encrypt 인증서도 자동으로 설정된다</span>
 
-서비스가 워밍업이 된 상태에서 [WebPageTest](http://webpagetest.org)로 로드 테스트를 해 보니, 괜찮은 반응 속도가 나오는 것을 확인할 수 있습니다. 
+서비스가 워밍업이 된 상태에서 [WebPageTest](http://webpagetest.org)로 로드 테스트를 해 보니, 괜찮은 반응 속도가 나오는 것을 확인할 수 있습니다.
 
 ![도메인 연결](https://simplist.cdn.sapbox.me/2019-04-20-cloud-run-at-a-glance/waterfall.png)
 
@@ -91,4 +91,4 @@ docker push gcr.io/my-project/my-image:20180420
 
 처음 Heroku를 접했을 때, 배포가 이렇게 간단할 수 있구나 라는 생각에 감탄했던 기억이 납니다. 컨테이너를 점점 더 많은 사람들이 사용하게 되고 Kubernetes와 같은 복잡한 도구가 보편화되면서 이따금씩 Heroku가 그리운 적이 있는데, Cloud Run은 이러한 향수를 말끔하게 없애주고, 오히려 Heroku보다도 더욱 쉽게 애플리케이션을 배포할 수 있는 서비스입니다. GA가 되면 충분히 프로덕션 환경에도 도입해볼 가치가 있지 않을까 생각합니다.
 
-다음 포스트에서는 Cloud Run에서 구동되는 서비스를 어떻게 모니터링하는지, GCP의 다른 제품과는 어떻게 연동되는지를 살펴보겠습니다. 
+다음 포스트에서는 Cloud Run에서 구동되는 서비스를 어떻게 모니터링하는지, GCP의 다른 제품과는 어떻게 연동되는지를 살펴보겠습니다.
