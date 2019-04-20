@@ -8,7 +8,8 @@ excerpt: Cloud Next '19에서 발표된 Cloud Run에 개인적으로 만들고 �
 
 2019년 4월, 샌프란시스코에서 [Cloud Next ‘19](https://cloud.withgoogle.com/next/sf/)가 열렸습니다. Shakr DevOps 팀에서 정말 기다리고 있던 [PostgreSQL 11 버전 지원](https://cloud.google.com/sql/docs/release-notes#april_9_2019)을 비롯해 정말 많은 제품 발표가 있었지만, 그 중 Cloud Run이라는 제품이 가장 인상적이었습니다.
 
-## Cloud Functions, 그리고 Knative
+
+## Lambda, Cloud Functions, 그리고 Cloud Run
 
 2014년 아마존이 [Lambda](https://aws.amazon.com/ko/lambda/)를 발표한 이후로 서버리스는 클라우드 인프라 구축의 트렌드가 되었습니다.  구글도 Lambda와 유사한 서버리스 제품인 [Cloud Functions](https://cloud.google.com/functions/)를 출시했지만, Lambda보다 적은 언어를 지원하고 작년 8월 베타 딱지를 떼어서 비교적 성숙하지 않은 제품이란 느낌이 강합니다.
 
@@ -22,6 +23,7 @@ excerpt: Cloud Next '19에서 발표된 Cloud Run에 개인적으로 만들고 �
 <span style="text-align: center;display:block;">[Cloud Run의 과금 방식을 설명하는 다이어그램](https://cloud.google.com/run/pricing)</span>
 
 또한 요청이 들어오는 정도에 따라 유연하게 컨테이너의 수를 조정하니, 따로 Autoscaler를 관리할 필요도 없습니다. 콘솔에서 최대 동시 실행 갯수를 지정해주기만 하면 됩니다.
+
 
 ## 간단하게 써 보았습니다
 
@@ -86,6 +88,7 @@ docker push gcr.io/my-project/my-image:20180420
 ![도메인 연결](https://simplist.cdn.sapbox.me/2019-04-20-cloud-run-at-a-glance/waterfall.png)
 
 Cloud Run 상에서 실행되는 저의 갤러리 사이트를 [방문](https://35.premi.st/)해서 확인해보세요!
+
 
 ## 마치며
 
