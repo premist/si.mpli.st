@@ -60,15 +60,15 @@ gcloud auth configure-docker
 docker push gcr.io/my-project/my-image:20180420
 ```
 
-이미지가 모두 푸시되었으면, 콘솔에서 Cloud Run 서비스를 만들 수 있습니다. 기본적으로는 요청을 할 때 IAM을 통해 인증을 하도록 요구하지만, ‘Allow unauthenticated invocations’ 를 체크하여 제한을 없애고 공개 웹 사이트를 호스팅할 수 있습니다.
+이미지가 모두 푸시되었으면, 콘솔에서 Cloud Run 서비스를 만들 수 있습니다. 이름을 입력하고, GCR에 올린 이미지를 지정해주면 준비 끝! 기본적으로는 요청을 할 때 IAM을 통해 인증을 하도록 요구하지만, ‘Allow unauthenticated invocations’ 를 체크하여 제한을 없애고 공개 웹 사이트를 호스팅할 수 있습니다. 
 
 ![서비스 만들기](https://simplist.cdn.sapbox.me/2019-04-20-cloud-run-at-a-glance/create-service.png)
 
-서비스를 만들면, 수 초 이내에 서비스가 준비되고 URL이 생성됩니다. 예시로 프로젝트를 만들 때는 생성 버튼을 누르고 URL이 준비되는데 5초 정도 밖에 걸리지 않아서 꽤나 인상깊었습니다.
+수 초 이내에 바로 접근 가능한 URL이 생성됩니다. 시험삼아 프로젝트를 몇 번 만들어 보았는데, 컨테이너 이미지에 문제가 있지 않는 한 URL이 준비되는데 5초 정도 밖에 걸리지 않아서 꽤나 인상깊었습니다.
 
 ![배포가 완료된 화면](https://simplist.cdn.sapbox.me/2019-04-20-cloud-run-at-a-glance/after-deploy.png)
 
-컨테이너가 출력하는 로그도 쉽게 확인이 가능합니다.
+컨테이너가 출력하는 로그도 Cloud Run 콘솔에서 쉽게 확인이 가능합니다. 물론 자세한 정보를 원한다면 [Stackdriver Logging](https://cloud.google.com/logging/) 콘솔에서도 확인이 가능합니다.
 
 ![요청에 대한 로그 확인](https://simplist.cdn.sapbox.me/2019-04-20-cloud-run-at-a-glance/logs.png)
 
