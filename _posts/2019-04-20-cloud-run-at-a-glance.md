@@ -16,7 +16,7 @@ excerpt: Cloud Next '19에서 발표된 Cloud Run에 개인적으로 만들고 �
 
 서버리스 플랫폼의 벤더 락인(vendor lock-in)도 해결했습니다. 구글 내에서 사용할때는 운영 걱정 없이 사용할 수도 있고, 이미 존재하는 GKE 클라스터의 자원을 사용하는 것도 가능합니다. 구글이 작년에 발표한 [Knative](https://knative.dev/docs/) 기반이기 때문에, EKS와 같은 다른 제공자의 Kubernetes 클러스터에서도 컨테이너를 같은 방식으로 구동할 수 있습니다.
 
-발표 이후 운영 없이 컨테이너를 구동할 수 있다는 점 때문에 [AWS Fargate](https://aws.amazon.com/ko/fargate/)나 [Azure Container Instances](https://azure.microsoft.com/ko-kr/services/container-instances/)와 비교되기도 했지만, 실행 방식과 과금 방식에서 큰 차이가 있습니다. Fargate 및 ACI는 컨테이너가 상주하는 방식이기 때문에 한 달 내내 웹 서버 컨테이너 한개를 켜두면 30일분의 요금을 지불해야 합니다. Cloud Run은 컨테이너를 사용하지만 Cloud Functions처럼 요청이 있을 때만 실행되고, 요청을 처리하는 시간만큼만 과금이 됩니다.
+발표 이후 운영 없이 컨테이너를 구동할 수 있다는 점 때문에 [AWS Fargate](https://aws.amazon.com/ko/fargate/)나 [Azure Container Instances](https://azure.microsoft.com/ko-kr/services/container-instances/)와 비교되기도 했지만, 실행 방식과 과금 방식에서 큰 차이가 있습니다. Fargate 및 ACI는 컨테이너가 상주하는 방식이기 때문에 한 달 내내 웹 서버 컨테이너 한개를 켜두면 30일분의 요금을 지불해야 합니다. Cloud Run은 컨테이너를 사용하지만 Cloud Functions처럼 **요청이 있을 때만 실행**되고, **요청을 처리하는 시간만큼만 과금**이 됩니다.
 
 ![과금 방식 다이어그램](https://simplist.cdn.sapbox.me/2019-04-20-cloud-run-at-a-glance/billing.png)
 <span style="text-align: center;display:block;">[Cloud Run의 과금 방식을 설명하는 다이어그램](https://cloud.google.com/run/pricing)</span>
