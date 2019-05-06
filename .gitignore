@@ -1,8 +1,5 @@
-.settings
-.c9revisions
-.tweet-cache
+public/
+resources/_gen/
 
-assets
-_site
-node_modules
-
+.DS_Store
+*.swp

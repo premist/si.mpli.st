@@ -1,0 +1,30 @@
+baseURL = "https://si.mpli.st/"
+languageCode = "ko-kr"
+title = "si.mpli.st"
+theme = "si.mpli.st"
+
+googleAnalytics = "UA-31538611-1"
+
+PygmentsUseClasses = true
+PygmentsCodeFences = true
+
+[outputFormats]
+
+[outputFormats.RSS]
+baseName = "feed"
+
+[permalinks]
+  post = "/post/:filename"
+  travel = "/travel/:filename"
+  dev = "/dev/:filename"
+  geek = "/geek/:filename"
+  life = "/life/:filename"
+  review = "/review/:filename"
+  think = "/think/:filename"
+
+[params]
+  title = "si.mpli.st"
+  description = "blog by minku lee"
+  author = "Minku Lee"
+  authorWebsite = "https://premi.st"
+  authorFacebook = "https://www.facebook.com/premist.lee"

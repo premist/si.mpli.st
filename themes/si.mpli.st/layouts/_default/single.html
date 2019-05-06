@@ -1,0 +1,25 @@
+{{ define "main" }}
+
+<div class="container post-{{ .Section }}">
+  <div class="post" itemscope itemtype="https://schema.org/Article">
+    <header class="small">
+        <h1 class="title"><a href="/">{{ .Site.Title }} <span class="title-cat">{{ .Section }}</span></a></h1>
+        <span class="author" itemprop="author publisher">
+          <a href="{{ .Site.Params.AuthorWebsite }}" target="_blank">{{ .Site.Params.Author }}</a>
+        </span>
+    </header>
+    <article>
+      <h2>{{ .Title }}</h2>
+      <span class="meta">
+        <a href="{{ .Permalink }}">
+          <time datetime="{{ .Date.Format "2006-01-02" }}" itemprop="datePublished">{{ .Date.Format "2006-01-02 15:04" }}</time>
+        </a>
+      </span>
+      <div class="content" itemprop="articleBody">
+          {{ .Content }}
+      </div>
+    </article>
+  </div>
+</div>
+
+{{ end }}

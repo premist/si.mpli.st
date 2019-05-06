@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+
+    <title>{{ .Site.Title }}</title>
+
+    {{ template "_internal/opengraph.html" . }}
+    <meta property="article:author" content="{{ .Site.Params.AuthorFacebook }}">
+    {{ template "_internal/twitter_cards.html" . }}
+
+    {{ $mainSass := resources.Get "styles/main.scss" }}
+    {{ $mainStyle := $mainSass | resources.ToCSS }}
+    <link rel="stylesheet" href="{{ $mainStyle.Permalink }}">
+
+    {{ $syntaxSass := resources.Get "styles/syntax.scss" }}
+    {{ $syntaxStyle := $syntaxSass | resources.ToCSS }}
+    <link rel="stylesheet" href="{{ $syntaxStyle.Permalink }}">
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700" rel="stylesheet">
+  </head>
+
+  <body>
