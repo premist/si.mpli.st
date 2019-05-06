@@ -7,6 +7,9 @@
 
     <title>{{ .Site.Title }}</title>
 
+    {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/twitter_cards.html" . }}
+
     {{ $mainSass := resources.Get "styles/main.scss" }}
     {{ $mainStyle := $mainSass | resources.ToCSS }}
     <link rel="stylesheet" href="{{ $mainStyle.Permalink }}">
