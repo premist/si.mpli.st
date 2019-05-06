@@ -8,3 +8,7 @@ PygmentsCodeFences = true
 
 [permalinks]
   post = "/post/:filename"
+  travel = "/travel/:filename"
+
+[params]
+  author = "Minku Lee"
