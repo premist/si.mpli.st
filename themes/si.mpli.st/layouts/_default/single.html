@@ -3,8 +3,10 @@
 <div class="container post-{{ .Section }}">
   <div class="post" itemscope itemtype="https://schema.org/Article">
     <header class="small">
-        <h1 class="title"><a href="/">si.mpli.st <span class="title-cat">{{ .Section }}</span></a></h1>
-        <span class="author" itemprop="author publisher">Minku Lee</span>
+        <h1 class="title"><a href="/">{{ .Site.Title }} <span class="title-cat">{{ .Section }}</span></a></h1>
+        <span class="author" itemprop="author publisher">
+          <a href="{{ .Site.Params.AuthorWebsite }}" target="_blank">{{ .Site.Params.Author }}</a>
+        </span>
     </header>
     <article>
       <h2>{{ .Title }}</h2>
