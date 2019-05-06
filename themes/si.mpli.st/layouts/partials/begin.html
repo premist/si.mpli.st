@@ -7,8 +7,8 @@
 
     <title>{{ .Site.Title }}</title>
 
-    {{ $sass := resources.Get "styles/main.css" }}
-    {{ $style := $sass | resources.PostCSS }}
+    {{ $sass := resources.Get "styles/main.scss" }}
+    {{ $style := $sass | resources.ToCSS }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700" rel="stylesheet">
   </head>
