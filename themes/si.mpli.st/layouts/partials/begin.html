@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -8,6 +8,7 @@
     <title>{{ .Site.Title }}</title>
 
     {{ template "_internal/opengraph.html" . }}
+    <meta property="article:author" content="{{ .Site.Params.AuthorFacebook }}">
     {{ template "_internal/twitter_cards.html" . }}
 
     {{ $mainSass := resources.Get "styles/main.scss" }}
