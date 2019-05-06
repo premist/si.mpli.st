@@ -3,6 +3,8 @@ languageCode = "ko-kr"
 title = "si.mpli.st"
 theme = "si.mpli.st"
 
+googleAnalytics = "UA-31538611-1"
+
 PygmentsUseClasses = true
 PygmentsCodeFences = true
 
@@ -16,5 +18,7 @@ PygmentsCodeFences = true
   think = "/think/:filename"
 
 [params]
+  title = "si.mpli.st"
+  description = "blog by minku lee"
   author = "Minku Lee"
   authorWebsite = "https://premi.st"
