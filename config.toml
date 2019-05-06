@@ -8,6 +8,11 @@ googleAnalytics = "UA-31538611-1"
 PygmentsUseClasses = true
 PygmentsCodeFences = true
 
+[outputFormats]
+
+[outputFormats.RSS]
+baseName = "feed"
+
 [permalinks]
   post = "/post/:filename"
   travel = "/travel/:filename"
@@ -22,3 +27,4 @@ PygmentsCodeFences = true
   description = "blog by minku lee"
   author = "Minku Lee"
   authorWebsite = "https://premi.st"
+  authorFacebook = "https://www.facebook.com/premist.lee"
