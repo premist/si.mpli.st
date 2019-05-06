@@ -259,7 +259,7 @@ article {
     width: 100%;
 
     @media #{$mq-mobile} {
-      width: calc(100% + $container-mobile-left-right-margin * 2);
+      width: calc(100% + #{$container-mobile-left-right-margin} * 2);
       margin-left: $container-mobile-left-right-margin * -1;
     }
   }
