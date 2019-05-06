@@ -1,13 +1,25 @@
 {{ define "main" }}
 
-<section id="hero">
-<h2>
-  {{ .Site.Params.hero | safeHTML }}
-</h2>
-</section>
+<div class="container">
+  <header>
+    <h1 class="title"><a href="/">{{ .Site.Title }}</a></h1>
+    <span class="author">by {{ .Site.Params.Author }}</span>
+  </header>
 
-{{ range first 10 .Pages }}
-<p><a href="{{.Permalink}}">{{ .Title }}</a></p>
-{{ end }}
+  <div id="index">
+    <ul class="posts">
+      {{ range first 10 .Pages }}
+        <li class="category-{{ .Section }}">
+          <a href="{{ .Permalink }}">
+            <span class="category">{{ .Section }}</span>
+            <span class="title">{{ .Title }}</span>
+            <span class="time">{{ .Date.Format "2006-01-02" }}</span>
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+</div>
+
 
 {{ end }}

@@ -1,9 +1,9 @@
 {{ define "main" }}
 
-<div class="container post-dev">
+<div class="container post-{{ .Section }}">
   <div class="post" itemscope itemtype="https://schema.org/Article">
     <header class="small">
-        <h1 class="title"><a href="/">si.mpli.st <span class="title-cat">dev</span></a></h1>
+        <h1 class="title"><a href="/">si.mpli.st <span class="title-cat">{{ .Section }}</span></a></h1>
         <span class="author">by <span itemprop="author publisher">Minku Lee</span></span>
     </header>
     <article>
