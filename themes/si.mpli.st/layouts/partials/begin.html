@@ -7,6 +7,10 @@
 
     <title>{{ .Site.Title }}</title>
 
+    {{ with .OutputFormats.Get "rss" -}}
+      {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
+
     {{ template "_internal/opengraph.html" . }}
     <meta property="article:author" content="{{ .Site.Params.AuthorFacebook }}">
     {{ template "_internal/twitter_cards.html" . }}
