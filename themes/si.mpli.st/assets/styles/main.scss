@@ -247,7 +247,7 @@ article {
 .content {
   line-height: 2em;
 
-  & p, & ul {
+  & p, & ul, & figure {
     margin-bottom: 1.8em;
   }
 
@@ -259,12 +259,23 @@ article {
   }
 
   & img {
+    display: block;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 
     @media #{$mq-mobile} {
       width: calc(100% + #{$container-mobile-left-right-margin} * 2);
       margin-left: $container-mobile-left-right-margin * -1;
     }
+  }
+
+  & figure.halfsize {
+    & img { width: 50%; }
+  }
+
+  & figcaption {
+    text-align: center;
   }
 
   & ul {
@@ -283,7 +294,7 @@ article {
     text-decoration: none;
   }
 
-  & iframe, & twitterwidget {
+  & iframe, & twitterwidget, & twitter-widget {
     display: block;
     margin: 1.2em auto !important;
   }
