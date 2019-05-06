@@ -1,24 +1,14 @@
-# si.mpli.st
+si.mpli.st
+==========
 
-Repository of my personal blog [si.mpli.st](http://si.mpli.st/), built with static page generator [Jekyll](http://jekyllrb.com/).
+My personal blog [si.mpli.st](https://si.mpli.st/), built with static site generator [Hugo](https://gohugo.io/).
 
 
-## Dependencies
+## Building
 
-- [Jekyll](http://jekyllrb.com/)
-- [Redcarpet](https://github.com/vmg/redcarpet)
-- [Gulp](http://gulpjs.com/)
-
-## Setup
-
-- Run `bundle install`.
-- Run `npm install gulp-cli -g`.
-
+- Install [Hugo](https://gohugo.io/).
+- Run `hugo`.
 
 ## License
 
-Copyright © [Minku Lee](mailto:premist@me.com). Some rights reserved.
-
-![Creative Commons Attribution-ShareAlike 3.0 Unported License](http://i.creativecommons.org/l/by-sa/3.0/88x31.png)
-
-The text part of this work is licensed under a [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/deed.en_US).
+Copyright © [Minku Lee](mailto:public@premi.st). All rights reserved.
