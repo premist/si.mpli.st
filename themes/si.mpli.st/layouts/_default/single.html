@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+<div class="container post-dev">
+  <div class="post" itemscope itemtype="https://schema.org/Article">
+    <header class="small">
+        <h1 class="title"><a href="/">si.mpli.st <span class="title-cat">dev</span></a></h1>
+        <span class="author">by <span itemprop="author publisher">Minku Lee</span></span>
+    </header>
+    <article>
+      <h2>{{ .Title }}</h2>
+      <span class="meta">
+        <a href="{{ .Permalink }}">
+          <time datetime="2019-04-20" itemprop="datePublished">20 Apr 2019</time>
+        </a>
+      </span>
+      <div class="content" itemprop="articleBody">
+          {{ .Content }}
+      </div>
+    </article>
+  </div>
+</div>
+
+{{ end }}

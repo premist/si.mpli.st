@@ -2,3 +2,9 @@ baseURL = "https://si.mpli.st/"
 languageCode = "ko-kr"
 title = "si.mpli.st"
 theme = "si.mpli.st"
+
+PygmentsUseClasses = true
+PygmentsCodeFences = true
+
+[permalinks]
+  post = "/post/:filename"

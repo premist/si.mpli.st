@@ -7,9 +7,14 @@
 
     <title>{{ .Site.Title }}</title>
 
-    {{ $sass := resources.Get "styles/main.scss" }}
-    {{ $style := $sass | resources.ToCSS }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    {{ $mainSass := resources.Get "styles/main.scss" }}
+    {{ $mainStyle := $mainSass | resources.ToCSS }}
+    <link rel="stylesheet" href="{{ $mainStyle.Permalink }}">
+
+    {{ $syntaxSass := resources.Get "styles/syntax.scss" }}
+    {{ $syntaxStyle := $syntaxSass | resources.ToCSS }}
+    <link rel="stylesheet" href="{{ $syntaxStyle.Permalink }}">
+
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700" rel="stylesheet">
   </head>
 

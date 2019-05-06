@@ -4,8 +4,6 @@
   by minku lee
 */
 
-@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
-
 /* reset5 © 2011 opensource.736cs.com MIT */
 html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,audio,canvas,details,figcaption,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,summary,time,video{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0;}body{line-height:1;}article,aside,dialog,figure,footer,header,hgroup,nav,section,blockquote{display:block;}nav ul{list-style:none;}ol{list-style:decimal;}ul{list-style:disc;}ul ul{list-style:circle;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:none;}ins{text-decoration:underline;}del{text-decoration:line-through;}mark{background:none;}abbr[title],dfn[title]{border-bottom:1px dotted #000;cursor:help;}table{border-collapse:collapse;border-spacing:0;}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0;}input[type=submit],input[type=button],button{margin:0!important;padding:0!important;}input,select,a img{vertical-align:middle;}
 
@@ -138,7 +136,7 @@ header {
 
   & li {
     display: block;
-    padding: calc(($index-item-height) - $index-item-font-size) / 2 0;
+    padding: ($index-item-height - $index-item-font-size)/2 0;
   }
 
   & a {
@@ -153,7 +151,7 @@ header {
     float: left;
 
     line-height: $index-item-font-size;
-    font-size: calc($index-item-font-size * 0.6);
+    font-size: $index-item-font-size * 0.6;
     font-family: $primary-font;
     text-transform: uppercase;
     letter-spacing: $uppercase-letter-spacing;
@@ -204,9 +202,9 @@ header {
 /* Post specific header configuration */
 header.small {
   & .title {
-    font-size: calc($main-title-font-size) / 2;
+    font-size: $main-title-font-size / 2;
     line-height: 2em;
-    margin-top: calc($main-title-font-size) / 4;
+    margin-top: $main-title-font-size / 4;
     margin-left: 1px;
   }
 
@@ -222,8 +220,8 @@ article {
   & h2 {
     font-size: $post-title-font-size;
     font-weight: $title-font-weight;
-    margin-top: calc($post-title-font-size * 2);
-    margin-bottom: calc($post-title-font-size / 2);
+    margin-top: $post-title-font-size * 2;
+    margin-bottom: $post-title-font-size / 2;
 
     & a {
       text-decoration: none;
@@ -232,7 +230,7 @@ article {
 
   & .meta {
     display: block;
-    margin-bottom: calc($post-title-font-size * 2);
+    margin-bottom: $post-title-font-size * 2;
   }
 
   & .meta a {
@@ -262,7 +260,7 @@ article {
 
     @media #{$mq-mobile} {
       width: calc(100% + $container-mobile-left-right-margin * 2);
-      margin-left: calc($container-mobile-left-right-margin * -1);
+      margin-left: $container-mobile-left-right-margin * -1;
     }
   }
 
