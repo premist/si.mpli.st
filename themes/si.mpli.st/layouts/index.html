@@ -1,0 +1,14 @@
+{{ define "main" }}
+
+<section id="hero">
+<h2>
+  {{ .Site.Params.hero | safeHTML }}
+</h2>
+</section>
+
+<section class="content-wrap">
+  <div class="title"><h2>hello.</h2></div>
+  <div class="content">{{ .Content }}</div>
+</section>
+
+{{ end }}

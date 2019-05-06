@@ -1,0 +1,322 @@
+/*
+  si.mpli.st v3
+  main stylesheet
+  by minku lee
+*/
+
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+/* reset5 © 2011 opensource.736cs.com MIT */
+html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,audio,canvas,details,figcaption,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,summary,time,video{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0;}body{line-height:1;}article,aside,dialog,figure,footer,header,hgroup,nav,section,blockquote{display:block;}nav ul{list-style:none;}ol{list-style:decimal;}ul{list-style:disc;}ul ul{list-style:circle;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:none;}ins{text-decoration:underline;}del{text-decoration:line-through;}mark{background:none;}abbr[title],dfn[title]{border-bottom:1px dotted #000;cursor:help;}table{border-collapse:collapse;border-spacing:0;}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0;}input[type=submit],input[type=button],button{margin:0!important;padding:0!important;}input,select,a img{vertical-align:middle;}
+
+/* Basic Settings - Typography, geometry and colors */
+:root {
+  --container-width: 800px;
+  --container-top-bottom-margin: 30px;
+
+  --container-mobile-left-right-margin: 30px;
+
+  --primary-color: #4c4c4c;
+  --link-color: #888;
+
+  --primary-font: "Ringside Narrow SSm A", "Ringside Narrow SSm B", "Noto Sans CJK KR", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", "Dotum", sans-serif;
+  --syntax-highlighting-font: "Meslo LG L", "Menlo", "Monaco", "Liberation Mono", Consolas, Courier, monospace;
+
+  --primary-font-weight: 400;
+  --subtitle-font-weight: 400;
+  --title-font-weight: 700;
+
+  --main-title-font-size: 36px;
+  --main-author-font-size: 12px;
+
+  --index-item-font-size: 20px;
+  --index-item-height: 45px;
+
+  --post-title-font-size: 26px;
+
+  --uppercase-letter-spacing: 0.05em;
+
+  /* Category Colors */
+  --cat-color-dev: #3498db;
+  --cat-color-geek: #2980b9;
+  --cat-color-life: #f39c12;
+  --cat-color-think: #1abc9c;
+  --cat-color-review: #e74c3c;
+  --cat-color-travel: #9b59b6;
+  --cat-color-video: #ec407a;
+}
+
+/* Define screen size to support */
+@custom-media --mobile (width <= 820px);
+
+/* Common */
+body {
+  font-family: var(--primary-font);
+  font-weight: var(--primary-font-weight);
+  color: var(--primary-color);
+}
+
+.container {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: var(--container-width);
+  margin: var(--container-top-bottom-margin) auto;
+
+  @media (--mobile) {
+    width: auto;
+    margin: var(--container-top-bottom-margin) 0;
+    padding: 0 var(--container-mobile-left-right-margin);
+  }
+}
+
+/* Common Header */
+header {
+
+  & h1 {
+    font-size: var(--main-title-font-size);
+    font-weight: var(--title-font-weight);
+    letter-spacing: -0.02em;
+    line-height: 2em;
+  }
+
+  & a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+
+  & .author {
+    font-size: var(--main-author-font-size);
+    font-weight: var(--subtitle-font-weight);
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: var(--uppercase-letter-spacing);
+  }
+
+}
+
+.category-dev .category, .category-dev:hover .title,
+.post-dev .title-cat, .post-dev h2 a, .post-dev .content a {
+  color: var(--cat-color-dev);
+}
+
+.category-geek .category, .category-geek:hover .title,
+.post-geek .title-cat, .post-geek h2 a, .post-geek .content a {
+  color: var(--cat-color-geek);
+}
+
+.category-life .category, .category-life:hover .title,
+.post-life .title-cat, .post-life h2 a, .post-life .content a {
+  color: var(--cat-color-life);
+}
+
+.category-think .category, .category-think:hover .title,
+.post-think .title-cat, .post-think h2 a, .post-think .content a {
+  color: var(--cat-color-think);
+}
+
+.category-review .category, .category-review:hover .title,
+.post-review .title-cat, .post-review h2 a, .post-review .content a {
+  color: var(--cat-color-review);
+}
+
+.category-travel .category, .category-travel:hover .title,
+.post-travel .title-cat, .post-travel h2 a, .post-travel .content a {
+  color: var(--cat-color-travel);
+}
+
+.category-video .category, .category-video:hover .title,
+.post-video .title-cat, .post-video h2 a, .post-video .content a {
+  color: var(--cat-color-video);
+}
+
+/* Index listing */
+#index {
+  position: relative;
+  display: block;
+  margin: var(--container-top-bottom-margin) auto;
+
+  & ul {
+    list-style-type: none;
+  }
+
+  & li {
+    display: block;
+    padding: calc((var(--index-item-height) - var(--index-item-font-size)) / 2) 0;
+  }
+
+  & a {
+    display: block;
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+
+  & .category {
+    display: block;
+    width: 100px;
+    float: left;
+
+    line-height: var(--index-item-font-size);
+    font-size: calc(var(--index-item-font-size) * 0.6);
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+    letter-spacing: var(--uppercase-letter-spacing);
+
+    @media (--mobile) {
+      float: none;
+      margin-bottom: 0.5em;
+    }
+  }
+
+  & .title {
+    font-size: var(--index-item-font-size);
+    transition: all .15s ease-out;
+
+    @media (--mobile) {
+      line-height: 1.4em;
+    }
+  }
+
+  & .time {
+    display: none;
+  }
+}
+
+/* Index pagination */
+#pagination {
+  & p {
+    float: left;
+    margin-right: 10px;
+  }
+
+  & p, & a {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: var(--uppercase-letter-spacing);
+  }
+
+  & a {
+    color: var(--link-color);
+    text-decoration: none;
+  }
+
+  & a:hover {
+    color: var(--primary-color);
+  }
+}
+
+/* Post specific header configuration */
+header.small {
+  & .title {
+    font-size: calc(var(--main-title-font-size) / 2);
+    line-height: 2em;
+    margin-top: calc(var(--main-title-font-size) / 4);
+    margin-left: 1px;
+  }
+
+  & .title-cat {
+    margin-left: 2px;
+  }
+
+  & .author { display: none; }
+}
+
+/* Post Layout */
+article {
+  & h2 {
+    font-size: var(--post-title-font-size);
+    font-weight: var(--title-font-weight);
+    margin-top: calc(var(--post-title-font-size) * 2);
+    margin-bottom: calc(var(--post-title-font-size) / 2);
+
+    & a {
+      text-decoration: none;
+    }
+  }
+
+  & .meta {
+    display: block;
+    margin-bottom: calc(var(--post-title-font-size) * 2);
+  }
+
+  & .meta a {
+    font-size: 0.8em;
+    color: var(--primary-color);
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+.content {
+  line-height: 2em;
+
+  & p, & ul {
+    margin-bottom: 1.8em;
+  }
+
+  & h1, & h2, & h3, & h4, & h5, & h6 {
+    font-size: 1em;
+    margin-top: 4em;
+    margin-bottom: 1em;
+    line-height: 1.4em;
+  }
+
+  & img {
+    width: 100%;
+
+    @media (--mobile) {
+      width: calc(100% + var(--container-mobile-left-right-margin) * 2);
+      margin-left: calc(var(--container-mobile-left-right-margin) * -1);
+    }
+  }
+
+  & ul {
+    list-style: none;
+  }
+
+  & li {
+    margin-bottom: 0.5em;
+  }
+
+  & li:before {
+    content: "∙ ";
+  }
+
+  & a {
+    text-decoration: none;
+  }
+
+  & iframe, & twitterwidget {
+    display: block;
+    margin: 1.2em auto !important;
+  }
+
+  & code {
+    font-family: var(--syntax-highlighting-font);
+    font-size: 0.9em;
+  }
+
+  & .highlight {
+    padding: 10px;
+    background-color: #fafafa;
+    overflow: scroll;
+  }
+
+  & blockquote {
+    border-left: 4px solid var(--primary-color);
+    padding-left: 15px;
+  }
+
+  & table {
+    position: relative;
+    margin: 0 auto 1.8em auto;
+  }
+
+  & thead {
+    border-bottom: 1px solid #ccc;
+  }
+
+  & th, & td {
+    padding: 5px 10px;
+  }
+}

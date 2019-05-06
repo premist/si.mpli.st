@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+
+    <title>{{ .Site.Title }}</title>
+
+    {{ $sass := resources.Get "styles/main.css" }}
+    {{ $style := $sass | resources.PostCSS }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700" rel="stylesheet">
+  </head>
+
+  <body>
