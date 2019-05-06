@@ -1,23 +1,7 @@
 {{ partial "begin.html" . }}
 
-{{ block "header" . }}
-{{ end }}
-
 <div id="content">
   {{ block "main" . }}{{ end }}
 </div>
-
-<footer>
-  {{ $currentLanguage := .Language }}
-{{ range $.Site.Home.AllTranslations }}
-<p>
-  {{ if eq $currentLanguage .Language }}
-    {{ .Language.LanguageName }}
-  {{ else }}
-    <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
-  {{ end }}
-</p>
-{{ end }}
-</footer>
 
 {{ partial "end.html" . }}
