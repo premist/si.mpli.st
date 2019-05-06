@@ -9,6 +9,7 @@ PygmentsCodeFences = true
 [permalinks]
   post = "/post/:filename"
   travel = "/travel/:filename"
+  dev = "/dev/:filename"
 
 [params]
   author = "Minku Lee"
