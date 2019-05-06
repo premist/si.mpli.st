@@ -10,6 +10,11 @@ PygmentsCodeFences = true
   post = "/post/:filename"
   travel = "/travel/:filename"
   dev = "/dev/:filename"
+  geek = "/geek/:filename"
+  life = "/life/:filename"
+  review = "/review/:filename"
+  think = "/think/:filename"
 
 [params]
   author = "Minku Lee"
+  authorWebsite = "https://premi.st"
