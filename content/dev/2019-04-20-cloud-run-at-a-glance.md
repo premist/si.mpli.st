@@ -19,8 +19,11 @@ excerpt: Cloud Next '19에서 발표된 Cloud Run에 개인적으로 만들고 �
 
 발표 이후 운영 없이 컨테이너를 구동할 수 있다는 점 때문에 [AWS Fargate](https://aws.amazon.com/ko/fargate/)나 [Azure Container Instances](https://azure.microsoft.com/ko-kr/services/container-instances/)와 비교되기도 했지만, 실행 방식과 과금 방식에서 큰 차이가 있습니다. Fargate 및 ACI는 컨테이너가 상주하는 방식이기 때문에 한 달 내내 웹 서버 컨테이너 한개를 켜두면 30일분의 요금을 지불해야 합니다. Cloud Run은 컨테이너를 사용하지만 Cloud Functions처럼 **요청이 있을 때만 실행**되고, **요청을 처리하는 시간만큼만 과금**이 됩니다.
 
-![과금 방식 다이어그램](https://simplist.cdn.sapbox.me/2019-04-20-cloud-run-at-a-glance/billing.png)
-<span style="text-align: center;display:block;">[Cloud Run의 과금 방식을 설명하는 다이어그램](https://cloud.google.com/run/pricing)</span>
+{{< figure
+  src="https://simplist.cdn.sapbox.me/2019-04-20-cloud-run-at-a-glance/billing.png"
+  alt="과금 방식 다이어그램"
+  attr="과금 방식 다이어그램"
+  attrlink="https://cloud.google.com/run/pricing" >}}
 
 또한 요청이 들어오는 정도에 따라 유연하게 컨테이너의 수를 조정하니, 따로 Autoscaler를 관리할 필요도 없습니다. 콘솔에서 최대 동시 실행 갯수를 지정해주기만 하면 됩니다.
 
@@ -77,11 +80,17 @@ docker push gcr.io/my-project/my-image:20180420
 
 내부 서비스에 사용하기 위해서는 Cloud Run에서 제공해주는 URL로도 충분하지만, 웹 사이트를 운영하려면 도메인 연결은 필수죠. 도메인 소유권을 인증하고 DNS 레코드를 변경해주면 [Let’s Encrypt](https://letsencrypt.org/) 인증서로 보안 연결까지 자동으로 설정합니다.
 
-![도메인 연결](https://simplist.cdn.sapbox.me/2019-04-20-cloud-run-at-a-glance/add-domain-mapping.png)
-<span style="text-align: center;display:block;">도메인 연결을 하면...</span>
 
-![도메인 연결](https://simplist.cdn.sapbox.me/2019-04-20-cloud-run-at-a-glance/auto-letsencrypt.jpg)
-<span style="text-align: center;display:block;">Let's Encrypt 인증서도 자동으로 설정된다</span>
+{{< figure
+  src="https://simplist.cdn.sapbox.me/2019-04-20-cloud-run-at-a-glance/add-domain-mapping.png"
+  alt="도메인 연결"
+  attr="도메인 연결을 하면..." >}}
+
+
+{{< figure
+  src="https://simplist.cdn.sapbox.me/2019-04-20-cloud-run-at-a-glance/auto-letsencrypt.jpg"
+  alt="Let's Encrypt 인증서"
+  attr="Let's Encrypt 인증서도 자동으로 설정된다" >}}
 
 워밍업이 된 상태에서 [WebPageTest](http://webpagetest.org)로 로드 테스트를 해 보니, 꽤 괜찮은 반응 속도가 나오는 것을 확인할 수 있습니다.
 

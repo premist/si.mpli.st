@@ -11,7 +11,7 @@ excerpt: Core Graphics와 Core Image에서 여러 가지의 이미지 처리 기
 
 개인 사진 갤러리 사이트인 [35](https://35.premi.st/)를 최근 트위터를 통해 공개했다. 기존에 존재하는 CMS를 이용하지 않고 웹 인터페이스부터 업로드 기능까지 직접 만들게 되어, 간단한 웹사이트이지만 생각했던 것보다 해결해야 하는 점이 많았다.
 
-그 중 여러 번 고치고 개선해야 했던 것은 사진을 올리기 위해 사용하는 업로더. 사진을 축소하고, 워터마크를 추가하고, 메타데이터를 바꾸는 등의 작업을 사진을 올릴 때 매번 직접 할 수는 없으니 업로드를 처리해주는 애플리케이션을 만들고 싶었다. 처음에는 Ruby 스크립트를 대강 만들어 사용하였지만, 사진을 업로드하기 위해서 iTerm을 켜고 `ruby upload.rb /Users/premist/Photo\ Exports/DSC00001.JPG "Sunset"` 을 입력하는 건, 아무리 내가 혼자 쓴다고 하더라도 좋지 않은 사용자 경험이었다. 
+그 중 여러 번 고치고 개선해야 했던 것은 사진을 올리기 위해 사용하는 업로더. 사진을 축소하고, 워터마크를 추가하고, 메타데이터를 바꾸는 등의 작업을 사진을 올릴 때 매번 직접 할 수는 없으니 업로드를 처리해주는 애플리케이션을 만들고 싶었다. 처음에는 Ruby 스크립트를 대강 만들어 사용하였지만, 사진을 업로드하기 위해서 iTerm을 켜고 `ruby upload.rb /Users/premist/Photo\ Exports/DSC00001.JPG "Sunset"` 을 입력하는 건, 아무리 내가 혼자 쓴다고 하더라도 좋지 않은 사용자 경험이었다.
 
 35의 프론트엔드를 이미 [Angular](https://angular.io/)로 만들었으니 관리자 인터페이스를 만들어서 사용할까 하는 생각도 들었지만, 웹사이트를 통해 사진을 업로드 하게 되면 서버에서 사진을 처리해야 하고, Cloud Functions for Firebase의 [무료 티어](https://firebase.google.com/pricing/)에서는 사용할 수 있는 CPU와 메모리의 한계가 명확하여 관리자 인터페이스를 만드는 건 다음으로 미루기로 했다.
 
@@ -24,7 +24,7 @@ excerpt: Core Graphics와 Core Image에서 여러 가지의 이미지 처리 기
 ### CGImageDestinationAddImageFromSource
 
 가장 먼저 시도한 방법은 [CGImageDestinationAddImageFromSource](https://developer.apple.com/documentation/imageio/1465143-cgimagedestinationaddimagefromso)를 이용한 방법이다. CGImageDestinationAddImageFromSource는 이미지의 프로퍼티를 네 번째 인자로 받는데, CGImageProperties에 기술된 아무 파라메터나 CFDictionary 형태로 전달해주면 된다.
- 
+
 ```swift
 // Run this code in macOS Playground
 
@@ -53,23 +53,32 @@ destData.write(to: output, atomically: true)
 
 비교적 간단하게 TIFF 및 IPTC 메타데이터를 변경하는 코드를 작성할 수 있었고, macOS의 Preview로 열었을 때도 변경된 메타데이터를 확인할 수 있었다.
 
-![제대로 바뀐 저작권 정보](https://simplist.cdn.sapbox.me/2018-09-09-swift-exif-change/first-attempt-info.png){: style="width: 50%; margin: 0 auto; display: block;"}
 
+{{< figure
+  src="https://simplist.cdn.sapbox.me/2018-09-09-swift-exif-change/first-attempt-info.png"
+  class="halfsize"
+  alt="제대로 바뀐 저작권 정보" >}}
 
 하지만 이 방식은 문제가 있는데, 이미지의 데이터를 새로 저장하면서 압축을 다시 한다는 것이다. 새로 만들어진 사진 파일을 보면, JPEGRepresentation과 같은 메소드를 사용하지 않았는데도 용량이 줄어있는 것을 확인할 수 있다.
 
-![용량이 2MB 이상 줄었다](https://simplist.cdn.sapbox.me/2018-09-09-swift-exif-change/first-attempt-output.png)
+{{< figure
+  src="https://simplist.cdn.sapbox.me/2018-09-09-swift-exif-change/first-attempt-output.png"
+  alt="용량이 2MB 이상 줄었다"
+  attr="용량이 2MB 이상 줄었다" >}}
 
 원본 이미지 데이터를 유지한 채로 메타데이터만 바꾸려면 어떻게 해야 할까?
 
 ## CGImageDestinationCopyImageSource
 
-Apple도 이러한 문제를 의식했는지 이에 대한 [Technical Q&A 문서](https://developer.apple.com/library/archive/qa/qa1895/_index.html)를 만들어 두었다. Objective-C 기반이긴 하지만 메서드 이름은 같아서 예제 코드를 무리없이 읽을 수 있었는데, [CGImageDestinationCopyImageSource](https://developer.apple.com/documentation/imageio/1465189-cgimagedestinationcopyimagesourc)라는 메서드를 이용하여 CGImageSource 인스턴스에서 이미지 데이터를 복사해 오는 메서드처럼 보였다. 
+Apple도 이러한 문제를 의식했는지 이에 대한 [Technical Q&A 문서](https://developer.apple.com/library/archive/qa/qa1895/_index.html)를 만들어 두었다. Objective-C 기반이긴 하지만 메서드 이름은 같아서 예제 코드를 무리없이 읽을 수 있었는데, [CGImageDestinationCopyImageSource](https://developer.apple.com/documentation/imageio/1465189-cgimagedestinationcopyimagesourc)라는 메서드를 이용하여 CGImageSource 인스턴스에서 이미지 데이터를 복사해 오는 메서드처럼 보였다.
 
 이 메서드에 대한 자세한 정보를 보기 위해서 레퍼런스 사이트를 들어갔지만, 문서가 하나도 없었다..
 
-![텅 비어있는 문서](https://simplist.cdn.sapbox.me/2018-09-09-swift-exif-change/reference-with-no-doc.png)
-<span style="text-align: center;display:block;">ㅠㅠ</span>
+
+{{< figure
+  src="https://simplist.cdn.sapbox.me/2018-09-09-swift-exif-change/reference-with-no-doc.png"
+  alt="텅 비어있는 문서"
+  attr="ㅠㅠ" >}}
 
 어쩔 수 없이 Technical Q&A 문서와 다른 인터넷의 사용 예제를 알음알음 참고해 가며 코드를 작성하기 시작했다.
 
@@ -86,7 +95,7 @@ let cgImgSource = CGImageSourceCreateWithData(data as CFData, nil)!
 let metadata = CGImageMetadataCreateMutable()
 
 let copyrightTIFF = CGImageMetadataTagCreate(
-    kCGImageMetadataNamespaceTIFF, 
+    kCGImageMetadataNamespaceTIFF,
     kCGImageMetadataPrefixTIFF,
     kCGImagePropertyTIFFCopyright,
     .string, "Sample Copyright Text" as CFString)!
@@ -122,9 +131,12 @@ CGImageDestinationAddImageFromSource를 사용한 코드와 다른 점이 몇 �
 
 이렇게 만들어진 이미지도 첫 번째 시도에서 만든 것처럼 메타데이터가 정상적으로 들어간 것을 확인할 수 있었다. 특이했던 점은, TIFF 메타데이터의 Copyright 태그만 추가를 해 주었는데도 IPTC의 Copyright Notice 태그가 추가되었다는 것이다. 어차피 두 개를 모두 설정하려고 했던 터라 수고를 덜 수 있어서 좋았다.
 
-![이번에도 제대로 바뀐 저작권 정보](https://simplist.cdn.sapbox.me/2018-09-09-swift-exif-change/second-attempt-info.png){: style="width: 50%; margin: 0 auto; display: block;"}
+{{< figure
+  src="https://simplist.cdn.sapbox.me/2018-09-09-swift-exif-change/second-attempt-info.png"
+  class="halfsize"
+  alt="이번에도 제대로 바뀐 저작권 정보" >}}
 
-첫 번째 시도와는 다르게, 원본과 거의 같은 용량의 파일이 생성되었다. 
+첫 번째 시도와는 다르게, 원본과 거의 같은 용량의 파일이 생성되었다.
 
 ![정보 손실이 없는 사진 파일이 생성되었다](https://simplist.cdn.sapbox.me/2018-09-09-swift-exif-change/second-attempt-output.png)
 
