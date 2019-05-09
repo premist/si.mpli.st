@@ -3,6 +3,8 @@ layout: post
 title:  "MacBook Air 신형 구매"
 date:   2012-07-16 14:51:36 +0900
 category: life
+aliases:
+  - /life/2012-07-16-macbook-air-purchase.html
 excerpt: 2012년형 MacBook Air를 구매하였다. 11인치에 CPU/RAM CTO.
 ---
 

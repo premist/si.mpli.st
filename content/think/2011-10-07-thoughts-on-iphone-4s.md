@@ -3,6 +3,8 @@ layout: post
 title: iPhone 4S
 date: 2011-10-07 23:43:03 +0900
 category: think
+aliases:
+  - /think/2011-10-07-thoughts-on-iphone-4s.html
 excerpt: 자정에 알람을 맞춰놓았지만 전날 밤을 샌 여파가 강했던지 일어나지 못해서, 결국 2007년 이후 한번도 놓치지 않았던 키노트를 놓쳐버렸다.
 ---
 

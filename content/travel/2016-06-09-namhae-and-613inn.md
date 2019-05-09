@@ -3,6 +3,8 @@ layout: post
 title: "남해 그리고 613여관"
 date: 2016-06-09 22:10:00 +0900
 category: travel
+aliases:
+  - /travel/2016-06-09-namhae-and-613inn.html
 excerpt: 여행을 가고 싶다는 생각이 다시금 고개를 들기 시작하던 2016년 초. 주변에도 여행을 가는 사람들이 많아지고 마침 회사를 같이 다니는 동료도 일본 여행을 간다는 이야기를 듣던 시기였다.
 cover: https://simplist.cdn.sapbox.me/2016-06-09-namhae613inn-day1-613inn.jpg
 ---

@@ -3,6 +3,8 @@ layout: post
 title: "DESKER 모니터 받침대"
 date: 2017-07-22 01:01:00 +0900
 category: review
+aliases:
+  - /review/2017-07-22-desker-monitor-stand.html
 excerpt: 국내 가구 브랜드 DESKER에서 모니터 받침대를 구매했다.
 ---
 

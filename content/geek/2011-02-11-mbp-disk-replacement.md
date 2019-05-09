@@ -3,6 +3,8 @@ layout: post
 title: MacBook Pro 디스크 교체
 date: 2011-02-11 17:08:25 +0900
 category: geek
+aliases:
+  - /geek/2011-02-11-mbp-disk-replacement.html
 excerpt: 320GB 하드디스크에는 내가 사용하는 그래픽 리소스를 전부 담아둘 수 없었고, Pro임에도 불구하고 소음때문에 채택된 5400rpm 하드디스크는 나에게 큰 컴플렉스였다.
 ---
 

@@ -3,6 +3,8 @@ layout: post
 title:  "Google Analytics"
 date:   2012-06-18 14:01:02 +0900
 category: think
+aliases:
+  - /think/2012-06-18-google-analytics-live.html
 excerpt: Google Analytic에 최근 추가된 실시간 기능을 보면서 경악을 금치 못했다.
 ---
 

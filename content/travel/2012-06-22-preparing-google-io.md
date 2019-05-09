@@ -3,6 +3,8 @@ layout: post
 title:  "여행 준비, 그리고..."
 date:   2012-06-22 13:16:55 +0900
 category: travel
+aliases:
+  - /travel/2012-06-22-preparing-google-io.html
 excerpt: Google I/O 참여를 위해 미국으로 떠날 준비를 하는데, 이전에 쓰던 여행 저널인 followmyfootprint을 이번에도 운영해야겠다는 생각을 했다.
 ---
 
