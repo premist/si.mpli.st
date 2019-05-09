@@ -4,6 +4,7 @@ title:  "NS1와 NGINX를 이용한 홈메이드 CDN"
 date:   2018-04-08 17:10:00 +0900
 category: dev
 aliases:
+  - /dev/homemade-cdn-with-ns1-and-nginx.html
   - /dev/2018-04-08-homemade-cdn-with-ns1-and-nginx.html
 excerpt: 최근 매우 느려진 해외 인터넷 접속 때문에 직접 CDN을 구축해 보기로 했다.
 ---

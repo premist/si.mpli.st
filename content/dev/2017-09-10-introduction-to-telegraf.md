@@ -4,6 +4,7 @@ title: "오픈소스 시스템 모니터링 에이전트, Telegraf"
 date: 2017-09-10 22:41:00 +0900
 category: dev
 aliases:
+  - /dev/introduction-to-telegraf.html
   - /dev/2017-09-10-introduction-to-telegraf.html
 excerpt: 시스템 리소스 사용량과 여러 가지 구성 요소의 지표를 수집할 수 있는 에이전트 Telegraf를 소개한다.
 ---

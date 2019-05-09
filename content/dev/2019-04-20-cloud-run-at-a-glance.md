@@ -4,6 +4,7 @@ title: Google Cloud Run 겉핥기
 date: 2019-04-20 17:50:00 +0900
 category: dev
 aliases:
+  - /dev/cloud-run-at-a-glance.html
   - /dev/2019-04-20-cloud-run-at-a-glance.html
 excerpt: Cloud Next '19에서 발표된 Cloud Run에 개인적으로 만들고 있던 사진 갤러리 사이트를 옮겨보았습니다.
 ---

@@ -4,6 +4,7 @@ title: Steve Jobs (1955 - 2011)
 date: 2011-10-06 18:31:08 +0900
 category: life
 aliases:
+  - /think/steve-jobs.html
   - /think/2011-10-06-steve-jobs.html
 excerpt: Rest in peace, Steve Jobs.
 ---

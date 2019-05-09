@@ -4,6 +4,7 @@ title: 4박 5일간, 도쿄에 갑니다.
 date: 2011-11-23 01:31:09 +0900
 category: travel
 aliases:
+  - /travel/tokyo-trip.html
   - /travel/2011-11-23-tokyo-trip.html
 excerpt: 여행을 다니면서 블로그에 여행기를 쓰려고 해도 귀찮아져서, 기록을 전부 저장해버리기로 했습니다.
 ---

@@ -4,6 +4,7 @@ title: 맥을 쓰게 된 계기
 date: 2011-04-30 23:13:41 +0900
 category: think
 aliases:
+  - /think/why-i-switched-to-mac.html
   - /think/2011-04-30-why-i-switched-to-mac.html
 excerpt: 흔히 저를 맥 올드비라고 하시는 분들이 있는데, 저도 2008년도까지는 윈도만 썼고, 많은 애착을 가지고 있었습니다.
 ---

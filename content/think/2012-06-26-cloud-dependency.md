@@ -4,6 +4,7 @@ title:  "클라우드 의존성"
 date:   2012-06-26 05:09:07 +0900
 category: think
 aliases:
+  - /think/cloud-dependency.html
   - /think/2012-06-26-cloud-dependency.html
 excerpt: 최근 클라우드에 내가 얼마나 의존하고 있는지를 뼈저리게 느끼게 해준 사건이 터졌다.
 ---

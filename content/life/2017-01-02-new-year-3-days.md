@@ -4,6 +4,7 @@ title: "신년 휴일 3일"
 date: 2017-01-02 21:00:00 +0900
 category: life
 aliases:
+  - /life/new-year-3-days.html
   - /life/2017-01-02-new-year-3-days.html
 excerpt: 12월 31일 토요일부터 회사 휴일인 오늘(1월 2일 월요일)까지 총 3일을 쉬었는데, 그 동안 이것 저것 한 기록을 짤막하게 남겨본다.
 ---

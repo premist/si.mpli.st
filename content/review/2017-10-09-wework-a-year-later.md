@@ -4,6 +4,7 @@ title:  "WeWork, 1년 후"
 date:   2017-10-09 17:44:00 +0900
 category: review
 aliases:
+  - /review/wework-a-year-later.html
   - /review/2017-10-09-wework-a-year-later.html
 excerpt: WeWork에 입주한 지 1년이 넘었는데, 그동안 강남점에서 지낸 경험과 느낀 점을 공유한다.
 ---

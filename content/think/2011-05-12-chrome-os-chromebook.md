@@ -4,6 +4,7 @@ title: Chrome OS, Chromebook에 대한 생각
 date: 2011-05-12 22:36:34 +0900
 category: think
 aliases:
+  - /think/chrome-os-chromebook.html
   - /think/2011-05-12-chrome-os-chromebook.html
 excerpt: 오늘(한국 시간으로 2011년 5월 12일), Google I/O 컨퍼런스에서 Chrome OS에 대한 새로운 소식이 들려왔다. 바로 Chromebook에 대한 이야기였다.
 ---

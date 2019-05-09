@@ -4,6 +4,7 @@ title: "2016년에 해 보고 싶은 것들"
 date: 2016-01-07 13:45:00 +0900
 category: think
 aliases:
+  - /think/new-year-resolutions.html
   - /think/2016-01-07-new-year-resolutions.html
 excerpt: 평소 신년 결심을 세우지 않았지만, 목표 의식을 가지는 것이 중요하다는 생각을 최근에 많이 하게 되어 신년에는 어떤 일들을 해 보고 싶은지 정리 해 보았다.
 ---

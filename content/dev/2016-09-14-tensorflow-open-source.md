@@ -4,6 +4,7 @@ title: "\"왜 Tensorflow처럼 가치 있는 것을 오픈 소스로 공개하�
 date: 2016-09-14 22:30:00 +0900
 category: dev
 aliases:
+  - /dev/tensorflow-open-source.html
   - /dev/2016-09-14-tensorflow-open-source.html
 link: https://changelog.com/219/
 excerpt: 어제 밤에 The Changelog을 들으면서 인상 깊었던 Tensorflow 구글 엔지니어와의 질답.

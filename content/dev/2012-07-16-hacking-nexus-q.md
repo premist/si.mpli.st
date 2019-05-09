@@ -4,6 +4,7 @@ title:  "Hacking Nexus Q"
 date:   2012-07-16 15:07:39 +0900
 category: geek
 aliases:
+  - /dev/hacking-nexus-q.html
   - /dev/2012-07-16-hacking-nexus-q.html
 excerpt: Nexus Q를 발표할 때, 사람들의 환호가 터져나온 순간은 바로 'Full Hackability' 를 발표했을 때였다..
 ---

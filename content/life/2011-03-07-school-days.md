@@ -4,6 +4,7 @@ title: 근황
 date: 2011-03-07 23:59:37 +0900
 category: life
 aliases:
+  - /life/school-days.html
   - /life/2011-03-07-school-days.html
 excerpt: 학기초라 정신이 없긴 하지만 일단은 잘 지내고 있다. 고등학교 2학년으로 올라와서 뭔가 바뀔 줄 알았는데 딱히 바뀐 건 없고, 1학년때 정말 싫었던 학생부장을 이제 보지 않게 되어서 좋다.
 ---

@@ -4,6 +4,7 @@ title: "Elixir 정적 코드 분석, Credo와 Dialyzer"
 date: 2017-08-27 21:10:00 +0900
 category: dev
 aliases:
+  - /dev/elixir-credo-and-dialyzer.html
   - /dev/2017-08-27-elixir-credo-and-dialyzer.html
 excerpt: Elixir 프로그래밍 언어에 사용 가능한 정적 코드 분석기, Credo와 Dialyzer를 소개한다.
 ---

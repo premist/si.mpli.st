@@ -4,6 +4,7 @@ title:  "Pocket Planes"
 date:   2012-06-19 18:22:45 +0900
 category: life
 aliases:
+  - /life/pocket-planes.html
   - /life/2012-06-19-pocket-planes.html
 link: http://itunes.apple.com/kr/app/pocket-planes/id491994942?mt=8
 excerpt: Pocket Planes는 요즘 한창 재밌게 하고 있던 게임이다.

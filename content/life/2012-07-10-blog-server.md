@@ -4,6 +4,7 @@ title:  "블로그 서버 이전"
 date:   2012-07-10 11:22:31 +0900
 category: life
 aliases:
+  - /life/blog-server.html
   - /life/2012-07-10-blog-server.html
 excerpt: 블로그 서버를 Windows Azure에서 @Relipnamu님 서버로 옮겼다.
 ---
