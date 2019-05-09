@@ -3,6 +3,8 @@ layout: post
 title: 내 DB에 암호화폐 마이너가?!
 date: 2018-04-15 21:50:00 +0900
 category: dev
+aliases:
+  - /dev/2018-04-15-cryptominer-inside-postgres.html
 excerpt: 무슨 바람이 불었는지는 모르겠지만 서버에서 구동중이던 데몬의 로그를 하나씩 살펴보기 시작했는데, 데이터베이스에 바이너리 데이터를 로드하는 것 처럼 보이는 SQL 선언문이 로그에 찍혀 있었다. 불안감이 몰려왔다.
 ---
 

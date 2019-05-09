@@ -3,6 +3,8 @@ layout: post
 title: 생활코딩 @ 과천중앙고등학교
 date: 2011-09-17 10:13:54 +0900
 category: geek
+aliases:
+  - /dev/2011-09-17-opentutorials-at-school.html
 excerpt: 동아리 담당 선생님이 색다른 걸 해보면 어떨까..라는 제안을 하셨다. 그래서 아주 간단한 언어의 일종인 자바스크립트로 시작하기로 했다.
 ---
 

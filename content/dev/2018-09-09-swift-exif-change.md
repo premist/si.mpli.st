@@ -3,6 +3,8 @@ layout: post
 title: Swift에서 이미지 손실없이 EXIF 정보 변경하기
 date: 2018-09-09 17:50:00 +0900
 category: dev
+aliases:
+  - /dev/2018-09-09-swift-exif-change.html
 excerpt: Core Graphics와 Core Image에서 여러 가지의 이미지 처리 기능을 제공해주고 있어서, 이를 이용하여 저작권 메타데이터를 사진에 추가해보기로 했다.
 ---
 

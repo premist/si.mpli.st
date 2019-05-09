@@ -3,6 +3,8 @@ layout: post
 title:  "블로그 다시 만들기"
 date:   2013-07-07 16:01:00 +0900
 category: life
+aliases:
+  - /dev/2013-07-07-remaking-blog.html
 excerpt: 마지막 글을 쓰고 나서 몇 개월이 지나고, 우연한 계기로 블로그를 다시 보게 되었다. 몇일간 고심한 이후, 블로그를 다시 만들기 시작했다.
 ---
 

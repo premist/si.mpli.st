@@ -3,6 +3,8 @@ layout: post
 title: "포토샵에서 Sketch로"
 date: 2016-04-06 01:25:00 +0900
 category: dev
+aliases:
+  - /dev/2016-04-06-from-photoshop-to-sketch.html
 excerpt: 길지 않은 시간이지만 Sketch로 작업하면서 Photoshop과의 차이점을 여럿 느낄 수 있었다.
 ---
 
