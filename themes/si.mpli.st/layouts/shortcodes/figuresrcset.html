@@ -1,0 +1,22 @@
+{{ $src := (.Get "src") }}
+{{ $original := (.Get "original") }}
+{{ $small := (.Get "small") }}
+
+{{ $src_ext := (path.Ext $src) }}
+{{ $src_without_ext := (strings.TrimRight $src_ext $src) }}
+
+{{ $src_small := (printf "%s-%s%s" $src_without_ext $small $src_ext) }}
+
+{{ $class := (.Get "class") }}
+{{ $alt := (.Get "alt") }}
+{{ $attr := (.Get "attr") }}
+
+<figure class="{{ $class }}">
+  <img
+    alt="{{ $alt }}"
+    decoding="async"
+    srcset="{{ $src_small }} {{ $small}}, {{ $src }} {{ $original }}">
+  <figcaption>
+    <p>{{ $attr | safeHTML }}</p>
+  </figcaption>
+</figure>

@@ -35,6 +35,8 @@ $post-title-font-size: 26px;
 
 $uppercase-letter-spacing: 0.05em;
 
+$toolarge-width: 1680px;
+
 /* Category Colors */
 $cat-color-dev: #3498db;
 $cat-color-geek: #2980b9;
@@ -45,6 +47,7 @@ $cat-color-travel: #9b59b6;
 $cat-color-video: #ec407a;
 
 $mq-mobile: "(max-width: 820px)";
+$mq-toolarge: "(min-width: #{$toolarge-width})";
 
 /* Common */
 body {
@@ -55,8 +58,9 @@ body {
 
 .container {
   position: relative;
-  display: block;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   width: $container-width;
   margin: $container-top-bottom-margin auto;
 
@@ -131,7 +135,7 @@ header {
 #index {
   position: relative;
   display: block;
-  margin: $container-top-bottom-margin auto;
+  margin: $container-top-bottom-margin 0;
 
   & ul {
     list-style-type: none;
@@ -258,6 +262,10 @@ article {
     line-height: 1.4em;
   }
 
+  & figure {
+    margin-bottom: 40px;
+  }
+
   & img {
     display: block;
     width: 100%;
@@ -272,8 +280,32 @@ article {
 
   & figure.halfsize {
     width: 50%;
-    margin: 0 auto;
-    // & img { width: 50%; }
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  & figure.oversize {
+    width: 100vw;
+    margin-left: calc((100vw - #{$container-width}) * -0.5);
+
+    & figcaption {
+      padding: 0 20px;
+    }
+
+    @media #{$mq-toolarge} {
+      width: $toolarge-width;
+      margin-left: calc((#{$toolarge-width} - #{$container-width}) * -0.5);
+    }
+
+    // Copy from & img media query properties
+    @media #{$mq-mobile} {
+      width: 100%;
+      margin-left: 0;
+
+      & figcaption {
+        padding: 0;
+      }
+    }
   }
 
   & figcaption {
