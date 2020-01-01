@@ -3,7 +3,7 @@ layout: post
 title: k3s로 간단하게 Kubernetes 환경 구축하기
 date: 2020-01-01 22:30:00 +0900
 category: dev
-excerpt: Cloud Next '19에서 발표된 Cloud Run에 개인적으로 만들고 있던 사진 갤러리 사이트를 옮겨보았습니다.
+excerpt: "k3s를 이용하여 조금 더 쉽게 Kubernetes를 설치하고, 첫 서비스를 띄워봅니다."
 ---
 
 
