@@ -264,6 +264,11 @@ article {
 
   & figure {
     margin-bottom: 40px;
+
+    & h4 {
+      font-weight: normal;
+      margin: 0;
+    }
   }
 
   & img {
