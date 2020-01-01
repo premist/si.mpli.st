@@ -7,7 +7,7 @@ excerpt: Cloud Next '19에서 발표된 Cloud Run에 개인적으로 만들고 �
 ---
 
 
-Google Cloud Summit 등에서 여러 번 했던 발표[(관련 슬라이드 보기)](https://speakerdeck.com/premist/google-cloud-summit-seoul-gke-at-shakr)를 들으신 분이라면 아시겠지만, [Shakr](https://www.shakr.com/)에서는 2016년부터 Kubernetes를 프로덕션 서비스에 도입하여 사용중입니다. Kubernetes는 도입하고 어느 정도 정착을 시킨 후에는 강력한 리소스 추상화와 다양한 관리 및 모니터링 기능의 덕을 톡톡히 볼 수 있지만, [GKE](https://cloud.google.com/kubernetes-engine)와 같은 매니지드 서비스를 사용하지 않는 한 초기 설정의 까다로움과 첫 웹 서버 트래픽을 처리할 때 까지의 이해의 복잡함이 어려움으로 다가오는 경우가 많죠. 이러한 설정의 번거로움을 해결하기 위해 [kubespray](https://github.com/kubernetes-sigs/kubespray), [kubeadm](https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm/)과 같은 도구를 사용할 수도 있는데요, 그러기엔 이런 도구들이 Kubernetes 생태계의 변화를 따라잡지 못해서 설정 매뉴얼대로만 따라하면 오류를 맞닥뜨리게 되는 경우가 종종 있습니다. 미국의 치킨 패스트푸드 전문점인 Chick-fil-A는 [식당 안에서도 Kubernetes를 돌린다는데](https://medium.com/@cfatechblog/bare-metal-k8s-clustering-at-chick-fil-a-scale-7b0607bd3541), 우리는 컴퓨터 몇 개에서 Kubernetes를 돌리는 것도 왜 이렇게 버거울까요?
+Google Cloud Summit 등에서 여러 번 했던 발표[(관련 슬라이드 보기)](https://speakerdeck.com/premist/google-cloud-summit-seoul-gke-at-shakr)를 들으신 분이라면 아시겠지만, [Shakr](https://www.shakr.com/)에서는 2016년부터 Kubernetes를 프로덕션 서비스에 도입하여 사용중입니다. Kubernetes는 도입하고 어느 정도 정착을 시킨 후에는 강력한 리소스 추상화와 다양한 관리 및 모니터링 기능의 덕을 톡톡히 볼 수 있지만, [GKE](https://cloud.google.com/kubernetes-engine)와 같은 매니지드 서비스를 사용하지 않는 한 초기 설정의 까다로움과 첫 웹 서버 트래픽을 처리할 때 까지의 이해의 복잡함이 어려움으로 다가오는 경우가 많죠. 이러한 설정의 번거로움을 해결하기 위해 [kubespray](https://github.com/kubernetes-sigs/kubespray), [kubeadm](https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm/)과 같은 도구를 사용할 수도 있는데요, 그러기엔 이런 도구들이 Kubernetes 생태계의 변화를 따라잡지 못해서 설정 매뉴얼대로만 따라하면 오류를 맞닥뜨리게 되는 경우가 종종 있습니다. 미국의 치킨 패스트푸드 전문점인 Chick-fil-A는 [식당 안에서도 Kubernetes를 돌린다는데](https://medium.com/@cfatechblog/bare-metal-k8s-clustering-at-chick-fil-a-scale-7b0607bd3541), 우리는 컴퓨터 몇 개에서 Kubernetes를 돌리는 것도 버겁습니다. 조금 더 쉽게 Kubernetes를 운영하는 방법은 없을까요?
 
 
 ### k3s
@@ -15,6 +15,7 @@ Google Cloud Summit 등에서 여러 번 했던 발표[(관련 슬라이드 보�
 이러한 문제에서 비교적 자유로운 해결책으로 [k3s](https://k3s.io)가 있습니다. 컨테이너 관련 기술을 주로 개발하는 Rancher Labs에서 만든 Kubernetes의 또 다른 버전인데요, Kubernetes와 비교해서는 크게 두 가지 차이점이 있습니다.
 
 먼저, 경량화입니다. 외부 클라우드 서비스와의 연동 기능을 최소한도로 줄이고, 고가용성(HA) 배포를 위해 기본으로 사용하던 etcd 의존성을 없애고 sqlite를 기본값으로 사용합니다. 또한 Docker와 같은 의존성을 모두 삭제하고 containerd와 같은 가벼운 대체재를 사용합니다. 기존 Kubernetes에서 지원하는 과거 버전의 API 또한 과감히 지원하지 않습니다.
+
 두 번째는, 설치가 무척 간단합니다. 경량화를 통해 시스템 요구 사항을 극단적으로 줄인 결실이 설치 과정에서 드러나는데, 쉘 스크립트 하나로 대부분의 배포판에서 설치할 수 있습니다. 설치 후 자동으로 systemd 서비스 또한 만들기 때문에, 사용자가 신경 써 주어야 할 것이 거의 없습니다. Kubernetes를 처음부터 설치해보려고 시도해 보셨던 분이라면 믿기 힘든 사실이죠.
 
 프로덕션 사용에는 여전히 [GKE](https://cloud.google.com/kubernetes-engine/) 같은 매니지드 서비스를 쓰는 것이 바람직하겠지만, 테스트 환경이나 개인 활용에는 이만한 것이 없어 보입니다. 그럼, 리눅스 서버에 k3s를 설치하고 첫 서비스를 띄워볼까요?
