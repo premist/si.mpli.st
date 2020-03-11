@@ -9,7 +9,7 @@
         </span>
     </header>
     <article>
-      <h2>{{ .Title }}</h2>
+      <h2 itemprop="name">{{ .Title }}</h2>
       <span class="meta">
         <a href="{{ .Permalink }}">
           <time datetime="{{ .Date.Format "2006-01-02" }}" itemprop="datePublished">{{ .Date.Format "2006-01-02 15:04" }}</time>
