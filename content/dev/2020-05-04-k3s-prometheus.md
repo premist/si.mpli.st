@@ -53,7 +53,7 @@ Prometheus를 이용하여 모니터링하게 되는 영역은 크게 네 가지
 
 하지만 kube-prometheus의 기본 설정은 VPS 등의 작은 서버에 간단히 올리고자 하는 분들에게는 적합하지 않습니다. 제가 AWS Lightsail 가상서버에 설치를 했을 때 1GB 이상의 메모리를 기본으로 사용해서 배보다 배꼽이 큰 상황이 되었습니다. 장애를 견딜 수 있는 고가용성(HA) 설정이다보니 그대로 설치하면 메모리와 CPU 등의 리소스를 많이 소비하는 것이죠. 
 
-리소스가 충분하다면 위의 kube-prometheus 공식 저장소에서 설치를 하면 되지만, 리소스가 제한된 환경일 때는 특히 적은 리소스만 사용하도록 설치하고 싶은 경우가 대부분이죠. 이런 고민을 하시는 분들을 위해 [kube-prometheus의 경량화된 버전](https://github.com/premist/k3s-kube-prometheus)을 제작했습니다. 원본과의 주요 차이점이라면 replica가 하나이고 alertmanager를 배포하지 않는 것인데, 이 버전을 k3s에 설치해보도록 하겠습니다.
+리소스가 충분하다면 위의 kube-prometheus 공식 저장소에서 설치를 하면 되지만, 리소스가 제한된 환경일 때는 특히 적은 리소스만 사용하도록 설치하고 싶은 경우가 대부분이죠. 이런 고민을 하시는 분들을 위해 **[kube-prometheus의 경량화된 버전](https://github.com/premist/k3s-kube-prometheus)**을 제작했습니다. 원본과의 주요 차이점이라면 replica가 하나이고 alertmanager를 배포하지 않는 것인데, 이 버전을 k3s에 설치해보도록 하겠습니다.
 
 kubectl이 동작하는 환경에서, 아래의 명령어를 실행해줍니다.
 
@@ -64,7 +64,7 @@ kubectl apply -k github.com/premist/k3s-kube-prometheus/setup
 kubectl apply -k github.com/premist/k3s-kube-prometheus
 ```
 
-첫 번째 명령어는 Prometheus에 관련된[커스텀 리소스 명세(Custom Resource Definition; CRD)](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/)를 Kubernetes에 등록합니다. Deployment나 Ingress를 만드는 것처럼, Prometheus를 마치 Kubernetes의 리소스와 같이 실행할 수 있게 해 주는 것이죠. 
+첫 번째 명령어는 Prometheus와 관련 구성 요소의 [커스텀 리소스 명세(Custom Resource Definition; CRD)](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/)를 생성합니다. Deployment나 Ingress를 만드는 것처럼, Prometheus를 마치 Kubernetes의 리소스와 같이 실행할 수 있게 해 주는 것이죠. 
 두 번째 명령어는 monitoring이라는 네임스페이스를 만들고, 새로 추가된 여러가지 CRD를 이용해 실제로 Prometheus 서버를 생성합니다.
 
 ![kubectl apply 명령어의 실행 결과](https://simplist.cdn.sapbox.me/2020-05-04-k3s-prometheus/0002-apply.png)
