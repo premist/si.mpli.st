@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "k3s 시리즈 - Prometheus로 하는 Kubernetes 모니터링"
+title: "k3s 시리즈 - Prometheus로 하는 Kubernetes 지표 수집과 모니터링"
 date: 2020-05-04 21:08:00 +0900
 category: dev
 excerpt: "이번 글에서는 Kubernetes 클러스터에서 Prometheus를 이용해 클러스터의 각종 지표를 수집하는 방법에 대해 알아보려고 합니다."
@@ -22,13 +22,13 @@ excerpt: "이번 글에서는 Kubernetes 클러스터에서 Prometheus를 이용
 이번에 소개할 소프트웨어는 Prometheus입니다. Prometheus는 SoundCloud에서 내부 사용을 위해 처음 개발되었는데, 지금은 Kubernetes와 같은 오픈 소스 소프트웨어와 함께 사용되고 있는 대표적 시계열 지표 관련 소프트웨어 중 하나입니다.
 
 
-### Pull 방식을 사용하는 Prometheus 
+### Pull 방식을 사용하는 Prometheus
 
-Telegraf를 소개하는 이전 글에서는 Prometheus가 수집한 지표를 저장하는 역할을 한다고 설명했는데요, 이에 더불어 다른 시계열 수집 방식과 차별화되는 Prometheus만의 특별한 점이 있습니다. 
+Telegraf를 소개하는 이전 글에서는 Prometheus가 수집한 지표를 저장하는 역할을 한다고 설명했는데요, 이에 더불어 다른 시계열 수집 방식과 차별화되는 Prometheus만의 특별한 점이 있습니다.
 
-만약 StatsD를 이용해 웹 서버에서 처리하는 리퀘스트 수를 기록하고 싶다면, 웹 서버에서 UDP 패킷을 StatsD 서버에 보내야 하죠. 모니터링 되어야 하는 서버가 모니터링을 하는 서버로 정보를 보내기 떄문에, Push 방식이라고 부릅니다. StatsD와 CollectD와 같은 에이전트는 Push 방식을 사용하는 대표적인 예시입니다. 
+만약 StatsD를 이용해 웹 서버에서 처리하는 리퀘스트 수를 기록하고 싶다면, 웹 서버에서 UDP 패킷을 StatsD 서버에 보내야 하죠. 모니터링 되어야 하는 서버가 모니터링을 하는 서버로 정보를 보내기 떄문에, Push 방식이라고 부릅니다. StatsD와 CollectD와 같은 에이전트는 Push 방식을 사용하는 대표적인 예시입니다.
 
-반면 Prometheus를 이용해 웹 서버에서 처리하는 리퀘스트 수를 기록하고 싶다면, 웹 서버는 `/metrics`라는 HTTP 엔드포인트에 정해진 형식으로 리퀘스트 수를 출력합니다. 이를 Prometheus에 등록하면, 주기적으로 데이터를 크롤링 해가는 방식입니다. 모니터링 되어야 하는 서버에서 모니터링을 하는 서버가 데이터를 가져가기 때문에, Pull 방식이라고 부릅니다.   
+반면 Prometheus를 이용해 웹 서버에서 처리하는 리퀘스트 수를 기록하고 싶다면, 웹 서버는 `/metrics`라는 HTTP 엔드포인트에 정해진 형식으로 리퀘스트 수를 출력합니다. 이를 Prometheus에 등록하면, 주기적으로 데이터를 크롤링 해가는 방식입니다. 모니터링 되어야 하는 서버에서 모니터링을 하는 서버가 데이터를 가져가기 때문에, Pull 방식이라고 부릅니다.
 
 이러한 Pull 방식을 사용하므로 인해 얻는 장점과 단점이 있습니다. 장점이라면 모니터링을 하는 서버가 데이터 수집 주기를 결정할 수 있고, `/metrics` 엔드포인트를 구현한 웹 서버라면 서비스 디스커버리(Service Discovery) 등을 이용해 자동으로 수집을 할 수 있다는 점이 있겠죠. 단점이라면 데이터 유실 위험이 높고, UDP 패킷을 보내는 StatsD에 비해 성능 면에서 분리하다는 점이 있겠습니다. 각각의 장·단점 모두 감안할 정도이다보니, 서비스의 성격 및 취향에 맞게 하나의 시스템을 결정하면 되겠습니다.
 
@@ -49,9 +49,9 @@ Prometheus를 이용하여 모니터링하게 되는 영역은 크게 네 가지
 
 ### kube-prometheus 설치
 
-이 글에서는 Kubernetes 위에 Prometheus를 설치하기 위해서 [kube-prometheus](https://github.com/coreos/kube-prometheus)를 사용합니다. Prometheus를 직접 설치하는 것을 포함하여 여러 가지 방법을 시도해 보았지만, kube-prometheus를 사용했을 때 최소한의 설정으로 빠르게 Prometheus를 설치할 수 있었습니다. 
+이 글에서는 Kubernetes 위에 Prometheus를 설치하기 위해서 [kube-prometheus](https://github.com/coreos/kube-prometheus)를 사용합니다. Prometheus를 직접 설치하는 것을 포함하여 여러 가지 방법을 시도해 보았지만, kube-prometheus를 사용했을 때 최소한의 설정으로 빠르게 Prometheus를 설치할 수 있었습니다.
 
-하지만 kube-prometheus의 기본 설정은 VPS 등의 작은 서버에 간단히 올리고자 하는 분들에게는 적합하지 않습니다. 제가 AWS Lightsail 가상서버에 설치를 했을 때 1GB 이상의 메모리를 기본으로 사용해서 배보다 배꼽이 큰 상황이 되었습니다. 장애를 견딜 수 있는 고가용성(HA) 설정이다보니 그대로 설치하면 메모리와 CPU 등의 리소스를 많이 소비하는 것이죠. 
+하지만 kube-prometheus의 기본 설정은 VPS 등의 작은 서버에 간단히 올리고자 하는 분들에게는 적합하지 않습니다. 제가 AWS Lightsail 가상서버에 설치를 했을 때 1GB 이상의 메모리를 기본으로 사용해서 배보다 배꼽이 큰 상황이 되었습니다. 장애를 견딜 수 있는 고가용성(HA) 설정이다보니 그대로 설치하면 메모리와 CPU 등의 리소스를 많이 소비하는 것이죠.
 
 리소스가 충분하다면 위의 kube-prometheus 공식 저장소에서 설치를 하면 되지만, 리소스가 제한된 환경일 때는 특히 적은 리소스만 사용하도록 설치하고 싶은 경우가 대부분이죠. 이런 고민을 하시는 분들을 위해 [**kube-prometheus의 경량화된 버전**](https://github.com/premist/k3s-kube-prometheus)을 제작했습니다. 원본과의 주요 차이점이라면 replica가 하나이고 alertmanager를 배포하지 않는 것인데, 이 버전을 k3s에 설치해보도록 하겠습니다.
 
@@ -64,7 +64,7 @@ kubectl apply -k github.com/premist/k3s-kube-prometheus/setup
 kubectl apply -k github.com/premist/k3s-kube-prometheus
 ```
 
-첫 번째 명령어는 Prometheus와 관련 구성 요소의 [커스텀 리소스 명세(Custom Resource Definition; CRD)](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/)를 생성합니다. Deployment나 Ingress를 만드는 것처럼, Prometheus를 마치 Kubernetes의 리소스와 같이 실행할 수 있게 해 주는 것이죠. 
+첫 번째 명령어는 Prometheus와 관련 구성 요소의 [커스텀 리소스 명세(Custom Resource Definition; CRD)](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/)를 생성합니다. Deployment나 Ingress를 만드는 것처럼, Prometheus를 마치 Kubernetes의 리소스와 같이 실행할 수 있게 해 주는 것이죠.
 두 번째 명령어는 monitoring이라는 네임스페이스를 만들고, 새로 추가된 여러가지 CRD를 이용해 실제로 Prometheus 서버를 생성합니다.
 
 ![kubectl apply 명령어의 실행 결과](https://simplist.cdn.sapbox.me/2020-05-04-k3s-prometheus/0002-apply.png)
@@ -98,7 +98,7 @@ $ kubectl --namespace monitoring port-forward svc/grafana 3000
 
 ![클러스터 리소스 사용량 대시보드](https://simplist.cdn.sapbox.me/2020-05-04-k3s-prometheus/0005-grafana-cluster.png)
 
-Explore 탭에 들어가면, Prometheus가 사용하는 지표 쿼리 언어인 [PromQL](https://prometheus.io/docs/prometheus/latest/querying/basics/)을 이용하여 수집중인 지표의 그래프를 그려볼 수 있습니다. 
+Explore 탭에 들어가면, Prometheus가 사용하는 지표 쿼리 언어인 [PromQL](https://prometheus.io/docs/prometheus/latest/querying/basics/)을 이용하여 수집중인 지표의 그래프를 그려볼 수 있습니다.
 
 ![원하는 PromQL 쿼리를 실행할 수 있다](https://simplist.cdn.sapbox.me/2020-05-04-k3s-prometheus/0006-grafana-explore.png)
 
@@ -109,10 +109,10 @@ Prometheus가 지표를 수집하고, 이를 시각화할 수 있는 Grafana 대
 
 ### 마치며
 
-Prometheus를 막 설치했다면, 이제는 자신의 환경에 맞도록 튜닝을 해 줘야 하겠죠. 라즈베리 파이나 작은 VPS에서 k3s 클러스터를 돌린다면 Prometheus를 이용한 지표 수집은 과한 선택일수도 있지만, 조금 더 클러스터를 꼼꼼하게 관리하고 싶다면 운영해보는 것도 좋은 선택이 될 것 같습니다. 
+Prometheus를 막 설치했다면, 이제는 자신의 환경에 맞도록 튜닝을 해 줘야 하겠죠. 라즈베리 파이나 작은 VPS에서 k3s 클러스터를 돌린다면 Prometheus를 이용한 지표 수집은 과한 선택일수도 있지만, 조금 더 클러스터를 꼼꼼하게 관리하고 싶다면 운영해보는 것도 좋은 선택이 될 것 같습니다.
 
 
 
 
- 
+
 
