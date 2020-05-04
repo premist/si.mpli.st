@@ -104,10 +104,8 @@ Explore 탭에 들어가면, Prometheus가 사용하는 지표 쿼리 언어인 
 
 Prometheus가 지표를 수집하고, 이를 시각화할 수 있는 Grafana 대시보드도 잘 돌아갑니다! 다만 이와 같은 구성에서 몇 가지 알아두어야 할 점이 있는데요,
 
-- **고가용성(HA) 셋업이 아닙니다.** 실제 서비스를 운영하는 등 시스템의 안정성이 중요한 환경이라면, 서버 하나가 다운되어도 복구가 가능한 원본 kube-prometheus 프로젝트를 이용하여 배포하는 것이 좋겠죠?
+- **고가용성(HA) 셋업이 아닙니다.** 실제 서비스를 운영하는 등 시스템의 안정성이 중요한 환경이라면, 서버 하나가 다운되어도 복구가 가능한 원본 kube-prometheus 프로젝트를 이용하여 배포하는 것이 좋겠죠? 제 레포에서 [override.jsonnet](https://github.com/premist/k3s-kube-prometheus/blob/master/override.jsonnet)을 수정하여 replica 갯수를 변경할 수도 있습니다.
 - **지표는 평생 저장되지 않습니다.** Prometheus는 기본적으로 [15일](https://prometheus.io/docs/prometheus/latest/storage/#operational-aspects)동안 지표를 저장합니다. 지표를 더 오랜 시간동안 저장하고 싶다면 명령줄에 희망하는 기간을 지정해주거나, [원격 데이터베이스에 저장](https://prometheus.io/docs/operating/integrations/#remote-endpoints-and-storage)할 수 있습니다.
-- **AlertManager를 포함하지 않습니다.** Slack 등의 채널로 지표 변화에 따른 알림을 받아보고 싶다면, 제 레포에서 [override.jsonnet](https://github.com/premist/k3s-kube-prometheus/blob/master/override.jsonnet)을 수정하여 AlertManager와 기타 다른 요소를 추가할 수 있습니다.
-
 
 ### 마치며
 
