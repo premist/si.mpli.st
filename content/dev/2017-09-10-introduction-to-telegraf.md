@@ -175,8 +175,8 @@ docker run -p 8888:8888 -d quay.io/influxdb/chronograf:1.3.7.0
 [21]:	https://grafana.com/dashboards?search=telegraf
 [22]:	https://github.com/influxdata/chronograf/releases
 
-[image-1]:	https://simplist.cdn.sapbox.me/2017-09-10-introduction-to-telegraf/ingest-store-visualize.svg "수집, 저장, 시각화 소프트웨어"
-[image-2]:	https://simplist.cdn.sapbox.me/2017-09-10-introduction-to-telegraf/grafana-setup.jpg "Grafana에 InfluxDB를 데이터 소스로 추가하기"
-[image-3]:	https://simplist.cdn.sapbox.me/2017-09-10-introduction-to-telegraf/grafana-in-action.jpg "Grafana에 InfluxDB를 데이터 소스로 추가하기"
-[image-4]:	https://simplist.cdn.sapbox.me/2017-09-10-introduction-to-telegraf/chronograf-setup.jpg "Grafana에 InfluxDB를 데이터 소스로 추가하기"
-[image-5]:	https://simplist.cdn.sapbox.me/2017-09-10-introduction-to-telegraf/chronograf-in-action.jpg "Grafana에 InfluxDB를 데이터 소스로 추가하기"
+[image-1]:	https://cdn.si.mpli.st/2017-09-10-introduction-to-telegraf/ingest-store-visualize.svg "수집, 저장, 시각화 소프트웨어"
+[image-2]:	https://cdn.si.mpli.st/2017-09-10-introduction-to-telegraf/grafana-setup.jpg "Grafana에 InfluxDB를 데이터 소스로 추가하기"
+[image-3]:	https://cdn.si.mpli.st/2017-09-10-introduction-to-telegraf/grafana-in-action.jpg "Grafana에 InfluxDB를 데이터 소스로 추가하기"
+[image-4]:	https://cdn.si.mpli.st/2017-09-10-introduction-to-telegraf/chronograf-setup.jpg "Grafana에 InfluxDB를 데이터 소스로 추가하기"
+[image-5]:	https://cdn.si.mpli.st/2017-09-10-introduction-to-telegraf/chronograf-in-action.jpg "Grafana에 InfluxDB를 데이터 소스로 추가하기"

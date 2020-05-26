@@ -20,7 +20,7 @@ Affinity Designer가 보다 Photoshop에 가깝게 만들어진 소프트웨어�
 
 회사에서 디자인을 다시 맡아야 한다면 기존에 경력이 있는 팀원을 모집할 수 있고, 이미 지식이 있어 배움의 벽이 높지 않은 Photoshop나 Affinity Designer를 선택했겠지만, 개인 프로젝트인만큼 컨트롤이 간결하고 보다 웹 디자인에 초점이 맞춰진 Sketch를 선택했다.
 
-![Sketch](https://simplist.cdn.sapbox.me/2016-04-06-sketch.jpg)
+![Sketch](https://cdn.si.mpli.st/2016-04-06-sketch.jpg)
 
 길지 않은 시간이지만 Sketch로 작업하면서 Photoshop과의 차이점을 여럿 느낄 수 있었다.
 

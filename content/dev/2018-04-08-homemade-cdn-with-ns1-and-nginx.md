@@ -63,16 +63,16 @@ NS1의 킬러 기능은 Filter Chain인데, 서버의 다운타임이나 사용�
 설정을 마치고 DNS 레코드를 쿼리해보니, 서울 엣지 서버의 IP가 정상적으로 반환된다!
 
 ```shell
-❯ dig simplist.cdn.sapbox.me @8.8.8.8
+❯ dig cdn.si.mpli.st @8.8.8.8
 
-; <<>> DiG 9.10.6 <<>> simplist.cdn.sapbox.me @8.8.8.8
+; <<>> DiG 9.10.6 <<>> cdn.si.mpli.st @8.8.8.8
 ;; global options: +cmd
 ;; Got answer:
 
 (중략)
 
 ;; ANSWER SECTION:
-simplist.cdn.sapbox.me. 21599   IN  A   <SEOUL EDGE IP>
+cdn.si.mpli.st. 21599   IN  A   <SEOUL EDGE IP>
 
 ;; Query time: 680 msec
 ;; SERVER: 8.8.8.8#53(8.8.8.8)
@@ -82,16 +82,16 @@ simplist.cdn.sapbox.me. 21599   IN  A   <SEOUL EDGE IP>
 
 같은 명령어를 일본에 위치한 다른 서버에 접속하여 실행해 보니, 정상적으로 도쿄 오리진 서버의 IP가 반환된다.
 ```shell
-❯ dig simplist.cdn.sapbox.me @8.8.8.8
+❯ dig cdn.si.mpli.st @8.8.8.8
 
-; <<>> DiG 9.12.1 <<>> simplist.cdn.sapbox.me @8.8.8.8
+; <<>> DiG 9.12.1 <<>> cdn.si.mpli.st @8.8.8.8
 ;; global options: +cmd
 ;; Got answer:
 
 (중략)
 
 ;; ANSWER SECTION:
-simplist.cdn.sapbox.me. 21599   IN  A   <TOKYO ORIGIN IP>
+cdn.si.mpli.st. 21599   IN  A   <TOKYO ORIGIN IP>
 
 ;; Query time: 133 msec
 ;; SERVER: 8.8.8.8#53(8.8.8.8)
@@ -116,7 +116,7 @@ server {
   ssl_certificate /opt/certs/fullchain.pem;
   ssl_certificate_key /opt/certs/privkey.key;
 
-  server_name simplist.cdn.sapbox.me;
+  server_name cdn.si.mpli.st;
 
   proxy_http_version 1.1;
   proxy_cache default;
@@ -171,8 +171,8 @@ SSL을 설정할 때는 [Let's Encrypt][15]의 인증서를 활용했는데, 지
 [16]:	https://github.com/Neilpang/acme.sh
 [17]:	https://si.mpli.st/review/wework-a-year-later.html
 
-[image-1]:	https://simplist.cdn.sapbox.me/2018-04-homemade-cdn-with-ns1-and-nginx/cdn-plan.svg "홈메이드 CDN 구조"
-[image-2]:	https://simplist.cdn.sapbox.me/2018-04-homemade-cdn-with-ns1-and-nginx/dnsimple.png "DNSimple의 Regional Records 기능"
-[image-3]:	https://simplist.cdn.sapbox.me/2018-04-homemade-cdn-with-ns1-and-nginx/ns1-filter-chain.png "NS1의 Filter Chain"
-[image-4]:	https://simplist.cdn.sapbox.me/2018-04-homemade-cdn-with-ns1-and-nginx/ns1-filter-chain-config.png "NS1의 Filter Chain"
-[image-5]:	https://simplist.cdn.sapbox.me/2018-04-homemade-cdn-with-ns1-and-nginx/inspector-comparison.png "전후 Web Inspector 비교"
+[image-1]:	https://cdn.si.mpli.st/2018-04-homemade-cdn-with-ns1-and-nginx/cdn-plan.svg "홈메이드 CDN 구조"
+[image-2]:	https://cdn.si.mpli.st/2018-04-homemade-cdn-with-ns1-and-nginx/dnsimple.png "DNSimple의 Regional Records 기능"
+[image-3]:	https://cdn.si.mpli.st/2018-04-homemade-cdn-with-ns1-and-nginx/ns1-filter-chain.png "NS1의 Filter Chain"
+[image-4]:	https://cdn.si.mpli.st/2018-04-homemade-cdn-with-ns1-and-nginx/ns1-filter-chain-config.png "NS1의 Filter Chain"
+[image-5]:	https://cdn.si.mpli.st/2018-04-homemade-cdn-with-ns1-and-nginx/inspector-comparison.png "전후 Web Inspector 비교"

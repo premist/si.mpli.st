@@ -32,6 +32,6 @@ _본 글은 제조사의 별도 지원 없이 자비로 구입한 제품에 대�
 [1]:	http://www.lg.com/us/monitors/lg-27UD88-W-4k-uhd-led-monitor
 [2]:	http://www.desker.co.kr/
 
-[image-1]:	https://simplist.cdn.sapbox.me/2017-07-22-desker-monitor-stand-1.jpg "DESKER 모니터 받침대 박스"
-[image-2]:	https://simplist.cdn.sapbox.me/2017-07-22-desker-monitor-stand-2.jpg "모니터 받침대에 있는 DESKER 로고"
-[image-3]:	https://simplist.cdn.sapbox.me/2017-07-22-desker-monitor-stand-3.jpg "모니터 받침대를 배치한 책상의 모습"
+[image-1]:	https://cdn.si.mpli.st/2017-07-22-desker-monitor-stand-1.jpg "DESKER 모니터 받침대 박스"
+[image-2]:	https://cdn.si.mpli.st/2017-07-22-desker-monitor-stand-2.jpg "모니터 받침대에 있는 DESKER 로고"
+[image-3]:	https://cdn.si.mpli.st/2017-07-22-desker-monitor-stand-3.jpg "모니터 받침대를 배치한 책상의 모습"

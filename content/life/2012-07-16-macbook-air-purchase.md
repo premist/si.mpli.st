@@ -9,7 +9,7 @@ aliases:
 excerpt: 2012년형 MacBook Air를 구매하였다. 11인치에 CPU/RAM CTO.
 ---
 
-![MacBook Air with MagSafe 2](https://simplist.cdn.sapbox.me/2012-07-16-macbook-air.jpg)
+![MacBook Air with MagSafe 2](https://cdn.si.mpli.st/2012-07-16-macbook-air.jpg)
 
 2012년형 MacBook Air를 구매하였다. 11인치에 CPU/RAM CTO. 기존에 사용하던 MacBook Pro를 대체하고도 남을 성능을 가진만큼, 오래오래 써줘야겠다.
 

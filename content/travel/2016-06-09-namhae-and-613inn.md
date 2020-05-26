@@ -7,7 +7,7 @@ aliases:
   - /travel/namhae-and-613inn.html
   - /travel/2016-06-09-namhae-and-613inn.html
 excerpt: 여행을 가고 싶다는 생각이 다시금 고개를 들기 시작하던 2016년 초. 주변에도 여행을 가는 사람들이 많아지고 마침 회사를 같이 다니는 동료도 일본 여행을 간다는 이야기를 듣던 시기였다.
-cover: https://simplist.cdn.sapbox.me/2016-06-09-namhae613inn-day1-613inn.jpg
+cover: https://cdn.si.mpli.st/2016-06-09-namhae613inn-day1-613inn.jpg
 ---
 
 2016.02.20 - 2016.02.21
@@ -48,15 +48,15 @@ cover: https://simplist.cdn.sapbox.me/2016-06-09-namhae613inn-day1-613inn.jpg
 
 부산행 KTX 티켓을 구매하고, 나갈 준비를 시작했다. 시간이 생각보다 늦어져서 버스 첫 차를 타고 이동할 수도 있었지만, 가장 빠른 6시 25분 KTX를 타고 출발하려면 택시로 이동을 해야 했다. 짐을 싸기 전에 카카오택시를 이용해 택시를 호출하고, 내려가서 바로 택시를 타고 서울역으로 이동하였다.
 
-![서울역](https://simplist.cdn.sapbox.me/2016-06-09-namhae613inn-day1-seoulstation.jpg)
+![서울역](https://cdn.si.mpli.st/2016-06-09-namhae613inn-day1-seoulstation.jpg)
 
 평소에 북적이던 서울역의 풍경에만 익숙해져서 그런지, 이른 아침의 조용한 서울역은 내가 생각하는 이미지와 큰 차이가 있었다. 이른 시간이지만 공항철도를 타고 공항에 가기 위해 짐을 바리바리 들고 온 사람들도 몇몇 보였다. 대부분의 음식점은 문을 닫았지만, 서울역 중앙에 있는 맥도날드와 롯데리아는 문을 영업을 하고 있었다. 맥도날드에서 간단하게 아침을 해결하고, 플랫폼으로 내려가서 열차에 탑승했다.
 
-![9, 10번 플랫폼](https://simplist.cdn.sapbox.me/2016-06-09-namhae613inn-day1-seoulstation-platform.jpg)
+![9, 10번 플랫폼](https://cdn.si.mpli.st/2016-06-09-namhae613inn-day1-seoulstation-platform.jpg)
 
 2시간 반 가량의 여정동안 일부 정차역에서 깬 것을 제외하고서는 쭉 잠을 잘 수 있었다. 일반석에는 자리가 없어서 어쩔 수 없이 특실로 예약했는데, 거의 잠을 자지 못한 터라 부족한 잠을 편안하게 보충할 수 있었다.
 
-![부산역](https://simplist.cdn.sapbox.me/2016-06-09-namhae613inn-day1-busanstation.jpg)
+![부산역](https://cdn.si.mpli.st/2016-06-09-namhae613inn-day1-busanstation.jpg)
 
 
 ### 부산에서 남해로
@@ -65,13 +65,13 @@ cover: https://simplist.cdn.sapbox.me/2016-06-09-namhae613inn-day1-613inn.jpg
 
 사상역 역사에서 나와 사람들의 물결을 따라가니 부산 서부버스 터미널 건물이 나왔다. 비교적 작은 터미널이었지만 지방 곳곳으로 버스를 타고 가려는 사람들로 붐볐다. 남해로 가는 티켓을 구입하고 보니, 별도의 좌석 지정이 없는 선착순 착석 티켓이었다. 아무래도 버스가 자주 다니기도 하고, 만석이 되어 좌석을 정해주어야 할 만큼 사람들이 붐비지 않아서 그런 듯. 승차장에서 잠시 기다리니 버스가 도착하였다.
 
-![버스 안](https://simplist.cdn.sapbox.me/2016-06-09-namhae613inn-day1-busan-namhae-bus.jpg)
+![버스 안](https://cdn.si.mpli.st/2016-06-09-namhae613inn-day1-busan-namhae-bus.jpg)
 
 버스를 가득 채울 정도는 아니었지만 승객이 꽤 있었다. 남해를 가는 승객도 있겠지만, 진교나 진주 등 중간에 경유하는 터미널을 가는 승객도 몇몇 있는 것 같았다. 아직 피로가 풀리지 않은 탓도 있고, 버스 안에서는 할 게 마땅치 않은만큼 졸다 깨다 하면서 시간을 보냈다.
 
 약 2시간 반의 이동 후에, 남해 공용 터미널에 도착하였다. 크기가 작을 것이라고 생각한 것과는 달리 볼링장 등 여러 시설을 겸하고 있는, 어느 정도 규모가 있는 터미널이었다. 독일마을에 가서 점심을 해결하려 했지만 허기진 배를 조금아나마 채우려고 터미널 안에 있는 작은 식당으로 들어갔다. 식당 안에는 다른 지역에서 온 여행객은 거의 없고, 대부분이 근처에 거주하시는 지역 주민분들인 것 같아 살짝 어색했다. 김밥이나 우동 등 간단하게 먹을 수 있는 요깃거리를 팔고 있었는데, 그 중 칼국수를 시켰다. 3,500원이라는 간단한 가격대라 크게 기대를 하지 않았지만 해산물이 들어간 나름 본격적인 칼국수가 나왔다.
 
-![터미널 안의 작은 식당](https://simplist.cdn.sapbox.me/2016-06-09-namhae613inn-day1-service-area.jpg)
+![터미널 안의 작은 식당](https://cdn.si.mpli.st/2016-06-09-namhae613inn-day1-service-area.jpg)
 
 어디까지나 이번 여행의 주 목적은 613 여관이었지만, 이왕 남해에 온 겸 주변을 둘러보자 싶어서 전날 찾아둔 관광지 중 어디를 갈 지 고민했다. 관광객이 많이 찾는 남해의 관광지는 독일마을, 원예 예술촌, 휴양림 등이 있었는데, 간단하게 독일마을과 바다 정도를 구경하고 싶었다. 주변 풍경도 볼 겸 아래와 같이 섬 한 쪽을 빙 돌아보는 계획을 세웠다.
 
@@ -91,9 +91,9 @@ cover: https://simplist.cdn.sapbox.me/2016-06-09-namhae613inn-day1-613inn.jpg
 
 오르막길을 따라 걸어가다 보니 독일 음식점들이 보이기 시작했고, 입구를 지나 계속 걸어가니 본격적으로 독일풍 건물들이 늘어서 있는 작은 마을이 나왔다.
 
-![독일마을](https://simplist.cdn.sapbox.me/2016-06-09-namhae613inn-day1-german-village.jpg)
+![독일마을](https://cdn.si.mpli.st/2016-06-09-namhae613inn-day1-german-village.jpg)
 
-![독일마을 2](https://simplist.cdn.sapbox.me/2016-06-09-namhae613inn-day1-german-village-2.jpg)
+![독일마을 2](https://cdn.si.mpli.st/2016-06-09-namhae613inn-day1-german-village-2.jpg)
 
 실제 사람이 살고 있는 집도 있고, 먹을거리를 파는 가게로 개조해서 사용되고 있는 집들도 몇몇 있었다. 실제 유럽의 건축물처럼 오랜 역사를 자랑하진 않겠지만, 한국에서는 보기 힘든 디자인의 건물들이 이색적이었다. 마을 구경을 마치고 정상에 도착하니 관광 안내소를 비롯해 기념품 상점과 독일 음식점이 여럿 있었다. 그 중 하나인 [바이로이트](http://bayreuth.co.kr/)에 들어가서 점심을 해결하기로 했다.
 
@@ -105,14 +105,14 @@ cover: https://simplist.cdn.sapbox.me/2016-06-09-namhae613inn-day1-613inn.jpg
 
 점심식사를 끝내고 슬슬 독일마을을 나왔다. 정류장 근처 커피숍에서 약 한 시간 정도 기다리다가, [물미 해안도로](http://www.namhae.tv/news/articleView.html?idxno=25357)를 거쳐 미조항으로 가는 버스를 탔다. 여행을 오기 전 인터넷 검색으로 남해의 볼거리를 찾아보던 중 눈에 띈 것이 바로 물미 해안도로인데, 바다와 맞닿아있는 구불구불한 도로를 보면서 다음에 운전면허를 따면 꼭 드라이브 해 보고 싶다는 생각이 들었다. 지금은 면허가 없어서 가 볼 수 없겠구나 생각하던 와중, 마침 해당 코스를 지나가는 버스를 찾아서 버스를 타고 체험해보기로 한 것이다. 직접 운전을 한 것이 아니기에 파노라마처럼 펼쳐지는 탁 트인 경치는 구경할 수 없었지만, 중간중간 창문 너머로 보이는 바닷가의 풍경은 다음에 이 곳을 다시 오겠다는 생각을 하게 만들기에 충분했다.
 
-![물미 해안도로](https://simplist.cdn.sapbox.me/2016-06-09-namhae613inn-day1-mulmi-shoreline-road.jpg)
+![물미 해안도로](https://cdn.si.mpli.st/2016-06-09-namhae613inn-day1-mulmi-shoreline-road.jpg)
 
 
 ### 미조항, 그리고 613 여관으로
 
 버스를 타고 도착한 곳은 미조항. 아직 겨울이 완전히 사라지지 않은 날씨에 세찬 바다 바람이 더해져 꽤나 쌀쌀했다. 사람이 북적대는 여름 바다와는 다른, 겨울 바다만의 묘한 매력이 있는 것 같다.
 
-![미조항](https://simplist.cdn.sapbox.me/2016-06-09-namhae613inn-day1-mijoharbor.jpg)
+![미조항](https://cdn.si.mpli.st/2016-06-09-namhae613inn-day1-mijoharbor.jpg)
 
 원래는 미조항에 도착하여 바다를 따라 산책을 할 예정이었지만, 생각보다 날이 빨리 어두워지는 데다가 버스 막차를 놓칠 수도 있어 오래 머물지 않고 바로 이동하기로 했다. 약 30분 후 마지막 버스가 도착하는 상황이었는데, 조금 더 빨리 숙소에 도착하고 싶은 마음에 택시를 타고 숙소로 향하였다.
 
@@ -124,11 +124,11 @@ cover: https://simplist.cdn.sapbox.me/2016-06-09-namhae613inn-day1-613inn.jpg
 
 어느새 하늘은 어둑어둑해지고 택시는 613 여관에 도착했다. 차에서 내려 여관 쪽으로 걸어가니 입구 쪽에서 걸어오고 계신 주인장님에게 반갑게 인사를 했다. 아무래도 여관 근처의 횟집에서는 혼자서 저녁을 해결하기는 힘들 테니, 같이 식사를 하자는 제안을 하셨다. 나도 저녁을 어떻게 해결할지에 대한 고민을 하고 있던 터라 흔쾌히 승낙하고, 주인장님을 따라 여관 안의 카페테리아로 들어갔다.
 
-![613 여관](https://simplist.cdn.sapbox.me/2016-06-09-namhae613inn-day1-613inn.jpg)
+![613 여관](https://cdn.si.mpli.st/2016-06-09-namhae613inn-day1-613inn.jpg)
 
 여관의 정면에 위치한 카페테리아에는 커피 머신을 비롯해 식탁 몇 개와 주방을 볼 수 있는 바 테이블이 있었다. 반대편으로 크게 나 있는 창문 저 멀리로는 상주 해수욕장이 보였다. 주인장님은 아무래도 늦은 시간이라 커피가 아닌 유자차를 권하셨고, 마침 무언가를 마시고 싶었던 터라 감사히 받았다. 이런 저런 이야기를 나누면서 내가 쓰게 될 [102호](http://www.613inn.com/room-102/)의 방 키를 준비해 주셨고, 짐을 풀기 위해 숙소로 올라갔다.
 
-![102호](https://simplist.cdn.sapbox.me/2016-06-09-namhae613inn-day1-613inn-room102.jpg)
+![102호](https://cdn.si.mpli.st/2016-06-09-namhae613inn-day1-613inn-room102.jpg)
 
 102호의 문을 열고 들어가니 근처 건물들과 완전히 다른 느낌의, 높은 층고를 가진 방이 나타났다. 오래된 가정집과 펜션으로 가득한 마을과 대비를 이루는 인테리어에 잠시 할 말을 잃고 바라보고 있다가, 이내 정신을 차리고 짐을 풀기 시작했다. 짧게 하루 다녀오는 여행이 목적인만큼 캐리어나 무거운 가방 대신, 평상시에 들고 다니던 가방에 간단히 갈아입을 옷을 챙겨온 가방을 풀고 간단히 씻었다.
 
@@ -143,9 +143,9 @@ cover: https://simplist.cdn.sapbox.me/2016-06-09-namhae613inn-day1-613inn.jpg
 
 즐거운 식사와 대화를 마치고 다시 102호로 돌아왔다. 휴식을 위해 먼 곳까지 찾아온 만큼 늦게까지 무언가를 하고 싶다는 생각은 들지 않아서, 오늘 찍은 사진을 간단히 정리하고 하루를 마감했다.
 
-![3층으로 올라가는 계단에서](https://simplist.cdn.sapbox.me/2016-06-09-namhae613inn-day1-room102-laptop.jpg)
+![3층으로 올라가는 계단에서](https://cdn.si.mpli.st/2016-06-09-namhae613inn-day1-room102-laptop.jpg)
 
-![더블 침대](https://simplist.cdn.sapbox.me/2016-06-09-namhae613inn-day1-room102-bed.jpg)
+![더블 침대](https://cdn.si.mpli.st/2016-06-09-namhae613inn-day1-room102-bed.jpg)
 
 
 ### 2일차 아침 - 613 여관의 아침 식사, 그리고 바다
@@ -154,21 +154,21 @@ cover: https://simplist.cdn.sapbox.me/2016-06-09-namhae613inn-day1-613inn.jpg
 
 아침 식사 메뉴는 [남해산 활전복으로 만든 전복죽](http://www.613inn.com/ear-shell-soup/). 어제 밤에 방으로 들어가기 전에 활전복을 보여주셨는데, 바로 그 전복으로 만든 죽이었다. 뷔페식으로 나오는 호텔 식사들은 아무래도 뷔페식이다보니 생각보다 많이 먹게 되고 그 후 속이 더부룩한 경우가 많은데, 휴식 후에 속을 풀어주는 전복죽은 정말 반가운 아침 식사 메뉴였다.
 
-![613 여관의 카페테리아](https://simplist.cdn.sapbox.me/2016-06-09-namhae613inn-day2-cafeteria.jpg)
+![613 여관의 카페테리아](https://cdn.si.mpli.st/2016-06-09-namhae613inn-day2-cafeteria.jpg)
 
-![전복죽](https://simplist.cdn.sapbox.me/2016-06-09-namhae613inn-day2-avalon-porridge.jpg)
+![전복죽](https://cdn.si.mpli.st/2016-06-09-namhae613inn-day2-avalon-porridge.jpg)
 
 체크아웃을 하기 전, 가벼운 마음으로 상주 해수욕장을 보고 싶은 마음에 카메라를 들고 바다로 향했다. 카페테리아의 창문으로 바다가 바로 보일 정도로 아주 가까운 거리에 있어서, 얼마 걷지 않아 해수욕장 입구에 도착했다. 생각외로 사람들이 꽤 있었는데, 근처 펜션에서 하룻밤 묵고 바다를 보러 온 사람들인 듯 했다. 해수욕장 한켠에는 사륜 오토바이를 빌려서 경주를 즐기는 사람들도 있었다.
 
 '상주 은모래 비치' 라는 별명처럼 고운 모래와, 붐비지 않는 해변가, 그리고 달리 맑고 투명한 바닷물. 짧은 여정이지만 이 곳에 오길 잘했다는 생각을 다시금 하며, 잠시 시간을 잊고 바다를 바라보았다.
 
-![상주 해수욕장](https://simplist.cdn.sapbox.me/2016-06-09-namhae613inn-day2-sangju-beach.jpg)
+![상주 해수욕장](https://cdn.si.mpli.st/2016-06-09-namhae613inn-day2-sangju-beach.jpg)
 
 613 여관으로 돌아와서 짐을 챙기고, 카페테리아에서 하룻밤을 묵었던 102호의 키를 건네드렸다. 한 시간 정도 후에 오는 버스가 오기 전까지 카페테리아에서 커피를 마시며 시간을 보냈다. 주인장님에게 인사를 하고 613 여관을 나와 버스 정류장으로 향했다. 버스 정류장은 613 여관에서 걸어서 5분 정도의 거리에 있었는데, 잠시 기다리자 남해 터미널로 가는 버스가 도착했다.
 
-![613 여관의 낮](https://simplist.cdn.sapbox.me/2016-06-09-namhae613inn-day2-613inn.jpg)
+![613 여관의 낮](https://cdn.si.mpli.st/2016-06-09-namhae613inn-day2-613inn.jpg)
 
-![버스 정류장](https://simplist.cdn.sapbox.me/2016-06-09-namhae613inn-day2-busstation.jpg)
+![버스 정류장](https://cdn.si.mpli.st/2016-06-09-namhae613inn-day2-busstation.jpg)
 
 
 ### 남해에서 대전으로
@@ -186,11 +186,11 @@ cover: https://simplist.cdn.sapbox.me/2016-06-09-namhae613inn-day1-613inn.jpg
 
 플레이버거는 한번 더 이전을 한 것 같았다. 마지막으로 업무차 대전에 방문했을때는 **플레이버거 그린라벨**이라는 이름으로 유성구청 맞은편 골목 깊숙히 있었는데, 이번에 찾아갔을때는 처음 방문했을때와 같이 큰길가로 다시 위치를 옮겼다. 가게 안으로 들어가자 익숙한 플레이버거의 인테리어가 나타났다. 배가 많이 고프진 않아서 주로 먹던 더블 더블 버거가 아닌 베이컨 버거를 주문했다. 역시나 실망시키지 않는 맛, 이 맛 때문에라도 대전을 다시 찾게 된다.
 
-![플레이버거](https://simplist.cdn.sapbox.me/2016-06-09-namhae613inn-day2-playburger.jpg)
+![플레이버거](https://cdn.si.mpli.st/2016-06-09-namhae613inn-day2-playburger.jpg)
 
 식사를 마칠 쯤 되니 시간은 6시 10분을 조금 넘어가고 있었다. 7시 40분에 출발하는 ITX-새마을 열차를 타야 했는데, 대중교통으로 이동하면 시간을 맞출 지 확신할 수 없어서 택시를 이용하기로 했다. 택시로 이동하면 시간적인 여유가 약간 생겨서 카카오택시로 호출을 미리 해 놓고 근처에 있는 April & August 커피숍으로 이동했다. 이 커피숍도 플레이버거가 운영하고 있는데, 유성구청 맞은편에는 이렇게 플레이버거가 운영하는 여러 종류의 음식점이 가득하다.
 
-![April & August](https://simplist.cdn.sapbox.me/2016-06-09-namhae613inn-day2-aprilnaugust.jpg)
+![April & August](https://cdn.si.mpli.st/2016-06-09-namhae613inn-day2-aprilnaugust.jpg)
 
 커피를 마시면서 카카오택시 앱으로 서대전역을 목적지로 설정하고 택시를 호출했다. 도착하신 기사님은 꽤 친절하신 분이었다. 카카오택시는 우버보다 불친절한 기사님이 오실 확률은 높지만, 우버와는 다르게 기사님들이 전국 대부분의 지역에서 이용하다 보니 국내 어디를 가도 사용할 수 있다는 장점이 꽤 큰 것 같다.
 
@@ -199,7 +199,7 @@ cover: https://simplist.cdn.sapbox.me/2016-06-09-namhae613inn-day1-613inn.jpg
 
 시간에 딱 맞게 서대전역에 도착했다. 비교적 큰 규모의 대전역과 다르게 음식점 등도 꽤나 적은 작은 역이었는데, 대전역 대신 이 역에 온 이유는 KTX가 아닌 ITX-새마을을 타고 서울로 가기 위해서였다. KTX보다 저렴한 요금에 크게 차이나지 않는 이동시간, 그리고 비교적 최신 열차를 탈 수 있다는 점이 좋았다. 조금은 썰렁한 플랫폼에서 열차를 기다렸다.
 
-![서대전역](https://simplist.cdn.sapbox.me/2016-06-09-namhae613inn-day2-seodaejeon-stn.jpg)
+![서대전역](https://cdn.si.mpli.st/2016-06-09-namhae613inn-day2-seodaejeon-stn.jpg)
 
 집으로 돌아가는 열차 안은 손님으로 가득 차 있었다. 옆 좌석이 내심 비길 기대했지만 그 기대가 무색하게도 내가 탄 칸은 전 좌석이 만석이었다. 그래도 KTX 일반석보다 체감 상으로 자리가 넓어서 편안하게 서울로 올라왔다.
 

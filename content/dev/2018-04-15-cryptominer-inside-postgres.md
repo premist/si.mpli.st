@@ -143,8 +143,8 @@ PostgreSQL 컨테이너를 `docker kill ID && docker rm ID` 로 제거하고, Po
 [17]:	https://www.slideshare.net/inquis/advanced-sql-injection-to-operating-system-full-control-slides
 [18]:	http://bernardodamele.blogspot.kr/2009/01/command-execution-with-postgresql-udf.html
 
-[image-1]:	https://simplist.cdn.sapbox.me/2018-04-cryptominer-inside-postgres/ipad-workstation.jpg
-[image-2]:	https://simplist.cdn.sapbox.me/2018-04-cryptominer-inside-postgres/log-pg-largeobject.jpg "로그의 일부 발췌 (1)"
-[image-3]:	https://simplist.cdn.sapbox.me/2018-04-cryptominer-inside-postgres/log-lo-export.jpg "로그의 일부 발췌 (2)"
-[image-4]:	https://simplist.cdn.sapbox.me/2018-04-cryptominer-inside-postgres/log-subprocessing.jpg "로그의 일부 발췌 (3)"
-[image-5]:	https://simplist.cdn.sapbox.me/2018-04-cryptominer-inside-postgres/chronograf-telegraf-graph.png
+[image-1]:	https://cdn.si.mpli.st/2018-04-cryptominer-inside-postgres/ipad-workstation.jpg
+[image-2]:	https://cdn.si.mpli.st/2018-04-cryptominer-inside-postgres/log-pg-largeobject.jpg "로그의 일부 발췌 (1)"
+[image-3]:	https://cdn.si.mpli.st/2018-04-cryptominer-inside-postgres/log-lo-export.jpg "로그의 일부 발췌 (2)"
+[image-4]:	https://cdn.si.mpli.st/2018-04-cryptominer-inside-postgres/log-subprocessing.jpg "로그의 일부 발췌 (3)"
+[image-5]:	https://cdn.si.mpli.st/2018-04-cryptominer-inside-postgres/chronograf-telegraf-graph.png
