@@ -89,8 +89,9 @@ $ kubectl --namespace monitoring port-forward svc/grafana 3000
 
 ![Prometheus 대시보드의 Targets 메뉴](https://cdn.si.mpli.st/2020-05-04-k3s-prometheus/0003-prometheus-targets.png)
 
-다음으로, Grafana 대시보드에 들어가보겠습니다. Grafana 포트 포워딩을 켠 후 localhost:3000에 들어가, 상단의 Home을 누르고 Default 폴더를 열어봅시다. Kubernetes의 여러 부분에 대한 지표를 모아둔 대시보드를 확인할 수 있습니다.
+다음으로, Grafana 대시보드에 들어가보겠습니다. Grafana는 Elasticsearch, InfluxDB와 같은 다른 백엔드와도 같이 쓰일만큼 지표를 그래프 등으로 시각화하여 쉽게 확인할 때 널리 사용되고 있습니다. Prometheus의 대시보드는 확인 목적 외에는 들어갈 일이 자주 없고, 지표를 확인하고 싶다면 대부분의 경우에는 Grafana 대시보드를 이용하게 될 것입니다.
 
+Grafana 포트 포워딩을 켠 후 localhost:3000에 들어갑니다. 기본 로그인 정보인 `admin/admin`으로 접속하고, 상단의 Home을 눌러 Default 폴더를 열어봅시다. Kubernetes의 여러 부분에 대한 지표를 모아둔 대시보드를 확인할 수 있습니다.
 
 {{< figure src="https://cdn.si.mpli.st/2020-05-04-k3s-prometheus/0004-grafana-dashboard.png" title="Grafana에 미리 추가된 대시보드 목록" >}}
 
