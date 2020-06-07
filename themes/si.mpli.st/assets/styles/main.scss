@@ -321,9 +321,20 @@ article {
     justify-content: center;
     align-items: flex-start;
 
+    @media #{$mq-mobile} {
+      & { display: inherit; }
+    }
+
     & figure {
       object-fit: contain;
       padding-right: 20px;
+
+      @media #{$mq-mobile} {
+        & {
+          object-fit: none;
+          padding-right: 0px;
+        }
+      }
     }
 
     & figure:last-child {
