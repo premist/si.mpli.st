@@ -1,0 +1,47 @@
+{{ define "main" }}
+
+<div class="container">
+  <header>
+    <h1 class="title"><a href="/">{{ .Site.Title }}</a></h1>
+    <span class="author"><a href="{{ .Site.Params.AuthorWebsite }}" target="_blank">{{ .Site.Params.Author }}</a></span>
+  </header>
+
+  <div id="index">
+    <ul class="posts">
+      {{ range (.Paginator 12).Pages }}
+        <li class="category-{{ .Section }}">
+          <a href="{{ .Permalink }}">
+            <span class="category">{{ .Section }}</span>
+            <span class="title">{{ .Title }}</span>
+            <span class="time">{{ .Date }}</span>
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+
+
+  <div id="pagination" class="pagination">
+    {{ if .Paginator.HasPrev }}
+      <p><a href="{{ .Paginator.Prev.URL }}">newer</a></p>
+    {{ else }}
+      <p class="prev disabled">
+        <span>newer</span>
+      </p>
+    {{ end }}
+
+    <p class="page-count">
+      {{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }}
+    </p>
+
+    {{ if .Paginator.HasNext }}
+      <p><a href="{{ .Paginator.Next.URL }}">older</a></p>
+    {{ else }}
+      <p class="prev disabled">
+        <span>older</span>
+      </p>
+    {{ end }}
+  </div>
+</div>
+
+{{ end }}
