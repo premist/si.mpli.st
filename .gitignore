@@ -3,3 +3,8 @@ resources/_gen/
 
 .DS_Store
 *.swp
+
+static/fonts/
+themes/simplist2022/assets/styles/fonts/
+
+.hugo_build.lock
