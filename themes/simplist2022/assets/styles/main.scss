@@ -20,19 +20,46 @@ $syntax-highlighting-font: "Menlo", "Monaco", "Liberation Mono", Consolas, Couri
 
 $primary-color: #222;
 $bold-color: #000;
+$caption-color: #888;
 
 $mq-mobile: "(max-width: 820px)";
 
 /* Common */
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: $primary-font;
     font-weight: $force-font-weight;
+    font-size: 20px;
+    line-height: 2em;
+    letter-spacing: 0.005em;
     
     text-rendering: optimizeLegibility;
     word-break: keep-all;
     word-wrap: break-word;
 
     color: $primary-color;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 90px;
+    font-size: 26px;
+    
+    border-bottom: 2px solid $primary-color;
+
+    & a, & span {
+        display: inline-block;
+
+        line-height: 2.5em;
+
+        color: $bold-color;
+    }
 }
 
 .container {
@@ -55,8 +82,13 @@ h1, h2 {
     font-size: 40px;
     font-family: 'Lab Grotesque Medium', 'Gothic A1 SemiBold';
     font-weight: $force-font-weight;
+
+    line-height: 1.4em;
     
     color: $bold-color;
+
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
 }
 
 h3, h4, h5, h6 {
@@ -67,13 +99,30 @@ h3, h4, h5, h6 {
     line-height: 1.4em;
 
     color: $bold-color;
+
+    padding-top: 1.5em;
+    padding-bottom: 0.5em;
 }
 
-p, span {
-  font-size: 20px;
-  font-family: 'Lab Grotesque Regular', 'Gothic A1 Medium';
-  font-weight: $force-font-weight;
-  line-height: 2em;
+figcaption h4 {
+    font-size: 18px;
+    font-family: $primary-font;
+    text-align: right;
+    
+    color: $caption-color;
+
+    padding-top: 0;
+    padding-bottom: 1.5em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+// TEMP
+a {
+    color: #009EC9;
+    text-decoration: none;
 }
 
 img {
