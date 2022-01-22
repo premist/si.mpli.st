@@ -5,15 +5,25 @@
     <a class="title" href="/">{{ .Site.Title }}</a>
   </header>
 
+  <div id="intro">
+    <h2>si.mpli.st is<br />a tiny little journal<br />by minku lee.</h2>
+    <p>매일매일의 일상을 되돌아보고 싶을 때, 흥미 있는 무언가를 탐구해보았을 때, 관심 가는 물건을 사용해 보았을 때, 어딘가로 훌쩍 다녀온 작은 기억을 남기고 싶을때. 기억에 남는, 기억에 남기고 싶은 그 무언가를 여기에 적어보곤 합니다.</p>
+  </div>
+
   <div id="index">
     <ul class="posts">
-      {{ range (.Paginator 12).Pages }}
+      {{ range (.Paginator 3).Pages }}
         <li class="category-{{ .Section }}">
-          <a href="{{ .Permalink }}">
-            <span class="category">{{ .Section }}</span>
-            <span class="title">{{ .Title }}</span>
-            <span class="time">{{ .Date }}</span>
-          </a>
+          <div class="info">
+            <a class="title" href="{{ .Permalink }}">{{ .Title }}</a>
+            <span class="meta">
+              <span>{{ .Section }}</span>
+              <span>{{ .Date }}</span>
+            </span>
+          </div>
+          <div class="summary">
+            <p>{{ .Description }}</p>
+          </div>
         </li>
       {{ end }}
     </ul>

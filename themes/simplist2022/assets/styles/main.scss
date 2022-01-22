@@ -13,14 +13,21 @@ html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,addr
 
 $container-width: 1024px;
 
-$primary-font: "Lab Grotesque Regular", "Gothic A1 Medium", "Helvetica", "Arial", "Noto Sans CJK KR", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
 $force-font-weight: 400;
+
+$primary-font: "Lab Grotesque Regular", "Gothic A1 Medium", "Helvetica", "Arial", "Noto Sans CJK KR", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+$primary-font-size: 1.25rem;
+
+$semibold-font: 'Lab Grotesque Medium', 'Gothic A1 SemiBold', "Helvetica", "Arial", "Noto Sans CJK KR", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+$bold-font: 'Lab Grotesque Bold', 'Gothic A1 Bold',  "Helvetica", "Arial", "Noto Sans CJK KR", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
 
 $syntax-highlighting-font: "Menlo", "Monaco", "Liberation Mono", Consolas, Courier, monospace;
 
 $primary-color: #222;
 $bold-color: #000;
 $caption-color: #888;
+
+$temp-color: #009EC9;
 
 $mq-mobile: "(max-width: 820px)";
 
@@ -32,10 +39,10 @@ $mq-mobile: "(max-width: 820px)";
 body {
     font-family: $primary-font;
     font-weight: $force-font-weight;
-    font-size: 20px;
+    font-size: $primary-font-size;
     line-height: 2em;
     letter-spacing: 0.005em;
-    
+
     text-rendering: optimizeLegibility;
     word-break: keep-all;
     word-wrap: break-word;
@@ -48,9 +55,8 @@ header {
     display: flex;
     justify-content: space-between;
 
-    margin-top: 90px;
-    font-size: 26px;
-    
+    font-size: 1.3em;
+
     border-bottom: 2px solid $primary-color;
 
     & a, & span {
@@ -68,8 +74,8 @@ header {
     flex-direction: column;
     justify-content: flex-start;
     width: 1024px;
-    margin: 0 auto;
-  
+    margin: 6rem auto 6rem auto;
+
     @media #{$mq-mobile} {
       width: auto;
       margin: 0 0;
@@ -79,12 +85,12 @@ header {
 
 
 h1, h2 {
-    font-size: 40px;
-    font-family: 'Lab Grotesque Medium', 'Gothic A1 SemiBold';
+    font-size: 2em;
+    font-family: $semibold-font;
     font-weight: $force-font-weight;
 
-    line-height: 1.4em;
-    
+    line-height: 1.5em;
+
     color: $bold-color;
 
     padding-top: 2.5em;
@@ -92,11 +98,11 @@ h1, h2 {
 }
 
 h3, h4, h5, h6 {
-    font-size: 26px;
-    font-family: 'Lab Grotesque Bold', 'Gothic A1 Bold';
+    font-size: 1.3em;
+    font-family: $bold-font;
     font-weight: $force-font-weight;
 
-    line-height: 1.4em;
+    line-height: 1.5em;
 
     color: $bold-color;
 
@@ -104,15 +110,17 @@ h3, h4, h5, h6 {
     padding-bottom: 0.5em;
 }
 
-figcaption h4 {
-    font-size: 18px;
+figcaption * {
+    font-size: 0.8em;
     font-family: $primary-font;
     text-align: right;
-    
+
+    line-height: 1.6em;
+
     color: $caption-color;
 
     padding-top: 0;
-    padding-bottom: 1.5em;
+    // padding-bottom: 1.5em;
 }
 
 p {
@@ -121,10 +129,49 @@ p {
 
 // TEMP
 a {
-    color: #009EC9;
+    color: $temp-color;
     text-decoration: none;
 }
 
 img {
     width: 100%;
 }
+
+figure {
+    padding-bottom: 2em;
+}
+
+// Mainpage
+
+#index {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.posts li {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+
+  & .info {
+    flex-basis: 30%;
+
+    & .title {
+      display: block;
+      font-family: $bold-font;
+      color: $primary-color;
+      transition-property: color;
+      transition-duration: 0.4s;
+
+      &:hover {
+        color: $temp-color;
+      }
+    }
+  }
+
+  & .summary {
+    flex-basis: 70%;
+  }
+}
+
+
