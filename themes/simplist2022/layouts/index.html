@@ -18,7 +18,7 @@
             <a class="title" href="{{ .Permalink }}">{{ .Title }}</a>
             <span class="meta">
               <span>{{ .Section }}</span>
-              <span>{{ .Date }}</span>
+              <span>{{ .Date | time.Format "2006.01.02" }}</span>
             </span>
           </div>
           <div class="summary">
@@ -29,28 +29,12 @@
     </ul>
   </div>
 
-
-  <div id="pagination" class="pagination">
-    {{ if .Paginator.HasPrev }}
-      <p><a href="{{ .Paginator.Prev.URL }}">newer</a></p>
-    {{ else }}
-      <p class="prev disabled">
-        <span>newer</span>
-      </p>
-    {{ end }}
-
-    <p class="page-count">
-      {{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }}
-    </p>
-
-    {{ if .Paginator.HasNext }}
-      <p><a href="{{ .Paginator.Next.URL }}">older</a></p>
-    {{ else }}
-      <p class="prev disabled">
-        <span>older</span>
-      </p>
-    {{ end }}
+  <div id="view-archive">
+    <a>모든 글 보기 →</a>
   </div>
-</div>
+
+  <footer>
+    <p class="bytheway">글을 읽어보고 궁금한 점이 생겼거나, 고치고 싶은 내용이 있거나, 다른 이야기가 있으시다면 si.mpli.st@premi.st로 편지를 남겨주세요. 대화를 나누고 싶습니다.</p>
+  </footer>
 
 {{ end }}
