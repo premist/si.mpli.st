@@ -2,10 +2,8 @@
 
 <div class="container post-{{ .Section }}">
   <div class="post" itemscope itemtype="https://schema.org/Article">
-    <header class="small">
-      <a class="title" href="/">{{ .Site.Title }}</a>
-      <span class="category">{{ .Section }}</span>
-    </header>
+    {{ partial "header.html" (dict "Context" . "Subtitle" .Section) }}
+
     <article>
       <h2 itemprop="name">{{ .Title }}</h2>
       <div class="content" itemprop="articleBody">

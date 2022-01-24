@@ -182,6 +182,10 @@ hr {
 
 // Mainpage
 
+#intro a {
+  @include blend-link;
+}
+
 #index {
   margin-top: 3rem;
   margin-bottom: 2rem;

@@ -1,0 +1,40 @@
+{{ define "main" }}
+
+<div class="container">
+  {{ partial "header.html" (dict "Context" . "Subtitle" "archive") }}
+
+  {{ $paginator := .Paginate (.Site.RegularPages) }}
+
+  <div id="index">
+    <ul class="posts">
+      {{ range $paginator.Pages }}
+        {{ partial "list-post.html" . }}
+      {{ end }}
+    </ul>
+  </div>
+
+  <div id="pagination" class="pagination">
+    {{ if .Paginator.HasPrev }}
+      <p><a href="{{ .Paginator.Prev.URL }}">newer</a></p>
+    {{ else }}
+      <p class="prev disabled">
+        <span>newer</span>
+      </p>
+    {{ end }}
+
+    <p class="page-count">
+      {{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }}
+    </p>
+
+    {{ if .Paginator.HasNext }}
+      <p><a href="{{ .Paginator.Next.URL }}">older</a></p>
+    {{ else }}
+      <p class="prev disabled">
+        <span>older</span>
+      </p>
+    {{ end }}
+  </div>
+
+</div>
+
+{{ end }}

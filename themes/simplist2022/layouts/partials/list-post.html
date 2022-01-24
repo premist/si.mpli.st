@@ -1,0 +1,12 @@
+<li class="category-{{ .Section }}">
+  <div class="info">
+    <a class="title" href="{{ .Permalink }}">{{ .Title }}</a>
+    <span class="meta">
+      <span>{{ .Section }}</span>
+      <span>{{ .Date | time.Format "2006.01.02" }}</span>
+    </span>
+  </div>
+  <div class="summary">
+    <p>{{ .Description }}</p>
+  </div>
+</li>
