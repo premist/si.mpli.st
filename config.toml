@@ -3,6 +3,8 @@ languageCode = "ko-kr"
 title = "si.mpli.st"
 theme = "simplist2022"
 
+paginate = 5
+
 PygmentsUseClasses = true
 PygmentsCodeFences = true
 
