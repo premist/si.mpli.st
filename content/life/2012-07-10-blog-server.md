@@ -6,7 +6,7 @@ category: life
 aliases:
   - /life/blog-server.html
   - /life/2012-07-10-blog-server.html
-excerpt: 블로그 서버를 Windows Azure에서 @Relipnamu님 서버로 옮겼다.
+description: 블로그 서버를 Windows Azure에서 @Relipnamu님 서버로 옮겼다.
 ---
 
 블로그 서버를 [Windows Azure](http://windowsazure.com/) 에서 [@Relipnamu](https://twitter.com/relipnamu)님 서버로 옮겼다.

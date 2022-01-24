@@ -6,7 +6,7 @@ category: life
 aliases:
   - /life/macbook-air-purchase.html
   - /life/2012-07-16-macbook-air-purchase.html
-excerpt: 2012년형 MacBook Air를 구매하였다. 11인치에 CPU/RAM CTO.
+description: 2012년형 MacBook Air를 구매하였다. 11인치에 CPU/RAM CTO.
 ---
 
 ![MacBook Air with MagSafe 2](https://cdn.si.mpli.st/2012-07-16-macbook-air.jpg)

@@ -6,7 +6,7 @@ category: review
 aliases:
   - /review/soylent-week-1.html
   - /review/2015-06-19-soylent-week-1.html
-excerpt: 영양의 균형이 잡힌 식사를 하고 싶다는 생각과 점심마다 메뉴 선택에 많은 고민을 하기 싫다는 생각에, 일주일동안 소일렌트로 대부분의 식사를 대체 해 보았다.
+description: 영양의 균형이 잡힌 식사를 하고 싶다는 생각과 점심마다 메뉴 선택에 많은 고민을 하기 싫다는 생각에, 일주일동안 소일렌트로 대부분의 식사를 대체 해 보았다.
 ---
 
 ![Soylent 1.5](https://cdn.si.mpli.st/2015-06-19-soylent-week-1.jpg)

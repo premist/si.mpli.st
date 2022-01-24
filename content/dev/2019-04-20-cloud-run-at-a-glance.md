@@ -6,7 +6,7 @@ category: dev
 aliases:
   - /dev/cloud-run-at-a-glance.html
   - /dev/2019-04-20-cloud-run-at-a-glance.html
-excerpt: Cloud Next '19에서 발표된 Cloud Run에 개인적으로 만들고 있던 사진 갤러리 사이트를 옮겨보았습니다.
+description: Cloud Next '19에서 발표된 구글의 강력한 한 방인 Cloud Run에 개인적으로 만들고 있던 사진 갤러리 사이트를 옮겨보았습니다.
 ---
 
 2019년 4월, 샌프란시스코에서 [Cloud Next ‘19](https://cloud.withgoogle.com/next/sf/)가 열렸습니다. Shakr DevOps 팀에서 정말 기다리고 있던 [PostgreSQL 11 버전 지원](https://cloud.google.com/sql/docs/release-notes#april_9_2019)을 비롯해 정말 많은 제품 발표가 있었지만, 그 중 Cloud Run이라는 제품이 가장 인상적이었습니다.

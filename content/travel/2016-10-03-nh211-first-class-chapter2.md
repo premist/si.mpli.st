@@ -6,7 +6,7 @@ category: travel
 aliases:
   - /travel/nh211-first-class-chapter2.html
   - /travel/2016-10-03-nh211-first-class-chapter2.html
-excerpt: 기내에 들어서자 여러 승무원 분께서 탑승을 환영해 주시고, 내 자리인 1K로 안내해 주셨다.
+description: 드디어 탑승. 기내에 들어서자 여러 승무원 분께서 탑승을 환영해 주시고, 내 자리인 1K로 안내해 주셨다.
 ---
 
 2016.03.24

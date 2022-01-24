@@ -6,7 +6,7 @@ category: travel
 aliases:
   - /travel/preparing-google-io.html
   - /travel/2012-06-22-preparing-google-io.html
-excerpt: Google I/O 참여를 위해 미국으로 떠날 준비를 하는데, 이전에 쓰던 여행 저널인 followmyfootprint을 이번에도 운영해야겠다는 생각을 했다.
+description: Google I/O 참여를 위해 미국으로 떠날 준비를 하는데, 이전에 쓰던 여행 저널인 followmyfootprint을 이번에도 운영해야겠다는 생각을 했다.
 ---
 
 Google I/O 참여를 위해 미국으로 떠날 준비를 하는데, 이전에 쓰던 여행 저널인 [followmyfootprint](http://followmyfootprint.tumblr.com/)을 이번에도 운영해야겠다는 생각을 했다. 다만 최근에는 Google Latitude를 사용하지 않고 있고, [Tumblr](http://tumblr.com/) iPhone 앱의 이미지 업로드는 너무 느렸다. 사진이 압축되더라도 빠르게 업로드가 가능하고, 사진마다 지오태깅이 가능하도록 구축하고 싶었다.

@@ -3,7 +3,7 @@ layout: post
 title: "k3s 시리즈 - Prometheus로 하는 Kubernetes 지표 수집과 모니터링"
 date: 2020-05-04 21:08:00 +0900
 category: dev
-excerpt: "이번 글에서는 Kubernetes 클러스터에서 Prometheus를 이용해 클러스터의 각종 지표를 수집하는 방법에 대해 알아보려고 합니다."
+description: "이번 글에서는 대표적 시계열 지표 관련 소프트웨어 중 하나인 Prometheus를 이용해, Kubernetes 클러스터의 각종 지표를 수집하는 방법에 대해 알아보려고 합니다."
 ---
 
 

@@ -7,7 +7,7 @@ aliases:
   - /think/sharp-aquos.html
   - /think/2012-06-19-sharp-aquos.html
 link: http://vimeo.com/43224490
-excerpt: NeXT 컴퓨터 등을 디자인해온 디자인 에이전시 frog가 디자인한 안드로이드 UI.
+description: NeXT 컴퓨터 등을 디자인해온 디자인 에이전시 frog가 디자인한 안드로이드 UI.
 ---
 
 NeXT 컴퓨터와 Sony의 TV 등을 디자인해온 디자인 에이전시 [frog](http://www.frogdesign.com/)가 디자인한 안드로이드 UI.

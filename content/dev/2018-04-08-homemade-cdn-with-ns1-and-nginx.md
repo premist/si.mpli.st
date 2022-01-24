@@ -6,7 +6,7 @@ category: dev
 aliases:
   - /dev/homemade-cdn-with-ns1-and-nginx.html
   - /dev/2018-04-08-homemade-cdn-with-ns1-and-nginx.html
-excerpt: 최근 매우 느려진 해외 인터넷 접속 때문에 직접 CDN을 구축해 보기로 했다.
+description: 최근 매우 느려진 해외 인터넷 접속 때문에, 해외 데이터센터에 호스팅한 웹사이트를 로드하는데 1분이 넘어갈 때도 생겼다. 여러 가지 방법을 고민하던 중 직접 CDN을 구축해 보기로 했다.
 ---
 
 Disclaimer: 리퍼러 링크가 있는 글입니다. 리퍼러 링크를 통해 서비스에 가입하시면 할인 혜택을 제공하기도 하고, 저도 리퍼럴에 대한 작은 보상을 받음으로써 더 많은 글을 쓸 수 있도록 동기 부여가 됩니다.

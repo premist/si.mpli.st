@@ -7,7 +7,7 @@ aliases:
   - /dev/tensorflow-open-source.html
   - /dev/2016-09-14-tensorflow-open-source.html
 link: https://changelog.com/219/
-excerpt: 어제 밤에 The Changelog을 들으면서 인상 깊었던 Tensorflow 구글 엔지니어와의 질답.
+description: 어제 밤에 The Changelog을 들으면서 인상 깊었던 Tensorflow 구글 엔지니어와의 질답을 짧게 번역했다.
 ---
 
 어제 밤에 [The Changelog](https://changelog.com/219/)을 들으면서 인상 깊었던 Tensorflow 구글 엔지니어와의 질답.

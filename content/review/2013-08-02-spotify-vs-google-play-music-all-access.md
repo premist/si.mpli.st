@@ -6,7 +6,7 @@ category: review
 aliases:
   - /review/spotify-vs-google-play-music-all-access.html
   - /review/2013-08-02-spotify-vs-google-play-music-all-access.html
-excerpt: Spotify와 Google Play Music All Access, 두 서비스를 모두 사용해본 입장에서 나의 경험을 공유해본다.
+description: Spotify와 Google Play Music All Access, 두 서비스를 모두 사용해본 입장에서 나의 경험을 공유해본다.
 ---
 
 ![두 서비스의 Android 앱](https://cdn.si.mpli.st/2013-08-02-spotify-vs-google-music-all-access.png)

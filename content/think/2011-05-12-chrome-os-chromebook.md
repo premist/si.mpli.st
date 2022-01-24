@@ -6,7 +6,7 @@ category: think
 aliases:
   - /think/chrome-os-chromebook.html
   - /think/2011-05-12-chrome-os-chromebook.html
-excerpt: 오늘(한국 시간으로 2011년 5월 12일), Google I/O 컨퍼런스에서 Chrome OS에 대한 새로운 소식이 들려왔다. 바로 Chromebook에 대한 이야기였다.
+description: 오늘(한국 시간으로 2011년 5월 12일), Google I/O 컨퍼런스에서 Chrome OS에 대한 새로운 소식이 들려왔다. 바로 Chromebook에 대한 이야기였다.
 ---
 
 Chrome OS가 처음 나왔을때 내 생각은, "너무 일찍 나왔다" 라는 생각뿐이였다. Google이 웹 오피스 환경을 제공하고, GMail을 제공한다고는 하지만, 턱없이 부족하다는 것이 내 생각이였다. 다른 많은 분들도 아직은 시기상조가 아니냐는 의견이 대다수였다. 이제 막 클라우드 개념이 퍼져나갈 시기였고, 유저들은 토런트를 사용하고 있었다. 미디어 라이브러리는 C:/Users/User/Music 에 저장되어 있는 것이 기본이였고, 하드디스크를 테라바이트 단위로 운영하는 사람들도 꽤 있었다.

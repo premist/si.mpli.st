@@ -6,7 +6,7 @@ category: dev
 aliases:
   - /dev/swift-exif-change.html
   - /dev/2018-09-09-swift-exif-change.html
-excerpt: Core Graphics와 Core Image에서 여러 가지의 이미지 처리 기능을 제공해주고 있어서, 이를 이용하여 저작권 메타데이터를 사진에 추가해보기로 했다.
+description: Core Graphics와 Core Image에서 여러 가지의 이미지 처리 기능을 제공해주고 있어서, 이를 이용하여 저작권 메타데이터를 사진에 추가해보기로 했다.
 ---
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="ko" dir="ltr">제가 찍은 사진을 올려두는 갤러리를 만들었습니다. 놀러오세요 😊 <a href="https://t.co/Oju48BKcKG">https://t.co/Oju48BKcKG</a></p>&mdash; Premist (@premist) <a href="https://twitter.com/premist/status/1033708178398109699?ref_src=twsrc%5Etfw">August 26, 2018</a></blockquote>
