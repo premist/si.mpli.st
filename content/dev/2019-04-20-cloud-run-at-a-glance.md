@@ -12,7 +12,7 @@ excerpt: Cloud Next '19에서 발표된 Cloud Run에 개인적으로 만들고 �
 2019년 4월, 샌프란시스코에서 [Cloud Next ‘19](https://cloud.withgoogle.com/next/sf/)가 열렸습니다. Shakr DevOps 팀에서 정말 기다리고 있던 [PostgreSQL 11 버전 지원](https://cloud.google.com/sql/docs/release-notes#april_9_2019)을 비롯해 정말 많은 제품 발표가 있었지만, 그 중 Cloud Run이라는 제품이 가장 인상적이었습니다.
 
 
-## Lambda, Cloud Functions, 그리고 Cloud Run
+### Lambda, Cloud Functions, 그리고 Cloud Run
 
 2014년 아마존이 [Lambda](https://aws.amazon.com/ko/lambda/)를 발표한 이후로 서버리스는 클라우드 인프라 구축의 트렌드가 되었습니다.  구글도 Lambda와 유사한 서버리스 제품인 [Cloud Functions](https://cloud.google.com/functions/)를 출시했지만, Lambda보다 적은 언어를 지원하고 작년 8월 베타 딱지를 떼어서 비교적 성숙하지 않은 제품이란 느낌이 강합니다.
 
@@ -31,7 +31,7 @@ excerpt: Cloud Next '19에서 발표된 Cloud Run에 개인적으로 만들고 �
 또한 요청이 들어오는 정도에 따라 유연하게 컨테이너의 수를 조정하니, 따로 Autoscaler를 관리할 필요도 없습니다. 콘솔에서 최대 동시 실행 갯수를 지정해주기만 하면 됩니다.
 
 
-## 간단하게 써 보았습니다
+### 간단하게 써 보았습니다
 
 이렇게 기존에 나와 있던 다른 솔루션에 대비해서 좋은 점이 무척이나 많았기에, 바로 써 보고 싶다는 생각이 들었습니다. 하지만 베타 상태의 서비스에 무턱대고 운영 중인 서비스를 올릴 순 없죠. 비교적 트래픽이 적고, 개인적으로 만들고 있던 사진 갤러리 사이트인 [35](https://35.premi.st/)를 Cloud Run으로 옮겨보기로 하였습니다.
 
@@ -102,7 +102,7 @@ docker push gcr.io/my-project/my-image:20180420
 Cloud Run 상에서 실행되는 저의 갤러리 사이트를 [방문](https://35.premi.st/)해서 확인해보세요!
 
 
-## 마치며
+### 마치며
 
 처음 Heroku를 접했을 때, 배포가 이렇게 간단할 수 있구나 라는 생각에 감탄했던 기억이 납니다. 컨테이너를 점점 더 많은 사람들이 사용하게 되고 Kubernetes와 같은 복잡한 도구가 보편화되면서 이따금씩 Heroku가 그리운 적이 있는데, Cloud Run은 이러한 향수를 말끔하게 없애주고, 오히려 Heroku보다도 더욱 쉽게 애플리케이션을 배포할 수 있는 서비스입니다. GA가 되면 충분히 프로덕션 환경에도 도입해볼 가치가 있지 않을까 생각합니다.
 

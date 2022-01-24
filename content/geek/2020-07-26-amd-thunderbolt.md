@@ -15,7 +15,7 @@ description: 새로운 컴퓨터를 새로 맞추고 싶어서 벼르다가 드�
 하지만 작년 인텔이 [썬더볼트 표준을 공개하기로 결정](https://newsroom.intel.com/news/intel-takes-steps-enable-thunderbolt-3-everywhere-releases-protocol/)하고, [썬더볼트 3를 지원하는 첫 AMD 메인보드](https://www.techradar.com/news/this-bizarre-amd-motherboard-supports-thunderbolt-3-and-intel-coolers)가 출시되었습니다. 이후 더 많은 제조사에서 썬더볼트 3를 지원하는 메인보드를 출시하고 있어서, AMD CPU를 선택하고 썬더볼트 3 모니터를 사용하는게 충분히 가능하지 않을까 하는 희망이 생겼습니다.
 
 
-## 메인보드 고르기
+### 메인보드 고르기
 
 메인보드를 고를 때 두 가지 부분을 고려했습니다. 앞으로 나올 AMD CPU(Zen 3 이상)를 지원할 수 있는지, 그리고 LG UltraFine 5K를 지원할 수 있는지. 후자의 경우 보다 자세한 요구 사항이 있는데요, UltraFine은 최대 해상도인 5K(5120x2880)을 지원하기 위해 화면을 절반(2560x2880)으로 나누고, [두 개의 DisplayPort 1.2 스트림으로 나누어](https://www.anandtech.com/show/10798/lg-introduces-new-4k-and-5k-ultrafine-monitors) 신호를 전송합니다. 따라서 썬더볼트 컨트롤러에 들어가는 DisplayPort 스트림이 두 개가 되어야 하죠. 여기서 위에서 언급한 썬더볼트 3 지원 최초 AMD 메인보드인 [ASRock X570 Phantom Gaming-ITX](https://www.asrock.com/mb/AMD/X570%20Phantom%20Gaming-ITXTB3/index.asp)가 탈락하는데요, DisplayPort 입력이 하나밖에 없기 때문입니다. 인텔의 인증도 받은 모델이지만 아쉽게도 사용할 수 없었습니다. 같은 제조사에서 나온 메인보드인 [ASRock X570 AQUA](https://www.asrock.com/mb/AMD/X570%20AQUA/index.html)는 DisplayPort 입력을 두 개 지원하지만, 100만원에 육박하는 가격과 수냉식 쿨링을 무조건 사용하는 제약이 너무 커서 선택하긴 무리가 있었죠.
 
@@ -24,7 +24,7 @@ description: 새로운 컴퓨터를 새로 맞추고 싶어서 벼르다가 드�
 이와 다르게, 썬더볼트 3 AIC 입력이 있는 메인보드와 썬더볼트 3 AIC(Add-in Card)를 사용하는 방법도 있습니다. 이 쪽으로 고개를 돌리면 더 많은 선택지가 있는데, [Gigabyte](https://www.gigabyte.com/Motherboard/X570-AORUS-MASTER-rev-11-12#kf) 이나 [ASRock](https://www.asrock.com/mb/AMD/X570%20Taichi/index.asp) 에서 다양한 메인보드를 출시하고 있습니다. 저는 이 중에 가장 가격이 저렴하고 게이밍 디자인이 최대한 덜 들어간, [ASRock X570 Pro4](https://www.asrock.com/MB/AMD/X570%20Pro4/index.asp)를 구입하였습니다.
 
 
-## 썬더볼트 AIC 장착하기
+### 썬더볼트 AIC 장착하기
 
 썬더볼트 3를 지원한다고 해도 AIC를 설치하기 전 까지는 사용할 수 없습니다. 이를 위해 ASRock의 AIC를 구입하였는데, 결론적으로 이야기하면 문제가 있어서 Gigabyte의 AIC를 추가적으로 사게 되었습니다.
 
@@ -45,7 +45,7 @@ Gigabyte의 GC-TITAN-RIDGE도 ASRock의 그것과 거의 동일한 대신, 보�
 이렇게 썬더볼트 AIC 장착은 완료되고, 부팅을 하여 BIOS와 윈도에서 설정을 할 시간입니다.
 
 
-## 설정하기
+### 설정하기
 
 설정에 앞서 먼저 메인보드의 BIOS를 최신 버전으로 업데이트합니다. 업데이트를 하지 않고 이리저리 설정하다가, NVMe 드라이브가 인식이 되지 않아 부팅이 실패하는 문제를 겪으면서 어리둥절했습니다. ASRock 홈페이지의 [펌웨어 페이지](https://www.asrock.com/MB/AMD/X570%20Pro4/index.asp#BIOS)에 들어가서 전혀 상관없을 것 같은 BIOS 업데이트를 적용하니 거짓말처럼 잘 되더군요...
 
@@ -60,7 +60,7 @@ Gigabyte의 GC-TITAN-RIDGE도 ASRock의 그것과 거의 동일한 대신, 보�
 {{< figurelazy class="oversize" src="/images/2020/07/26-amd-thunderbolt/win.jpg" title="AMD 시스템에서 UltraFine 5K 모니터와, 벨킨의 썬더볼트 프로 독을 사용하고 있는 모습" alt="AMD 시스템에서 UltraFine 5K 모니터와, 벨킨의 썬더볼트 프로 독을 사용하고 있는 모습" >}}
 
 
-## 마치며
+### 마치며
 
 이렇게 세팅 후에도 이따금씩 부팅시 모니터가 인식이 되지 않는 경우가 있는데, 이럴 때는 썬더볼트 3 케이블을 다시 꽂아주면 해결이 되었습니다. 어차피 평소에는 맥북을 연결해서 사용하니, 컴퓨터가 켜지고 케이블을 바꾸게 되어 크게 거슬리진 않습니다. 다만 울트라파인 5K를 메인 디스플레이로 PC에서 사용하신다면, 썬더볼트 3 단자가 내장되어 있는 위의 조금 더 고급형 보드를 보시는 것이 안정성에 도움이 될 것 같습니다.
 
@@ -69,6 +69,6 @@ Gigabyte의 GC-TITAN-RIDGE도 ASRock의 그것과 거의 동일한 대신, 보�
 다행인 건, 칩셋을 밥 먹듯이 바꾸는 인텔과 다르게 AMD는 칩셋 호환성을 꽤 오래 유지해준다는 점입니다. 최신 칩셋인 X570 기반으로 시스템을 맞춘 만큼, 지금 메인보드 그대로 1~3세대 후의 AMD CPU와, 추후 더 많아질 PCIe 4.0 GPU를 추가로 업그레이드할 수 있을 것 같습니다. 미래에는 [썬더볼트 3 표준이 USB 4 표준에 통합](https://www.anandtech.com/show/14048/usb4-specification-40-gbps-type-c-tb3)될 것으로 보이는데, 이러한 복잡한 절차 없이 프로 장비를 쉽게 사용하는 날이 오면 좋겠습니다. 아니면 게이밍을 포기하고 편안하게 맥 컴퓨터를 사도 되겠죠.
 
 
-## 관련 문서
+### 관련 문서
 
 - [Levelonetechs 포럼 - ASRock X570 Taichi/Gigabyte GC-Titan Ridge AIC](https://forum.level1techs.com/t/solved-asrock-x570-taichi-gigabyte-gc-titan-ridge-aic-thunderbolt-3-devices-ok-but-usb-3-displayport-device-hotplug-causes-bsod/145888) Gigabyte 보드를 사용하여 해결을 하는데 큰 도움이 된 스레드입니다. 같이 고통받고 있는 AMD + 썬더볼트 사용자의 사례를 볼 수 있습니다.
