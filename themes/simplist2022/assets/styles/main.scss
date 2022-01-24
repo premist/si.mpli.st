@@ -189,6 +189,10 @@ hr {
 #index {
   margin-top: 3rem;
   margin-bottom: 2rem;
+
+  &.archive {
+    margin-top: 7rem;
+  }
 }
 
 .posts li {

@@ -5,7 +5,7 @@
 
   {{ $paginator := .Paginate (.Site.RegularPages) }}
 
-  <div id="index">
+  <div id="index" class="archive">
     <ul class="posts">
       {{ range $paginator.Pages }}
         {{ partial "list-post.html" . }}
@@ -25,7 +25,9 @@
     <p class="page-count">
       {{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }}
     </p>
+  </div>
 
+  <footer>
     {{ if .Paginator.HasNext }}
       <p><a href="{{ .Paginator.Next.URL }}">older</a></p>
     {{ else }}
@@ -33,7 +35,7 @@
         <span>older</span>
       </p>
     {{ end }}
-  </div>
+  </footer>
 
 </div>
 
