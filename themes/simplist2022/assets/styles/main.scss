@@ -116,11 +116,13 @@ footer {
     }
   }
 
+h1, h2, h3, h4, h5, h6, strong, b {
+  font-weight: $force-font-weight;
+}
 
 h1, h2 {
     font-size: 2em;
     font-family: $semibold-font;
-    font-weight: $force-font-weight;
 
     line-height: 1.5em;
 
@@ -133,7 +135,6 @@ h1, h2 {
 h3, h4, h5, h6 {
     font-size: 1.3em;
     font-family: $bold-font;
-    font-weight: $force-font-weight;
 
     line-height: 1.5em;
 
@@ -157,6 +158,10 @@ figcaption * {
 
 p {
     margin-bottom: 1em;
+}
+
+b, strong {
+  font-family: $bold-font;
 }
 
 // TEMP
@@ -186,13 +191,13 @@ hr {
   @include blend-link;
 }
 
-#index {
+.index {
   margin-top: 3rem;
   margin-bottom: 2rem;
+}
 
-  &.archive {
-    margin-top: 7rem;
-  }
+.final-section {
+  margin-bottom: 8rem;
 }
 
 .posts li {
@@ -233,9 +238,26 @@ hr {
 }
 
 #view-archive {
-  margin-bottom: 8rem;
-
   & a {
     @include blend-link;
+  }
+}
+
+// Archive
+
+#archive {
+  margin-top: 7rem;
+}
+
+.pages {
+  display: flex;
+  gap: 0.7rem;
+
+  & .other-page {
+    @include blend-link;
+  }
+
+  & .current {
+    color: $caption-color;
   }
 }

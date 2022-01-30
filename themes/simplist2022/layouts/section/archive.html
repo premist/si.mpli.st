@@ -5,7 +5,7 @@
 
   {{ $paginator := .Paginate (.Site.RegularPages) }}
 
-  <div id="index" class="archive">
+  <div id="archive" class="index final-section">
     <ul class="posts">
       {{ range $paginator.Pages }}
         {{ partial "list-post.html" . }}
@@ -13,28 +13,23 @@
     </ul>
   </div>
 
-  <div id="pagination" class="pagination">
-    {{ if .Paginator.HasPrev }}
-      <p><a href="{{ .Paginator.Prev.URL }}">newer</a></p>
-    {{ else }}
-      <p class="prev disabled">
-        <span>newer</span>
-      </p>
-    {{ end }}
-
-    <p class="page-count">
-      {{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }}
-    </p>
-  </div>
-
   <footer>
-    {{ if .Paginator.HasNext }}
-      <p><a href="{{ .Paginator.Next.URL }}">older</a></p>
-    {{ else }}
-      <p class="prev disabled">
-        <span>older</span>
-      </p>
-    {{ end }}
+    <p class="page-count">
+      {{ .Paginator.PageNumber }} 페이지
+    </p>
+
+    <div class="pages">
+      {{ $currentPage := .Paginator.PageNumber }}
+      {{ range .Paginator.Pagers }}
+
+        {{ if eq .PageNumber $currentPage }}
+          <a class="current">{{ .PageNumber }}</a>
+        {{ else }}
+          <a class="other-page" href="{{ .URL }}">{{ .PageNumber }}</a>
+        {{ end }}
+
+      {{ end }}
+    </div>
   </footer>
 
 </div>

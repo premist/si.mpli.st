@@ -8,7 +8,7 @@
     <p>매일매일의 일상을 되돌아보고 싶을 때, 흥미 있는 무언가를 탐구해보았을 때, 관심 가는 물건을 사용해 보았을 때, 어딘가로 훌쩍 다녀온 작은 기억을 남기고 싶을때. 기억에 남는, 기억에 남기고 싶은 그 무언가를 여기에 적어보곤 합니다.</p>
   </div>
 
-  <div id="index">
+  <div id="partial-posts" class="index">
     <ul class="posts">
       {{ range (.Paginator 3).Pages }}
         <li class="category-{{ .Section }}">
@@ -27,7 +27,7 @@
     </ul>
   </div>
 
-  <div id="view-archive">
+  <div id="view-archive" class="final-section">
     <a href="/archive">모든 글 보기 →</a>
   </div>
 
