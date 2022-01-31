@@ -1,6 +1,4 @@
-FROM alpine:3.11 AS builder
-
-ENV HUGO_VERSION 0.92.1
+FROM alpine:latest AS builder
 
 COPY . /tmp/si.mpli.st
 
@@ -11,6 +9,6 @@ RUN apk add --no-cache --virtual .hugo hugo \
   && apk del .hugo
 
 
-FROM nginx:1.17-alpine
+FROM nginx:mainline-alpine
 
 COPY --from=builder /tmp/si.mpli.st/public /usr/share/nginx/html
