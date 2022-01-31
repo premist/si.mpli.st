@@ -66,6 +66,7 @@ destData.write(to: output, atomically: true)
 
 {{< figure
   src="https://cdn.si.mpli.st/2018-09-09-swift-exif-change/first-attempt-output.png"
+  class="halfsize"
   alt="용량이 2MB 이상 줄었다"
   attr="용량이 2MB 이상 줄었다" >}}
 
@@ -141,7 +142,10 @@ CGImageDestinationAddImageFromSource를 사용한 코드와 다른 점이 몇 �
 
 첫 번째 시도와는 다르게, 원본과 거의 같은 용량의 파일이 생성되었다.
 
-![정보 손실이 없는 사진 파일이 생성되었다](https://cdn.si.mpli.st/2018-09-09-swift-exif-change/second-attempt-output.png)
+{{< figure
+  src="https://cdn.si.mpli.st/2018-09-09-swift-exif-change/second-attempt-output.png"
+  class="halfsize"
+  alt="정보 손실이 없는 사진 파일이 생성되었다" >}}
 
 ### 같이 보기
 

@@ -86,12 +86,14 @@ docker push gcr.io/my-project/my-image:20180420
 
 {{< figure
   src="https://cdn.si.mpli.st/2019-04-20-cloud-run-at-a-glance/add-domain-mapping.png"
+  class="halfsize"
   alt="도메인 연결"
   attr="도메인 연결을 하면..." >}}
 
 
 {{< figure
   src="https://cdn.si.mpli.st/2019-04-20-cloud-run-at-a-glance/auto-letsencrypt.jpg"
+  class="halfsize"
   alt="Let's Encrypt 인증서"
   attr="Let's Encrypt 인증서도 자동으로 설정된다" >}}
 
