@@ -1,6 +1,6 @@
 FROM alpine:3.11 AS builder
 
-ENV HUGO_VERSION 0.62.0
+ENV HUGO_VERSION 0.92.1
 
 COPY . /tmp/si.mpli.st
 
