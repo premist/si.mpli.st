@@ -22,9 +22,8 @@
     <link rel="stylesheet" href="https://fonts.premi.st/ofl/Gothic A1 Bold.css">
     <link rel="stylesheet" href="https://fonts.premi.st/lfs/Lab Grotesque.css">
 
-    {{ $mainSass := resources.Get "styles/main.scss" }}
-    {{ $mainStyle := $mainSass | resources.ToCSS }}
-    <link rel="stylesheet" href="{{ $mainStyle.Permalink }}">
+    {{ $mainSass := resources.Get "styles/main.scss" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $mainSass.Permalink }}">
 
     <script async defer data-website-id="4cdb476c-5519-4742-9fcb-639cd24fe89d" src="https://umami.sapbox.me/umami.js"></script>
   </head>
