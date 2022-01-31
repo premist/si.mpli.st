@@ -20,14 +20,20 @@
 
     <div class="pages">
       {{ $currentPage := .Paginator.PageNumber }}
-      {{ range .Paginator.Pagers }}
 
-        {{ if eq .PageNumber $currentPage }}
-          <a class="current">{{ .PageNumber }}</a>
+      {{ $slots := 6 }}
+      {{ $start := math.Max 1 (sub .Paginator.PageNumber (math.Floor (div $slots 2))) }}
+      {{ $end := math.Min .Paginator.TotalPages (sub (add $start $slots) 1) }}
+      {{ if lt (add (sub $end $start) 1) $slots }}
+        {{ $start = math.Max 1 (add (sub $end $slots) 1) }}
+      {{ end }}
+
+      {{ range $k := seq $start $end }}
+        {{ if eq $.Paginator.PageNumber $k }}
+        <a class="current">{{ $k }}</a>
         {{ else }}
-          <a class="other-page" href="{{ .URL }}">{{ .PageNumber }}</a>
+        <a class="other-page" href="{{ (index $.Paginator.Pagers (sub $k 1)).URL }}">{{ $k }}</a>
         {{ end }}
-
       {{ end }}
     </div>
   </footer>

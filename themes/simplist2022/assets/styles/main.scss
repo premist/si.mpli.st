@@ -1,221 +1,44 @@
 /*
-  si.mpli.st edition 2022
-  main stylesheet
-  by minku lee
+si.mpli.st edition 2022
+main stylesheet
+by minku lee
 */
 
+@import "reset";
+
+@import "fonts/ibm-plex/ibm-plex";
 @import "fonts/lab-grotesque";
 @import "fonts/gothic-a1";
 
 @import "variables";
-@import "reset";
+@import "syntax";
+
+@import "categories";
 
 
 @mixin blend-link {
-  color: $primary-color;
-  transition-property: color;
-  transition-duration: 0.4s;
-
   &:hover {
-    color: $temp-color;
+    color: $neutral-link-color;
   }
 }
 
-body {
-    font-family: $primary-font;
-    font-weight: $force-font-weight;
-    font-size: $primary-font-size;
-    line-height: 2em;
-    letter-spacing: 0.005em;
+@mixin oversize-support {
+  width: 100vw;
+  margin-left: calc((100vw - #{$container-width}) * -0.5);
 
-    text-rendering: optimizeLegibility;
-    word-break: keep-all;
-    word-wrap: break-word;
-
-    color: $primary-color;
-}
-
-header, footer {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-
-  border-bottom: 2px solid $primary-color;
-
-  & a, & span {
-    display: inline-block;
-
-    line-height: 2.5em;
-
-    color: $bold-color;
-}
-}
-
-header {
-    font-size: 1.3em;
-}
-
-footer {
-  margin-bottom: 3rem;
-}
-
-.container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 1024px;
-    margin: 6rem auto 6rem auto;
-
-    @media #{$mq-mobile} {
-      width: auto;
-      margin: 0 0;
-      padding: 0 0;
-    }
+  @media #{$mq-toolarge} {
+    width: $toolarge-width;
+    margin-left: calc((#{$toolarge-width} - #{$container-width}) * -0.5);
   }
 
-h1, h2, h3, h4, h5, h6, strong, b {
-  font-weight: $force-font-weight;
-}
-
-h1, h2 {
-    font-size: 2em;
-    font-family: $semibold-font;
-
-    line-height: 1.5em;
-
-    color: $bold-color;
-
-    padding-top: 2.5em;
-    padding-bottom: 2.5em;
-}
-
-h3, h4, h5, h6 {
-    font-size: 1.3em;
-    font-family: $bold-font;
-
-    line-height: 1.5em;
-
-    color: $bold-color;
-
-    padding-top: 1.5em;
-    padding-bottom: 0.5em;
-}
-
-figcaption * {
-    font-size: 0.8em;
-    font-family: $primary-font;
-    text-align: right;
-
-    line-height: 1.6em;
-
-    color: $caption-color;
-
-    padding-top: 0;
-}
-
-p {
-    margin-bottom: 1em;
-}
-
-b, strong {
-  font-family: $bold-font;
-}
-
-// TEMP
-a {
-    color: $temp-color;
-    text-decoration: none;
-}
-
-img {
+  @media #{$mq-mobile} {
     width: 100%;
-}
-
-figure {
-    padding-bottom: 2em;
-}
-
-hr {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-
-  border-top: 2px solid $light-color;
-}
-
-// Mainpage
-
-#intro a {
-  @include blend-link;
-}
-
-.index {
-  margin-top: 3rem;
-  margin-bottom: 2rem;
-}
-
-.final-section {
-  margin-bottom: 8rem;
-}
-
-.posts li {
-  display: flex;
-  justify-content: space-between;
-  gap: 4rem;
-
-  margin-bottom: 2rem;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-
-  & .info {
-    flex-basis: 26%;
-
-    & .title {
-      @include blend-link;
-
-      display: block;
-      font-family: $bold-font;
-    }
-
-    & .meta {
-      display: flex;
-      gap: 1rem;
-
-      font-family: $semibold-font;
-      text-transform: capitalize;
-
-      color: $caption-color;
-    }
-  }
-
-  & .summary {
-    flex-basis: 74%;
+    margin-left: 0;
   }
 }
 
-#view-archive {
-  & a {
-    @include blend-link;
-  }
-}
+// Common
+@import "common";
 
-// Archive
-
-#archive {
-  margin-top: 7rem;
-}
-
-.pages {
-  display: flex;
-  gap: 0.7rem;
-
-  & .other-page {
-    @include blend-link;
-  }
-
-  & .current {
-    color: $caption-color;
-  }
-}
+// Mainpage and Archive
+@import "mainpage-archive";

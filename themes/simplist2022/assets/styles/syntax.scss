@@ -1,9 +1,27 @@
-.highlight  {
+code {
+  font-family: $syntax-highlighting-font;
+  font-size: 0.9em;
+}
+
+.highlight {
 	position: relative;
 	display: block;
-	margin: 15px auto;
-	color: #4d4d4c
+
+  font-size: 0.9em;
+  line-height: 1.7em;
+
+  width: 100%;
+  margin: 2rem auto;
+  padding: 1rem 1.2rem;
+  overflow: scroll;
+
+	background-color: $lightest-color;
+
+  @media #{$mq-mobile} {
+    padding: 0.8rem 0.6rem;
+  }
 }
+
 .highlight .hll { background-color: #d6d6d6 }
 .highlight .c { color: #8e908c } /* Comment */
 .highlight .err { color: #c82829 } /* Error */

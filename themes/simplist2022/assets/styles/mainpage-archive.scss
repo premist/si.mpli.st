@@ -1,0 +1,82 @@
+.index {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+
+  @media #{$mq-mobile} {
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.posts li {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+
+  margin-bottom: 3rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media #{$mq-mobile} {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3.5rem;
+  }
+
+  & .info {
+    flex-basis: 26%;
+
+    & .title {
+      display: block;
+      font-family: $bold-font;
+    }
+
+    & .meta {
+      display: flex;
+      gap: 1rem;
+
+      font-family: $semibold-font;
+      text-transform: capitalize;
+
+      color: $caption-color;
+    }
+  }
+
+  & .summary {
+    flex-basis: 74%;
+  }
+}
+
+.final-section {
+  margin-bottom: 8rem;
+
+  @media #{$mq-mobile} {
+    margin-bottom: 6rem;
+  }
+}
+
+
+// Archive-specific
+
+#archive {
+  margin-top: 7rem;
+
+  @media #{$mq-mobile} {
+    margin-top: 3.5rem;
+  }
+}
+
+.pages {
+  display: flex;
+  gap: 0.7rem;
+
+  & .other-page {
+    @include blend-link;
+  }
+
+  & .current {
+    color: $caption-color;
+  }
+}
