@@ -6,7 +6,7 @@ category: life
 aliases:
   - /life/work-life-balance.html
   - /life/2015-11-29-work-life-balance.html
-excerpt: 큰 프로젝트를 진행할 때나 팀 내에서 통제하기가 힘든 외부 스케쥴이 있을 때, 직장 생활과 개인 생활의 균형(work-life balance)의 중요함을 잊곤 한다.
+description: 큰 프로젝트를 진행할 때나 팀 내에서 통제하기가 힘든 외부 스케쥴이 있을 때, 직장 생활과 개인 생활의 균형(work-life balance)의 중요함을 잊곤 한다.
 ---
 
 큰 프로젝트를 진행할 때나 팀 내에서 통제하기가 힘든 외부 스케쥴이 있을 때, 직장 생활과 개인 생활의 균형(work-life balance)의 중요함을 잊곤 한다. 보통 이런 식으로 악순환이 시작된다.

@@ -6,7 +6,7 @@ category: travel
 aliases:
   - /travel/nh211-first-class-chapter1.html
   - /travel/2016-10-03-nh211-first-class-chapter1.html
-excerpt: 올해 3월, 친구와 같이 가기로 했던 짧은 유럽 여행에서 퍼스트 클래스를 타 볼 기회가 생겼다.
+description: 올해 3월, 친구와 같이 가기로 했던 짧은 유럽 여행에서 퍼스트 클래스를 타 볼 기회가 생겼다. 쉽게 가질 수 없는 기회이기에 사전 조사를 철저히 해서 특별한 여정으로 만들고 싶어 몇 개월 전부터 여러 가지 사전 조사를 하기 시작했다.
 ---
 
 2016.03.24

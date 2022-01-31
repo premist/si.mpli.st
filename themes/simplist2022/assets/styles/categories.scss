@@ -1,0 +1,28 @@
+/* Category Colors */
+$cat-color-dev: #3498db;
+$cat-color-geek: #2980b9;
+$cat-color-life: #f39c12;
+$cat-color-think: #1abc9c;
+$cat-color-review: #e74c3c;
+$cat-color-travel: #9b59b6;
+
+@mixin category($name, $color) {
+  .category-#{$name} .title:hover {
+    color: $color;
+  }
+
+  .post-#{$name} .content a {
+    color: $color;
+
+    &:hover {
+      color: lighten($color, 12%);
+    }
+  }
+}
+
+@include category("dev", #3498db);
+@include category("geek", #2980b9);
+@include category("life", #f39c12);
+@include category("think", #1abc9c);
+@include category("review", #e74c3c);
+@include category("travel", #9b59b6);

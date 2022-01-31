@@ -10,7 +10,7 @@ jobs:
     - name: Build the Docker image
       run: |
         export IMAGE="docker.pkg.github.com/premist/si.mpli.st/web:$GITHUB_SHA"
-        docker login -u $GITHUB_ACTOR -p ${{ secrets.GITHUB_TOKEN }} docker.pkg.github.com
+        # docker login -u $GITHUB_ACTOR -p ${{ secrets.GITHUB_TOKEN }} docker.pkg.github.com
         docker build . --tag $IMAGE
-        docker push $IMAGE
+        # docker push $IMAGE
 

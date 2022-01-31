@@ -1,0 +1,40 @@
+/*
+si.mpli.st edition 2022
+main stylesheet
+by minku lee
+*/
+
+@import "reset";
+
+@import "variables";
+@import "syntax";
+
+@import "categories";
+
+
+@mixin blend-link {
+  &:hover {
+    color: $neutral-link-color;
+  }
+}
+
+@mixin oversize-support {
+  width: 100vw;
+  margin-left: calc((100vw - #{$container-width}) * -0.5);
+
+  @media #{$mq-toolarge} {
+    width: $toolarge-width;
+    margin-left: calc((#{$toolarge-width} - #{$container-width}) * -0.5);
+  }
+
+  @media #{$mq-mobile} {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+// Common
+@import "common";
+
+// Mainpage and Archive
+@import "mainpage-archive";

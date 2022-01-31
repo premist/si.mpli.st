@@ -1,0 +1,39 @@
+{{ define "main" }}
+
+<div class="container">
+  {{ partial "header.html" (dict "Context" . "Subtitle" "") }}
+
+  <div id="intro">
+    <h2>si.mpli.st is<br />a tiny little journal<br />by <a href="https://premi.st">minku lee</a>.</h2>
+    <p>매일매일의 일상을 되돌아보고 싶을 때, 흥미 있는 무언가를 탐구해보았을 때, 관심 가는 물건을 사용해 보았을 때, 어딘가로 훌쩍 다녀온 작은 기억을 남기고 싶을때. 기억에 남는, 기억에 남기고 싶은 그 무언가를 여기에 적어보곤 합니다.</p>
+  </div>
+
+  <div id="partial-posts" class="index">
+    <ul class="posts">
+      {{ range (.Paginator 3).Pages }}
+        <li class="category-{{ .Section }}">
+          <div class="info">
+            <a class="title" href="{{ .Permalink }}">{{ .Title }}</a>
+            <span class="meta">
+              <span>{{ .Section }}</span>
+              <span>{{ .Date | time.Format "2006.01.02" }}</span>
+            </span>
+          </div>
+          <div class="summary">
+            <p>{{ .Description }}</p>
+          </div>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+
+  <div id="view-archive" class="final-section">
+    <a href="/archive">모든 글 보기 →</a>
+  </div>
+
+  <footer>
+    <p class="bytheway">글을 읽어보고 궁금한 점이 생겼거나, 고치고 싶은 내용이 있거나, 다른 나누고 싶은 이야기가 있으시다면 <a href="mailto:si.mpli.st@premi.st">si.mpli.st@premi.st</a>로 편지를 남겨주세요.</p>
+  </footer>
+
+</div>
+{{ end }}

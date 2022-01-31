@@ -6,11 +6,7 @@ category: dev
 aliases:
   - /dev/homemade-cdn-with-ns1-and-nginx.html
   - /dev/2018-04-08-homemade-cdn-with-ns1-and-nginx.html
-excerpt: 최근 매우 느려진 해외 인터넷 접속 때문에 직접 CDN을 구축해 보기로 했다.
----
-
-Disclaimer: 리퍼러 링크가 있는 글입니다. 리퍼러 링크를 통해 서비스에 가입하시면 할인 혜택을 제공하기도 하고, 저도 리퍼럴에 대한 작은 보상을 받음으로써 더 많은 글을 쓸 수 있도록 동기 부여가 됩니다.
-
+description: 최근 매우 느려진 해외 인터넷 접속 때문에, 해외 데이터센터에 호스팅한 웹사이트를 로드하는데 1분이 넘어갈 때도 생겼다. 여러 가지 방법을 고민하던 중 직접 CDN을 구축해 보기로 했다.
 ---
 
 
@@ -153,7 +149,7 @@ SSL을 설정할 때는 [Let's Encrypt][15]의 인증서를 활용했는데, 지
 
 이렇게 구축한 홈메이드 CDN의 장점은, 자신이 원하는 서버 제공자를 선택한 다음 NGINX를 이용해 원하는 대로 세팅을 할 수 있다는 것이다. 통상적인 CDN에 비해 성능이 조금 떨어질 수 있고 관리의 귀찮음도 있겠지만, 개인적인 용도로 사용할 때, 혹은 일반적인 CDN으로는 해결하기가 힘든 특수한 설정을 하고 싶을 때는 충분히 써볼 만 한 것 같다.
 
-[1]:	https://www.linode.com/?r=9cc0e9cc373c8c9accddf7fc5ecef153e40f5a56
+[1]:	https://www.linode.com/
 [2]:	https://si.mpli.st
 [3]:	https://xenosium.com/
 [4]:	https://blog.kudokun.me/

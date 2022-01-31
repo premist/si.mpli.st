@@ -6,7 +6,7 @@ category: dev
 aliases:
   - /dev/introduction-to-telegraf.html
   - /dev/2017-09-10-introduction-to-telegraf.html
-excerpt: 시스템 리소스 사용량과 여러 가지 구성 요소의 지표를 수집할 수 있는 에이전트 Telegraf를 소개한다.
+description: 서버의 댓수와 상관 없이 프로덕션 환경에서 구동하고 있는 서버가 있다면 모니터링은 반드시 필요하다. 시스템 리소스 사용량과 여러 가지 구성 요소의 지표를 수집할 수 있는 에이전트 Telegraf를 소개한다.
 ---
 
 서버의 댓수와 상관 없이 프로덕션 환경에서 구동하고 있는 서버가 있다면 모니터링은 반드시 필요하다. 호스팅 업체를 비롯해 여러 기업들에서도 이러한 이유로 [RRDTool][1]이나 [Nagios][2]를 이용하여 서버의 리소스 사용량 지표를 수집하고 그래프를 출력하여 시스템의 사용량을 모니터링한다.
@@ -33,8 +33,6 @@ Telegraf는 InfluxDB의 제작사, InfluxDB에서 제작한 시스템 모니터�
 **StatD 프로토콜 지원** | ◯       | ◯        | ◯                  | ◯
 **지표 태그 지원**      | ╳       | ╳        | ◯                  | ◯
 **여러 백엔드 지원**    | ◯       | ◯        | ╳                  | ◯
-
-<span style="text-align: center;display:block;">다른 에이전트와의 비교</span>
 
 개인적으로 보유하고 있는 여러 시스템을 관리할 수 있는 에이전트를 찾고 있었는데, 여러 에이전트 중에서도 Telegraf가 마음에 들었던 점들은 다음과 같다.
 

@@ -6,7 +6,7 @@ category: think
 aliases:
   - /think/font-book-smart-collection.html
   - /think/2012-08-03-font-book-smart-collection.html
-excerpt: OS X Mountain Lion의 Font Book(서체 관리자)에 Smart Collection이라는 기능이 추가되었다.
+description: OS X Mountain Lion의 Font Book(서체 관리자)에 Smart Collection이라는 기능이 추가되었다.
 ---
 
 ![Smart Collection](https://cdn.si.mpli.st/2012-08-13-font-book-1.png)

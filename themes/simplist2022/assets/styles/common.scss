@@ -1,0 +1,114 @@
+body {
+  font-family: $primary-font;
+  font-weight: $force-font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: 0.005em;
+
+  text-rendering: optimizeLegibility;
+  word-break: keep-all;
+  word-wrap: break-word;
+
+  color: $primary-color;
+
+  @media #{$mq-mobile} {
+    font-size: $mobile-font-size;
+    line-height: $mobile-line-height;
+  }
+}
+
+header, footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  border-bottom: 2px solid $primary-color;
+
+  & a, & span {
+    display: inline-block;
+
+    line-height: 2.5em;
+
+    color: $bold-color;
+  }
+}
+
+header {
+  font-size: 1.3em;
+}
+
+footer {
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 1024px;
+  margin: 6rem auto 6rem auto;
+
+  @media #{$mq-mobile} {
+    width: auto;
+    margin: $mobile-topbottom-margin 0;
+    padding: 0 $mobile-leftright-margin;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, strong, b {
+  font-weight: $force-font-weight;
+}
+
+h1, h2 {
+  font-size: 2em;
+  font-family: $semibold-font;
+
+  line-height: 1.5em;
+
+  color: $bold-color;
+
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+
+  @media #{$mq-mobile} {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+}
+
+h3, h4, h5, h6 {
+  font-size: 1.3em;
+  font-family: $bold-font;
+
+  line-height: 1.5em;
+
+  color: $bold-color;
+
+  margin-top: 3.5rem;
+  margin-bottom: 0.5em;
+}
+
+a {
+  @include blend-link;
+
+  text-decoration: none;
+
+  color: $primary-color;
+
+  transition-property: color;
+  transition-duration: 0.2s;
+}
+
+p {
+  line-height: $content-line-height;
+
+  @media #{$mq-mobile} {
+    line-height: $mobile-content-line-height;
+  }
+}
+
+.content {
+  @import "content";
+}

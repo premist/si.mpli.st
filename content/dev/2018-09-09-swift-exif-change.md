@@ -6,7 +6,7 @@ category: dev
 aliases:
   - /dev/swift-exif-change.html
   - /dev/2018-09-09-swift-exif-change.html
-excerpt: Core Graphics와 Core Image에서 여러 가지의 이미지 처리 기능을 제공해주고 있어서, 이를 이용하여 저작권 메타데이터를 사진에 추가해보기로 했다.
+description: Core Graphics와 Core Image에서 여러 가지의 이미지 처리 기능을 제공해주고 있어서, 이를 이용하여 저작권 메타데이터를 사진에 추가해보기로 했다.
 ---
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="ko" dir="ltr">제가 찍은 사진을 올려두는 갤러리를 만들었습니다. 놀러오세요 😊 <a href="https://t.co/Oju48BKcKG">https://t.co/Oju48BKcKG</a></p>&mdash; Premist (@premist) <a href="https://twitter.com/premist/status/1033708178398109699?ref_src=twsrc%5Etfw">August 26, 2018</a></blockquote>
@@ -66,12 +66,13 @@ destData.write(to: output, atomically: true)
 
 {{< figure
   src="https://cdn.si.mpli.st/2018-09-09-swift-exif-change/first-attempt-output.png"
+  class="halfsize"
   alt="용량이 2MB 이상 줄었다"
   attr="용량이 2MB 이상 줄었다" >}}
 
 원본 이미지 데이터를 유지한 채로 메타데이터만 바꾸려면 어떻게 해야 할까?
 
-## CGImageDestinationCopyImageSource
+### CGImageDestinationCopyImageSource
 
 Apple도 이러한 문제를 의식했는지 이에 대한 [Technical Q&A 문서](https://developer.apple.com/library/archive/qa/qa1895/_index.html)를 만들어 두었다. Objective-C 기반이긴 하지만 메서드 이름은 같아서 예제 코드를 무리없이 읽을 수 있었는데, [CGImageDestinationCopyImageSource](https://developer.apple.com/documentation/imageio/1465189-cgimagedestinationcopyimagesourc)라는 메서드를 이용하여 CGImageSource 인스턴스에서 이미지 데이터를 복사해 오는 메서드처럼 보였다.
 
@@ -141,9 +142,12 @@ CGImageDestinationAddImageFromSource를 사용한 코드와 다른 점이 몇 �
 
 첫 번째 시도와는 다르게, 원본과 거의 같은 용량의 파일이 생성되었다.
 
-![정보 손실이 없는 사진 파일이 생성되었다](https://cdn.si.mpli.st/2018-09-09-swift-exif-change/second-attempt-output.png)
+{{< figure
+  src="https://cdn.si.mpli.st/2018-09-09-swift-exif-change/second-attempt-output.png"
+  class="halfsize"
+  alt="정보 손실이 없는 사진 파일이 생성되었다" >}}
 
-## 같이 보기
+### 같이 보기
 
 - [35 - Time, Captured in Pixels](https://35.premi.st/)
 - [GitHub Gist - Modifying EXIF Data with Swift 3](https://gist.github.com/kwylez/a4b6ec261e52970e1fa5dd4ccfe8898f)

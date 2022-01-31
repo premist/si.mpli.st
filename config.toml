@@ -1,9 +1,9 @@
 baseURL = "https://si.mpli.st/"
 languageCode = "ko-kr"
 title = "si.mpli.st"
-theme = "si.mpli.st"
+theme = "simplist2022"
 
-googleAnalytics = "UA-31538611-1"
+paginate = 5
 
 PygmentsUseClasses = true
 PygmentsCodeFences = true

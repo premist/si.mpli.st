@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+<div class="container post-{{ .Section }}">
+  <div class="post" itemscope itemtype="https://schema.org/Article">
+    {{ partial "header.html" (dict "Context" . "Subtitle" .Section) }}
+
+    <article>
+      <h2 itemprop="name">{{ .Title }}</h2>
+      <div class="content" itemprop="articleBody">
+          {{ .Content }}
+      </div>
+    </article>
+  </div>
+</div>
+
+{{ end }}

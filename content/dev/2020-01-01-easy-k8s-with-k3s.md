@@ -3,7 +3,7 @@ layout: post
 title: "k3s 시리즈 - 간단하게 Kubernetes 환경 구축하기"
 date: 2020-01-01 22:30:00 +0900
 category: dev
-excerpt: "k3s를 이용하여 조금 더 쉽게 Kubernetes를 설치하고, 첫 서비스를 띄워봅니다."
+description: "조금 더 쉽게 Kubernetes를 운영하는 방법은 없을까요? k3s를 이용하여 조금 더 쉽게 Kubernetes를 설치하고, 첫 서비스를 띄워봅니다."
 ---
 
 

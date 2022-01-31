@@ -6,7 +6,7 @@ category: dev
 aliases:
   - /dev/elixir-credo-and-dialyzer.html
   - /dev/2017-08-27-elixir-credo-and-dialyzer.html
-excerpt: Elixir 프로그래밍 언어에 사용 가능한 정적 코드 분석기, Credo와 Dialyzer를 소개한다.
+description: 코드의 품질을 분석하여 개선이 필요한 코드를 알려주고, 같이 협업을 할 때 코딩 컨벤션을 프로젝트 전반에 걸쳐 강제하기 위해 정적 코드 분석기를 사용한다. Elixir 프로그래밍 언어에 사용 가능한 정적 코드 분석기, Credo와 Dialyzer를 소개한다.
 ---
 
 코드의 품질을 분석하여 개선이 필요한 코드를 알려주고, 같이 협업을 할 때 코딩 컨벤션을 프로젝트 전반에 걸쳐 강제하기 위해 정적 코드 분석기를 사용한다. 유닛 테스트와 더불어 이러한 정적 코드 분석기를 지속 통합(Continuous Integration) 과정에 추가해 두면, 기능 브랜치가 머지되지 전에 코딩 컨벤션 위반이나 지나치게 복잡한 코드가 머지되는 것을 사전에 방지할 수 있다.
@@ -16,7 +16,7 @@ excerpt: Elixir 프로그래밍 언어에 사용 가능한 정적 코드 분석�
 [Elixir](http://elixir-lang.org/) 프로그래밍 언어에 사용 가능한 대표적인 정적 코드 분석기로는 두 가지가 있는데, 바로 [**Credo**](https://github.com/rrrene/credo)와 [**Dlaiyzer**](http://erlang.org/doc/man/dialyzer.html)이다.
 
 
-## Credo
+### Credo
 
 Credo는 Elixir 언어를 위한 정적 코드 분석기이다. 공식 저장소의 설명에 따르면 다음과 같은 항목에 대한 검사를 수행한다.
 
@@ -39,7 +39,7 @@ end
 ![][image-credo]
 
 
-## Dialyzer
+### Dialyzer
 
 Dialyzer는 Erlang 프로그램을 위한 정적 코드 분석기이다. 왜 Elixir 프로그램을 분석하는데 Erlang용 분석기를 사용하는지 의문을 가질 수 있지만, Elixir는 Erlang 기반으로 제작되어 Erlang이 사용하는 BEAM bytecode로 컴파일이 되기 때문에 Dialyzer를 사용하는 것이 가능하다.
 

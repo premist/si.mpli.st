@@ -51,7 +51,7 @@ $mq-toolarge: "(min-width: #{$toolarge-width})";
 
 @mixin oversize-support {
   width: 100vw;
-  margin-left: calc((100vw - #{$container-width}) * -0.5); 
+  margin-left: calc((100vw - #{$container-width}) * -0.5);
   margin-top: 3em;
   margin-bottom: 3em;
 
@@ -357,7 +357,7 @@ article {
   }
 
   & .gallery.oversize {
-    @include oversize-support;    
+    @include oversize-support;
   }
 
   & ul {

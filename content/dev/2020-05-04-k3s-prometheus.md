@@ -3,7 +3,7 @@ layout: post
 title: "k3s 시리즈 - Prometheus로 하는 Kubernetes 지표 수집과 모니터링"
 date: 2020-05-04 21:08:00 +0900
 category: dev
-excerpt: "이번 글에서는 Kubernetes 클러스터에서 Prometheus를 이용해 클러스터의 각종 지표를 수집하는 방법에 대해 알아보려고 합니다."
+description: "이번 글에서는 대표적 시계열 지표 관련 소프트웨어 중 하나인 Prometheus를 이용해, Kubernetes 클러스터의 각종 지표를 수집하는 방법에 대해 알아보려고 합니다."
 ---
 
 
@@ -67,11 +67,19 @@ kubectl apply -k github.com/premist/k3s-kube-prometheus
 첫 번째 명령어는 Prometheus와 관련 구성 요소의 [커스텀 리소스 명세(Custom Resource Definition; CRD)](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/)를 생성합니다. Deployment나 Ingress를 만드는 것처럼, Prometheus를 마치 Kubernetes의 리소스와 같이 실행할 수 있게 해 주는 것이죠.
 두 번째 명령어는 monitoring이라는 네임스페이스를 만들고, 새로 추가된 여러가지 CRD를 이용해 실제로 Prometheus 서버를 생성합니다.
 
-![kubectl apply 명령어의 실행 결과](https://cdn.si.mpli.st/2020-05-04-k3s-prometheus/0002-apply.png)
+{{< figure
+  src="https://cdn.si.mpli.st/2020-05-04-k3s-prometheus/0002-apply.png"
+  alt="kubectl apply 명령어의 실행 결과]"
+  class="halfsize">}}
+
 
  명령어 실행이 끝나면, `kubectl get pod -n monitoring`을 이용해 리소스가 생성되는 과정을 지켜볼 수 있습니다.
 
-![pod이 생성되는것을 확인할 수 있다](https://cdn.si.mpli.st/2020-05-04-k3s-prometheus/0001-getpod.png)
+{{< figure
+  src="https://cdn.si.mpli.st/2020-05-04-k3s-prometheus/0001-getpod.png"
+  alt="pod이 생성되는것을 확인할 수 있다]"
+  class="halfsize">}}
+
 
 리소스 생성이 모두 완료되면, Prometheus가 수집하는 지표를 확인해 볼 차례입니다! kube-prometheus 저장소에서 설명하는 것과 같이, 아래의 명령어로 웹 대시보드를 접근할 수 있습니다.
 

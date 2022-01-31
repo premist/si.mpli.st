@@ -6,7 +6,7 @@ category: life
 aliases:
   - /think/steve-jobs.html
   - /think/2011-10-06-steve-jobs.html
-excerpt: Rest in peace, Steve Jobs.
+description: Rest in peace, Steve Jobs.
 ---
 
 <iframe width="420" height="315" src="//www.youtube.com/embed/nmwXdGm89Tk" frameborder="0" allowfullscreen></iframe>

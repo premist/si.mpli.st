@@ -6,7 +6,7 @@ category: travel
 aliases:
   - /travel/tokyo-trip.html
   - /travel/2011-11-23-tokyo-trip.html
-excerpt: 여행을 다니면서 블로그에 여행기를 쓰려고 해도 귀찮아져서, 기록을 전부 저장해버리기로 했습니다.
+description: 여행을 다니면서 블로그에 여행기를 쓰려고 해도 귀찮아져서, 기록을 전부 저장해버리기로 했습니다.
 ---
 
 ![followmyfootprint TOKYO 2011](https://cdn.si.mpli.st/2011-11-23-tokyo-trip.png)

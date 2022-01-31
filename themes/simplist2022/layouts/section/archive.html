@@ -1,0 +1,43 @@
+{{ define "main" }}
+
+<div class="container">
+  {{ partial "header.html" (dict "Context" . "Subtitle" "archive") }}
+
+  {{ $paginator := .Paginate (.Site.RegularPages) }}
+
+  <div id="archive" class="index final-section">
+    <ul class="posts">
+      {{ range $paginator.Pages }}
+        {{ partial "list-post.html" . }}
+      {{ end }}
+    </ul>
+  </div>
+
+  <footer>
+    <p class="page-count">
+      {{ .Paginator.PageNumber }} 페이지
+    </p>
+
+    <div class="pages">
+      {{ $currentPage := .Paginator.PageNumber }}
+
+      {{ $slots := 6 }}
+      {{ $start := math.Max 1 (sub .Paginator.PageNumber (math.Floor (div $slots 2))) }}
+      {{ $end := math.Min .Paginator.TotalPages (sub (add $start $slots) 1) }}
+      {{ if lt (add (sub $end $start) 1) $slots }}
+        {{ $start = math.Max 1 (add (sub $end $slots) 1) }}
+      {{ end }}
+
+      {{ range $k := seq $start $end }}
+        {{ if eq $.Paginator.PageNumber $k }}
+        <a class="current">{{ $k }}</a>
+        {{ else }}
+        <a class="other-page" href="{{ (index $.Paginator.Pagers (sub $k 1)).URL }}">{{ $k }}</a>
+        {{ end }}
+      {{ end }}
+    </div>
+  </footer>
+
+</div>
+
+{{ end }}
