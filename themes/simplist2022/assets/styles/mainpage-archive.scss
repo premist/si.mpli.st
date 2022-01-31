@@ -30,12 +30,14 @@
 
     & .title {
       display: block;
+      margin-bottom: 0.2rem;
+
       font-family: $bold-font;
     }
 
     & .meta {
       display: flex;
-      gap: 1rem;
+      gap: 0.8rem;
 
       font-family: $semibold-font;
       text-transform: capitalize;
