@@ -62,20 +62,12 @@ hr {
 
 ul {
   margin: 1rem 0;
-  list-style: none;
+  list-style-type: disc;
+  list-style-position: inside;
 }
 
 li {
   margin-bottom: 1rem;
-}
-
-li:before {
-  content: "∙ ";
-  margin-right: 0.5rem;
-
-  @media #{$mq-mobile} {
-    margin-right: 0.2rem;
-  }
 }
 
 figure {
