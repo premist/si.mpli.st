@@ -52,7 +52,7 @@
 }
 
 .final-section {
-  margin-bottom: 8rem;
+  margin-bottom: 6rem;
 
   @media #{$mq-mobile} {
     margin-bottom: 6rem;
@@ -63,6 +63,7 @@
 // Archive-specific
 
 #archive {
+  min-height: 60vh;
   margin-top: 7rem;
 
   @media #{$mq-mobile} {
@@ -73,6 +74,10 @@
 .pages {
   display: flex;
   gap: 0.7rem;
+
+  & a {
+    width: 2rem;
+  }
 
   & .other-page {
     @include blend-link;
