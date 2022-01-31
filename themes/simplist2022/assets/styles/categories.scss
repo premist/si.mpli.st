@@ -15,7 +15,7 @@ $cat-color-travel: #9b59b6;
     color: $color;
 
     &:hover {
-      color: darken($color, 5%);
+      color: lighten($color, 12%);
     }
   }
 }
