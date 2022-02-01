@@ -15,12 +15,12 @@
     <meta property="article:author" content="{{ .Site.Params.AuthorFacebook }}">
     {{ template "_internal/twitter_cards.html" . }}
 
-    <link rel="stylesheet" href="https://fonts.premi.st/ofl/ibm-plex-mono/IBMPlexMono-Bold.css" integrity="sha512-ptCFtgrysrX0D5p5ceZPTKM3OLOtHfCfdwkZMN25BRWpLfmynChh1UHSGcR+Lg14m2cTpF63AaWU06K8q+AzLA==" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.premi.st/ofl/ibm-plex-mono/IBMPlexMono-Regular.css" integrity="sha512-S32YX/yb02JrAiysUSSH/91IzN+1YXbTBbLsOjLse4NClraWpAbkGfoitVwmpjHmF0qlYph9tMb7DXkWj+CnUA==" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.premi.st/ofl/Gothic A1 Medium.css" integrity="sha512-F+Gn17HwGMQeNSAHhLX0fe+ewSTSa5XcfaMEdWxMZm4xOfbzhPZVBA8Jfkqmt+b1ARz1ufDoYVv+5bjrV0nS+g==" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.premi.st/ofl/Gothic A1 SemiBold.css" integrity="sha512-924b7xrdwKTVbkbnRdy3Tzw1ixpe6Tb2Kmc9pYNev+GB/JjuuNyjxMTyi6+NutodFDRorqdR+BL0x2dLEWS1oQ==" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.premi.st/ofl/Gothic A1 Bold.css" integrity="sha512-b4nvu6g/K0/CnPtG8Em9uSbHrTo0jcY8tJZaVXZD8DYC6GPQ1gaVOFUOQQr7lbBO7hgra2esL6zAx9lNY7vf/A==" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.premi.st/lfs/Lab Grotesque.css" integrity="sha512-pMN59vqcMRBApPtB/WJ3yeJrWdnhEABZoIZ1gwkV+wVDUCN+GuxaKmoh2Unc5qHdGrQ18bQYf2zAVfQDADP0pw==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.premi.st/ofl/ibm-plex-mono/IBMPlexMono-Bold.css">
+    <link rel="stylesheet" href="https://fonts.premi.st/ofl/ibm-plex-mono/IBMPlexMono-Regular.css">
+    <link rel="stylesheet" href="https://fonts.premi.st/ofl/Gothic A1 Medium.css">
+    <link rel="stylesheet" href="https://fonts.premi.st/ofl/Gothic A1 SemiBold.css">
+    <link rel="stylesheet" href="https://fonts.premi.st/ofl/Gothic A1 Bold.css">
+    <link rel="stylesheet" href="https://fonts.premi.st/lfs/Lab Grotesque.css">
 
     {{ $mainSass := resources.Get "styles/main.scss" | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $mainSass.Permalink }}">
