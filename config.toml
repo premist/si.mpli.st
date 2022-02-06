@@ -27,7 +27,7 @@ baseName = "feed"
 
 [params]
   title = "si.mpli.st"
-  description = "blog by minku lee"
+  description = "si.mpli.st is a tiny little journal by minku lee."
   author = "Minku Lee"
   authorWebsite = "https://premi.st"
   authorFacebook = "https://www.facebook.com/premist.lee"
