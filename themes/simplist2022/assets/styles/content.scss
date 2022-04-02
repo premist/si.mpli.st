@@ -106,7 +106,10 @@ figcaption * {
   align-items: flex-start;
 
   @media #{$mq-mobile} {
-    & { display: inherit; }
+    & {
+      display: inherit;
+      flex-direction: column;
+    }
   }
 
   & figure {
@@ -117,6 +120,9 @@ figcaption * {
       & {
         object-fit: none;
         padding-right: 0px;
+
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
       }
     }
   }
