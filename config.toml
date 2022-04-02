@@ -8,6 +8,8 @@ paginate = 5
 PygmentsUseClasses = true
 PygmentsCodeFences = true
 
+timeout = "90s"
+
 [markup.goldmark.renderer]
 unsafe = true
 
