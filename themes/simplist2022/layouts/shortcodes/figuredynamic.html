@@ -1,0 +1,58 @@
+{{ $path_prefix := "https://premist-public.objects.polychrome.network/images/" }}
+
+{{ $path := (.Get "path") }}
+{{ $class := (.Get "class") }}
+{{ $alt := (.Get "alt") }}
+{{ $attr := (.Get "attr") }}
+
+{{ $image := index $.Site.Data.image_manifest $path }}
+
+{{ $srgb_avif := slice }}
+{{ range where (where $image "color_profile" "srgb") "extension" ".avif" }}
+  {{ $srgb_avif = $srgb_avif | append . }}
+{{ end }}
+
+{{ $srgb_jpg := slice }}
+{{ range where (where $image "color_profile" "srgb") "extension" ".jpg" }}
+  {{ $srgb_jpg = $srgb_jpg | append . }}
+{{ end }}
+
+{{ $displayp3_avif := slice }}
+{{ range where (where $image "color_profile" "displayp3") "extension" ".avif" }}
+  {{ $displayp3_avif = $displayp3_avif | append . }}
+{{ end }}
+
+<figure class="{{ $class }}">
+  <picture>
+
+    {{ with $displayp3_avif }}
+      <source type="image/avif"
+        media="(color-gamut: p3)"
+        srcset="
+          {{ range $displayp3_avif }}
+            {{ $path_prefix }}{{ .path }} {{ .width }}w,
+          {{ end }}">
+    {{ end }}
+
+    {{ with $srgb_avif }}
+      <source type="image/avif"
+        srcset="
+          {{ range $srgb_avif }}
+            {{ $path_prefix }}{{ .path }} {{ .width }}w,
+          {{ end }}">
+    {{ end }}
+
+    {{ with $srgb_jpg }}
+      <source type="image/jpg"
+        srcset="
+          {{ range $srgb_jpg }}
+            {{ $path_prefix }}{{ .path }} {{ .width }}w,
+          {{ end }}">
+    {{ end }}
+
+    <img src="{{ $path_prefix }}{{ index $srgb_jpg 0 "path" }}" alt="{{ $alt }}" decoding="async">
+  </picture>
+  <figcaption>
+    <p>{{ $attr | safeHTML }}</p>
+  </figcaption>
+</figure>
