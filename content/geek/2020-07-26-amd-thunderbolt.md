@@ -6,7 +6,7 @@ category: geek
 description: 새로운 컴퓨터를 새로 맞추고 싶어서 벼르다가 드디어 맞추게 되었습니다. AMD 컴퓨터에서 썬더볼트 모니터를 사용하기 위한 시행착오와 필요한 부품을 소개합니다.
 ---
 
-{{< figurelazy class="oversize" src="/images/2020/07/26-amd-thunderbolt/L1000813.jpg" alt="새로 맞춘 PC의 내부" >}}
+{{< fig class="oversize" path="si.mpli.st/2020/07-26-amd-thunderbolt/L1000813" alt="새로 맞춘 PC의 내부" >}}
 
 새 PC를 맞추고 싶어서 벼르다가 드디어 맞추게 되었습니다. 맥북 프로를 제외하면 원래 쓰던 PC가 없었으니 게임을 할 때도 무언가 아쉬웠고, 애플이 ARM 아키텍처로 전환한다는 이야기를 듣고 PC를 따로 두긴 두어야겠구나 하는 생각도 들었죠. 사실 1년 넘게 각을 재고 있다가 명분 한두 개가 필요했는지도 모릅니다.
 
@@ -19,7 +19,7 @@ description: 새로운 컴퓨터를 새로 맞추고 싶어서 벼르다가 드�
 
 메인보드를 고를 때 두 가지 부분을 고려했습니다. 앞으로 나올 AMD CPU(Zen 3 이상)를 지원할 수 있는지, 그리고 LG UltraFine 5K를 지원할 수 있는지. 후자의 경우 보다 자세한 요구 사항이 있는데요, UltraFine은 최대 해상도인 5K(5120x2880)을 지원하기 위해 화면을 절반(2560x2880)으로 나누고, [두 개의 DisplayPort 1.2 스트림으로 나누어](https://www.anandtech.com/show/10798/lg-introduces-new-4k-and-5k-ultrafine-monitors) 신호를 전송합니다. 따라서 썬더볼트 컨트롤러에 들어가는 DisplayPort 스트림이 두 개가 되어야 하죠. 여기서 위에서 언급한 썬더볼트 3 지원 최초 AMD 메인보드인 [ASRock X570 Phantom Gaming-ITX](https://www.asrock.com/mb/AMD/X570%20Phantom%20Gaming-ITXTB3/index.asp)가 탈락하는데요, DisplayPort 입력이 하나밖에 없기 때문입니다. 인텔의 인증도 받은 모델이지만 아쉽게도 사용할 수 없었습니다. 같은 제조사에서 나온 메인보드인 [ASRock X570 AQUA](https://www.asrock.com/mb/AMD/X570%20AQUA/index.html)는 DisplayPort 입력을 두 개 지원하지만, 100만원에 육박하는 가격과 수냉식 쿨링을 무조건 사용하는 제약이 너무 커서 선택하긴 무리가 있었죠.
 
-{{< figurelazy src="/images/2020/07/26-amd-thunderbolt/asrock-x570-aqua.png" title="이 가격은 좀..." alt="ASRock X570 AQUA 메인보드의 가격" >}}
+{{< fig path="si.mpli.st/2020/07-26-amd-thunderbolt/asrock-x570-aqua" attr="이 가격은 좀..." alt="ASRock X570 AQUA 메인보드의 가격" >}}
 
 이와 다르게, 썬더볼트 3 AIC 입력이 있는 메인보드와 썬더볼트 3 AIC(Add-in Card)를 사용하는 방법도 있습니다. 이 쪽으로 고개를 돌리면 더 많은 선택지가 있는데, [Gigabyte](https://www.gigabyte.com/Motherboard/X570-AORUS-MASTER-rev-11-12#kf) 이나 [ASRock](https://www.asrock.com/mb/AMD/X570%20Taichi/index.asp) 에서 다양한 메인보드를 출시하고 있습니다. 저는 이 중에 가장 가격이 저렴하고 게이밍 디자인이 최대한 덜 들어간, [ASRock X570 Pro4](https://www.asrock.com/MB/AMD/X570%20Pro4/index.asp)를 구입하였습니다.
 
@@ -28,19 +28,19 @@ description: 새로운 컴퓨터를 새로 맞추고 싶어서 벼르다가 드�
 
 썬더볼트 3를 지원한다고 해도 AIC를 설치하기 전 까지는 사용할 수 없습니다. 이를 위해 ASRock의 AIC를 구입하였는데, 결론적으로 이야기하면 문제가 있어서 Gigabyte의 AIC를 추가적으로 사게 되었습니다.
 
-{{< figurelazy src="/images/2020/07/26-amd-thunderbolt/L1000851.jpg" title="ASRock의 Thunderbolt 3 AIC R2.0, 그리고 Gigabyte의 GC-TITAN-RIDGE 1.0" alt="ASRock과 Gigabyte의 AIC" >}}
+{{< fig path="si.mpli.st/2020/07-26-amd-thunderbolt/L1000851" attr="ASRock의 Thunderbolt 3 AIC R2.0, 그리고 Gigabyte의 GC-TITAN-RIDGE 1.0" alt="ASRock과 Gigabyte의 AIC" >}}
 
 ASRock의 AIC는 인텔의 구형 썬더볼트 칩셋인 Alpine Ridge를 사용하고, 보드의 차폐가 제대로 되어있지 않아서인지 울트라파인 5K 모니터를 연결했을 때 간헐적으로 끊김 현상이 발생하였습니다. 해외 포럼을 여럿 찾아보니 비슷한 문제를 겪는 사람이 있었고, Gigabyte의 AIC를 사용하고 해결되었다는 글을 보게 되었습니다. 조금 더 일찍 알았다면 바로 해당 AIC를 구입했겠지만, 워낙 이상한 조합으로 시스템을 맞췄으니까 문제를 찾기도 힘들었던 것 같습니다.
 
-{{< figurelazy src="/images/2020/07/26-amd-thunderbolt/L1000847.jpg" title="안 쓰게 된 ASRock의 썬더볼트 3 카드" alt="안 쓰게 된 ASRock의 썬더볼트 3 카드" >}}
+{{< fig path="si.mpli.st/2020/07-26-amd-thunderbolt/L1000847" attr="안 쓰게 된 ASRock의 썬더볼트 3 카드" alt="안 쓰게 된 ASRock의 썬더볼트 3 카드" >}}
 
 Gigabyte의 GC-TITAN-RIDGE도 ASRock의 그것과 거의 동일한 대신, 보드의 전면이 덮개로 가려져 있어 차폐가 잘 되어 있습니다. 그리고 이름에서 알 수 있듯이 신형 썬더볼트 칩셋인 [Titan Ridge](https://www.anandtech.com/show/12228/intel-titan-ridge-thunderbolt-3)를 사용합니다. 사용하진 않겠지만 전원 포트가 따로 달려 있어 100W의 Power Delivery도 지원합니다.
 
-{{< figurelazy class="oversize" src="/images/2020/07/26-amd-thunderbolt/L1000817.jpg" title="PCIe x4를 사용하는 GC-TITAN-RIDGE AIC" alt="PCIe x4를 사용하는 GC-TITAN-RIDGE AIC" >}}
+{{< fig class="oversize" path="si.mpli.st/2020/07-26-amd-thunderbolt/L1000817" attr="PCIe x4를 사용하는 GC-TITAN-RIDGE AIC" alt="PCIe x4를 사용하는 GC-TITAN-RIDGE AIC" >}}
 
 썬더볼트 AIC를 장착한 이후에는, DisplayPort 케이블을 그래픽카드와 연결해 주어야 합니다. 이를 위해 AIC 후면 패널에 DisplayPort 입력 포트가 두 개 자리잡고 있습니다. 사실 외부에 상시 케이블을 연결해 두어야 하는게 거추장스러울 수 밖에 없는데, 인텔이 이렇게밖에 표준을 만들 수 없던 이유가 있을지 궁금하네요. 여담이지만 애플이 [MPX 모듈](https://support.apple.com/guide/mac-pro/install-mpx-modules-apd8e22bab6b/mac)을 만든 이유도 이런 케이블 연결의 문제를 없애고 싶어서인 것 같습니다.
 
-{{< figurelazy class="oversize" src="/images/2020/07/26-amd-thunderbolt/L1000840.jpg" title="썬더볼트 3 AIC와 그래픽카드를 두 개의 케이블로 이어주었다. 그나마 AIC에 동봉된 DisplayPort 케이블이 짧아서 다행." alt="썬더볼트 3 AIC와 그래픽카드를 두 개의 케이블로 이어주었다." >}}
+{{< fig class="oversize" path="si.mpli.st/2020/07-26-amd-thunderbolt/L1000840" attr="썬더볼트 3 AIC와 그래픽카드를 두 개의 케이블로 이어주었다. 그나마 AIC에 동봉된 DisplayPort 케이블이 짧아서 다행." alt="썬더볼트 3 AIC와 그래픽카드를 두 개의 케이블로 이어주었다." >}}
 
 이렇게 썬더볼트 AIC 장착은 완료되고, 부팅을 하여 BIOS와 윈도에서 설정을 할 시간입니다.
 
@@ -51,13 +51,13 @@ Gigabyte의 GC-TITAN-RIDGE도 ASRock의 그것과 거의 동일한 대신, 보�
 
 다음으로는 BIOS에서 썬더볼트 지원을 켜고, 보안 설정을 낮췄습니다. 일반적인 경우라면 썬더볼트 3의 취약점을 해결하기 위해 보안 설정을 그대로 두는 것이 좋지만, 모니터를 사용할 때는 인식이 되어야 시스템을 사용할 수 있어서 불가피하게 이렇게 두었습니다.
 
-{{< figurelazy src="/images/2020/07/26-amd-thunderbolt/L1000853.jpg" title="썬더볼트 지원을 켜고, 보안 등급을 조정하였다." alt="썬더볼트 지원을 켜고, 보안 등급을 조정하였다." >}}
+{{< fig path="si.mpli.st/2020/07-26-amd-thunderbolt/L1000853" attr="썬더볼트 지원을 켜고, 보안 등급을 조정하였다." alt="썬더볼트 지원을 켜고, 보안 등급을 조정하였다." >}}
 
 준비가 모두 완료되었으니, AIC의 드라이버를 잡아줄 차례입니다. Gigabyte의 [GC-TITAN-RIDGE 지원페이지](https://www.gigabyte.com/Motherboard/GC-TITAN-RIDGE-rev-10/support#support-dl-driver)에서 다운로드를 받고 실행합니다. 이 때 모니터가 연결되어 있다면 여러 번 깜박일 수 있습니다.
 
 여기까지 모두 완료한 후 재부팅을 해주면, 울트라파인 5K를 최대 해상도와 색영역으로 사용할 수 있습니다!
 
-{{< figurelazy class="oversize" src="/images/2020/07/26-amd-thunderbolt/win.jpg" title="AMD 시스템에서 UltraFine 5K 모니터와, 벨킨의 썬더볼트 프로 독을 사용하고 있는 모습" alt="AMD 시스템에서 UltraFine 5K 모니터와, 벨킨의 썬더볼트 프로 독을 사용하고 있는 모습" >}}
+{{< fig class="oversize" path="si.mpli.st/2020/07-26-amd-thunderbolt/win" attr="AMD 시스템에서 UltraFine 5K 모니터와, 벨킨의 썬더볼트 프로 독을 사용하고 있는 모습" alt="AMD 시스템에서 UltraFine 5K 모니터와, 벨킨의 썬더볼트 프로 독을 사용하고 있는 모습" >}}
 
 
 ### 마치며
