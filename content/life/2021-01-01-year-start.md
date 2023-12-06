@@ -54,7 +54,7 @@ description: 삶의 변화가 워낙 강렬했기 때문에 이미 충분히 다
 
 ### Shakr
 
-{{< figuregen class="oversize" path="2021/01-01-year-start/007" >}}
+{{< fig class="oversize" path="si.mpli.st/2021/01-01-year-start/007" >}}
 
 회사에서는 2020년도 여느 해처럼 기쁜 일도 있고 아쉬운 일도 있었습니다. 세세한 것들에 대해 다 이야기하지는 못하겠지만, 기억에 남는 변화와 일들을 적어봅니다.
 
