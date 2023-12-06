@@ -32,6 +32,11 @@ iframe {
 blockquote {
   border-left: 4px solid $primary-color;
   padding-left: 15px;
+  margin-bottom: 2rem;
+
+  & p {
+    margin-bottom: 0rem;
+  }
 }
 
 table {

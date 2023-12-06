@@ -8,6 +8,8 @@ description: 새로운 컴퓨터를 새로 맞추고 싶어서 벼르다가 드�
 
 {{< fig class="oversize" path="si.mpli.st/2020/07-26-amd-thunderbolt/L1000813" alt="새로 맞춘 PC의 내부" >}}
 
+> **2023-12 업데이트:** 현재는 AMD 진영에서도 Thunderbolt/USB 4를 지원하는 메인보드가 꽤나 나와 있어, 아래처럼 꼭 AIC를 추가할 필요 없이 썬더볼트를 사용할 수 있습니다. 저는 LG UltraFine을 더 이상 쓰지 않아서 DisplayPort 스트림 두 개를 고집할 필요는 없어졌습니다. 현재는 Thunderbolt 4를 지원하는 ASUS의 [ProArt X570-CREATOR WIFI](https://www.asus.com/motherboards-components/motherboards/proart/proart-x570-creator-wifi/) 메인보드를 사용중입니다.
+
 새 PC를 맞추고 싶어서 벼르다가 드디어 맞추게 되었습니다. 맥북 프로를 제외하면 원래 쓰던 PC가 없었으니 게임을 할 때도 무언가 아쉬웠고, 애플이 ARM 아키텍처로 전환한다는 이야기를 듣고 PC를 따로 두긴 두어야겠구나 하는 생각도 들었죠. 사실 1년 넘게 각을 재고 있다가 명분 한두 개가 필요했는지도 모릅니다.
 
 그렇지만 무턱대고 PC를 맞추지 못하고 미루고 있던 중요한 이유가 하나 있습니다. 바로 제가 쓰는 모니터가 [LG의 울트라파인 5K](https://www.lge.co.kr/lgekor/product/pc/monitor/productDetail.do?cateId=2410&prdId=EPRD.335395)이기 때문인데요, 현재 판매되는 신형(27MD5KL)가 아닌 구형(27MD5KA)를 사용하고 있어서 썬더볼트 3만 사용할 수 있습니다. 최근 AMD가 멋진 CPU를 계속 만들어서 이왕 새 PC를 만들거면 AMD CPU를 사고 싶었는데, 썬더볼트 3는 인텔의 기술이어서 쉽게 사용하기는 힘들었죠.
