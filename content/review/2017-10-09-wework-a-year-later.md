@@ -16,8 +16,7 @@ description: 2016년 7월 강남점 오픈과 함께 WeWork에 입주한 지 1�
 
 고민을 거듭하던 중 작년 3월경 국내 언론에 미국의 공유 사무실 기업인 [WeWork][2]가 들어온다는 [기사][3]가 실렸고, 호기심에 연락을 해 보게 되었다. 입주 시기나 사무실의 위치가 아직은 확정되지 않아서 어느 정도 시간이 흐른 후 답장을 받았는데, 8월 1일에 국내 첫 번째 WeWork인 강남역점에 입주할 것을 제안하는 내용이었다.  공유 사무실에 대한 궁금증과 약간의 걱정이 있었기에 여러 번 질문과 답변을 주고받았고, 마침내 WeWork에 입주하기로 결정하였다. 그 당시 있던 건물의 임대 계약이 만료되는 시점과 WeWork 강남역점의 오픈일과 2주 정도의 차이가 있었는데, 이 동안은 [패스트파이브 서초점][4]을 단기 임대하여 사용하였다.
 
-{{< figure
-  src="https://cdn.si.mpli.st/2017-10-09-wework-a-year-later/before-open.jpg"
+{{< fig path="si.mpli.st/2017/10-09-wework-a-year-later/before-open"
   alt="작년 7월, WeWork 강남점의 오픈을 알리는 팻말"
   attr="작년 7월, WeWork 강남점의 오픈을 알리는 팻말" >}}
 
@@ -26,8 +25,7 @@ description: 2016년 7월 강남점 오픈과 함께 WeWork에 입주한 지 1�
 
 WeWork은 뉴욕에서 시작하여 빠르게 확장하고 있는 공유 사무실 업체다. 여러 기업들이 시내 중심가 건물들을 직접 임대하려면 살인적인 임대료를 지불해야 하는데, 이를 WeWork가 지불하고 공간을 나눠 공용 사무실을 제공해주는 방식으로 가격을 낮춰 스타트업과 여러 기업에 공급한다. 모든 지점의 인테리어를 본사에서 관리 감독하기 때문에 WeWork 사무실은 유명 대기업에 견줄 정도로 멋진 인테리어를 가지고 있으며, 단순한 공간 임대에 그치지 않고 사무실에 필요한 각종 비품 및 시설을 제공한다. 같은 내 기업들의 교류를 도와주는 여러 가지 이벤트를 운영한다.
 
-{{< figure
-  src="https://cdn.si.mpli.st/2017-10-09-wework-a-year-later/samseong-lounge.jpg"
+{{< fig path="si.mpli.st/2017/10-09-wework-a-year-later/samseong-lounge"
   alt="WeWork 삼성점의 라운지"
   attr="WeWork 삼성점의 라운지" >}}
 
@@ -35,34 +33,29 @@ WeWork은 뉴욕에서 시작하여 빠르게 확장하고 있는 공유 사무�
 
 WeWork에서는 커피와 맥주(!)를 무제한 제공하고, 복사기도 각 층마다 설치되어 있어 인터넷으로 문서 프린트가 가능하다. 인터넷의 경우에도 기본적으로 유무선 연결이 가능하며, 공인 IP나 서버 랙이 필요한 경우 CM(Community Management)팀에 요청하면 테크니션의 도움을 받아 구성할 수 있다.
 
-{{< figure
-  src="https://cdn.si.mpli.st/2017-10-09-wework-a-year-later/beer-tap.jpg"
+{{< fig path="si.mpli.st/2017/10-09-wework-a-year-later/beer-tap"
   alt="맥주 탭" >}}
 
-{{< figure
-  src="https://cdn.si.mpli.st/2017-10-09-wework-a-year-later/beer-info.jpg"
+{{< fig path="si.mpli.st/2017/10-09-wework-a-year-later/beer-info"
   alt="키친에 준비되어 있는 맥주 탭. 각 층마다 맥주 종류가 다른데, 아쉽게도 우리 층은 OB다.."
   attr="키친에 준비되어 있는 맥주 탭. 각 층마다 맥주 종류가 다른데, 아쉽게도 우리 층은 OB다.." >}}
 
 
 ### WeWork 내부 톺아보기
 
-{{< figure
-  src="https://cdn.si.mpli.st/2017-10-09-wework-a-year-later/keycard.jpg"
+{{< fig path="si.mpli.st/2017/10-09-wework-a-year-later/keycard"
   alt="키카드" >}}
 
 WeWork에 입주를 하면 키카드를 받게 되는데, 이 키카드로 자신이 소속한 지점에 24시간 출입할 수 있다. 뿐만 아니라 다른 WeWork 지점을 이용할 때도 이 키카드를 사용할 수 있는데, 다른 지점의 일일 사용 예약을 한 후 자신이 가지고 있는 키카드를 사용하면 해당 지점에 자유롭게 출입하여 작업 공간을 사용할 수 있다. 올해 초 Google Cloud 컨퍼런스 참여를 위해 샌프란시스코에 방문했을 때도 잠시 집중해서 일을 할 수 있는 공간이 필요했는데, 근처에 있는 [WeWork SOMA][5]에 방문하여 작업을 할 수 있었다.
 
 
-{{< figure
-  src="https://cdn.si.mpli.st/2017-10-09-wework-a-year-later/info-display.jpg"
+{{< fig path="si.mpli.st/2017/10-09-wework-a-year-later/info-display"
   alt="안내 디스플레이" >}}
 
 엘리베이터 로비에는 디스플레이가 설치되어 있다. 보통의 건물이라면 입주사의 목록이 나열되어 있는 디렉터리가 있겠지만, WeWork의 경우에는 개인으로 입주하여 있는 경우도 있고, 입주사의 수가 워낙 많을 뿐더러 주기적으로 입주사가 바뀌기 때문에 디스플레이를 설치해 둔 것 같다. WeWork에 입주한 회사와 멤버를 무작위로 보여주며, 이번 주에 예정되어 있는 커뮤니티 이벤트나 WeWork 인스타그램 계정의 사진을 소개해준다.
 
 
-{{< figure
-  src="https://cdn.si.mpli.st/2017-10-09-wework-a-year-later/gangnam-lounge.jpg"
+{{< fig path="si.mpli.st/2017/10-09-wework-a-year-later/gangnam-lounge"
   alt="강남점 라운지"
   attr="강남점의 18층 라운지" >}}
 
@@ -71,41 +64,34 @@ WeWork에 처음 방문하게 되면 오게 되는 곳은 바로 라운지. 내�
 공용 공간의 경우 자유롭게 이용할 수 있는데, 다른 WeWork 지점을 방문했을 때 이용하게 되는 공간도 바로 이 라운지 공간이다. 이벤트가 진행되는 날에는 라운지 공간이 여유있는 이벤트 홀로 변신하는데, Shakr도 이 곳에서 여러 번 세미나를 진행했다.
 
 
-{{< figure
-  src="https://cdn.si.mpli.st/2017-10-09-wework-a-year-later/front-sticker-zone.jpg"
+{{< fig path="si.mpli.st/2017/10-09-wework-a-year-later/front-sticker-zone"
   alt="리셉션 데스크의 스티커들" >}}
-{{< figure
-  src="https://cdn.si.mpli.st/2017-10-09-wework-a-year-later/our-floor.jpg"
+{{< fig path="si.mpli.st/2017/10-09-wework-a-year-later/our-floor"
   alt="내가 입주해 있는 층"
   attr="내가 입주해 있는 16층" >}}
 
 각 층에도 작은 공용 공간과 더불어 주방이 마련되어 있다. 사무실이 너무 답답하게 느껴진다면 이 공간에서 작업을 하고, 식사를 배달해 먹는 경우에도 이 공간을 주로 이용한다.
 
-{{< figure
-  src="https://cdn.si.mpli.st/2017-10-09-wework-a-year-later/kitchen.jpg"
+{{< fig path="si.mpli.st/2017/10-09-wework-a-year-later/kitchen"
   alt="공용 주방" >}}
 
 각 사무실은 사무실 간의 벽을 투명한 유리 소재를 사용하여 개방감이 느껴지는데, 어느 정도의 프라이버시를 보호하기 위해 눈높이까지는 반투명 코팅이 되어 있다. 처음 사무실에 입주했을때는 복도를 지나가는 사람들이 많이 의식되었지만, 지금은 어느정도 적응이 되어 크게 신경쓰이지 않게 되었다.
 
-{{< figure
-  src="https://cdn.si.mpli.st/2017-10-09-wework-a-year-later/shakr-office.jpg"
+{{< fig path="si.mpli.st/2017/10-09-wework-a-year-later/shakr-office"
   alt="우리 사무실"
   attr="우리 사무실" >}}
 
 층마다 있는 작은 방에는 복합기와 파쇄함, 절단기와 같은 인쇄와 관련된 여러 도구가 구비되어 있다. 입주한 기업에게는 매달 사무실 크기에 비례하여 크레딧이 주어지는데, 크레딧을 사용하여 출력이 가능하다.
 
-{{< figure
-  src="https://cdn.si.mpli.st/2017-10-09-wework-a-year-later/copy-machine-and-shredding.jpg"
+{{< fig path="si.mpli.st/2017/10-09-wework-a-year-later/copy-machine-and-shredding"
   alt="복사기와 파쇄함" >}}
-{{< figure
-  src="https://cdn.si.mpli.st/2017-10-09-wework-a-year-later/meeting-room-large.jpg"
+{{< fig path="si.mpli.st/2017/10-09-wework-a-year-later/meeting-room-large"
   alt="10인 회의실"
   attr="10인 회의실" >}}
 
 3인부터 10인까지 다양한 인원을 수용할 수 있는 회의실이 각 층마다 있어, 크레딧으로 예약 후 사용이 가능하다.
 
-{{< figure
-  src="https://cdn.si.mpli.st/2017-10-09-wework-a-year-later/meeting-rooms.jpg"
+{{< fig path="si.mpli.st/2017/10-09-wework-a-year-later/meeting-rooms"
   alt="3인 회의실"
   attr="3인 회의실" >}}
 
@@ -126,13 +112,11 @@ WeWork에 처음 방문하게 되면 오게 되는 곳은 바로 라운지. 내�
 
 **멋진 인테리어:** 이전 사무실에서는 저비용으로 간단한 인테리어만 했던 터라 더욱 멋진 인테리어에 매료되었다. 사무실을 실제로 소유하고 있지 않다면 인테리어에 비용을 쓰기가 아무래도 힘든 것이 사실인데, WeWork의 경우에는 초기 인테리어가 워낙 잘 되어 있고 목재 재질의 책상 등 멋진 소품들이 마련되어 있어 인테리어에 대한 고민을 덜 수 있었다. 사무실에 방문할 일이 있어 찾아온 손님이나 화상 대화로 연결한 파트너가 카메라를 통해 보여지는 멋진 인테리어에 놀라는 것은 덤.
 
-{{< figure
-  src="https://cdn.si.mpli.st/2017-10-09-wework-a-year-later/phone-booth.jpg"
+{{< fig path="si.mpli.st/2017/10-09-wework-a-year-later/phone-booth"
   alt="폰부스"
   attr="폰부스" >}}
 
-{{< figure
-  src="https://cdn.si.mpli.st/2017-10-09-wework-a-year-later/hallway.jpg"
+{{< fig path="si.mpli.st/2017/10-09-wework-a-year-later/hallway"
   alt="복도"
   attr="형광등이 아닌 따뜻한 조명이 비치는 복도는 언제 봐도 기분이 좋다." >}}
 
@@ -147,8 +131,7 @@ WeWork에 처음 방문하게 되면 오게 되는 곳은 바로 라운지. 내�
 
 **매주 진행되는 여러 이벤트:** 입주하고 며칠간 라운지에서 진행되는 이벤트를 보면서 얼마 가지 못하겠다는 생각을 했지만, 1년이 지난 지금까지도 매주 활발하게 이벤트가 진행되고 있다. 월요일에 WeWork에서 직접 진행하는 TGIM(Thank God It's Monday의 약자) 아침 식사 이벤트부터 여러 기업들이 참여하는 리크루팅 이벤트, 그리고 Google 등 외부 기업에서 주최하는 기술이나 디자인 관련 행사까지 다양한 행사가 열리고 있다.
 
-{{< figure
-  src="https://cdn.si.mpli.st/2017-10-09-wework-a-year-later/launching-party.jpg"
+{{< fig path="si.mpli.st/2017/10-09-wework-a-year-later/launching-party"
   alt="작년 11월에 열린 을지로점 런칭 기념 파티에 마련된 보드카 바"
   attr="작년 11월에 열린 을지로점 런칭 기념 파티에 마련된 보드카 바." >}}
 
