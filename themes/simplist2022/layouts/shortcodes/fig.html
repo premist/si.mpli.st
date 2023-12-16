@@ -7,20 +7,34 @@
 
 {{ $image := index $.Site.Data.image_manifest $path }}
 
-{{ $srgb_avif := slice }}
+{{/* AVIF standard begin */}}
+{{/* sRGB + original */}}
+{{ $standard_avif := slice }}
 {{ range where (where $image "color_profile" "srgb") "extension" ".avif" }}
-  {{ $srgb_avif = $srgb_avif | append . }}
+  {{ $standard_avif = $standard_avif | append . }}
 {{ end }}
+{{ range where (where $image "color_profile" "original") "extension" ".avif" }}
+  {{ $standard_avif = $standard_avif | append . }}
+{{ end }}
+{{/* AVIF standard end */}}
 
-{{ $srgb_jpg := slice }}
+{{/* JPG standard begin */}}
+{{/* sRGB + original */}}
+{{ $standard_jpg := slice }}
 {{ range where (where $image "color_profile" "srgb") "extension" ".jpg" }}
-  {{ $srgb_jpg = $srgb_jpg | append . }}
+  {{ $standard_jpg = $standard_jpg | append . }}
 {{ end }}
+{{ range where (where $image "color_profile" "original") "extension" ".jpg" }}
+  {{ $standard_jpg = $standard_jpg | append . }}
+{{ end }}
+{{/* JPG standard end */}}
 
+{{/* AVIF Display P3 begin */}}
 {{ $displayp3_avif := slice }}
 {{ range where (where $image "color_profile" "displayp3") "extension" ".avif" }}
   {{ $displayp3_avif = $displayp3_avif | append . }}
 {{ end }}
+{{/* AVIF Display P3 end */}}
 
 <figure class="{{ $class }}">
   <picture>
@@ -34,25 +48,28 @@
           {{ end }}">
     {{ end }}
 
-    {{ with $srgb_avif }}
+    {{ with $standard_avif }}
       <source type="image/avif"
         srcset="
-          {{ range $srgb_avif }}
+          {{ range $standard_avif }}
             {{ $path_prefix }}{{ .path }} {{ .width }}w,
           {{ end }}">
     {{ end }}
 
-    {{ with $srgb_jpg }}
+    {{ with $standard_jpg }}
       <source type="image/jpg"
         srcset="
-          {{ range $srgb_jpg }}
+          {{ range $standard_jpg }}
             {{ $path_prefix }}{{ .path }} {{ .width }}w,
           {{ end }}">
     {{ end }}
 
-    <img src="{{ $path_prefix }}{{ index $srgb_jpg 0 "path" }}" alt="{{ $alt }}" decoding="async">
+    <img src="{{ $path_prefix }}{{ index $standard_jpg 0 "path" }}" alt="{{ $alt }}" decoding="async">
   </picture>
-  <figcaption>
-    <p>{{ $attr | safeHTML }}</p>
-  </figcaption>
+
+  {{ with $attr }}
+    <figcaption>
+      <p>{{ $attr | safeHTML }}</p>
+    </figcaption>
+  {{ end }}
 </figure>
