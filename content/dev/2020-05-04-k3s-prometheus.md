@@ -67,19 +67,11 @@ kubectl apply -k github.com/premist/k3s-kube-prometheus
 첫 번째 명령어는 Prometheus와 관련 구성 요소의 [커스텀 리소스 명세(Custom Resource Definition; CRD)](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/)를 생성합니다. Deployment나 Ingress를 만드는 것처럼, Prometheus를 마치 Kubernetes의 리소스와 같이 실행할 수 있게 해 주는 것이죠.
 두 번째 명령어는 monitoring이라는 네임스페이스를 만들고, 새로 추가된 여러가지 CRD를 이용해 실제로 Prometheus 서버를 생성합니다.
 
-{{< figure
-  src="https://cdn.si.mpli.st/2020-05-04-k3s-prometheus/0002-apply.png"
-  alt="kubectl apply 명령어의 실행 결과]"
-  class="halfsize">}}
-
+{{< fig class="halfsize" path="si.mpli.st/2020/05-04-k3s-prometheus/0002-apply" alt="kubectl apply 명령어의 실행 결과" >}}
 
  명령어 실행이 끝나면, `kubectl get pod -n monitoring`을 이용해 리소스가 생성되는 과정을 지켜볼 수 있습니다.
 
-{{< figure
-  src="https://cdn.si.mpli.st/2020-05-04-k3s-prometheus/0001-getpod.png"
-  alt="pod이 생성되는것을 확인할 수 있다]"
-  class="halfsize">}}
-
+{{< fig class="halfsize" path="si.mpli.st/2020/05-04-k3s-prometheus/0001-getpod" alt="pod이 생성되는것을 확인할 수 있다" >}}
 
 리소스 생성이 모두 완료되면, Prometheus가 수집하는 지표를 확인해 볼 차례입니다! kube-prometheus 저장소에서 설명하는 것과 같이, 아래의 명령어로 웹 대시보드를 접근할 수 있습니다.
 
@@ -95,21 +87,21 @@ $ kubectl --namespace monitoring port-forward svc/grafana 3000
 
 먼저 Prometheus 대시보드를 살펴볼까요? 포트 포워딩을 하고 있는 상태에서 localhost:9090에 들어가면 웹 인터페이스가 나오는데, **Status > Targets** 메뉴에서 현재 수집중인 지표를 확인할 수 있습니다.
 
-![Prometheus 대시보드의 Targets 메뉴](https://cdn.si.mpli.st/2020-05-04-k3s-prometheus/0003-prometheus-targets.png)
+{{< fig path="si.mpli.st/2020/05-04-k3s-prometheus/0003-prometheus-targets" alt="Prometheus 대시보드의 Targets 메뉴" >}}
 
 다음으로, Grafana 대시보드에 들어가보겠습니다. Grafana는 Elasticsearch, InfluxDB와 같은 다른 백엔드와도 같이 쓰일만큼 지표를 그래프 등으로 시각화하여 쉽게 확인할 때 널리 사용되고 있습니다. Prometheus의 대시보드는 확인 목적 외에는 들어갈 일이 자주 없고, 지표를 확인하고 싶다면 대부분의 경우에는 Grafana 대시보드를 이용하게 될 것입니다.
 
 Grafana 포트 포워딩을 켠 후 localhost:3000에 들어갑니다. 기본 로그인 정보인 `admin/admin`으로 접속하고, 상단의 Home을 눌러 Default 폴더를 열어봅시다. Kubernetes의 여러 부분에 대한 지표를 모아둔 대시보드를 확인할 수 있습니다.
 
-{{< figure src="https://cdn.si.mpli.st/2020-05-04-k3s-prometheus/0004-grafana-dashboard.png" title="Grafana에 미리 추가된 대시보드 목록" >}}
+{{< fig path="si.mpli.st/2020/05-04-k3s-prometheus/0004-grafana-dashboard" attr="Grafana에 미리 추가된 대시보드 목록" alt="Grafana에 미리 추가된 대시보드 목록" >}}
 
 클러스터의 전체적인 리소스 사용량을 보여주는 “Kubernetes / Compute Resources / Cluster”에 들어가면, CPU 사용량을 비롯한 다양한 지표가 시각화되어 나오는 것을 확인할 수 있습니다.
 
-![클러스터 리소스 사용량 대시보드](https://cdn.si.mpli.st/2020-05-04-k3s-prometheus/0005-grafana-cluster.png)
+{{< fig path="si.mpli.st/2020/05-04-k3s-prometheus/0005-grafana-cluster" alt="클러스터 리소스 사용량 대시보드" >}}
 
 Explore 탭에 들어가면, Prometheus가 사용하는 지표 쿼리 언어인 [PromQL](https://prometheus.io/docs/prometheus/latest/querying/basics/)을 이용하여 수집중인 지표의 그래프를 그려볼 수 있습니다.
 
-![원하는 PromQL 쿼리를 실행할 수 있다](https://cdn.si.mpli.st/2020-05-04-k3s-prometheus/0006-grafana-explore.png)
+{{< fig path="si.mpli.st/2020/05-04-k3s-prometheus/0006-grafana-explore" alt="원하는 PromQL 쿼리를 실행할 수 있다" >}}
 
 Prometheus가 지표를 수집하고, 이를 시각화할 수 있는 Grafana 대시보드도 잘 돌아갑니다! 다만 이와 같은 구성에서 몇 가지 알아두어야 할 점이 있는데요,
 
