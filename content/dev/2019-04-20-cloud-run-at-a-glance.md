@@ -22,8 +22,7 @@ description: Cloud Next '19에서 발표된 구글의 강력한 한 방인 Cloud
 
 발표 이후 운영 없이 컨테이너를 구동할 수 있다는 점 때문에 [AWS Fargate](https://aws.amazon.com/ko/fargate/)나 [Azure Container Instances](https://azure.microsoft.com/ko-kr/services/container-instances/)와 비교되기도 했지만, 실행 방식과 과금 방식에서 큰 차이가 있습니다. Fargate 및 ACI는 컨테이너가 상주하는 방식이기 때문에 한 달 내내 웹 서버 컨테이너 한개를 켜두면 30일분의 요금을 지불해야 합니다. Cloud Run은 컨테이너를 사용하지만 Cloud Functions처럼 **요청이 있을 때만 실행**되고, **요청을 처리하는 시간만큼만 과금**이 됩니다.
 
-{{< figure
-  src="https://cdn.si.mpli.st/2019-04-20-cloud-run-at-a-glance/billing.png"
+{{< fig path="si.mpli.st/2019/04-20-cloud-run-at-a-glance/billing"
   alt="과금 방식 다이어그램"
   attr="과금 방식 다이어그램"
   attrlink="https://cloud.google.com/run/pricing" >}}
@@ -70,36 +69,34 @@ docker push gcr.io/my-project/my-image:20180420
 
 이미지가 모두 푸시되었으면, 콘솔에서 Cloud Run 서비스를 만들 수 있습니다. 이름을 입력하고, GCR에 올린 이미지를 지정해주면 준비 끝! 기본적으로는 요청을 할 때 IAM을 통해 인증을 하도록 요구하지만, ‘Allow unauthenticated invocations’ 를 체크하여 제한을 없애고 공개 웹 사이트를 호스팅할 수 있습니다.
 
-![서비스 만들기](https://cdn.si.mpli.st/2019-04-20-cloud-run-at-a-glance/create-service.png)
+{{< fig path="si.mpli.st/2019/04-20-cloud-run-at-a-glance/create-service" alt="서비스 만들기" >}}
 
 수 초 이내에 바로 접근 가능한 URL이 생성됩니다. 시험삼아 프로젝트를 몇 번 만들어 보았는데, 컨테이너 이미지에 문제가 있지 않는 한 URL이 준비되는데 5초 정도 밖에 걸리지 않아서 꽤나 인상깊었습니다.
 
-![배포가 완료된 화면](https://cdn.si.mpli.st/2019-04-20-cloud-run-at-a-glance/after-deploy.png)
+{{< fig path="si.mpli.st/2019/04-20-cloud-run-at-a-glance/after-deploy" alt="배포가 완료된 화면" >}}
 
 컨테이너가 출력하는 로그도 Cloud Run 콘솔에서 쉽게 확인이 가능합니다. 물론 자세한 정보를 원한다면 [Stackdriver Logging](https://cloud.google.com/logging/) 콘솔에서도 확인이 가능합니다.
 
-![요청에 대한 로그 확인](https://cdn.si.mpli.st/2019-04-20-cloud-run-at-a-glance/logs.png)
+{{< fig path="si.mpli.st/2019/04-20-cloud-run-at-a-glance/logs" alt="요청에 대한 로그 확인" >}}
 
 
 내부 서비스에 사용하기 위해서는 Cloud Run에서 제공해주는 URL로도 충분하지만, 웹 사이트를 운영하려면 도메인 연결은 필수죠. 도메인 소유권을 인증하고 DNS 레코드를 변경해주면 [Let’s Encrypt](https://letsencrypt.org/) 인증서로 보안 연결까지 자동으로 설정합니다.
 
 
-{{< figure
-  src="https://cdn.si.mpli.st/2019-04-20-cloud-run-at-a-glance/add-domain-mapping.png"
+{{< fig path="si.mpli.st/2019/04-20-cloud-run-at-a-glance/add-domain-mapping"
   class="halfsize"
   alt="도메인 연결"
   attr="도메인 연결을 하면..." >}}
 
 
-{{< figure
-  src="https://cdn.si.mpli.st/2019-04-20-cloud-run-at-a-glance/auto-letsencrypt.jpg"
+{{< fig path="si.mpli.st/2019/04-20-cloud-run-at-a-glance/auto-letsencrypt"
   class="halfsize"
   alt="Let's Encrypt 인증서"
   attr="Let's Encrypt 인증서도 자동으로 설정된다" >}}
 
 워밍업이 된 상태에서 [WebPageTest](http://webpagetest.org)로 로드 테스트를 해 보니, 꽤 괜찮은 반응 속도가 나오는 것을 확인할 수 있습니다.
 
-![도메인 연결](https://cdn.si.mpli.st/2019-04-20-cloud-run-at-a-glance/waterfall.png)
+{{< fig path="si.mpli.st/2019/04-20-cloud-run-at-a-glance/waterfall" alt="도메인 연결" >}}
 
 Cloud Run 상에서 실행되는 저의 갤러리 사이트를 [방문](https://35.premi.st/)해서 확인해보세요!
 
