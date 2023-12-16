@@ -30,7 +30,7 @@ description: 최근 매우 느려진 해외 인터넷 접속 때문에, 해외 �
 
 가장 먼저 지역 기반 라우팅을 어떻게 할 지 고민하기 시작하였다. 개인적으로 관리하고 있는 서버는 한국과 일본에 위치한 총 두 개의 서버에서, 지역에 따라 어떤 서버를 사용해야 할 지를 정할 수 있어야 했다.
 
-![][image-1]
+{{< fig path="si.mpli.st/2018/04-08-homemade-cdn-with-ns1-and-nginx/cdn-plan" alt="홈메이드 CDN 구조" >}}
 
 직접 Anycast 라우팅을 구축할 수도 있겠지만, [절차도 복잡하고 비용도 요구 사항도 까다로워서][8] 어느 정도 찾아보다 포기를 하고 서비스 형태로 제공해 주는 곳을 찾아보게 되었다.
 
@@ -38,8 +38,7 @@ AWS Route 53의 [지연 속도 기반 라우팅(Latency Based Routing)][9]이나
 
 내가 소유하고 있는 모든 도메인은 [DNSimple][11]을 통해 관리하고 있는데, 찾아보니 DNSimple에도 [Regional Records][12]라는 이름으로 특정 요금제에서는 사용자의 접속 지역에 따라 다른 DNS 레코드를 반환해주는 기능이 들어가 있었다. 다만 지역 설정이 아시아의 경우 일본 하나밖에 없어서, 한국의 유저를 구별해낼 수 있는 방법이 없었다.
 
-![][image-2]
-<span style="text-align: center;display:block;"> DNSimple의 Regional Records 기능</span>
+{{< fig path="si.mpli.st/2018/04-08-homemade-cdn-with-ns1-and-nginx/dnsimple" attr="DNSimple의 Regional Records 기능" alt="DNSimple의 Regional Records 기능" >}}
 
 여러 방법을 찾아보던 중 최근 유명세를 타기 시작한 DNS 제공자인 [NS1][13]에 무료 플랜이 있다는 사실을 발견하고, 한번 설정을 해 보았다.
 
@@ -48,13 +47,11 @@ AWS Route 53의 [지연 속도 기반 라우팅(Latency Based Routing)][9]이나
 
 NS1의 킬러 기능은 Filter Chain인데, 서버의 다운타임이나 사용자의 위치 등 다양한 종류의 지표를 이용하여 DNS 요청에 어떤 레코드를 반환해 줄 지를 설정할 수 있다.
 
-![][image-3]
-<span style="text-align: center;display:block;"> NS1에서 지원하는 다양한 필터</span>
+{{< fig path="si.mpli.st/2018/04-08-homemade-cdn-with-ns1-and-nginx/ns1-filter-chain" attr="NS1에서 지원하는 다양한 필터" alt="NS1에서 지원하는 다양한 필터" >}}
 
 무료 사용자의 경우 Filter Chain을 한 개의 레코드에 사용할 수 있는데, 여러 사이트에 각각 도메인을 배정하기 위해 와일드카드 레코드를 생성하였다. 그런 다음 Filter Chain으로 한국과 한국 외의 레코드 반환값을 다르게 지정하였다.
 
-![][image-4]
-<span style="text-align: center;display:block;"> 와일드카드 레코드를 만들고, KR과 Non-KR 그룹을 각각 설정했다</span>
+{{< fig path="si.mpli.st/2018/04-08-homemade-cdn-with-ns1-and-nginx/ns1-filter-chain-config" attr="NS1의 Filter Chain" alt="NS1의 Filter Chain" >}}
 
 설정을 마치고 DNS 레코드를 쿼리해보니, 서울 엣지 서버의 IP가 정상적으로 반환된다!
 
@@ -145,7 +142,7 @@ SSL을 설정할 때는 [Let's Encrypt][15]의 인증서를 활용했는데, 지
 
 이미지가 꽤 많이 포함된 글인 [WeWork, 1년 후][17]를 브라우저 캐시를 해제한 상태로 로드해 본 결과, 간섭이 심한 Wi-Fi 환경에서 12초 정도 로드가 되던 페이지가 1초대에 로드되었다!
 
-![][image-5]
+{{< fig path="si.mpli.st/2018/04-08-homemade-cdn-with-ns1-and-nginx/inspector-comparison" attr="전후 Web Inspector 비교" alt="전후 Web Inspector 비교" >}}
 
 이렇게 구축한 홈메이드 CDN의 장점은, 자신이 원하는 서버 제공자를 선택한 다음 NGINX를 이용해 원하는 대로 세팅을 할 수 있다는 것이다. 통상적인 CDN에 비해 성능이 조금 떨어질 수 있고 관리의 귀찮음도 있겠지만, 개인적인 용도로 사용할 때, 혹은 일반적인 CDN으로는 해결하기가 힘든 특수한 설정을 하고 싶을 때는 충분히 써볼 만 한 것 같다.
 
@@ -166,9 +163,3 @@ SSL을 설정할 때는 [Let's Encrypt][15]의 인증서를 활용했는데, 지
 [15]:	https://letsencrypt.org/
 [16]:	https://github.com/Neilpang/acme.sh
 [17]:	https://si.mpli.st/review/wework-a-year-later.html
-
-[image-1]:	https://cdn.si.mpli.st/2018-04-homemade-cdn-with-ns1-and-nginx/cdn-plan.svg "홈메이드 CDN 구조"
-[image-2]:	https://cdn.si.mpli.st/2018-04-homemade-cdn-with-ns1-and-nginx/dnsimple.png "DNSimple의 Regional Records 기능"
-[image-3]:	https://cdn.si.mpli.st/2018-04-homemade-cdn-with-ns1-and-nginx/ns1-filter-chain.png "NS1의 Filter Chain"
-[image-4]:	https://cdn.si.mpli.st/2018-04-homemade-cdn-with-ns1-and-nginx/ns1-filter-chain-config.png "NS1의 Filter Chain"
-[image-5]:	https://cdn.si.mpli.st/2018-04-homemade-cdn-with-ns1-and-nginx/inspector-comparison.png "전후 Web Inspector 비교"

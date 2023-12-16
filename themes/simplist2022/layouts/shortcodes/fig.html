@@ -36,6 +36,10 @@
 {{ end }}
 {{/* AVIF Display P3 end */}}
 
+{{/* non-modified original begin */}}
+{{ $original := index (where $image "original" true) 0 }}
+{{/* non-modified original end */}}
+
 <figure class="{{ $class }}">
   <picture>
 
@@ -64,7 +68,11 @@
           {{ end }}">
     {{ end }}
 
-    <img src="{{ $path_prefix }}{{ index $standard_jpg 0 "path" }}" alt="{{ $alt }}" decoding="async">
+    {{ with $original }}
+    <img src="{{ $path_prefix }}{{ index $original "path" }}" alt="{{ $alt }}" decoding="async">
+    {{ else }}
+      <img src="{{ $path_prefix }}{{ index $standard_jpg 0 "path" }}" alt="{{ $alt }}" decoding="async">
+    {{ end }}
   </picture>
 
   {{ with $attr }}
