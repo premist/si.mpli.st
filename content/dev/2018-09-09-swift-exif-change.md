@@ -57,15 +57,13 @@ destData.write(to: output, atomically: true)
 비교적 간단하게 TIFF 및 IPTC 메타데이터를 변경하는 코드를 작성할 수 있었고, macOS의 Preview로 열었을 때도 변경된 메타데이터를 확인할 수 있었다.
 
 
-{{< figure
-  src="https://cdn.si.mpli.st/2018-09-09-swift-exif-change/first-attempt-info.png"
+{{< fig path="si.mpli.st/2018/09-09-swift-exif-change/first-attempt-info"
   class="halfsize"
   alt="제대로 바뀐 저작권 정보" >}}
 
 하지만 이 방식은 문제가 있는데, 이미지의 데이터를 새로 저장하면서 압축을 다시 한다는 것이다. 새로 만들어진 사진 파일을 보면, JPEGRepresentation과 같은 메소드를 사용하지 않았는데도 용량이 줄어있는 것을 확인할 수 있다.
 
-{{< figure
-  src="https://cdn.si.mpli.st/2018-09-09-swift-exif-change/first-attempt-output.png"
+{{< fig path="si.mpli.st/2018/09-09-swift-exif-change/first-attempt-output"
   class="halfsize"
   alt="용량이 2MB 이상 줄었다"
   attr="용량이 2MB 이상 줄었다" >}}
@@ -79,8 +77,7 @@ Apple도 이러한 문제를 의식했는지 이에 대한 [Technical Q&A 문서
 이 메서드에 대한 자세한 정보를 보기 위해서 레퍼런스 사이트를 들어갔지만, 문서가 하나도 없었다..
 
 
-{{< figure
-  src="https://cdn.si.mpli.st/2018-09-09-swift-exif-change/reference-with-no-doc.png"
+{{< fig path="si.mpli.st/2018/09-09-swift-exif-change/reference-with-no-doc"
   alt="텅 비어있는 문서"
   attr="ㅠㅠ" >}}
 
@@ -135,15 +132,13 @@ CGImageDestinationAddImageFromSource를 사용한 코드와 다른 점이 몇 �
 
 이렇게 만들어진 이미지도 첫 번째 시도에서 만든 것처럼 메타데이터가 정상적으로 들어간 것을 확인할 수 있었다. 특이했던 점은, TIFF 메타데이터의 Copyright 태그만 추가를 해 주었는데도 IPTC의 Copyright Notice 태그가 추가되었다는 것이다. 어차피 두 개를 모두 설정하려고 했던 터라 수고를 덜 수 있어서 좋았다.
 
-{{< figure
-  src="https://cdn.si.mpli.st/2018-09-09-swift-exif-change/second-attempt-info.png"
+{{< fig path="si.mpli.st/2018/09-09-swift-exif-change/second-attempt-info"
   class="halfsize"
   alt="이번에도 제대로 바뀐 저작권 정보" >}}
 
 첫 번째 시도와는 다르게, 원본과 거의 같은 용량의 파일이 생성되었다.
 
-{{< figure
-  src="https://cdn.si.mpli.st/2018-09-09-swift-exif-change/second-attempt-output.png"
+{{< fig path="si.mpli.st/2018/09-09-swift-exif-change/second-attempt-output"
   class="halfsize"
   alt="정보 손실이 없는 사진 파일이 생성되었다" >}}
 
