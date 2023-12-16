@@ -13,8 +13,7 @@ description: 무슨 바람이 불었는지는 모르겠지만 서버에서 구�
 
 작년 [RubyKaigi 2017][2]에 참가하기 위해 일본 히로시마에 다녀왔을 때에도, 짐을 최대한 줄이고 싶었기 때문에 노트북은 집에 두고 아이패드 프로를 챙겨갔다. 보통 작업을 위해 접속하는 서버는 한국에 있기 때문에, 일본에서 사용하기 위해 VM 서버를 하나 생성하고 PostgreSQL을 비롯한 개발 환경을 구축해 두었다.
 
-![][image-1]
-<span style="text-align: center;display:block;"> 10.5인치로 화면이 작은 것을 제외하면 이보다 편리할 수 없다. </span>
+{{< fig path="si.mpli.st/2018/04-15-cryptominer-inside-postgres/ipad-workstation" alt="아이패드 워크스테이션" attr="10.5인치로 화면이 작은 것을 제외하면 이보다 편리할 수 없다." >}}
 
 한국으로 돌아오기 전 사용한 데이터베이스는 drop했지만, 서버는 다음에 쓸 일이 있을 것 같아 종료는 하지 않았다. 그리고 시간이 흘러 몇 주 전, 그 때 사용했던 서버를 켜 두었다는 것을 깨닫고 필요한 자료가 있는지 확인하기 위해 서버에 접속하게 되었다.
 
@@ -34,7 +33,7 @@ premist  pts/0     12:00    0.00s  0.05s  0.00s w
 
 그리고는 무슨 바람이 불었는지는 모르겠지만, 서버에서 구동중이던 데몬의 로그를 하나씩 살펴보기 시작했다. PostgreSQL 데몬의 로그를 열고, [less][4]로 로그 파일을 파이프하고 스크롤을 하던 중...
 
-![][image-2]
+{{< fig path="si.mpli.st/2018/04-15-cryptominer-inside-postgres/log-pg-largeobject" >}}
 
 **가슴이 철렁 하는 로그를 발견했다.**
 
@@ -42,11 +41,11 @@ PostgreSQL에서 제공하는 [pg\_largeobject][5] 기능을 이용하여 데이
 
 황급히 로그에서 수상한 다른 부분을 찾기 시작하자, 바이너리 데이터를 넣는 선언문 외에도 다른 수상한 선언문을 여러 개 찾을 수 있었다.
 
-![][image-3]
+{{< fig path="si.mpli.st/2018/04-15-cryptominer-inside-postgres/log-lo-export" >}}
 
 공격자는 원격 코드 실행을 위한 프로시저 함수를 만든 다음, 이 함수를 이용해 바이너리를 생성하고 실행하려는 것 처럼 보였다. 불행 중에 다행으로, 공격자가 시도한 대부분의 명령어는 권한의 문제로 성공하지 않는 것으로 보였다.
 
-![][image-4]
+{{< fig path="si.mpli.st/2018/04-15-cryptominer-inside-postgres/log-subprocessing" >}}
 
 일부 명령어에서는 현재 접속된 시스템에 그래픽 카드가 장착되어 있는지를 확인하고(`lshw -c video`), CPU 모델명을 확인하려는 시도(`cat /proc/cpuinfo`)도 보였다. 이 쯤에서 암호화폐를 마이닝 하기 위한 공격일 것이라는 예상을 하기 시작했다.
 
@@ -65,7 +64,7 @@ AND "host" = 'hostname'
 GROUP BY time(4d)
 ```
 
-![][image-5]
+{{< fig path="si.mpli.st/2018/04-15-cryptominer-inside-postgres/chronograf-telegraf-graph" >}}
 
 
 다행히도 CPU 점유율이 비정상적으로 치솟는 현상은 없었다. 누군가가 공격을 시도한 건 맞지만 공격이 성공하지 않아 바이너리가 실행되지는 않은 듯 보였다.
@@ -142,9 +141,3 @@ PostgreSQL 컨테이너를 `docker kill ID && docker rm ID` 로 제거하고, Po
 [16]:	https://cloud.google.com/sql/docs/postgres/users#default-users
 [17]:	https://www.slideshare.net/inquis/advanced-sql-injection-to-operating-system-full-control-slides
 [18]:	http://bernardodamele.blogspot.kr/2009/01/command-execution-with-postgresql-udf.html
-
-[image-1]:	https://cdn.si.mpli.st/2018-04-cryptominer-inside-postgres/ipad-workstation.jpg
-[image-2]:	https://cdn.si.mpli.st/2018-04-cryptominer-inside-postgres/log-pg-largeobject.jpg "로그의 일부 발췌 (1)"
-[image-3]:	https://cdn.si.mpli.st/2018-04-cryptominer-inside-postgres/log-lo-export.jpg "로그의 일부 발췌 (2)"
-[image-4]:	https://cdn.si.mpli.st/2018-04-cryptominer-inside-postgres/log-subprocessing.jpg "로그의 일부 발췌 (3)"
-[image-5]:	https://cdn.si.mpli.st/2018-04-cryptominer-inside-postgres/chronograf-telegraf-graph.png
