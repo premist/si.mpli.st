@@ -15,8 +15,7 @@ description: 서버의 댓수와 상관 없이 프로덕션 환경에서 구동�
 
 [Shakr][9]에서도 시스템 모니터링과 시계열 지표 수집을 하고 있는데, 시스템의 규모에 비해 운영을 할 수 있는 팀원의 수가 매우 적어서 여러 솔루션을 직접 이어 시스템을 구축하는 것이 아니라 SaaS 솔루션인 [Datadog][10]을 이용해 서버를 관리하고 시계열 지표를 수집하고 있다.
 
-![][image-1]
-<span style="text-align: center;display:block;">수집, 저장, 시각화 소프트웨어</span>
+{{< fig path="si.mpli.st/2017/09-10-introduction-to-telegraf/ingest-store-visualize" attr="수집, 저장, 시각화 소프트웨어" alt="수집, 저장, 시각화 소프트웨어" >}}
 
 이 글에서는 조금 생소할 수도 있는 에이전트, [Telegraf][11]를 소개하고자 한다.
 
@@ -123,13 +122,11 @@ docker run -p 3000:3000 -d grafana/grafana
 
 실행이 완료되었으면 브라우저로 `localhost:3000`에 방문하여 Grafana를 사용할 수 있다. 위 Docker 이미지로 생성된 Grafana의 기본 사용자 정보인 `admin/admin`로 접속하여, InfluxDB 데이터 소스를 추가해준다.
 
-![][image-2]
-<span style="text-align: center;display:block;"> Grafana에 InfluxDB를 데이터 소스로 추가하기</span>
+{{< fig path="si.mpli.st/2017/09-10-introduction-to-telegraf/grafana-setup" attr="Grafana에 InfluxDB를 데이터 소스로 추가하기" alt="Grafana에 InfluxDB를 데이터 소스로 추가하기" >}}
 
 InfluxDB 지표로 직접 대시보드를 제작해도 되지만, Grafana.com에서 [다른 사용자가 미리 제작해둔 대시보드][21]를 받아서 사용할 수도 있다.
 
-![][image-3]
-<span style="text-align: center;display:block;"> Grafana로 Telegraf 지표 확인하기</span>
+{{< fig path="si.mpli.st/2017/09-10-introduction-to-telegraf/grafana-in-action" attr="Grafana로 Telegraf 지표 확인하기" alt="Grafana로 Telegraf 지표 확인하기" >}}
 
 
 ### Telegraf로 수집한 지표 시각화 - Chronograf
@@ -142,13 +139,11 @@ docker run -p 8888:8888 -d quay.io/influxdb/chronograf:1.3.7.0
 
 실행이 완료되었으면 브라우저로 `localhost:3000`에 방문하여 Chronograf를 사용할 수 있다.
 
-![][image-4]
-<span style="text-align: center;display:block;"> Chronograf에 InfluxDB를 데이터 소스로 추가하기</span>
+{{< fig path="si.mpli.st/2017/09-10-introduction-to-telegraf/chronograf-setup" attr="Chronograf에 InfluxDB를 데이터 소스로 추가하기" alt="Chronograf에 InfluxDB를 데이터 소스로 추가하기" >}}
 
 데이터 소스를 추가하면 Telegraf가 전송한 리소스 사용 현황을 확인할 수 있다.
 
-![][image-5]
-<span style="text-align: center;display:block;"> Chronograf로 Telegraf 지표 확인하기</span>
+{{< fig path="si.mpli.st/2017/09-10-introduction-to-telegraf/chronograf-in-action" attr="Chronograf로 Telegraf 지표 확인하기" alt="Chronograf로 Telegraf 지표 확인하기" >}}
 
 [1]:	https://oss.oetiker.ch/rrdtool/
 [2]:	https://www.nagios.org/
@@ -172,9 +167,3 @@ docker run -p 8888:8888 -d quay.io/influxdb/chronograf:1.3.7.0
 [20]:	https://www.influxdata.com/time-series-platform/chronograf/
 [21]:	https://grafana.com/dashboards?search=telegraf
 [22]:	https://github.com/influxdata/chronograf/releases
-
-[image-1]:	https://cdn.si.mpli.st/2017-09-10-introduction-to-telegraf/ingest-store-visualize.svg "수집, 저장, 시각화 소프트웨어"
-[image-2]:	https://cdn.si.mpli.st/2017-09-10-introduction-to-telegraf/grafana-setup.jpg "Grafana에 InfluxDB를 데이터 소스로 추가하기"
-[image-3]:	https://cdn.si.mpli.st/2017-09-10-introduction-to-telegraf/grafana-in-action.jpg "Grafana에 InfluxDB를 데이터 소스로 추가하기"
-[image-4]:	https://cdn.si.mpli.st/2017-09-10-introduction-to-telegraf/chronograf-setup.jpg "Grafana에 InfluxDB를 데이터 소스로 추가하기"
-[image-5]:	https://cdn.si.mpli.st/2017-09-10-introduction-to-telegraf/chronograf-in-action.jpg "Grafana에 InfluxDB를 데이터 소스로 추가하기"
