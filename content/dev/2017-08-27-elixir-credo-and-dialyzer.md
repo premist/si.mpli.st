@@ -36,7 +36,7 @@ end
 
 추가 후 `mix deps.get`으로 의존성 패키지를 모두 받은 다음, `mix credo`를 실행하면 Credo가 정적 코드 분석을 수행한다.
 
-![][image-credo]
+{{< fig path="si.mpli.st/2017/08-27-elixir-credo-and-dialyzer/credo" alt="Credo의 실행 결과" >}}
 
 
 ### Dialyzer
@@ -66,8 +66,4 @@ end
 
 이렇게 필요한 설정을 모두 마치고 Dialyzer를 실행하면, 타입 어노테이션이 잘못 지정된 오류를 찾아서 출력해준다.
 
-![][image-dialyzer]
-
-
-[image-credo]: https://cdn.si.mpli.st/2017-08-27-credo.jpeg "Credo의 실행 결과"
-[image-dialyzer]: https://cdn.si.mpli.st/2017-08-27-dialyzer.jpeg "Dialyzer의 실행 결과"
+{{< fig path="si.mpli.st/2017/08-27-elixir-credo-and-dialyzer/dialyzer" alt="Dialyzer의 실행 결과" >}}
