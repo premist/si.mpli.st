@@ -32,7 +32,7 @@ WordPress 글들을 Markdown으로 변환한 이후 깨진 HTML 코드를 손보
 
 블로그는 기본적으로 글을 쓰는 공간이기 때문에 부담되지 않는 색상과 글자의 가독성을 최우선적으로 생각하면서 목업을 만들기 시작했다. 이것이 첫 번째 목업의 결과물이다.
 
-![첫 번째 목업](https://cdn.si.mpli.st/2013-07-07-design-candidate-1.png)
+{{< fig path="si.mpli.st/2013/07-07-remaking-blog/design-candidate-1" alt="첫 번째 목업" >}}
 
 워드프레스를 사용했을 때 si.mpli.st에 Myriad Pro를 사용했는데, 색다른 폰트를 사용해보자 해서 선택한 것이 [Futura PT](http://bit.ly/10HfDgU)이다. Ableton이 [웹사이트](https://www.ableton.com/)를 리뉴얼한 것을 보면서 Futura PT가 매우 세련된 폰트라는 것을 다시 한 번 깨달았고, 결국 si.mpli.st에도 적용하게 되었다. 사실 webOS에 적용된 Prelude의 원조격인 Avenir Next를 쓰고 싶었지만, 아쉽게도 Typekit 라이브러리에 있지 않아 Futura를 사용하게 된 것도 있다.
 
@@ -41,7 +41,7 @@ WordPress 글들을 Markdown으로 변환한 이후 깨진 HTML 코드를 손보
 
 디자인을 이리저리 바꿔보면서 몇 가지 아이디어가 떠올랐는데, 그 중 하나가 **카테고리별로 색상을 정해주는 것은 어떨까** 라는 생각이었다. 먼저 블로그에 있는 글을 몇 가지 카테고리를 정해 분류하고, 각 카테고리마다 어울리는 색상을 정해주는 것인데, 블로그가 너무 단조로워 보이지 않도록 하는 효과에 더불어 글의 성격을 표현해주는 요소로 작용할 수 있을 것 같았다. 색상을 주 요소로 활용하게 된다면 팔레트를 선정하는 것이 매우 중요해지는데, 직접 색상을 고르는 대신 Designmodo의 [Flat UI](http://designmodo.github.com/Flat-UI/) 에서 색을 가져왔다.
 
-![color scheme](https://cdn.si.mpli.st/2013-07-07-color-scheme.png)
+{{< fig path="si.mpli.st/2013/07-07-remaking-blog/color-scheme" alt="color scheme" >}}
 
 카테고리에 맞는 색을 나름 고른다고 했는데, 카테고리가 더 추가되면 어떻게 할 지도 생각 해 보아야 할 것 같다.
 
