@@ -69,9 +69,9 @@
     {{ end }}
 
     {{ with $original }}
-    <img src="{{ $path_prefix }}{{ index $original "path" }}" alt="{{ $alt }}" decoding="async">
+    <img src="{{ $path_prefix }}{{ index $original "path" }}" alt="{{ $alt }}" loading="lazy" decoding="async">
     {{ else }}
-      <img src="{{ $path_prefix }}{{ index $standard_jpg 0 "path" }}" alt="{{ $alt }}" decoding="async">
+      <img src="{{ $path_prefix }}{{ index $standard_jpg 0 "path" }}" alt="{{ $alt }}" loading="lazy" decoding="async">
     {{ end }}
   </picture>
 
