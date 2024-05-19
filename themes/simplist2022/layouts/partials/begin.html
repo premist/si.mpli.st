@@ -14,17 +14,17 @@
     {{ template "_internal/opengraph.html" . }}
     <meta property="article:author" content="{{ .Site.Params.AuthorFacebook }}">
 
-    <link rel="preload" as="style" href="https://fonts.premi.st/ofl/Fira Code.css">
-    <link rel="preload" as="style" href="https://fonts.premi.st/ofl/Gothic A1 Medium.css">
-    <link rel="preload" as="style" href="https://fonts.premi.st/ofl/Gothic A1 SemiBold.css">
-    <link rel="preload" as="style" href="https://fonts.premi.st/ofl/Gothic A1 Bold.css">
-    <link rel="preload" as="style" href="https://fonts.premi.st/lfs/Lab Grotesque.css">
+    <link rel="preload" as="style" href="https://o.polychrome.network/fonts/ofl/Fira Code.css">
+    <link rel="preload" as="style" href="https://o.polychrome.network/fonts/ofl/Gothic A1 Medium.css">
+    <link rel="preload" as="style" href="https://o.polychrome.network/fonts/ofl/Gothic A1 SemiBold.css">
+    <link rel="preload" as="style" href="https://o.polychrome.network/fonts/ofl/Gothic A1 Bold.css">
+    <link rel="preload" as="style" href="https://o.polychrome.network/fonts/lfs/Lab Grotesque.css">
 
-    <link rel="stylesheet" href="https://fonts.premi.st/ofl/Fira Code.css">
-    <link rel="stylesheet" href="https://fonts.premi.st/ofl/Gothic A1 Medium.css">
-    <link rel="stylesheet" href="https://fonts.premi.st/ofl/Gothic A1 SemiBold.css">
-    <link rel="stylesheet" href="https://fonts.premi.st/ofl/Gothic A1 Bold.css">
-    <link rel="stylesheet" href="https://fonts.premi.st/lfs/Lab Grotesque.css">
+    <link rel="stylesheet" href="https://o.polychrome.network/fonts/ofl/Fira Code.css">
+    <link rel="stylesheet" href="https://o.polychrome.network/fonts/ofl/Gothic A1 Medium.css">
+    <link rel="stylesheet" href="https://o.polychrome.network/fonts/ofl/Gothic A1 SemiBold.css">
+    <link rel="stylesheet" href="https://o.polychrome.network/fonts/ofl/Gothic A1 Bold.css">
+    <link rel="stylesheet" href="https://o.polychrome.network/fonts/lfs/Lab Grotesque.css">
 
     {{ $css := resources.Get "styles/main.scss" | toCSS | minify }}
     <style>{{ $css.Content | safeCSS }}</style>
