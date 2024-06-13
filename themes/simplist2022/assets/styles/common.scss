@@ -1,11 +1,15 @@
+:host, html, body {
+  text-rendering: optimizeLegibility;
+  font-synthesis: none;
+  font-feature-settings: "ss02", "rlig";
+}
+
 body {
-  font-family: $primary-font;
-  font-weight: $force-font-weight;
+  font-family: $font;
+  font-weight: $primary-font-weight;
   font-size: $font-size;
   line-height: $line-height;
-  letter-spacing: 0.005em;
 
-  text-rendering: optimizeLegibility;
   word-break: keep-all;
   word-wrap: break-word;
 
@@ -58,12 +62,13 @@ footer {
 }
 
 h1, h2, h3, h4, h5, h6, strong, b {
-  font-weight: $force-font-weight;
+  font-weight: $primary-font-weight;
 }
 
 h1, h2 {
   font-size: 2em;
-  font-family: $semibold-font;
+  font-family: $font;
+  font-weight: 500;
 
   line-height: 1.5em;
 
@@ -80,9 +85,8 @@ h1, h2 {
 
 h3, h4, h5, h6 {
   font-size: 1.3em;
-  font-family: $bold-font;
-
   line-height: 1.5em;
+  font-weight: 700;
 
   color: $bold-color;
 

@@ -1,13 +1,9 @@
 $container-width: 1024px;
 
 // Fonts
-$force-font-weight: 400;
+$primary-font-weight: 400;
 
-$primary-font: "Lab Grotesque Regular", "Gothic A1 Medium", "Helvetica", "Arial", "Noto Sans CJK KR", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
-
-$semibold-font: 'Lab Grotesque Medium', 'Gothic A1 SemiBold', "Helvetica", "Arial", "Noto Sans CJK KR", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
-$bold-font: 'Lab Grotesque Bold', 'Gothic A1 Bold',  "Helvetica", "Arial", "Noto Sans CJK KR", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
-
+$font: "Lab Grotesque", "Gothic A1 LabGrtsqMatch", "Helvetica", "Arial", "Noto Sans CJK KR", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $syntax-highlighting-font: "Fira Code", "Menlo", "Monaco", "Liberation Mono", Consolas, Courier, monospace;
 
 

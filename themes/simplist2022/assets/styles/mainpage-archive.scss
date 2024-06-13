@@ -32,14 +32,14 @@
       display: block;
       margin-bottom: 0.2rem;
 
-      font-family: $bold-font;
+      font-weight: 700;
     }
 
     & .meta {
       display: flex;
       gap: 0.8rem;
 
-      font-family: $semibold-font;
+      font-weight: 500;
       text-transform: capitalize;
 
       color: $caption-color;
